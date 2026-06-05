@@ -1,0 +1,18 @@
+.DS_Store
+dist/
+graphify-out/
+
+# Local briefing/source docs are not needed for the public deploy.
+*.md
+
+# Generated site output. Cloudflare runs npm run build and publishes dist/.
+/blog/
+/consultoria/
+/contato/
+/index.html
+/nichos/
+/politica-de-privacidade/
+/robots.txt
+/servicos/
+/sitemap.xml
+/sobre/
