@@ -149,23 +149,15 @@
     });
   });
 
-  /* Lead form -> mailto (port of original site.js) */
+  /* Lead form -> Worker endpoint */
   document.querySelectorAll("[data-lead-form]").forEach(function (form) {
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", async function (event) {
       event.preventDefault();
       var fd = new FormData(form);
       var lead = Object.fromEntries(fd.entries());
       var status = form.querySelector("[data-form-status]");
-      var message = [
-        "Olá, recebi este pedido de diagnóstico pelo site Gestor de Tráfego Foz do Iguaçu.",
-        "",
-        "Nome: " + (lead.nome || ""),
-        "WhatsApp: " + (lead.whatsapp || ""),
-        "Segmento: " + (lead.segmento || ""),
-        "Cidade: " + (lead.cidade || ""),
-        "Investimento mensal: " + (lead.investimento || ""),
-        "Desafio: " + (lead.desafio || ""),
-      ].join("\n");
+      var button = form.querySelector('button[type="submit"]');
+
       dataLayer.push({
         event: "lead_form_submit",
         event_category: "formulario",
@@ -174,10 +166,59 @@
         lead_cidade: lead.cidade || "",
         lead_investimento: lead.investimento || "",
       });
-      if (status) status.textContent = "Obrigado. Vamos abrir seu aplicativo de email com a mensagem preenchida para envio.";
-      var email = form.dataset.submitEmail || "contato@gabriads.com";
-      var subject = "Novo diagnóstico pelo site Gestor de Tráfego Foz do Iguaçu";
-      window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+
+      if (button) {
+        button.disabled = true;
+        button.dataset.originalText = button.textContent;
+        button.textContent = "Enviando...";
+      }
+      if (status) status.textContent = "Enviando suas informações com segurança...";
+
+      try {
+        var response = await fetch(form.action, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            nome: lead.nome || "",
+            whatsapp: lead.whatsapp || "",
+            segmento: lead.segmento || "",
+            cidade: lead.cidade || "",
+            investimento: lead.investimento || "",
+            desafio: lead.desafio || "",
+            website: lead.website || "",
+            context: form.dataset.context || window.location.pathname,
+            page: window.location.href,
+          }),
+        });
+        var payload = await response.json().catch(function () {
+          return {};
+        });
+        if (!response.ok || !payload.ok) throw new Error(payload.error || "Nao foi possivel enviar.");
+
+        dataLayer.push({
+          event: "lead_form_success",
+          event_category: "formulario",
+          event_label: form.dataset.context || window.location.pathname,
+          lead_segmento: lead.segmento || "",
+          lead_cidade: lead.cidade || "",
+          lead_investimento: lead.investimento || "",
+        });
+        form.reset();
+        if (status) status.textContent = "Recebemos seu pedido de diagnóstico. Em breve entraremos em contato.";
+      } catch (error) {
+        dataLayer.push({
+          event: "lead_form_error",
+          event_category: "formulario",
+          event_label: form.dataset.context || window.location.pathname,
+          error_message: error && error.message ? error.message : "erro_desconhecido",
+        });
+        if (status) status.textContent = "Nao foi possivel enviar agora. Tente novamente ou chame pelo WhatsApp.";
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = button.dataset.originalText || "Enviar diagnóstico";
+        }
+      }
     });
   });
 

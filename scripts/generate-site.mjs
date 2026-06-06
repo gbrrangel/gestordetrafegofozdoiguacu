@@ -719,7 +719,7 @@ function renderFooter() {
 
 function renderLeadForm(context) {
   context = context || "global";
-  return `<form class="lead-form" data-lead-form data-context="${escapeHtml(context)}" data-submit-email="${contactEmail}" action="mailto:${contactEmail}" method="post" enctype="text/plain">
+  return `<form class="lead-form" data-lead-form data-context="${escapeHtml(context)}" data-submit-email="${contactEmail}" action="/api/lead" method="post">
   <label>Nome<input name="nome" autocomplete="name" required></label>
   <label>WhatsApp<input name="whatsapp" autocomplete="tel" required inputmode="tel"></label>
   <label>Segmento<select name="segmento" required>
@@ -732,8 +732,9 @@ function renderLeadForm(context) {
     <option>Ainda não invisto</option><option>Até R$ 1.000</option><option>R$ 1.000 a R$ 3.000</option><option>R$ 3.000 a R$ 5.000</option><option>Acima de R$ 5.000</option>
   </select></label>
   <label>Principal desafio<textarea name="desafio" rows="4" required></textarea></label>
+  <label class="hp-field" aria-hidden="true" tabindex="-1">Site<input name="website" autocomplete="off" tabindex="-1"></label>
   <button class="button primary" type="submit" data-gtm="lead_form_submit" data-event-category="formulario" data-event-label="${escapeHtml(context)}">Enviar diagnóstico</button>
-  <p class="form-note" data-form-status>Ao enviar, o site prepara uma mensagem para ${contactEmail}. Se preferir resposta mais rápida, use o botão de WhatsApp.</p>
+  <p class="form-note" data-form-status>Ao enviar, seus dados chegam no email ${contactEmail}. Se preferir resposta mais rápida, use o botão de WhatsApp.</p>
 </form>`;
 }
 

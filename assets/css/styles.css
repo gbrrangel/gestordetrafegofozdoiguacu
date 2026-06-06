@@ -859,6 +859,8 @@ tbody tr:hover td { background: rgba(255, 255, 255, 0.02); }
 .lead-form input:focus, .lead-form select:focus, .lead-form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 .lead-form select option { color: #111; }
 .lead-form .button { margin-top: 6px; }
+.lead-form .button:disabled { cursor: wait; opacity: 0.72; transform: none; }
+.hp-field { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .form-note { color: var(--muted); font-size: 0.86rem; }
 
 /* Blog archive */

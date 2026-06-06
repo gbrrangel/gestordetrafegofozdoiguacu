@@ -7,6 +7,7 @@ Este projeto e um site estatico gerado por script para publicacao no Cloudflare 
 - `scripts/generate-site.mjs`: fonte principal do site. Contem dados das paginas, posts, servicos, nichos, templates HTML, schema JSON-LD, header, footer, CTAs e formulario.
 - `assets/css/styles.css`: design visual do site.
 - `assets/js/site.js`: interacoes do menu, animacoes, eventos de `dataLayer` e comportamento do formulario.
+- `src/worker.js`: endpoint `/api/lead` no Cloudflare Worker para receber formularios e enviar email.
 - `scripts/build-dist.mjs`: roda o gerador e copia apenas os arquivos publicaveis para `dist/`.
 - `package.json`: comandos de build.
 - `wrangler.jsonc`: configuracao do Cloudflare para publicar os assets de `dist/`.
@@ -73,10 +74,11 @@ O `wrangler.jsonc` aponta o Worker/Assets para:
 1. Edite `scripts/generate-site.mjs` para conteudo, paginas, URLs, CTAs, schema ou estrutura HTML.
 2. Edite `assets/css/styles.css` para visual.
 3. Edite `assets/js/site.js` para comportamento.
-4. Rode `npm run build`.
-5. Revise localmente.
-6. Faça commit e push para `main`.
-7. O Cloudflare faz o deploy automaticamente.
+4. Edite `src/worker.js` apenas quando precisar mudar a API do formulario.
+5. Rode `npm run build`.
+6. Revise localmente.
+7. Faça commit e push para `main`.
+8. O Cloudflare faz o deploy automaticamente.
 
 ## Paginas e rotas
 
@@ -148,7 +150,7 @@ O `assets/js/site.js` envia eventos para `window.dataLayer`.
 
 Ao criar novos botoes importantes, sempre incluir `data-gtm`, `data-event-category` e `data-event-label`.
 
-## WhatsApp e formulario
+## WhatsApp, email e formulario
 
 Telefone atual:
 
@@ -162,13 +164,32 @@ Email atual:
 contato@gabriads.com
 ```
 
-O formulario atualmente usa `mailto:` como fallback estatico. Isso abre o aplicativo de email do visitante. Para producao ideal, implementar endpoint real, por exemplo:
+O formulario envia as submissoes para o endpoint:
 
-- Cloudflare Worker/Function em `/api/lead`
-- Resend, Brevo, SendGrid ou outro servico transacional
-- opcionalmente salvar tambem em planilha, CRM ou banco
+```text
+/api/lead
+```
 
-Quando implementar backend real, alterar `renderLeadForm()` em `scripts/generate-site.mjs` e a logica de submit em `assets/js/site.js`.
+Esse endpoint fica em `src/worker.js` e envia o email para `contato@gabriads.com` usando a API do Resend.
+
+Variaveis/segredos necessarios no Cloudflare Worker:
+
+```text
+RESEND_API_KEY
+LEAD_EMAIL_FROM
+```
+
+`RESEND_API_KEY` deve ser configurada como secret. `LEAD_EMAIL_FROM` pode ser uma variavel simples com um remetente verificado no Resend, por exemplo:
+
+```text
+Site <contato@seudominioverificado.com>
+```
+
+Durante testes iniciais, o Resend permite usar `Site <onboarding@resend.dev>` em alguns cenarios, mas o ideal em producao e verificar um dominio de envio e configurar SPF/DKIM conforme o painel do Resend orientar.
+
+O formulario tambem possui um campo invisivel `website` como honeypot anti-spam. Se esse campo vier preenchido, o Worker ignora a submissao.
+
+Se trocar de provedor de email, alterar apenas a funcao `sendWithResend()` em `src/worker.js`.
 
 ## Dominio
 
@@ -211,6 +232,7 @@ Redirecionamento recomendado:
 npm run build
 node --check scripts/generate-site.mjs
 node --check assets/js/site.js
+node --check src/worker.js
 ```
 
 Depois conferir no navegador:
@@ -224,4 +246,3 @@ Depois conferir no navegador:
 - Botao flutuante de WhatsApp
 - Formulario
 - `sitemap.xml`
-
