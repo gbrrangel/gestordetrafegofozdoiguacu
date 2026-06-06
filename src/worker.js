@@ -1,7 +1,7 @@
 const RECIPIENT_EMAIL = "contato@gabriads.com";
 const SITE_NAME = "Gestor de Trafego Foz do Iguacu";
 
-const REQUIRED_FIELDS = ["nome", "whatsapp", "segmento", "cidade", "investimento", "desafio"];
+const REQUIRED_FIELDS = ["nome", "email", "whatsapp", "investimento"];
 
 function json(data, init = {}) {
   return new Response(JSON.stringify(data), {
@@ -21,9 +21,20 @@ function clean(value, maxLength = 1000) {
     .slice(0, maxLength);
 }
 
+function isValidEmail(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(value || "").trim());
+}
+
+function isValidPhone(value) {
+  const digits = String(value || "").replace(/\D/g, "");
+  if (digits.startsWith("55")) return digits.length === 12 || digits.length === 13;
+  return digits.length === 10 || digits.length === 11;
+}
+
 function formatLeadHtml(lead) {
   const rows = [
     ["Nome", lead.nome],
+    ["Email", lead.email],
     ["WhatsApp", lead.whatsapp],
     ["Segmento", lead.segmento],
     ["Cidade", lead.cidade],
@@ -57,6 +68,7 @@ function formatLeadText(lead) {
     "Novo diagnostico pelo site",
     "",
     `Nome: ${lead.nome}`,
+    `Email: ${lead.email}`,
     `WhatsApp: ${lead.whatsapp}`,
     `Segmento: ${lead.segmento}`,
     `Cidade: ${lead.cidade}`,
@@ -90,6 +102,7 @@ async function readLead(request) {
 function normalizeLead(input) {
   return {
     nome: clean(input.nome, 120),
+    email: clean(input.email, 180),
     whatsapp: clean(input.whatsapp, 60),
     segmento: clean(input.segmento, 120),
     cidade: clean(input.cidade, 120),
@@ -108,6 +121,14 @@ function validateLead(lead) {
   const missing = REQUIRED_FIELDS.filter((field) => !lead[field]);
   if (missing.length) {
     return { ok: false, status: 400, error: `Campos obrigatorios ausentes: ${missing.join(", ")}` };
+  }
+
+  if (!isValidEmail(lead.email)) {
+    return { ok: false, status: 400, error: "Email invalido." };
+  }
+
+  if (!isValidPhone(lead.whatsapp)) {
+    return { ok: false, status: 400, error: "WhatsApp invalido. Informe o telefone com DDD." };
   }
 
   return { ok: true };

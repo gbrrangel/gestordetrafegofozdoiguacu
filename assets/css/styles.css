@@ -861,7 +861,10 @@ tbody tr:hover td { background: rgba(255, 255, 255, 0.02); }
 .lead-form .button { margin-top: 6px; }
 .lead-form .button:disabled { cursor: wait; opacity: 0.72; transform: none; }
 .hp-field { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
-.form-note { color: var(--muted); font-size: 0.86rem; }
+.form-note { color: var(--muted); font-size: 0.86rem; padding: 10px 12px; border: 1px solid transparent; border-radius: var(--radius-sm); background: rgba(255, 255, 255, 0.03); }
+.form-note.loading { color: var(--text-2); border-color: var(--line-2); }
+.form-note.success { color: #dffce8; border-color: rgba(34, 197, 94, 0.5); background: rgba(34, 197, 94, 0.16); font-weight: 700; }
+.form-note.error { color: #ffe1e1; border-color: rgba(239, 68, 68, 0.55); background: rgba(239, 68, 68, 0.15); font-weight: 700; }
 
 /* Blog archive */
 .category-list { display: grid; gap: 12px; margin-bottom: 22px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }

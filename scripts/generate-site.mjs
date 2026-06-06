@@ -719,19 +719,20 @@ function renderFooter() {
 
 function renderLeadForm(context) {
   context = context || "global";
-  return `<form class="lead-form" data-lead-form data-context="${escapeHtml(context)}" data-submit-email="${contactEmail}" action="/api/lead" method="post">
+  return `<form class="lead-form" data-lead-form data-context="${escapeHtml(context)}" data-submit-email="${contactEmail}" action="/api/lead" method="post" novalidate>
   <label>Nome<input name="nome" autocomplete="name" required></label>
+  <label>Email<input name="email" type="email" autocomplete="email" required></label>
   <label>WhatsApp<input name="whatsapp" autocomplete="tel" required inputmode="tel"></label>
-  <label>Segmento<select name="segmento" required>
+  <label>Segmento<select name="segmento">
     <option value="">Selecione</option>
     <option>Advocacia</option><option>Saúde</option><option>Turismo</option><option>Restaurante</option><option>Comércio</option><option>Serviço local</option><option>Infoproduto</option><option>Outro</option>
   </select></label>
-  <label>Cidade<input name="cidade" value="Foz do Iguaçu" required></label>
+  <label>Cidade<input name="cidade" value="Foz do Iguaçu"></label>
   <label>Investimento mensal em mídia<select name="investimento" required>
     <option value="">Selecione</option>
     <option>Ainda não invisto</option><option>Até R$ 1.000</option><option>R$ 1.000 a R$ 3.000</option><option>R$ 3.000 a R$ 5.000</option><option>Acima de R$ 5.000</option>
   </select></label>
-  <label>Principal desafio<textarea name="desafio" rows="4" required></textarea></label>
+  <label>Principal desafio<textarea name="desafio" rows="4"></textarea></label>
   <label class="hp-field" aria-hidden="true" tabindex="-1">Site<input name="website" autocomplete="off" tabindex="-1"></label>
   <button class="button primary" type="submit" data-gtm="lead_form_submit" data-event-category="formulario" data-event-label="${escapeHtml(context)}">Enviar diagnóstico</button>
   <p class="form-note" data-form-status>Ao enviar, seus dados chegam no email ${contactEmail}. Se preferir resposta mais rápida, use o botão de WhatsApp.</p>

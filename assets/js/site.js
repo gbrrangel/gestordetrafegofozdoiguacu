@@ -150,6 +150,23 @@
   });
 
   /* Lead form -> Worker endpoint */
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(value || "").trim());
+  }
+
+  function isValidPhone(value) {
+    var digits = String(value || "").replace(/\D/g, "");
+    if (digits.startsWith("55")) return digits.length === 12 || digits.length === 13;
+    return digits.length === 10 || digits.length === 11;
+  }
+
+  function setFormStatus(status, message, type) {
+    if (!status) return;
+    status.textContent = message;
+    status.classList.remove("success", "error", "loading");
+    if (type) status.classList.add(type);
+  }
+
   document.querySelectorAll("[data-lead-form]").forEach(function (form) {
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
@@ -157,6 +174,24 @@
       var lead = Object.fromEntries(fd.entries());
       var status = form.querySelector("[data-form-status]");
       var button = form.querySelector('button[type="submit"]');
+      var invalidMessage = "";
+
+      if (!lead.nome || !String(lead.nome).trim()) invalidMessage = "Preencha seu nome para enviar o diagnóstico.";
+      else if (!lead.email || !String(lead.email).trim()) invalidMessage = "Preencha seu email para enviar o diagnóstico.";
+      else if (!isValidEmail(lead.email)) invalidMessage = "Confira o email informado. Ele parece estar incompleto ou inválido.";
+      else if (!lead.whatsapp || !String(lead.whatsapp).trim()) invalidMessage = "Preencha seu WhatsApp com DDD para enviar o diagnóstico.";
+      else if (!isValidPhone(lead.whatsapp)) invalidMessage = "Confira o WhatsApp informado. Use DDD, por exemplo 45 99904-6673 ou 11 99999-9999.";
+      else if (!lead.investimento || !String(lead.investimento).trim()) invalidMessage = "Selecione o investimento mensal em mídia para enviar o diagnóstico.";
+
+      if (invalidMessage) {
+        setFormStatus(status, invalidMessage, "error");
+        dataLayer.push({
+          event: "lead_form_validation_error",
+          event_category: "formulario",
+          event_label: form.dataset.context || window.location.pathname,
+        });
+        return;
+      }
 
       dataLayer.push({
         event: "lead_form_submit",
@@ -172,7 +207,7 @@
         button.dataset.originalText = button.textContent;
         button.textContent = "Enviando...";
       }
-      if (status) status.textContent = "Enviando suas informações com segurança...";
+      setFormStatus(status, "Enviando suas informações com segurança...", "loading");
 
       try {
         var response = await fetch(form.action, {
@@ -180,6 +215,7 @@
           headers: { "Content-Type": "application/json", Accept: "application/json" },
           body: JSON.stringify({
             nome: lead.nome || "",
+            email: lead.email || "",
             whatsapp: lead.whatsapp || "",
             segmento: lead.segmento || "",
             cidade: lead.cidade || "",
@@ -204,7 +240,7 @@
           lead_investimento: lead.investimento || "",
         });
         form.reset();
-        if (status) status.textContent = "Recebemos seu pedido de diagnóstico. Em breve entraremos em contato.";
+        setFormStatus(status, "Pedido recebido. Entraremos em contato em breve pelo WhatsApp ou email informado.", "success");
       } catch (error) {
         dataLayer.push({
           event: "lead_form_error",
@@ -212,7 +248,7 @@
           event_label: form.dataset.context || window.location.pathname,
           error_message: error && error.message ? error.message : "erro_desconhecido",
         });
-        if (status) status.textContent = "Nao foi possivel enviar agora. Tente novamente ou chame pelo WhatsApp.";
+        setFormStatus(status, error && error.message ? error.message : "Nao foi possivel enviar agora. Tente novamente ou chame pelo WhatsApp.", "error");
       } finally {
         if (button) {
           button.disabled = false;

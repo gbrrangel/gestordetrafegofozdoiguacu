@@ -189,6 +189,25 @@ Durante testes iniciais, o Resend permite usar `Site <onboarding@resend.dev>` em
 
 O formulario tambem possui um campo invisivel `website` como honeypot anti-spam. Se esse campo vier preenchido, o Worker ignora a submissao.
 
+Campos obrigatorios atuais:
+
+```text
+nome
+email
+whatsapp
+investimento
+```
+
+Campos opcionais atuais:
+
+```text
+segmento
+cidade
+desafio
+```
+
+O email e validado no navegador e no Worker. O WhatsApp tambem e validado no navegador e no Worker, exigindo numero com DDD brasileiro, por exemplo `45 99904-6673` ou `11 99999-9999`. Numeros com codigo do pais `55` tambem sao aceitos.
+
 Se trocar de provedor de email, alterar apenas a funcao `sendWithResend()` em `src/worker.js`.
 
 ## Dominio
