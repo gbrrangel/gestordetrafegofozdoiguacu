@@ -151,13 +151,23 @@
 
   /* Lead form -> Worker endpoint */
   function isValidEmail(value) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(value || "").trim());
+    var email = String(value || "").trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return false;
+    var domain = email.split("@")[1] || "";
+    var blockedDomains = ["teste.com", "test.com", "example.com", "example.com.br", "email.com", "fake.com", "mailinator.com"];
+    return !blockedDomains.includes(domain);
   }
 
   function isValidPhone(value) {
     var digits = String(value || "").replace(/\D/g, "");
-    if (digits.startsWith("55")) return digits.length === 12 || digits.length === 13;
-    return digits.length === 10 || digits.length === 11;
+    if (/^(\d)\1+$/.test(digits)) return false;
+    if (digits.includes("123456789") || digits.includes("987654321")) return false;
+    if ("01234567890123456789".includes(digits) || "98765432109876543210".includes(digits)) return false;
+    var national = digits.startsWith("55") ? digits.slice(2) : digits;
+    if (!(national.length === 10 || national.length === 11)) return false;
+    var ddd = Number(national.slice(0, 2));
+    if (ddd < 11 || ddd > 99) return false;
+    return national.length === 10 || national[2] === "9";
   }
 
   function setFormStatus(status, message, type) {

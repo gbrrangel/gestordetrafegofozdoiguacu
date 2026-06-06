@@ -206,7 +206,7 @@ cidade
 desafio
 ```
 
-O email e validado no navegador e no Worker. O WhatsApp tambem e validado no navegador e no Worker, exigindo numero com DDD brasileiro, por exemplo `45 99904-6673` ou `11 99999-9999`. Numeros com codigo do pais `55` tambem sao aceitos.
+O email e validado no navegador e no Worker. Dominios obvios de teste, como `teste.com`, `test.com` e `example.com`, sao bloqueados. O WhatsApp tambem e validado no navegador e no Worker, exigindo numero com DDD brasileiro, por exemplo `45 99904-6673` ou `11 99999-9999`. Numeros com codigo do pais `55` tambem sao aceitos. Sequencias numericas obvias, como `12345678910`, e numeros repetidos sao bloqueados.
 
 Se trocar de provedor de email, alterar apenas a funcao `sendWithResend()` em `src/worker.js`.
 

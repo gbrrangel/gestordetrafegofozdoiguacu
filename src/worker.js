@@ -22,13 +22,23 @@ function clean(value, maxLength = 1000) {
 }
 
 function isValidEmail(value) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(value || "").trim());
+  const email = String(value || "").trim().toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return false;
+  const domain = email.split("@")[1] || "";
+  const blockedDomains = ["teste.com", "test.com", "example.com", "example.com.br", "email.com", "fake.com", "mailinator.com"];
+  return !blockedDomains.includes(domain);
 }
 
 function isValidPhone(value) {
   const digits = String(value || "").replace(/\D/g, "");
-  if (digits.startsWith("55")) return digits.length === 12 || digits.length === 13;
-  return digits.length === 10 || digits.length === 11;
+  if (/^(\d)\1+$/.test(digits)) return false;
+  if (digits.includes("123456789") || digits.includes("987654321")) return false;
+  if ("01234567890123456789".includes(digits) || "98765432109876543210".includes(digits)) return false;
+  const national = digits.startsWith("55") ? digits.slice(2) : digits;
+  if (!(national.length === 10 || national.length === 11)) return false;
+  const ddd = Number(national.slice(0, 2));
+  if (ddd < 11 || ddd > 99) return false;
+  return national.length === 10 || national[2] === "9";
 }
 
 function formatLeadHtml(lead) {
@@ -139,7 +149,7 @@ async function sendWithResend(env, lead) {
     return { ok: false, status: 503, error: "RESEND_API_KEY nao configurada no Cloudflare." };
   }
 
-  const from = env.LEAD_EMAIL_FROM || "Site <onboarding@resend.dev>";
+  const from = env.LEAD_EMAIL_FROM || "Site <leads@gestordetrafegofozdoiguacu.com.br>";
   const subject = `Novo diagnostico pelo site - ${lead.nome}`;
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -157,8 +167,7 @@ async function sendWithResend(env, lead) {
   });
 
   if (!response.ok) {
-    const body = await response.text();
-    return { ok: false, status: 502, error: `Falha no envio do email: ${body.slice(0, 500)}` };
+    return { ok: false, status: 502, error: "Nao foi possivel enviar agora. Tente novamente ou chame pelo WhatsApp." };
   }
 
   return { ok: true };
