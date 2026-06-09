@@ -1053,6 +1053,8 @@ function renderFooter(page) {
     </div>
     <div class="footer-bottom">
       <span>© <span id="ano">2026</span> Gestor de Tráfego Foz do Iguaçu · PR</span>
+      <span>CNPJ: 57.110.765/0001-00</span>
+      <span>Este site pertence à <a href="https://gabriads.com" target="_blank" rel="noopener noreferrer">GabriAds Soluções Digitais</a></span>
       ${isCurrentPage("/politica-de-privacidade", page) ? `<span class="footer-current" aria-current="page">Política de privacidade</span>` : `<a href="/politica-de-privacidade">Política de privacidade</a>`}
     </div>
   </div>

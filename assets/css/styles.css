@@ -723,7 +723,7 @@ p { margin: 0; text-wrap: pretty; }
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px 18px;
   justify-content: space-between;
   align-items: center;
   margin-top: 48px;
@@ -732,6 +732,8 @@ p { margin: 0; text-wrap: pretty; }
   color: var(--muted-2);
   font-size: 0.85rem;
 }
+.footer-bottom a { color: var(--text-2); font-weight: 600; }
+.footer-bottom a:hover { color: var(--accent); }
 .footer-bottom .footer-current { color: var(--muted-2); }
 
 /* ============ Floating WhatsApp ============ */
