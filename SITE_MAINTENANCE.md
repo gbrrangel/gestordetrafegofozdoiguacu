@@ -4,10 +4,10 @@ Este projeto e um site estatico gerado por script para publicacao no Cloudflare 
 
 ## Estrutura principal
 
-- `scripts/generate-site.mjs`: fonte principal do site. Contem dados das paginas, posts, servicos, nichos, templates HTML, schema JSON-LD, header, footer, CTAs e formulario.
+- `scripts/generate-site.mjs`: fonte principal do site. Contem dados das paginas, posts, servicos, nichos, templates HTML, schema JSON-LD, header, footer, CTAs e formulario. Tambem contem `assetVersion`, usado para forcar cache-busting do CSS.
 - `assets/css/styles.css`: design visual do site.
 - `assets/js/site.js`: interacoes do menu, animacoes, eventos de `dataLayer` e comportamento do formulario.
-- `src/worker.js`: endpoint `/api/lead` no Cloudflare Worker para receber formularios e enviar email.
+- `src/worker.js`: endpoint `/api/lead` no Cloudflare Worker para receber formularios e enviar email. Tambem contem redirecionamentos 301 em `REDIRECTS`.
 - `scripts/build-dist.mjs`: roda o gerador e copia apenas os arquivos publicaveis para `dist/`.
 - `package.json`: comandos de build.
 - `wrangler.jsonc`: configuracao do Cloudflare para publicar os assets de `dist/`.
@@ -73,12 +73,13 @@ O `wrangler.jsonc` aponta o Worker/Assets para:
 
 1. Edite `scripts/generate-site.mjs` para conteudo, paginas, URLs, CTAs, schema ou estrutura HTML.
 2. Edite `assets/css/styles.css` para visual.
-3. Edite `assets/js/site.js` para comportamento.
-4. Edite `src/worker.js` apenas quando precisar mudar a API do formulario.
-5. Rode `npm run build`.
-6. Revise localmente.
-7. Faça commit e push para `main`.
-8. O Cloudflare faz o deploy automaticamente.
+3. Se mudar CSS e precisar garantir que navegadores peguem o arquivo novo rapidamente, incremente `assetVersion` em `scripts/generate-site.mjs`.
+4. Edite `assets/js/site.js` para comportamento.
+5. Edite `src/worker.js` quando precisar mudar a API do formulario ou adicionar redirecionamentos 301.
+6. Rode `npm run build`.
+7. Revise localmente.
+8. Faca commit e push para `main`.
+9. O Cloudflare faz o deploy automaticamente.
 
 ## Paginas e rotas
 
@@ -92,6 +93,7 @@ O site tem paginas hub e paginas especificas:
 - `/servicos/landing-pages-foz-do-iguacu`
 - `/servicos/rastreamento-e-conversao`
 - `/servicos/criacao-de-contas`
+- `/servicos/google-meu-negocio-foz-do-iguacu`
 - `/nichos`
 - `/nichos/turismo-foz-do-iguacu`
 - `/nichos/restaurantes-foz-do-iguacu`
@@ -102,12 +104,46 @@ O site tem paginas hub e paginas especificas:
 - `/nichos/turismo-hoteis-restaurantes-foz-do-iguacu`
 - `/consultoria`
 - `/blog`
-- 8 posts em `/blog/...`
+- 13 posts em `/blog/...`:
+  - `/blog/como-aparecer-no-google-maps-em-foz-do-iguacu`
+  - `/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu`
+  - `/blog/como-rastrear-leads-de-trafego-pago`
+  - `/blog/como-responder-avaliacoes-no-google-meu-negocio`
+  - `/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes`
+  - `/blog/google-ads-ou-meta-ads-foz-do-iguacu`
+  - `/blog/google-meu-negocio-ou-site-o-que-priorizar`
+  - `/blog/google-meu-negocio-para-empresas-locais-em-foz-do-iguacu`
+  - `/blog/landing-page-para-negocios-locais-em-foz-do-iguacu`
+  - `/blog/quanto-custa-trafego-pago-em-foz-do-iguacu`
+  - `/blog/seo-local-para-negocios-em-foz-do-iguacu`
+  - `/blog/trafego-pago-para-advogados-em-foz-do-iguacu`
+  - `/blog/trafego-pago-para-hoteis-turismo-restaurantes-foz`
 - `/contato`
 - `/sobre`
 - `/politica-de-privacidade`
 
 Ao adicionar uma rota nova, tambem confirme se ela deve entrar em `sitemap.xml`. O gerador monta o sitemap automaticamente a partir das listas `pages` e `posts`.
+
+### Redirecionamentos atuais
+
+As antigas paginas separadas de Google Meu Negocio foram unificadas em `/servicos/google-meu-negocio-foz-do-iguacu`. O Worker redireciona:
+
+- `/servicos/criacao-de-google-meu-negocio` -> `/servicos/google-meu-negocio-foz-do-iguacu#criacao`
+- `/servicos/gestao-de-google-meu-negocio` -> `/servicos/google-meu-negocio-foz-do-iguacu#gestao`
+
+Se remover ou fundir novas rotas, prefira adicionar redirecionamento 301 em `REDIRECTS` no `src/worker.js` para preservar SEO e evitar 404.
+
+## Rodape global
+
+O rodape e renderizado por `renderFooter(page)` em `scripts/generate-site.mjs`. Ele inclui:
+
+- telefone e email de contato;
+- colunas de links de servicos e empresa;
+- politica de privacidade sem link quando a pagina atual ja e `/politica-de-privacidade`;
+- CNPJ `57.110.765/0001-00`;
+- mensagem `Este site pertence a GabriAds Solucoes Digitais`, com link externo para `https://gabriads.com`.
+
+Ao alterar o rodape, lembre que ele aparece em todas as paginas geradas.
 
 ## SEO
 
@@ -242,8 +278,9 @@ Redirecionamento recomendado:
 - Nao editar HTML gerado manualmente.
 - Nao subir briefings ou arquivos Markdown internos, exceto este guia.
 - Rodar `npm run build` antes de testar e antes de commitar mudancas relevantes.
-- Se o design parecer antigo no navegador, usar hard refresh: `Cmd + Shift + R`.
+- Se o design parecer antigo no navegador, usar hard refresh: `Cmd + Shift + R`. Para mudancas de CSS, incremente `assetVersion` em `scripts/generate-site.mjs`.
 - Se mudar dominio, telefone, GTM ou email, buscar no projeto inteiro para garantir consistencia.
+- A navegacao nao deve conter links para a propria pagina. O gerador usa `renderNavLink()` para trocar links atuais por texto com `aria-current="page"` no menu/rodape.
 
 ## Checklist antes de publicar mudancas
 
@@ -258,6 +295,7 @@ Depois conferir no navegador:
 
 - Home
 - Servicos
+- Pagina unificada de Google Meu Negocio
 - Nichos
 - Blog
 - Contato
@@ -265,3 +303,4 @@ Depois conferir no navegador:
 - Botao flutuante de WhatsApp
 - Formulario
 - `sitemap.xml`
+- Redirecionamentos antigos, quando houver, com `curl -I`
