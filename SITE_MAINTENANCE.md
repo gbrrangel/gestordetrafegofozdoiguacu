@@ -4,9 +4,10 @@ Este projeto e um site estatico gerado por script para publicacao no Cloudflare 
 
 ## Estrutura principal
 
-- `scripts/generate-site.mjs`: fonte principal do site. Contem dados das paginas, posts, servicos, nichos, templates HTML, schema JSON-LD, header, footer, CTAs e formulario. Tambem contem `assetVersion`, usado para forcar cache-busting do CSS.
+- `scripts/generate-site.mjs`: fonte principal do site. Contem dados das paginas, posts, categorias do blog, servicos, nichos, templates HTML, schema JSON-LD, header, footer, CTAs e formulario. Tambem contem `assetVersion`, usado para forcar cache-busting do CSS, JS e favicon.
 - `assets/css/styles.css`: design visual do site.
 - `assets/js/site.js`: interacoes do menu, animacoes, eventos de `dataLayer` e comportamento do formulario.
+- `assets/favicon.svg`: icone oficial do site usado na aba do navegador. Ele replica a marca visual gerada por `renderWaterfallLogo()`.
 - `src/worker.js`: endpoint `/api/lead` no Cloudflare Worker para receber formularios e enviar email. Tambem contem redirecionamentos 301 em `REDIRECTS`.
 - `scripts/build-dist.mjs`: roda o gerador e copia apenas os arquivos publicaveis para `dist/`.
 - `package.json`: comandos de build.
@@ -73,7 +74,7 @@ O `wrangler.jsonc` aponta o Worker/Assets para:
 
 1. Edite `scripts/generate-site.mjs` para conteudo, paginas, URLs, CTAs, schema ou estrutura HTML.
 2. Edite `assets/css/styles.css` para visual.
-3. Se mudar CSS e precisar garantir que navegadores peguem o arquivo novo rapidamente, incremente `assetVersion` em `scripts/generate-site.mjs`.
+3. Se mudar CSS, JS, favicon ou HTML que referencia assets versionados, incremente `assetVersion` em `scripts/generate-site.mjs`.
 4. Edite `assets/js/site.js` para comportamento.
 5. Edite `src/worker.js` quando precisar mudar a API do formulario ou adicionar redirecionamentos 301.
 6. Rode `npm run build`.
@@ -144,6 +145,54 @@ O rodape e renderizado por `renderFooter(page)` em `scripts/generate-site.mjs`. 
 - mensagem `Este site pertence a GabriAds Solucoes Digitais`, com link externo para `https://gabriads.com`.
 
 Ao alterar o rodape, lembre que ele aparece em todas as paginas geradas.
+
+## Blog
+
+A pagina `/blog` e gerada por `renderPostArchive()` em `scripts/generate-site.mjs`.
+
+Cada item em `posts` deve ter uma categoria principal no campo `category`. Categorias atuais:
+
+```text
+contratacao
+investimento
+canais
+nichos
+conversao
+```
+
+Essas categorias alimentam os botoes de filtro da pagina do blog. Os botoes sao renderizados com `data-filter-category`, e cada card de post recebe `data-post-category`. O comportamento de filtrar sem recarregar a pagina fica em `assets/js/site.js`, na secao `Blog category filters`. A estilizacao dos botoes fica no bloco `Blog archive` em `assets/css/styles.css`.
+
+Ao adicionar um post novo:
+
+1. Adicione o objeto em `posts`.
+2. Preencha `slug`, `category`, `title`, `description`, `h1`, `intro` e conteudo.
+3. Use uma das categorias atuais ou atualize tambem a lista `categories` dentro de `renderPostArchive()`.
+4. Rode `npm run build` e confira `/blog`.
+
+O arquivo do blog usa uma secao `post-archive-section` para controlar o espacamento entre o texto introdutorio, os filtros e os cards de posts.
+
+## Assets globais
+
+O favicon e referenciado no `<head>` global como:
+
+```html
+<link rel="icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
+<link rel="shortcut icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
+```
+
+O CSS e o JS tambem usam `assetVersion`:
+
+```html
+<link rel="stylesheet" href="/assets/css/styles.css?v=${assetVersion}">
+<script src="/assets/js/site.js?v=${assetVersion}" defer></script>
+```
+
+Sempre que alterar esses arquivos, incremente `assetVersion` para evitar cache antigo no navegador.
+
+## Ajustes visuais recentes
+
+- O H1 principal da home tem uma regra especifica para desktop em `@media (min-width: 960px)`, reduzindo o tamanho apenas em telas maiores. Nao alterar essa regra se a intencao for mexer somente no mobile.
+- Os filtros de categoria do blog foram estilizados para parecerem links/cards sutis, com destaque amarelo apenas no hover/foco/estado ativo.
 
 ## SEO
 

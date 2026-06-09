@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const siteUrl = "https://gestordetrafegofozdoiguacu.com.br";
-const assetVersion = "20260609-3";
+const assetVersion = "20260609-10";
 const brand = "Gestor de Tráfego Foz do Iguaçu";
 const whatsappNumber = "5545999046673";
 const contactEmail = "contato@gabriads.com";
@@ -103,6 +103,7 @@ const niches = [
 const posts = [
   {
     slug: "/blog/como-aparecer-no-google-maps-em-foz-do-iguacu",
+    category: "canais",
     title: "Como aparecer no Google Maps em Foz do Iguaçu",
     description: "Veja o que influencia sua presença no Google Maps em Foz do Iguaçu: perfil completo, categorias, avaliações, fotos, site e consistência.",
     h1: "Como aparecer no Google Maps em Foz do Iguaçu",
@@ -128,6 +129,7 @@ const posts = [
   },
   {
     slug: "/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu",
+    category: "contratacao",
     title: "Como escolher um gestor de tráfego em Foz do Iguaçu",
     description: "Veja como escolher um gestor de tráfego em Foz do Iguaçu com critérios práticos: diagnóstico, métricas, rastreamento, transparência e qualidade dos leads.",
     h1: "Como escolher um gestor de tráfego em Foz do Iguaçu",
@@ -155,6 +157,7 @@ const posts = [
   },
   {
     slug: "/blog/como-rastrear-leads-de-trafego-pago",
+    category: "conversao",
     title: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
     description: "Entenda como rastrear leads de tráfego pago com UTMs, eventos, WhatsApp, formulários e análise de qualidade para saber quais campanhas geram venda.",
     h1: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
@@ -182,6 +185,7 @@ const posts = [
   },
   {
     slug: "/blog/como-responder-avaliacoes-no-google-meu-negocio",
+    category: "conversao",
     title: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
     description: "Veja como responder avaliações positivas e negativas no Google Meu Negócio com profissionalismo, cuidado e foco em reputação local.",
     h1: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
@@ -209,6 +213,7 @@ const posts = [
   },
   {
     slug: "/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes",
+    category: "conversao",
     title: "7 erros que fazem leads do WhatsApp não virarem clientes",
     description: "Veja 7 erros que fazem leads do WhatsApp não virarem clientes e como melhorar resposta, qualificação, follow-up e rastreamento comercial.",
     h1: "7 erros que fazem leads do WhatsApp não virarem clientes",
@@ -244,6 +249,7 @@ const posts = [
   },
   {
     slug: "/blog/google-ads-ou-meta-ads-foz-do-iguacu",
+    category: "canais",
     title: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
     description: "Compare Google Ads e Meta Ads para empresas em Foz do Iguaçu e entenda quando usar cada canal para gerar leads, demanda e vendas.",
     h1: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
@@ -271,6 +277,7 @@ const posts = [
   },
   {
     slug: "/blog/google-meu-negocio-ou-site-o-que-priorizar",
+    category: "canais",
     title: "Google Meu Negócio ou site: o que priorizar primeiro?",
     description: "Entenda quando priorizar Google Meu Negócio, quando investir em site e como os dois canais se complementam para gerar leads locais.",
     h1: "Google Meu Negócio ou site: o que priorizar primeiro?",
@@ -298,6 +305,7 @@ const posts = [
   },
   {
     slug: "/blog/google-meu-negocio-para-empresas-locais-em-foz-do-iguacu",
+    category: "canais",
     title: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
     description: "Entenda como empresas locais em Foz do Iguaçu podem usar o Google Meu Negócio para aparecer na Busca, no Maps e gerar mais contatos.",
     h1: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
@@ -324,6 +332,7 @@ const posts = [
   },
   {
     slug: "/blog/landing-page-para-negocios-locais-em-foz-do-iguacu",
+    category: "conversao",
     title: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
     description: "Veja o que uma landing page para negócios locais em Foz do Iguaçu precisa ter para converter cliques em leads pelo WhatsApp, formulário ou ligação.",
     h1: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
@@ -352,6 +361,7 @@ const posts = [
   },
   {
     slug: "/blog/quanto-custa-trafego-pago-em-foz-do-iguacu",
+    category: "investimento",
     title: "Quanto custa contratar tráfego pago em Foz do Iguaçu?",
     description: "Entenda quanto custa contratar tráfego pago em Foz do Iguaçu, separando verba de mídia, gestão, setup, rastreamento e expectativa de retorno.",
     h1: "Quanto custa contratar tráfego pago em Foz do Iguaçu?",
@@ -377,6 +387,7 @@ const posts = [
   },
   {
     slug: "/blog/seo-local-para-negocios-em-foz-do-iguacu",
+    category: "canais",
     title: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
     description: "Guia prático de SEO local para negócios em Foz do Iguaçu: site, Google Meu Negócio, conteúdo, avaliações, Maps e rastreamento.",
     h1: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
@@ -405,6 +416,7 @@ const posts = [
   },
   {
     slug: "/blog/trafego-pago-para-advogados-em-foz-do-iguacu",
+    category: "nichos",
     title: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
     description: "Entenda como advogados em Foz do Iguaçu podem usar tráfego pago com abordagem informativa, ética, rastreamento e foco em autoridade.",
     h1: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
@@ -430,6 +442,7 @@ const posts = [
   },
   {
     slug: "/blog/trafego-pago-para-hoteis-turismo-restaurantes-foz",
+    category: "nichos",
     title: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
     description: "Veja estratégias de tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu, considerando sazonalidade, Google Maps, reservas e WhatsApp.",
     h1: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
@@ -1262,19 +1275,21 @@ function renderPackages(packages) {
 
 function renderPostArchive() {
   const categories = [
-    ["Contratação", "Como escolher gestor e avaliar propostas."],
-    ["Investimento", "Quanto custa e como pensar verba de mídia."],
-    ["Canais", "Google Ads, Meta Ads e escolha de plataformas."],
-    ["Nichos", "Advocacia, turismo, restaurantes e negócios locais."],
-    ["Conversão", "WhatsApp, landing pages, rastreamento e qualidade de lead."],
+    ["contratacao", "Contratação", "Como escolher gestor e avaliar propostas."],
+    ["investimento", "Investimento", "Quanto custa e como pensar verba de mídia."],
+    ["canais", "Canais", "Google Ads, Meta Ads e escolha de plataformas."],
+    ["nichos", "Nichos", "Advocacia, turismo, restaurantes e negócios locais."],
+    ["conversao", "Conversão", "WhatsApp, landing pages, rastreamento e qualidade de lead."],
   ];
-  return `<section class="section"><div class="wrap">
-    <div class="category-list" data-reveal>${categories
-      .map(([t, x]) => `<span><strong>${escapeHtml(t)}</strong>${escapeHtml(x)}</span>`)
+  const categoryLabels = Object.fromEntries(categories.map(([id, label]) => [id, label]));
+  return `<section class="section post-archive-section"><div class="wrap">
+    <div class="category-list" data-blog-filters data-reveal aria-label="Filtrar posts por tema">
+      <button class="category-filter is-active" type="button" data-filter-category="all" aria-pressed="true"><strong>Todos</strong>Ver todos os artigos.</button>${categories
+      .map(([id, t, x]) => `<button class="category-filter" type="button" data-filter-category="${id}" aria-pressed="false"><strong>${escapeHtml(t)}</strong>${escapeHtml(x)}</button>`)
       .join("")}</div>
-    <div class="post-grid">${posts
+    <div class="post-grid" data-post-grid>${posts
       .map(
-        (p) => `<a class="post-card" href="${p.slug}" data-reveal><span>Artigo</span><strong>${escapeHtml(p.title)}</strong><p>${escapeHtml(p.description)}</p><span class="sc-go">Ler ${arrowSvg()}</span></a>`
+        (p) => `<a class="post-card" href="${p.slug}" data-post-card data-post-category="${escapeHtml(p.category)}" data-reveal><span>${escapeHtml(categoryLabels[p.category] || "Artigo")}</span><strong>${escapeHtml(p.title)}</strong><p>${escapeHtml(p.description)}</p><span class="sc-go">Ler ${arrowSvg()}</span></a>`
       )
       .join("")}</div>
   </div></section>`;
@@ -1369,6 +1384,8 @@ function layout(page, content, jsonLd) {
   <meta property="og:type" content="website">
   <meta property="og:url" content="${absolute(page.slug)}">
   <meta name="theme-color" content="#14171c">
+  <link rel="icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1401,7 +1418,7 @@ function layout(page, content, jsonLd) {
     <span class="fw-label">Falar no WhatsApp</span>
   </a>
   ${renderFooter(page)}
-  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/site.js?v=${assetVersion}" defer></script>
 </body>
 </html>`;
 }

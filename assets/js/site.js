@@ -52,6 +52,30 @@
     });
   }
 
+  /* Blog category filters */
+  var blogFilters = document.querySelector("[data-blog-filters]");
+  var postCards = document.querySelectorAll("[data-post-card]");
+  if (blogFilters && postCards.length) {
+    var filterButtons = blogFilters.querySelectorAll("[data-filter-category]");
+    var applyPostFilter = function (category) {
+      filterButtons.forEach(function (button) {
+        var isActive = button.dataset.filterCategory === category;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+      postCards.forEach(function (card) {
+        var shouldShow = category === "all" || card.dataset.postCategory === category;
+        card.hidden = !shouldShow;
+      });
+    };
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        applyPostFilter(button.dataset.filterCategory || "all");
+      });
+    });
+  }
+
   /* Count-up stats */
   function animateCount(el) {
     var target = parseFloat(el.getAttribute("data-count"));
