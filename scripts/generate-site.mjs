@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const siteUrl = "https://gestordetrafegofozdoiguacu.com.br";
-const assetVersion = "20260609-2";
+const assetVersion = "20260609-3";
 const brand = "Gestor de Tráfego Foz do Iguaçu";
 const whatsappNumber = "5545999046673";
 const contactEmail = "contato@gabriads.com";
@@ -23,7 +23,7 @@ const footerServices = [
   ["Meta Ads", "/servicos/meta-ads-foz-do-iguacu"],
   ["Landing pages", "/servicos/landing-pages-foz-do-iguacu"],
   ["Rastreamento", "/servicos/rastreamento-e-conversao"],
-  ["Google Meu Negócio", "/servicos/gestao-de-google-meu-negocio"],
+  ["Google Meu Negócio", "/servicos/google-meu-negocio-foz-do-iguacu"],
 ];
 
 const footerCompany = [
@@ -56,14 +56,9 @@ const services = [
     text: "Páginas rápidas, blogs e landing pages pensados para SEO, campanhas, conversão e rastreamento.",
   },
   {
-    title: "Criação de Google Meu Negócio",
-    href: "/servicos/criacao-de-google-meu-negocio",
-    text: "Configuração do Perfil da Empresa no Google para aparecer com mais clareza na Busca e no Maps.",
-  },
-  {
-    title: "Gestão de Google Meu Negócio",
-    href: "/servicos/gestao-de-google-meu-negocio",
-    text: "Atualizações, fotos, postagens, avaliações e melhorias para fortalecer a presença local da empresa.",
+    title: "Google Meu Negócio",
+    href: "/servicos/google-meu-negocio-foz-do-iguacu",
+    text: "Criação e gestão do Perfil da Empresa no Google para empresas locais aparecerem melhor na Busca e no Maps.",
   },
   {
     title: "Consultoria",
@@ -129,7 +124,7 @@ const posts = [
 <h2>O papel do site</h2>
 <p>O Google Meu Negócio ajuda muito, mas o site dá profundidade. Uma página de serviço bem feita pode explicar melhor a oferta, responder dúvidas, mostrar diferenciais e captar contatos com rastreamento. Para negócios locais, perfil e site devem se complementar. Conheça nosso serviço de <a href="/servicos/landing-pages-foz-do-iguacu">criação de sites e landing pages em Foz do Iguaçu</a>.</p>
 <h2>Conclusão</h2>
-<p>Aparecer melhor no Google Maps em Foz do Iguaçu exige consistência. O perfil precisa estar completo, atualizado e conectado a uma presença digital confiável. O foco não deve ser só posição; deve ser gerar mais contatos úteis a partir das buscas locais. Para dar o primeiro passo, veja nosso serviço de <a href="/servicos/criacao-de-google-meu-negocio">criação de Google Meu Negócio</a> ou de <a href="/servicos/gestao-de-google-meu-negocio">gestão contínua do perfil</a>.</p>`,
+<p>Aparecer melhor no Google Maps em Foz do Iguaçu exige consistência. O perfil precisa estar completo, atualizado e conectado a uma presença digital confiável. O foco não deve ser só posição; deve ser gerar mais contatos úteis a partir das buscas locais. Para dar o primeiro passo, veja nosso serviço de <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criação de Google Meu Negócio</a> ou de <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão contínua do perfil</a>.</p>`,
   },
   {
     slug: "/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu",
@@ -208,9 +203,9 @@ const posts = [
 <tr><td>Prometer o que não será feito</td><td>Aumenta frustração e risco reputacional.</td></tr>
 </tbody></table></div>
 <h2>Avaliações devem virar aprendizado</h2>
-<p>Além de responder, a empresa deve analisar padrões. Se várias pessoas reclamam de demora, atendimento ou informação desencontrada, isso indica gargalo real. Reputação não é apenas marketing; é reflexo da operação. Uma boa <a href="/servicos/gestao-de-google-meu-negocio">gestão do Google Meu Negócio</a> inclui esse acompanhamento sistemático.</p>
+<p>Além de responder, a empresa deve analisar padrões. Se várias pessoas reclamam de demora, atendimento ou informação desencontrada, isso indica gargalo real. Reputação não é apenas marketing; é reflexo da operação. Uma boa <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão do Google Meu Negócio</a> inclui esse acompanhamento sistemático.</p>
 <h2>Conclusão</h2>
-<p>Responder avaliações no Google Meu Negócio é uma oportunidade de mostrar maturidade. A empresa que responde bem transmite confiança, reduz insegurança de novos clientes e melhora a percepção da marca local. Se você ainda não tem o perfil configurado, veja como <a href="/servicos/criacao-de-google-meu-negocio">criar o Google Meu Negócio em Foz do Iguaçu</a>.</p>`,
+<p>Responder avaliações no Google Meu Negócio é uma oportunidade de mostrar maturidade. A empresa que responde bem transmite confiança, reduz insegurança de novos clientes e melhora a percepção da marca local. Se você ainda não tem o perfil configurado, veja como <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criar o Google Meu Negócio em Foz do Iguaçu</a>.</p>`,
   },
   {
     slug: "/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes",
@@ -297,7 +292,7 @@ const posts = [
 <tr><td>Conversão personalizada</td><td>Média</td><td>Alta</td></tr>
 </tbody></table></div>
 <h2>O melhor caminho</h2>
-<p>Para a maioria das empresas, o melhor caminho é configurar bem o Perfil da Empresa e usar o site como base principal de conteúdo e conversão. O perfil gera confiança e visibilidade local. O site explica, filtra, convence e mede melhor. Veja nossos serviços: <a href="/servicos/criacao-de-google-meu-negocio">criação de Google Meu Negócio</a> e <a href="/servicos/landing-pages-foz-do-iguacu">sites e landing pages para negócios locais</a>.</p>
+<p>Para a maioria das empresas, o melhor caminho é configurar bem o Perfil da Empresa e usar o site como base principal de conteúdo e conversão. O perfil gera confiança e visibilidade local. O site explica, filtra, convence e mede melhor. Veja nossos serviços: <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criação de Google Meu Negócio</a> e <a href="/servicos/landing-pages-foz-do-iguacu">sites e landing pages para negócios locais</a>.</p>
 <h2>Conclusão</h2>
 <p>Se você quer o mínimo para ser encontrado, comece pelo Google Meu Negócio. Se quer construir aquisição previsível, combine Google Meu Negócio, site, SEO, anúncios e <a href="/servicos/rastreamento-e-conversao">rastreamento</a>. Um canal fortalece o outro.</p>`,
   },
@@ -321,11 +316,11 @@ const posts = [
 </tbody></table></div>
 <p>A <a href="https://support.google.com/business/answer/7091?hl=pt-BR" target="_blank" rel="noopener noreferrer">Central de Ajuda do Google para Perfil da Empresa</a> explica cada um desses elementos e como configurá-los corretamente.</p>
 <h2>Criação não é gestão</h2>
-<p>Criar o perfil é organizar a base. Gerir o perfil é manter essa base viva. Empresas que dependem de busca local devem revisar dados, publicar fotos, responder avaliações e acompanhar insights de desempenho. Isso evita que o perfil fique desatualizado e perca força comercial. Conheça nosso serviço de <a href="/servicos/gestao-de-google-meu-negocio">gestão de Google Meu Negócio em Foz do Iguaçu</a>.</p>
+<p>Criar o perfil é organizar a base. Gerir o perfil é manter essa base viva. Empresas que dependem de busca local devem revisar dados, publicar fotos, responder avaliações e acompanhar insights de desempenho. Isso evita que o perfil fique desatualizado e perca força comercial. Conheça nosso serviço de <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão de Google Meu Negócio em Foz do Iguaçu</a>.</p>
 <h2>Google Meu Negócio e tráfego pago</h2>
 <p>O perfil também conversa com anúncios. Uma empresa que investe em <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, mas tem perfil ruim no Maps, pode perder confiança. O usuário pode clicar no anúncio, pesquisar a empresa, ver poucas avaliações ou informações inconsistentes e desistir. Veja como os dois se complementam em: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
 <h2>Conclusão</h2>
-<p>Se sua empresa atende em Foz do Iguaçu, o Google Meu Negócio precisa ser tratado como parte do funil de aquisição. Ele não substitui site, campanha ou atendimento, mas ajuda a transformar buscas locais em contatos mais confiáveis. O próximo passo é <a href="/servicos/criacao-de-google-meu-negocio">criar o seu Perfil da Empresa no Google</a> com a estrutura certa.</p>`,
+<p>Se sua empresa atende em Foz do Iguaçu, o Google Meu Negócio precisa ser tratado como parte do funil de aquisição. Ele não substitui site, campanha ou atendimento, mas ajuda a transformar buscas locais em contatos mais confiáveis. O próximo passo é <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criar o seu Perfil da Empresa no Google</a> com a estrutura certa.</p>`,
   },
   {
     slug: "/blog/landing-page-para-negocios-locais-em-foz-do-iguacu",
@@ -400,7 +395,7 @@ const posts = [
 <h2>Conteúdo local precisa ser útil</h2>
 <p>Não adianta criar várias páginas repetindo "em Foz do Iguaçu" sem agregar valor. O conteúdo precisa ajudar o usuário a decidir. Isso significa explicar custos, processos, critérios de escolha, erros comuns, prazos, dúvidas frequentes e diferenças entre soluções. O Google reforça em seu guia de <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">como criar conteúdo útil</a> que páginas criadas para enganar mecanismos de busca são penalizadas — o foco deve ser sempre o usuário.</p>
 <h2>Google Meu Negócio e site trabalham juntos</h2>
-<p>O <a href="/servicos/gestao-de-google-meu-negocio">Perfil da Empresa no Google</a> ajuda na descoberta e na confiança local. O site aprofunda a decisão. Quando os dois estão bem configurados, a empresa melhora a experiência do usuário e cria mais caminhos para conversão. Leia mais: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
+<p>O <a href="/servicos/google-meu-negocio-foz-do-iguacu">Perfil da Empresa no Google</a> ajuda na descoberta e na confiança local. O site aprofunda a decisão. Quando os dois estão bem configurados, a empresa melhora a experiência do usuário e cria mais caminhos para conversão. Leia mais: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
 <h2>SEO local e tráfego pago</h2>
 <p>SEO local é construção. Tráfego pago é aceleração. O ideal é usar os dois quando possível. Enquanto o SEO constrói presença e autoridade, os anúncios geram demanda mais previsível e ajudam a testar mensagens, ofertas e páginas. Entenda mais: <a href="/blog/google-ads-ou-meta-ads-foz-do-iguacu">Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?</a></p>
 <h2>Como saber se o SEO local está funcionando</h2>
@@ -440,7 +435,7 @@ const posts = [
     h1: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
     intro: "Foz do Iguaçu tem forte demanda turística, mas isso não significa que todo anúncio vai funcionar. Hotéis, restaurantes e empresas de turismo precisam considerar sazonalidade, intenção de busca, localização, reputação e velocidade de atendimento.",
     cta: "Avaliar campanha para turismo",
-    bodyHtml: `<p>Turismo é um dos mercados mais importantes de Foz do Iguaçu, mas também é altamente competitivo. O visitante compara preço, localização, avaliações, fotos, distância, facilidade de reserva e resposta no WhatsApp. Por isso, a estratégia de tráfego pago precisa conectar anúncios, <a href="/servicos/gestao-de-google-meu-negocio">Google Maps</a>, site, perfil da empresa, reputação e atendimento.</p>
+    bodyHtml: `<p>Turismo é um dos mercados mais importantes de Foz do Iguaçu, mas também é altamente competitivo. O visitante compara preço, localização, avaliações, fotos, distância, facilidade de reserva e resposta no WhatsApp. Por isso, a estratégia de tráfego pago precisa conectar anúncios, <a href="/servicos/google-meu-negocio-foz-do-iguacu">Google Maps</a>, site, perfil da empresa, reputação e atendimento.</p>
 <p>Campanhas para turismo não devem ser planejadas apenas por canal. É preciso entender o momento da viagem. Há pessoas pesquisando meses antes, pessoas montando roteiro na semana e turistas que já estão na cidade decidindo onde comer, comprar ou visitar.</p>
 <h2>Estratégias por segmento</h2>
 <div class="table-wrap"><table><thead><tr><th>Segmento</th><th>Estratégia recomendada</th></tr></thead><tbody>
@@ -455,7 +450,7 @@ const posts = [
 <h2>Meta Ads no turismo</h2>
 <p><a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a> é forte para desejo e descoberta. Fotos, vídeos curtos, experiências, pratos, ambientes e depoimentos podem despertar interesse antes da busca. Também funciona bem para remarketing de quem visitou o site ou interagiu com o perfil.</p>
 <h2>Google Meu Negócio e Maps são decisivos</h2>
-<p>No turismo local, o Perfil da Empresa no Google pode influenciar muito a decisão. Fotos ruins, horário errado ou avaliações sem resposta podem prejudicar a conversão mesmo quando o anúncio está bom. Por isso, mídia paga e presença local precisam andar juntas. Veja: <a href="/servicos/gestao-de-google-meu-negocio">gestão de Google Meu Negócio em Foz do Iguaçu</a>. Segundo dados do <a href="https://www.visitbrasil.com/estatisticas/" target="_blank" rel="noopener noreferrer">Ministério do Turismo</a>, Foz do Iguaçu é um dos destinos mais visitados do Brasil, o que aumenta ainda mais a competição pela atenção online.</p>
+<p>No turismo local, o Perfil da Empresa no Google pode influenciar muito a decisão. Fotos ruins, horário errado ou avaliações sem resposta podem prejudicar a conversão mesmo quando o anúncio está bom. Por isso, mídia paga e presença local precisam andar juntas. Veja: <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão de Google Meu Negócio em Foz do Iguaçu</a>. Segundo dados do <a href="https://www.visitbrasil.com/estatisticas/" target="_blank" rel="noopener noreferrer">Ministério do Turismo</a>, Foz do Iguaçu é um dos destinos mais visitados do Brasil, o que aumenta ainda mais a competição pela atenção online.</p>
 <h2>Conclusão</h2>
 <p>Hotéis, turismo e restaurantes em Foz do Iguaçu precisam de campanhas que respeitem intenção, sazonalidade e comportamento de decisão. O canal importa, mas o conjunto importa mais: anúncio, fotos, reputação, página, atendimento e rastreamento. Entenda como o <a href="/blog/como-rastrear-leads-de-trafego-pago">rastreamento de leads</a> ajuda a entender quais canais funcionam melhor para o seu tipo de negócio.</p>`,
   }
@@ -540,155 +535,91 @@ const pages = [
     ],
   },
   {
-    slug: "/servicos/criacao-de-google-meu-negocio",
-    title: "Criação de Google Meu Negócio em Foz do Iguaçu",
-    description: "Criação e configuração de Google Meu Negócio em Foz do Iguaçu para empresas que querem aparecer melhor na Busca Google e no Maps.",
-    h1: "Criação de Google Meu Negócio em Foz do Iguaçu para sua empresa aparecer melhor no Google e no Maps",
-    intro: "O Google Meu Negócio — hoje chamado Perfil da Empresa no Google — é uma das principais vitrines digitais para empresas locais. Ele aparece na Busca Google e no Google Maps quando alguém procura por serviços, lojas, restaurantes, clínicas, escritórios ou profissionais próximos. Criar o perfil de qualquer jeito pode limitar sua visibilidade e passar uma imagem pouco profissional. A configuração correta ajuda o cliente a encontrar telefone, rota, horário, fotos, serviços e canais de contato com mais segurança.",
-    introHtml: `O Google Meu Negócio — hoje chamado <strong>Perfil da Empresa no Google</strong> — é uma das principais vitrines digitais para empresas locais. Ele aparece na Busca Google e no Google Maps quando alguém procura por serviços, lojas, restaurantes, clínicas, escritórios ou profissionais próximos. Criar o perfil de qualquer jeito pode limitar sua visibilidade e passar uma imagem pouco profissional. A configuração correta ajuda o cliente a encontrar telefone, rota, horário, fotos, serviços e canais de contato com mais segurança.`,
+    slug: "/servicos/google-meu-negocio-foz-do-iguacu",
+    title: "Google Meu Negócio em Foz do Iguaçu",
+    description: "Criação e gestão do Perfil da Empresa no Google para empresas locais aparecerem melhor na Busca Google e no Maps.",
+    h1: "Google Meu Negócio em Foz do Iguaçu",
+    intro: "O Google Meu Negócio — hoje chamado oficialmente de Perfil da Empresa no Google — é uma das principais vitrines digitais para negócios locais. Ele aparece quando alguém pesquisa por serviços, clínicas, restaurantes, escritórios ou profissionais próximos. Para empresas em Foz do Iguaçu, isso é ainda mais relevante: turismo, atendimento por região, rotas pelo Maps e contatos rápidos pelo WhatsApp dependem de um perfil bem estruturado.",
+    introHtml: `O Google Meu Negócio — hoje chamado oficialmente de <strong>Perfil da Empresa no Google</strong> — é uma das principais vitrines digitais para negócios locais. Ele aparece quando alguém pesquisa por serviços, clínicas, restaurantes, escritórios ou profissionais próximos. Para empresas em Foz do Iguaçu, isso é ainda mais relevante: turismo, atendimento por região, rotas pelo Maps e contatos rápidos pelo WhatsApp dependem de um perfil bem estruturado.<br><br>Um perfil mal configurado ou abandonado passa uma imagem pouco profissional e perde a confiança de quem está comparando opções — justamente no momento em que o cliente está perto de decidir.`,
     kicker: "Serviço de presença local no Google",
     sections: [],
     contentHtml: `<section class="section content-section"><div class="wrap prose-blocks">
     <article class="prose-block" data-reveal>
-      <h2>Por que criar o Google Meu Negócio do jeito certo</h2>
-      <p>Criar um Perfil da Empresa no Google não é apenas preencher nome, telefone e endereço. A estrutura do perfil influencia como sua empresa será percebida por quem está comparando opções locais. Em Foz do Iguaçu, isso importa ainda mais para negócios que dependem de pesquisa local, turismo, atendimento por região, rotas pelo Maps e contatos rápidos pelo WhatsApp.</p>
-      <p>Um perfil mal configurado pode gerar dúvidas simples que derrubam a conversão: horário desatualizado, categoria errada, telefone inconsistente, ausência de fotos, descrição genérica ou serviços incompletos. O usuário que encontra informações confusas tende a voltar para os resultados e escolher outro concorrente.</p>
-      <p>Segundo a <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer">Central de Ajuda do Google para Perfil da Empresa</a>, manter informações completas e precisas é um dos fatores que influenciam a relevância do perfil nas pesquisas locais.</p>
+      <h2>O que oferecemos</h2>
+      <p>Unimos criação e gestão do Perfil da Empresa no Google em uma frente única: primeiro organizamos a base para que sua empresa seja encontrada com clareza, depois mantemos o perfil vivo, atualizado e conectado ao restante da estratégia digital.</p>
     </article>
-    <article class="prose-block" data-reveal>
-      <h2>O que configuramos na criação do perfil</h2>
-      <p>A criação precisa respeitar o que o Google permite e, ao mesmo tempo, organizar o perfil para gerar confiança. O objetivo é deixar a empresa pronta para ser encontrada, compreendida e acionada por pessoas que pesquisam na cidade ou na região.</p>
+    <article class="prose-block" id="criacao" data-reveal>
+      <h2>Criação do Google Meu Negócio</h2>
+      <p><em>Para empresas que ainda não têm perfil ou perderam o acesso.</em></p>
+      <p>Criar um perfil corretamente vai além de preencher nome, telefone e endereço. A estrutura influencia como sua empresa é percebida e encontrada. Configuramos cada elemento para gerar confiança desde o primeiro contato.</p>
       <div class="table-wrap"><table>
         <thead><tr><th>Item configurado</th><th>Por que isso importa</th></tr></thead>
         <tbody>
-          <tr><td>Nome comercial correto</td><td>Evita inconsistência e reduz risco de problemas de validação.</td></tr>
-          <tr><td>Categoria principal</td><td>Ajuda o Google e o usuário a entenderem o tipo de negócio.</td></tr>
-          <tr><td>Categorias secundárias</td><td>Complementam a atuação sem transformar o perfil em algo genérico.</td></tr>
-          <tr><td>Endereço ou área de atendimento</td><td>Define se a empresa recebe clientes no local ou atende por deslocamento.</td></tr>
-          <tr><td>Telefone, site e WhatsApp</td><td>Facilita o contato e reduz fricção entre pesquisa e atendimento.</td></tr>
-          <tr><td>Horário de funcionamento</td><td>Evita ligações perdidas, rotas frustradas e reclamações por informação errada.</td></tr>
+          <tr><td>Nome comercial correto</td><td>Evita inconsistência e problemas de validação.</td></tr>
+          <tr><td>Categoria principal e secundárias</td><td>Ajuda o Google e o usuário a entenderem o tipo de negócio.</td></tr>
+          <tr><td>Endereço ou área de atendimento</td><td>Define se a empresa recebe no local ou atende por deslocamento.</td></tr>
+          <tr><td>Telefone, site e WhatsApp</td><td>Reduz fricção entre pesquisa e atendimento.</td></tr>
+          <tr><td>Horário de funcionamento</td><td>Evita ligações perdidas, rotas frustradas e reclamações.</td></tr>
           <tr><td>Descrição da empresa</td><td>Explica o que a empresa faz com linguagem clara e natural.</td></tr>
-          <tr><td>Serviços ou produtos</td><td>Mostra ao usuário as principais soluções antes do contato.</td></tr>
-          <tr><td>Fotos iniciais</td><td>Aumenta percepção de realidade, profissionalismo e confiança.</td></tr>
+          <tr><td>Serviços ou produtos</td><td>Mostra as principais soluções antes do contato.</td></tr>
+          <tr><td>Fotos iniciais</td><td>Aumenta percepção de profissionalismo e confiança.</td></tr>
         </tbody>
       </table></div>
+      <p><strong>Para quem faz sentido:</strong> empresas novas, negócios sem perfil criado, empresas que mudaram de endereço, profissionais que atendem por região e negócios que aparecem no Google mas não têm controle do próprio perfil.</p>
     </article>
-    <article class="prose-block" data-reveal>
-      <h2>Para quem esse serviço faz sentido</h2>
-      <p>Esse serviço faz sentido para empresas novas, empresas que nunca criaram o perfil, negócios que mudaram de endereço, profissionais que atendem por região e empresas que já aparecem no Google, mas não têm controle ou acesso ao próprio perfil.</p>
-      <p>Também é indicado para negócios locais que recebem contatos por ligação, rota, formulário, WhatsApp ou visitas presenciais. Em termos práticos, a criação do Google Meu Negócio é uma base. Ela não substitui <a href="/servicos/landing-pages-foz-do-iguacu">site e landing pages</a>, <a href="/servicos/google-ads-foz-do-iguacu">anúncios no Google Ads</a> ou atendimento comercial, mas fortalece a presença local e melhora a confiança de quem encontra a empresa pelo Google.</p>
-      <p>Para entender por que o perfil é importante para SEO local, veja o <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br" target="_blank" rel="noopener noreferrer">Guia de SEO para iniciantes do Google Search Central</a>.</p>
-    </article>
-    <article class="prose-block" data-reveal>
-      <h2>O que não prometemos</h2>
-      <p>Não prometemos primeiro lugar no Google Maps, nem aumento imediato de ligações sem analisar concorrência, categoria, localização, avaliações, demanda e qualidade do perfil. A proposta é criar a estrutura correta, evitar erros básicos e preparar o perfil para uma <a href="/servicos/gestao-de-google-meu-negocio">gestão mais profissional</a>.</p>
-    </article>
-    <article class="prose-block" data-reveal>
-      <h2>Perguntas frequentes</h2>
-      <p><strong>Google Meu Negócio ainda existe?</strong><br>O termo Google Meu Negócio ainda é muito usado no Brasil, mas o nome atual do produto é Perfil da Empresa no Google. Na prática, estamos falando da presença da empresa na Busca Google e no Google Maps. Você pode acessar diretamente pelo <a href="https://business.google.com/" target="_blank" rel="noopener noreferrer">Google Business Profile</a>.</p>
-      <p><strong>Criar o Perfil da Empresa no Google é gratuito?</strong><br>Sim. O Google permite criar um Perfil da Empresa sem pagamento. O serviço cobrado aqui é pela configuração estratégica, organização das informações, orientação de posicionamento e preparação do perfil para gerar mais confiança e contatos.</p>
-      <p><strong>Minha empresa não tem loja física. Posso criar mesmo assim?</strong><br>Em muitos casos, sim. Empresas que atendem em área de cobertura, como prestadores de serviço, podem ter perfil desde que sigam as <a href="https://support.google.com/business/answer/3038177?hl=pt-BR" target="_blank" rel="noopener noreferrer">diretrizes do Google para representação de empresas</a> e representem corretamente a forma de atendimento.</p>
-      <p><strong>Vocês também fazem a verificação do perfil?</strong><br>Podemos orientar o processo de verificação e organizar as informações necessárias. A forma de validação depende do Google e pode variar conforme o tipo de negócio, endereço e histórico do perfil.</p>
-      <p><strong>O perfil substitui um site?</strong><br>Não. O perfil ajuda muito na presença local, mas o site continua importante para apresentar serviços com profundidade, captar leads, rodar campanhas, medir conversões e criar conteúdo de SEO. Leia mais: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
-    </article>
-  </div></section>`,
-    faq: [
-          [
-                "Google Meu Negócio ainda existe?",
-                "O termo Google Meu Negócio ainda é muito usado no Brasil, mas o nome atual do produto é Perfil da Empresa no Google. Na prática, estamos falando da presença da empresa na Busca Google e no Google Maps."
-          ],
-          [
-                "Criar o Perfil da Empresa no Google é gratuito?",
-                "Sim. O Google permite criar um Perfil da Empresa sem pagamento. O serviço cobrado aqui é pela configuração estratégica, organização das informações, orientação de posicionamento e preparação do perfil para gerar mais confiança e contatos."
-          ],
-          [
-                "Minha empresa não tem loja física. Posso criar mesmo assim?",
-                "Em muitos casos, sim. Empresas que atendem em área de cobertura, como prestadores de serviço, podem ter perfil desde que sigam as regras do Google e representem corretamente a forma de atendimento."
-          ],
-          [
-                "O perfil substitui um site?",
-                "Não. O perfil ajuda muito na presença local, mas o site continua importante para apresentar serviços com profundidade, captar leads, rodar campanhas, medir conversões e criar conteúdo de SEO."
-          ]
-    ],
-  },
-  {
-    slug: "/servicos/gestao-de-google-meu-negocio",
-    title: "Gestão de Google Meu Negócio em Foz do Iguaçu",
-    description: "Gestão de Google Meu Negócio em Foz do Iguaçu com atualizações, fotos, postagens, avaliações, serviços e melhorias para gerar mais contatos locais.",
-    h1: "Gestão de Google Meu Negócio em Foz do Iguaçu para transformar buscas locais em mais contatos",
-    intro: "Ter um Perfil da Empresa no Google criado é apenas o começo. Para empresas locais, o Google Meu Negócio precisa ser mantido atualizado, com informações corretas, fotos recentes, serviços bem descritos, avaliações respondidas e leitura dos dados de desempenho. A gestão contínua ajuda a melhorar a confiança de quem encontra sua empresa na Busca Google e no Maps, além de apoiar estratégias de tráfego pago e SEO local.",
-    introHtml: `Ter um Perfil da Empresa no Google criado é apenas o começo. Para empresas locais, o Google Meu Negócio precisa ser mantido atualizado, com informações corretas, fotos recentes, serviços bem descritos, avaliações respondidas e leitura dos dados de desempenho. A gestão contínua ajuda a melhorar a confiança de quem encontra sua empresa na Busca Google e no Maps, além de apoiar estratégias de <a href="/servicos/google-ads-foz-do-iguacu">tráfego pago</a> e SEO local.`,
-    kicker: "Gestão de presença local no Google",
-    sections: [],
-    contentHtml: `<section class="section content-section"><div class="wrap prose-blocks">
-    <article class="prose-block" data-reveal>
-      <h2>Por que o perfil precisa de gestão contínua</h2>
-      <p>O comportamento do cliente local é rápido. Ele pesquisa, compara opções, olha fotos, confere avaliações, verifica distância, abre rota, liga ou chama no WhatsApp. Se o Perfil da Empresa está parado, incompleto ou desatualizado, a empresa perde confiança justamente no momento em que o cliente está perto de decidir.</p>
-      <p>A gestão do Google Meu Negócio não deve ser vista como uma tarefa isolada de marketing, mas como parte do funil de aquisição local. O perfil pode influenciar ligações, rotas, visitas ao site, pedidos de orçamento e conversas no WhatsApp. Por isso, precisa estar alinhado com campanhas, site, oferta, sazonalidade e atendimento.</p>
-      <p>De acordo com as <a href="https://support.google.com/business/answer/7091?hl=pt-BR" target="_blank" rel="noopener noreferrer">boas práticas do Google para perfis de empresas</a>, perfis completos e atualizados têm mais chance de aparecer em buscas locais relevantes.</p>
-    </article>
-    <article class="prose-block" data-reveal>
-      <h2>O que fazemos na gestão do Google Meu Negócio</h2>
-      <p>A gestão combina organização, consistência e rotina. O foco não é "postar por postar", mas manter o perfil vivo, confiável e coerente com o que a empresa quer vender.</p>
+    <article class="prose-block" id="gestao" data-reveal>
+      <h2>Gestão do Google Meu Negócio</h2>
+      <p><em>Para empresas que já têm perfil e querem mantê-lo gerando contatos.</em></p>
+      <p>Ter o perfil criado é apenas o começo. Um perfil parado perde força comercial porque deixa de refletir a realidade da empresa. A gestão contínua mantém o perfil atualizado, alinhado com campanhas e focado em gerar contatos qualificados — não apenas visualizações.</p>
       <div class="table-wrap"><table>
         <thead><tr><th>Frente de gestão</th><th>Como trabalhamos</th></tr></thead>
         <tbody>
-          <tr><td>Atualização de informações</td><td>Revisão de telefone, site, horário, área de atendimento, endereço e links de contato.</td></tr>
-          <tr><td>Serviços e descrições</td><td>Organização dos serviços com textos claros, orientados à busca local e à decisão do cliente.</td></tr>
-          <tr><td>Fotos e identidade visual</td><td>Sugestão e publicação de imagens que reforçam estrutura, equipe, atendimento, produto ou ambiente.</td></tr>
-          <tr><td>Postagens no perfil</td><td>Publicações sobre serviços, diferenciais, avisos, conteúdos úteis e novidades.</td></tr>
-          <tr><td>Avaliações</td><td>Orientação para estimular avaliações reais e responder comentários com profissionalismo.</td></tr>
-          <tr><td>Perguntas e respostas</td><td>Identificação de dúvidas recorrentes e criação de respostas úteis para reduzir fricção.</td></tr>
-          <tr><td>Insights do perfil</td><td>Leitura de termos de busca, ligações, rotas, cliques e interações para melhorar decisões.</td></tr>
-          <tr><td>Integração com mídia paga</td><td>Alinhamento com <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, landing pages, campanhas locais e rastreamento de leads.</td></tr>
+          <tr><td>Atualização de informações</td><td>Telefone, site, horário, área de atendimento e links de contato.</td></tr>
+          <tr><td>Serviços e descrições</td><td>Textos claros, orientados à busca local e à decisão do cliente.</td></tr>
+          <tr><td>Fotos e identidade visual</td><td>Imagens que reforçam estrutura, equipe, atendimento ou ambiente.</td></tr>
+          <tr><td>Postagens no perfil</td><td>Serviços, diferenciais, avisos e novidades.</td></tr>
+          <tr><td>Avaliações</td><td>Orientação para estimular avaliações reais e responder comentários.</td></tr>
+          <tr><td>Perguntas e respostas</td><td>Respostas úteis para reduzir fricção antes do contato.</td></tr>
+          <tr><td>Insights do perfil</td><td>Leitura de buscas, ligações, rotas e cliques para melhorar decisões.</td></tr>
+          <tr><td>Integração com mídia paga</td><td>Alinhamento com <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, landing pages e rastreamento de leads.</td></tr>
         </tbody>
       </table></div>
+      <p><strong>Para quem faz sentido:</strong> empresas com perfil incompleto, avaliações sem resposta, muitas visualizações mas poucos contatos, ou que já rodam Google Ads e precisam integrar presença local com campanhas.</p>
     </article>
     <article class="prose-block" data-reveal>
-      <h2>Diferença entre criação e gestão</h2>
-      <p>A <a href="/servicos/criacao-de-google-meu-negocio">criação</a> organiza a base inicial do perfil. A gestão melhora essa base ao longo do tempo. Um perfil criado corretamente, mas abandonado por meses, pode perder força comercial porque deixa de refletir a realidade da empresa. Já uma gestão bem feita mantém o perfil atualizado e ajuda o usuário a confiar que a empresa está ativa.</p>
+      <h2>Qual é o melhor caminho para você?</h2>
       <div class="table-wrap"><table>
-        <thead><tr><th>Situação</th><th>Melhor caminho</th></tr></thead>
+        <thead><tr><th>Situação</th><th>Serviço indicado</th></tr></thead>
         <tbody>
-          <tr><td>A empresa ainda não tem perfil</td><td>Criar e configurar o Google Meu Negócio.</td></tr>
-          <tr><td>A empresa tem perfil, mas está incompleto</td><td>Fazer organização inicial e iniciar gestão.</td></tr>
-          <tr><td>O perfil tem avaliações sem resposta</td><td>Criar rotina de resposta e posicionamento.</td></tr>
-          <tr><td>O perfil recebe visualizações, mas poucos contatos</td><td>Revisar fotos, serviços, descrição, site e atendimento.</td></tr>
-          <tr><td>A empresa roda Google Ads</td><td>Integrar presença local, anúncios, página de destino e <a href="/servicos/rastreamento-e-conversao">rastreamento</a>.</td></tr>
+          <tr><td>A empresa ainda não tem perfil</td><td>Criação.</td></tr>
+          <tr><td>Tem perfil, mas está incompleto ou sem acesso</td><td>Criação + organização inicial.</td></tr>
+          <tr><td>Tem perfil, mas está parado há meses</td><td>Gestão.</td></tr>
+          <tr><td>Recebe visualizações, mas poucos contatos</td><td>Gestão com foco em conversão.</td></tr>
+          <tr><td>Roda Google Ads e quer integrar presença local</td><td>Gestão integrada.</td></tr>
         </tbody>
       </table></div>
     </article>
     <article class="prose-block" data-reveal>
-      <h2>Gestão com foco em leads, não vaidade</h2>
-      <p>O objetivo não é apenas deixar o perfil bonito. A gestão precisa apoiar uma métrica real: mais contatos qualificados, mais ligações úteis, mais rotas relevantes, mais conversas com intenção e mais clareza sobre o que está funcionando.</p>
-      <p>Por isso, avaliamos o perfil como parte da jornada do cliente. Se a empresa recebe muitos contatos ruins, talvez o problema esteja na categoria, descrição, oferta ou filtro comercial. Se recebe visualizações mas poucos contatos, pode haver falha em fotos, avaliações, site, telefone, diferenciais ou clareza dos serviços. Para entender como medir melhor, veja também nosso serviço de <a href="/servicos/rastreamento-e-conversao">rastreamento e conversão</a>.</p>
+      <h2>O que não prometemos</h2>
+      <p>Não prometemos primeiro lugar no Google Maps nem aumento imediato de contatos sem analisar concorrência, categoria, localização, avaliações, demanda e qualidade do perfil. A proposta é estruturar e manter o perfil de forma profissional, evitar erros básicos e apoiar a geração de contatos reais.</p>
     </article>
     <article class="prose-block" data-reveal>
       <h2>Perguntas frequentes</h2>
-      <p><strong>Qual é a diferença entre Google Meu Negócio e Perfil da Empresa no Google?</strong><br>Google Meu Negócio é o nome antigo e ainda popular. Perfil da Empresa no Google é o nome atual do produto. Você pode gerenciar seu perfil diretamente em <a href="https://business.google.com/" target="_blank" rel="noopener noreferrer">business.google.com</a>.</p>
-      <p><strong>Gestão de Google Meu Negócio ajuda no SEO local?</strong><br>Ajuda na organização da presença local e melhora a experiência de quem encontra a empresa. Deve ser combinada com site bem estruturado, conteúdo útil, informações consistentes e boa reputação online. Leia mais sobre SEO local: <a href="/blog/seo-local-para-negocios-em-foz-do-iguacu">SEO local para negócios em Foz do Iguaçu</a>.</p>
-      <p><strong>Com que frequência o perfil deve ser atualizado?</strong><br>Negócios locais se beneficiam de uma rotina mensal ou quinzenal de revisão, fotos, postagens, respostas e análise de desempenho. Em segmentos com muita sazonalidade, como turismo, gastronomia e eventos, a frequência pode ser maior.</p>
-      <p><strong>Vocês respondem avaliações?</strong><br>Podemos orientar e estruturar respostas, sempre respeitando o tom da empresa e sem inventar informações. Avaliações negativas precisam ser tratadas com cuidado e profissionalismo. Veja mais em: <a href="/blog/como-responder-avaliacoes-no-google-meu-negocio">como responder avaliações no Google Meu Negócio</a>.</p>
-      <p><strong>A gestão substitui anúncios no Google?</strong><br>Não. A gestão fortalece a presença orgânica local. Os anúncios podem acelerar a geração de demanda quando existe intenção de busca, oferta clara e estrutura de conversão. Em muitos casos, Google Meu Negócio, site e <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> funcionam melhor juntos.</p>
+      <p><strong>Google Meu Negócio ainda existe?</strong><br>O nome atual do produto é Perfil da Empresa no Google, mas o termo Google Meu Negócio ainda é amplamente usado no Brasil. Na prática, é a presença da empresa na Busca Google e no Maps.</p>
+      <p><strong>Criar o perfil é gratuito?</strong><br>O Google permite criar o perfil sem custo. O serviço cobrado aqui é pela configuração estratégica, organização das informações e preparação do perfil para gerar mais confiança e contatos.</p>
+      <p><strong>Minha empresa não tem loja física. Posso criar mesmo assim?</strong><br>Em muitos casos, sim. Prestadores de serviço que atendem em área de cobertura podem ter perfil, desde que sigam as diretrizes do Google para representação de empresas.</p>
+      <p><strong>A gestão ajuda no SEO local?</strong><br>Ajuda na organização da presença local e melhora a experiência de quem encontra a empresa. Para resultados mais completos, deve ser combinada com site bem estruturado, conteúdo útil e boa reputação online.</p>
+      <p><strong>Com que frequência o perfil deve ser atualizado?</strong><br>Uma rotina mensal ou quinzenal de revisão, fotos, postagens e análise de desempenho já traz bons resultados. Em segmentos sazonais como turismo e gastronomia, a frequência pode ser maior.</p>
+      <p><strong>A gestão substitui anúncios no Google?</strong><br>Não. A gestão fortalece a presença orgânica local. Em muitos casos, Google Meu Negócio, site e <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> funcionam melhor juntos do que separados.</p>
     </article>
   </div></section>`,
     faq: [
-          [
-                "Qual é a diferença entre Google Meu Negócio e Perfil da Empresa no Google?",
-                "Google Meu Negócio é o nome antigo e ainda popular. Perfil da Empresa no Google é o nome atual. Ambos se referem à presença da empresa na Busca Google e no Google Maps."
-          ],
-          [
-                "Gestão de Google Meu Negócio ajuda no SEO local?",
-                "Ajuda na organização da presença local e melhora a experiência de quem encontra a empresa. Deve ser combinada com site bem estruturado, conteúdo útil, informações consistentes e boa reputação online."
-          ],
-          [
-                "Com que frequência o perfil deve ser atualizado?",
-                "Negócios locais se beneficiam de uma rotina mensal ou quinzenal de revisão, fotos, postagens, respostas e análise de desempenho. Em segmentos com muita sazonalidade, como turismo, gastronomia e eventos, a frequência pode ser maior."
-          ],
-          [
-                "A gestão substitui anúncios no Google?",
-                "Não. A gestão fortalece a presença orgânica local. Os anúncios podem acelerar a geração de demanda quando existe intenção de busca, oferta clara e estrutura de conversão. Em muitos casos, Google Meu Negócio, site e Google Ads funcionam melhor juntos."
-          ]
+      ["Google Meu Negócio ainda existe?", "O nome atual do produto é Perfil da Empresa no Google, mas o termo Google Meu Negócio ainda é amplamente usado no Brasil. Na prática, é a presença da empresa na Busca Google e no Maps."],
+      ["Criar o perfil é gratuito?", "O Google permite criar o perfil sem custo. O serviço cobrado aqui é pela configuração estratégica, organização das informações e preparação do perfil para gerar mais confiança e contatos."],
+      ["Minha empresa não tem loja física. Posso criar mesmo assim?", "Em muitos casos, sim. Prestadores de serviço que atendem em área de cobertura podem ter perfil, desde que sigam as diretrizes do Google para representação de empresas."],
+      ["A gestão ajuda no SEO local?", "Ajuda na organização da presença local e melhora a experiência de quem encontra a empresa. Para resultados mais completos, deve ser combinada com site bem estruturado, conteúdo útil e boa reputação online."],
+      ["Com que frequência o perfil deve ser atualizado?", "Uma rotina mensal ou quinzenal de revisão, fotos, postagens e análise de desempenho já traz bons resultados. Em segmentos sazonais como turismo e gastronomia, a frequência pode ser maior."],
+      ["A gestão substitui anúncios no Google?", "Não. A gestão fortalece a presença orgânica local. Em muitos casos, Google Meu Negócio, site e Google Ads funcionam melhor juntos do que separados."],
     ],
   },
   {

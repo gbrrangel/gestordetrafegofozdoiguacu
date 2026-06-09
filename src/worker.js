@@ -2,6 +2,10 @@ const RECIPIENT_EMAIL = "contato@gabriads.com";
 const SITE_NAME = "Gestor de Trafego Foz do Iguacu";
 
 const REQUIRED_FIELDS = ["nome", "email", "whatsapp", "investimento"];
+const REDIRECTS = {
+  "/servicos/criacao-de-google-meu-negocio": "/servicos/google-meu-negocio-foz-do-iguacu#criacao",
+  "/servicos/gestao-de-google-meu-negocio": "/servicos/google-meu-negocio-foz-do-iguacu#gestao",
+};
 
 function json(data, init = {}) {
   return new Response(JSON.stringify(data), {
@@ -201,8 +205,13 @@ async function handleLead(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const pathname = url.pathname.replace(/\/+$/, "") || "/";
 
-    if (url.pathname === "/api/lead") {
+    if (REDIRECTS[pathname]) {
+      return Response.redirect(new URL(REDIRECTS[pathname], url.origin), 301);
+    }
+
+    if (pathname === "/api/lead") {
       return handleLead(request, env);
     }
 
