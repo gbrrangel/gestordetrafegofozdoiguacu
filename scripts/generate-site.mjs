@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const siteUrl = "https://gestordetrafegofozdoiguacu.com.br";
+const assetVersion = "20260609-2";
 const brand = "Gestor de Tráfego Foz do Iguaçu";
 const whatsappNumber = "5545999046673";
 const contactEmail = "contato@gabriads.com";
@@ -1438,7 +1439,7 @@ function layout(page, content, jsonLd) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=${assetVersion}">
   <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.faq-answer{height:auto!important}</style></noscript>
   <script>
     window.dataLayer = window.dataLayer || [];
