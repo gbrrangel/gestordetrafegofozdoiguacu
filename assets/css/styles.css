@@ -857,6 +857,7 @@ p { margin: 0; text-wrap: pretty; }
 
 /* Tables */
 .table-wrap { overflow-x: auto; margin: 28px 0; border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.prose-block .table-wrap { grid-column: 1 / -1; width: 100%; }
 table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 0.98rem; }
 th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; color: var(--text-2); }
 thead th { background: var(--surface-2); color: var(--text); font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; }
