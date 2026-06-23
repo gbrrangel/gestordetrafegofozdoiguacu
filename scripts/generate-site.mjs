@@ -1412,7 +1412,7 @@ function renderPost(post) {
     <span class="kicker" data-reveal>Conteúdo sobre tráfego pago</span>
     <h1 data-reveal data-delay="60">${escapeHtml(page.h1)}</h1>
     <p class="lede" data-reveal data-delay="120">${escapeHtml(intro)}</p>
-    <div class="prose" data-reveal data-delay="160">${post.bodyHtml || renderBody(post.body)}</div>
+    <div class="prose">${post.bodyHtml || renderBody(post.body)}</div>
   </article>
   ${renderRelated(page)}
   ${renderCta(page, post.cta)}

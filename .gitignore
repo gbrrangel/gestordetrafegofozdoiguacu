@@ -1,4 +1,6 @@
 .DS_Store
+.github_token
+.env
 dist/
 graphify-out/
 
