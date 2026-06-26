@@ -2,7 +2,6 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const siteUrl = "https://gestordetrafegofozdoiguacu.com.br";
-const assetVersion = "20260609-10";
 const brand = "Gestor de Tráfego Foz do Iguaçu";
 const whatsappNumber = "5545999046673";
 const contactEmail = "contato@gabriads.com";
@@ -23,7 +22,6 @@ const footerServices = [
   ["Meta Ads", "/servicos/meta-ads-foz-do-iguacu"],
   ["Landing pages", "/servicos/landing-pages-foz-do-iguacu"],
   ["Rastreamento", "/servicos/rastreamento-e-conversao"],
-  ["Google Meu Negócio", "/servicos/google-meu-negocio-foz-do-iguacu"],
 ];
 
 const footerCompany = [
@@ -54,11 +52,6 @@ const services = [
     title: "Sites, blogs e landing pages",
     href: "/servicos/landing-pages-foz-do-iguacu",
     text: "Páginas rápidas, blogs e landing pages pensados para SEO, campanhas, conversão e rastreamento.",
-  },
-  {
-    title: "Google Meu Negócio",
-    href: "/servicos/google-meu-negocio-foz-do-iguacu",
-    text: "Criação e gestão do Perfil da Empresa no Google para empresas locais aparecerem melhor na Busca e no Maps.",
   },
   {
     title: "Consultoria",
@@ -101,6 +94,71 @@ const niches = [
 ];
 
 const posts = [
+  {
+    slug: "/blog/performance-max-2026-novidades-negocios-locais",
+    title: "Performance Max em 2026: Novidades e Como Usar para Negócios Locais",
+    description: "Conheça as principais atualizações do Performance Max em 2026 e veja como negócios em Foz do Iguaçu podem usar os novos controles para anunciar melhor no Google",
+    cta: "Falar com um especialista em Google Ads",
+    body: [
+      ["p", "O Performance Max é o tipo de campanha mais automatizado do Google Ads, e em 2026 ele ganhou um conjunto expressivo de atualizações que muda bastante a forma como anunciantes e gestores de tráfego trabalham com ele. Durante anos, uma das maiores críticas ao Performance Max era a falta de transparência: você investia verba, o algoritmo distribuía entre vários canais do Google, mas era difícil saber exatamente o que estava funcionando e o que estava consumindo orçamento sem retorno. Em 2026, o Google respondeu a essas críticas com novas ferramentas de relatório, controle de público, exclusões de marca e visibilidade de orçamento que colocam mais poder nas mãos de quem anuncia. Para donos de negócios em Foz do Iguaçu que investem ou pretendem investir em Google Ads, entender essas mudanças é essencial para aproveitar melhor cada real investido em anúncios."],
+      ["h2", "O Que é o Performance Max e Por Que Ele Importa"],
+      ["p", "O Performance Max, também chamado de PMax, é uma modalidade de campanha do Google Ads que exibe anúncios em todos os canais do ecossistema Google de forma simultânea: Pesquisa, Display, YouTube, Discover, Gmail e Google Maps. Em vez de criar campanhas separadas para cada canal, você configura uma única campanha, fornece criativos, textos, imagens e vídeos, e o algoritmo do Google decide onde, quando e para quem exibir seus anúncios para maximizar as conversões dentro do orçamento definido."],
+      ["p", "Para negócios locais em Foz do Iguaçu, isso significa alcançar potenciais clientes em diferentes momentos da jornada de compra: quando estão pesquisando no Google, assistindo a vídeos no YouTube, navegando em sites parceiros ou usando o Google Maps para encontrar estabelecimentos próximos. A promessa é eficiência: um único setup de campanha cobrindo múltiplos pontos de contato com o cliente, sem precisar gerenciar cada canal separadamente."],
+      ["p", "A desvantagem histórica era a falta de controle. Anunciantes reclamavam que o PMax era uma caixa preta, difícil de entender e otimizar. As atualizações de 2026 foram diretamente ao encontro dessas queixas, trazendo transparência e controles que tornam o Performance Max muito mais viável para negócios que não têm orçamentos grandes o suficiente para desperdiçar em canais que não funcionam para o seu segmento específico."],
+      ["h2", "Novidades de Relatório e Transparência no PMax 2026"],
+      ["p", "Uma das mudanças mais aguardadas do Performance Max em 2026 é o relatório por canal. Agora é possível ver quanto do orçamento foi investido em cada canal do Google, como Pesquisa, Display, YouTube, Discover, Gmail e Maps, além de qual foi a performance de cada um em termos de cliques, impressões e conversões. Antes, essa informação era agregada e impossível de desagregar, o que dificultava decisões de otimização informadas."],
+      ["p", "Outro avanço importante é o relatório por grupo de assets com detalhamento por tema criativo. Isso significa que você consegue ver quais combinações de imagem, texto e vídeo estão gerando mais conversões, e quais estão consumindo verba sem entregar resultado. Para negócios locais, isso permite identificar rapidamente se um tipo de criativo, como fotos do ambiente versus fotos de produto, funciona melhor para o público da cidade."],
+      ["p", "O Google também adicionou dados demográficos ao Performance Max em 2026. Agora é possível ver a distribuição de gastos e conversões por faixa etária e gênero dentro do relatório de audiência da campanha. Essa informação era disponível há anos no Search e Display, mas estava ausente no PMax, o que gerava frustrações para anunciantes que precisavam entender o perfil do consumidor que respondia melhor aos seus anúncios. Com esses dados em mãos, é possível ajustar criativos e mensagens para falar mais diretamente com o público que mais converte."],
+      ["h2", "Novos Controles de Orçamento e Projeção de Gastos"],
+      ["p", "Em 2026, o Performance Max ganhou um painel de controle de orçamento integrado diretamente na campanha. Esse painel mostra a projeção de gasto até o final do mês com base no ritmo atual, o que permite ao anunciante entender com antecedência se o orçamento vai durar ou se há risco de estourar o limite mensal antes do previsto. Para negócios com caixa controlado, essa visibilidade é fundamental para planejar o investimento com mais segurança."],
+      ["p", "A ferramenta também permite simular o impacto de ajustes de orçamento diário na projeção mensal. Se você aumentar R$ 20 por dia, o painel calcula o efeito esperado no total de gastos ao final do mês e nas conversões projetadas. Isso transforma uma decisão que antes era intuitiva em uma análise baseada em dados reais da campanha, reduzindo o risco de surpresas no extrato do cartão de crédito vinculado à conta de anúncios."],
+      ["p", "Para gestores de tráfego que administram várias contas ao mesmo tempo, essa funcionalidade economiza tempo de monitoramento e facilita conversas com clientes sobre investimento. Em vez de puxar planilhas manualmente para estimar o gasto até o fim do mês, os dados ficam centralizados e atualizados em tempo real dentro da própria interface do Google Ads."],
+      ["h2", "Controles de Público e Exclusão de Clientes"],
+      ["p", "Uma das limitações mais sentidas do Performance Max antes de 2026 era a impossibilidade de excluir listas de clientes das campanhas. Isso significava que anunciantes gastavam orçamento reimpactando pessoas que já eram clientes, quando o objetivo era trazer clientes novos. Com as atualizações de 2026, o Google adicionou a opção de excluir listas de clientes específicas do Performance Max, permitindo que o algoritmo foque o orçamento em prospecção de novos consumidores."],
+      ["p", "Para um hotel em Foz do Iguaçu, por exemplo, isso significa poder excluir a lista de hóspedes recentes da campanha de aquisição e investir o orçamento para alcançar turistas que ainda não conhecem o estabelecimento. Para um restaurante, permite separar clientes frequentes de novos visitantes, destinando campanhas e criativos diferentes para cada grupo. Essa segmentação mais precisa melhora a eficiência do gasto e evita que o algoritmo desperdice impressões em públicos que já foram convertidos."],
+      ["p", "Outra novidade relevante é a opção de sinalizar ao algoritmo que o objetivo da campanha é aquisição de novos clientes. Quando essa opção está ativa, o Performance Max calibra sua distribuição de orçamento para priorizar usuários que não fazem parte das listas de clientes existentes. Isso alinha melhor a automação do Google com os objetivos reais de crescimento do negócio, especialmente para empresas que já têm uma base de clientes estabelecida e precisam ampliar seu alcance."],
+      ["h2", "Controles de Marca e Segurança do Anunciante"],
+      ["p", "Em 2026, o Performance Max também recebeu melhorias nos controles de marca. Agora é possível excluir termos de marca da campanha para evitar que o PMax sobreponha campanhas de Search dedicadas à busca pelo nome da empresa. Antes, era comum o Performance Max disputar o mesmo inventário de pesquisa das campanhas de marca, o que podia elevar o custo desnecessariamente quando o usuário já estava buscando especificamente pela empresa."],
+      ["p", "Os controles de segurança de marca também foram ampliados. Anunciantes podem definir parâmetros para evitar que anúncios apareçam em conteúdo fora do perfil da marca, excluir categorias de conteúdo sensível e controlar com mais precisão os contextos em que os anúncios do Performance Max são exibidos na Rede de Display e no YouTube. Para empresas com posicionamento de marca bem definido, esses controles são importantes para manter a coerência da comunicação em todos os canais."],
+      ["p", "Para negócios em nichos regulados, como advocacia e saúde, onde existe restrição sobre o tipo de conteúdo com o qual os anúncios podem aparecer associados, esses controles de segurança de marca têm um valor adicional. Eles permitem restringir a veiculação a contextos mais controlados, reduzindo o risco de associação com conteúdo inadequado para o perfil do negócio ou que possa causar constrangimento para o anunciante perante seus clientes."],
+      ["h2", "Performance Max vs Campanhas Tradicionais de Search"],
+      ["table", [
+        ["Critério", "Performance Max", "Campanha de Search"],
+        ["Canais de exibição", "Pesquisa, Display, YouTube, Gmail, Maps, Discover", "Apenas Pesquisa Google"],
+        ["Segmentação", "Automática por algoritmo com sinais de audiência", "Palavras-chave definidas pelo anunciante"],
+        ["Controle de criativo", "Assets testados automaticamente", "Anúncios configurados manualmente"],
+        ["Relatório por canal", "Disponível desde 2026", "Relatório detalhado por palavra-chave"],
+        ["Exclusão de palavras-chave", "Limitada, no nível de conta", "Completa, no nível de campanha e grupo"],
+        ["Ideal para", "Negócios com múltiplos objetivos e canais", "Negócios com intenção de busca clara"],
+        ["Orçamento mínimo prático", "A partir de R$ 50/dia", "A partir de R$ 30/dia"]
+      ]],
+      ["p", "A escolha entre Performance Max e campanhas tradicionais de Search não precisa ser exclusiva. Em muitos casos, a estratégia mais eficiente combina uma campanha de Search para capturar intenção ativa, buscas específicas por serviços e produtos, com um Performance Max para ampliar o alcance nos demais canais e reimpactar usuários que já demonstraram interesse. Essa estrutura híbrida é usada por gestores de tráfego experientes para maximizar a cobertura sem abrir mão do controle sobre termos de busca de alta intenção."],
+      ["h2", "Como Usar o Performance Max para Negócios Locais em Foz do Iguaçu"],
+      ["p", "Para negócios locais em Foz do Iguaçu, o Performance Max pode ser uma ferramenta poderosa quando configurado com os objetivos e sinais corretos. O primeiro passo é definir claramente o objetivo de conversão da campanha: pode ser uma ligação telefônica, um formulário preenchido, uma mensagem no WhatsApp via rastreamento de clique ou uma visita ao estabelecimento registrada pelo Google Maps. Quanto mais preciso o objetivo configurado, mais eficiente será a otimização do algoritmo."],
+      ["p", "O segundo passo é alimentar a campanha com sinais de audiência de qualidade. Isso significa fazer o upload de uma lista de clientes existentes, configurar o rastreamento correto no site e criar audiências de remarketing para usuários que já visitaram páginas específicas. Esses sinais ajudam o algoritmo a entender o perfil do cliente ideal do negócio e a encontrar pessoas com comportamento semelhante dentro da área geográfica configurada em Foz do Iguaçu e região."],
+      ["p", "O terceiro elemento crítico são os criativos. O Performance Max testa automaticamente combinações de imagens, vídeos e textos, mas a qualidade do que você fornece define o teto de performance da campanha. Para negócios locais, imagens reais do estabelecimento, dos produtos e dos clientes satisfeitos tendem a funcionar melhor do que imagens genéricas de banco de fotos. Um vídeo simples, mesmo feito com celular, pode superar uma imagem estática bem produzida no YouTube e no Discover."],
+      ["h2", "Erros Comuns no Performance Max que Donos de Negócio Devem Evitar"],
+      ["p", "O erro mais comum de quem usa Performance Max pela primeira vez é não configurar as conversões corretamente antes de lançar a campanha. Se o Google Ads não está rastreando as ações que realmente importam para o negócio, seja um clique no número de telefone, um formulário enviado ou uma abertura de chat no WhatsApp, o algoritmo vai otimizar para métricas sem valor comercial, como visualizações de página ou tempo no site, e o orçamento será desperdiçado."],
+      ["p", "Outro erro frequente é definir um orçamento muito baixo e esperar resultados rápidos. O Performance Max precisa de um período de aprendizado para calibrar sua distribuição de anúncios. Com orçamentos abaixo de R$ 30 por dia, esse período se estende muito e os resultados na fase inicial podem ser decepcionantes. Isso leva muitos anunciantes a desativar a campanha antes de ela atingir o volume mínimo de dados necessário para otimizar de forma eficiente."],
+      ["p", "Um terceiro erro é ignorar os relatórios de assets e grupos de ativos. O Performance Max gera diagnósticos sobre o desempenho de cada elemento criativo, indicando quais estão com baixa, média ou alta performance. Anunciantes que não revisam esses relatórios perdem a oportunidade de substituir criativos que não funcionam por novos testes, deixando a campanha estagnada em uma combinação de ativos que poderiam ser muito melhores com ajustes simples no material visual ou nos textos dos anúncios."],
+      ["h2", "Quanto Investir no Performance Max em Foz do Iguaçu"],
+      ["table", [
+        ["Porte do negócio", "Orçamento diário sugerido", "Período de aprendizado estimado", "Resultado esperado"],
+        ["Pequeno negócio local", "R$ 30 a R$ 60/dia", "14 a 21 dias", "5 a 15 leads por semana"],
+        ["Negócio de médio porte", "R$ 60 a R$ 150/dia", "7 a 14 dias", "15 a 40 leads por semana"],
+        ["Empresa com múltiplos serviços", "R$ 150 a R$ 400/dia", "5 a 10 dias", "Escala conforme conversões"]
+      ]],
+      ["p", "Os valores acima são referências práticas baseadas no mercado de anúncios locais no Brasil em 2026, mas o orçamento ideal varia conforme o nicho, a concorrência local e o custo por lead aceitável para o negócio. Um serviço com ticket médio de R$ 500 pode justificar um custo por lead de R$ 40 a R$ 60, enquanto um produto de baixo valor precisa de custo por lead muito menor para que a campanha seja lucrativa. Calcular essa equação antes de definir o orçamento é fundamental para evitar frustração com os resultados."],
+      ["h2", "O Papel do Gestor de Tráfego na Era do Performance Max Automatizado"],
+      ["p", "Com tantas automações e controles cada vez mais sofisticados no Performance Max, surge uma pergunta recorrente entre donos de negócios: ainda preciso de um gestor de tráfego? A resposta continua sendo sim, e o motivo vai além da configuração técnica. O algoritmo do Google é poderoso, mas ele otimiza para as métricas que você configurou. Se o rastreamento está errado, se os criativos são fracos ou se as conversões configuradas não representam o que realmente importa para o negócio, toda a automação do PMax vai trabalhar na direção errada."],
+      ["p", "Um gestor de tráfego qualificado garante que a fundação da campanha esteja correta antes de ligar o algoritmo. Isso inclui configurar o rastreamento de conversões de forma precisa, criar grupos de assets com criativos relevantes para o público local de Foz do Iguaçu, definir as exclusões de marca corretas, fazer o upload das listas de clientes e interpretar os relatórios para identificar oportunidades de melhoria que não são óbvias na superfície dos dados apresentados na interface."],
+      ["p", "Além da configuração, o acompanhamento contínuo faz diferença. O Performance Max pode entrar em fases de queda de performance que exigem intervenção estratégica: novos criativos, revisão de objetivos de conversão, ajustes de orçamento ou mudança de estrutura de campanha. Um anunciante sem experiência tende a ignorar esses sinais até que o orçamento já foi consumido de forma ineficiente. Um gestor experiente identifica esses padrões antes e age com ajustes cirúrgicos que preservam a eficiência da campanha."],
+      ["h2", "Conclusão: Performance Max em 2026 é Mais Poderoso e Mais Transparente"],
+      ["p", "O Performance Max de 2026 não é mais a caixa preta que frustrava anunciantes em anos anteriores. Com relatórios por canal, dados demográficos, exclusão de clientes, controles de marca e visibilidade de orçamento, o Google entregou ferramentas que tornam essa modalidade de campanha muito mais viável e segura para negócios de todos os portes, incluindo pequenas e médias empresas em Foz do Iguaçu que não podem se dar ao luxo de desperdiçar verba de anúncio em canais ineficientes."],
+      ["p", "Para aproveitar ao máximo essas novidades, o ponto de partida é garantir que o rastreamento de conversões está funcionando corretamente na sua conta do Google Ads. Sem isso, todas as atualizações de 2026 perdem grande parte do seu valor, porque o algoritmo precisa de dados de conversão reais para tomar decisões de otimização precisas. Um rastreamento bem configurado é o alicerce sobre o qual toda a automação do Performance Max se apoia para gerar resultados consistentes."],
+      ["p", "Se você quer usar o Performance Max em Foz do Iguaçu e aproveitar as atualizações de 2026 de forma estratégica, contar com um gestor de tráfego especializado reduz o risco de erros na configuração inicial e acelera o processo de aprendizado do algoritmo. O investimento em gestão profissional tende a se pagar rapidamente quando se compara ao custo de semanas de campanha rodando com configurações incorretas ou criativos inadequados para o público local."],
+    ],
+  },
   {
     slug: "/blog/meta-ads-advantage-plus-2026",
     title: "Meta Ads Advantage+ em 2026: O Que Mudou e Como Usar",
@@ -154,372 +212,146 @@ const posts = [
     ],
   },
   {
-    slug: "/blog/como-aparecer-no-google-maps-em-foz-do-iguacu",
-    category: "canais",
-    title: "Como aparecer no Google Maps em Foz do Iguaçu",
-    description: "Veja o que influencia sua presença no Google Maps em Foz do Iguaçu: perfil completo, categorias, avaliações, fotos, site e consistência.",
-    h1: "Como aparecer no Google Maps em Foz do Iguaçu",
-    intro: "Aparecer no Google Maps é essencial para muitas empresas locais, mas não depende de um único ajuste. O resultado vem da combinação entre perfil completo, relevância, localização, reputação e consistência.",
-    bodyHtml: `<p>Quando alguém pesquisa por um serviço local, o Google Maps pode ser um dos primeiros pontos de decisão. O usuário vê distância, nota, fotos, horários, rotas, telefone e avaliações. Para negócios em Foz do Iguaçu, isso pode impactar ligações, visitas presenciais, reservas e mensagens no WhatsApp.</p>
-<p>Não existe botão mágico para aparecer em primeiro. Também não faz sentido prometer posição fixa no Maps. O trabalho correto é melhorar os sinais que ajudam o usuário e o Google a entenderem sua empresa. O <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br" target="_blank" rel="noopener noreferrer">Guia de SEO para iniciantes do Google Search Central</a> reforça que SEO local começa com informações precisas e conteúdo útil.</p>
-<h2>Fatores práticos que influenciam sua presença</h2>
-<div class="table-wrap"><table><thead><tr><th>Fator</th><th>O que melhorar</th></tr></thead><tbody>
-<tr><td>Categoria</td><td>Escolher categoria principal coerente com o serviço central.</td></tr>
-<tr><td>Informações</td><td>Manter nome, telefone, endereço, site e horário corretos.</td></tr>
-<tr><td>Fotos</td><td>Publicar imagens reais e atualizadas regularmente.</td></tr>
-<tr><td>Avaliações</td><td>Incentivar avaliações verdadeiras e responder com profissionalismo.</td></tr>
-<tr><td>Serviços</td><td>Descrever o que a empresa faz com clareza.</td></tr>
-<tr><td>Site</td><td>Ter páginas relevantes conectadas ao perfil.</td></tr>
-<tr><td>Consistência</td><td>Evitar divergência de dados entre site, redes e perfil.</td></tr>
-</tbody></table></div>
-<h2>O papel das avaliações</h2>
-<p>Avaliações não devem ser compradas nem manipuladas. O caminho correto é pedir feedback real para clientes reais, facilitar o processo e responder com atenção. Responder avaliações mostra que a empresa está ativa e se importa com a experiência do cliente. Leia: <a href="/blog/como-responder-avaliacoes-no-google-meu-negocio">como responder avaliações no Google Meu Negócio</a>.</p>
-<h2>O papel do site</h2>
-<p>O Google Meu Negócio ajuda muito, mas o site dá profundidade. Uma página de serviço bem feita pode explicar melhor a oferta, responder dúvidas, mostrar diferenciais e captar contatos com rastreamento. Para negócios locais, perfil e site devem se complementar. Conheça nosso serviço de <a href="/servicos/landing-pages-foz-do-iguacu">criação de sites e landing pages em Foz do Iguaçu</a>.</p>
-<h2>Conclusão</h2>
-<p>Aparecer melhor no Google Maps em Foz do Iguaçu exige consistência. O perfil precisa estar completo, atualizado e conectado a uma presença digital confiável. O foco não deve ser só posição; deve ser gerar mais contatos úteis a partir das buscas locais. Para dar o primeiro passo, veja nosso serviço de <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criação de Google Meu Negócio</a> ou de <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão contínua do perfil</a>.</p>`,
-  },
-  {
     slug: "/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu",
-    category: "contratacao",
     title: "Como escolher um gestor de tráfego em Foz do Iguaçu",
-    description: "Veja como escolher um gestor de tráfego em Foz do Iguaçu com critérios práticos: diagnóstico, métricas, rastreamento, transparência e qualidade dos leads.",
-    h1: "Como escolher um gestor de tráfego em Foz do Iguaçu",
-    intro: "Escolher um gestor de tráfego em Foz do Iguaçu não deve ser uma decisão baseada apenas em preço, promessa de resultado rápido ou indicação informal. O profissional certo precisa entender mídia paga, mas também oferta, funil, WhatsApp, rastreamento e qualidade dos leads.",
+    description:
+      "Veja como escolher um gestor de tráfego em Foz do Iguaçu sem cair em promessas vazias. Entenda critérios, riscos e perguntas antes de contratar.",
     cta: "Solicitar diagnóstico gratuito",
-    bodyHtml: `<p>Escolher um gestor de tráfego em Foz do Iguaçu exige mais do que comparar mensalidades. Em muitos negócios locais, o problema não está apenas no anúncio. O gargalo pode estar na página, no atendimento, na proposta, na demora para responder no WhatsApp, na falta de rastreamento ou na ausência de uma oferta clara.</p>
-<p>Um bom gestor não deve começar prometendo resultado. Ele deve começar fazendo perguntas. Antes de falar em verba, campanha e canal, precisa entender o que a empresa vende, qual margem existe, quem é o cliente ideal, como o atendimento funciona e o que acontece depois que o lead chama.</p>
-<h2>O que avaliar antes de contratar</h2>
-<div class="table-wrap"><table><thead><tr><th>Critério</th><th>O que observar</th></tr></thead><tbody>
-<tr><td>Diagnóstico inicial</td><td>O profissional entende seu negócio antes de sugerir campanha?</td></tr>
-<tr><td>Clareza de métricas</td><td>Ele fala de CPL, taxa de conversão, qualidade do lead e custo por oportunidade real?</td></tr>
-<tr><td>Rastreamento</td><td>Existe plano para medir WhatsApp, formulário, ligação e origem dos contatos?</td></tr>
-<tr><td>Estratégia de canal</td><td>Ele explica quando usar <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a> ou ambos?</td></tr>
-<tr><td>Transparência</td><td>Você terá acesso aos dados e entenderá o que está sendo feito?</td></tr>
-<tr><td>Visão comercial</td><td>Ele considera atendimento, follow-up e conversão em venda?</td></tr>
-</tbody></table></div>
-<h2>Perguntas que você deve fazer antes de fechar</h2>
-<p>Pergunte se as campanhas ficarão em uma conta da sua empresa, como serão apresentados os relatórios, quais conversões serão medidas, qual será o plano dos primeiros 30 dias e o que será considerado sucesso. Também vale perguntar o que ele faria se os leads viessem baratos, mas ruins. A resposta mostra se o profissional olha apenas volume ou se entende qualidade.</p>
-<p>Outra pergunta importante é: "o que precisa estar pronto antes de anunciar?". Se a resposta for apenas "verba", cuidado. Uma campanha local eficiente depende de <a href="/servicos/landing-pages-foz-do-iguacu">página ou destino adequado</a>, mensagem clara, canais de contato funcionando e capacidade de atendimento.</p>
-<h2>Sinais de alerta</h2>
-<p>Desconfie de promessas de primeiro lugar, vendas garantidas, leads ilimitados ou resultados sem conhecer sua empresa. Também é arriscado contratar alguém que fala só em alcance, curtidas e cliques, sem falar de conversão, <a href="/servicos/rastreamento-e-conversao">rastreamento</a> e processo comercial.</p>
-<p>O melhor gestor de tráfego é o que consegue transformar verba de mídia em aprendizado, oportunidades qualificadas e decisões melhores. Para empresas em Foz do Iguaçu, isso significa entender a realidade local, concorrência regional, comportamento de WhatsApp e diferença entre lead curioso e lead com real intenção de compra. O <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">guia do Google sobre conteúdo útil</a> reforça que profissionais sérios focam em entregar valor real, não métricas de vaidade.</p>
-<h2>Conclusão</h2>
-<p>Se você quer contratar com menos risco, escolha alguém que explique o plano com clareza, questione suas premissas, meça o que importa e tenha coragem de dizer quando o problema não está no anúncio. Tráfego pago bom não é só campanha bonita; é sistema de aquisição funcionando.</p>`,
-  },
-  {
-    slug: "/blog/como-rastrear-leads-de-trafego-pago",
-    category: "conversao",
-    title: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
-    description: "Entenda como rastrear leads de tráfego pago com UTMs, eventos, WhatsApp, formulários e análise de qualidade para saber quais campanhas geram venda.",
-    h1: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
-    intro: "Gerar leads é importante, mas saber de onde vieram os melhores contatos é o que permite escalar com segurança. Sem rastreamento, a empresa toma decisão no escuro e pode cortar campanhas boas ou manter campanhas ruins.",
-    cta: "Solicitar análise de rastreamento",
-    bodyHtml: `<p>Rastrear leads de tráfego pago é o que separa gestão baseada em dados de gestão baseada em sensação. Em negócios locais, é comum o empresário dizer que "veio bastante WhatsApp", mas não saber qual campanha trouxe os contatos, quais leads tinham intenção real e quais viraram orçamento ou venda.</p>
-<p>O rastreamento não precisa começar complexo. O primeiro passo é organizar a origem dos contatos. Depois, é preciso conectar essa origem com qualidade comercial. Um lead barato que nunca responde pode ser pior do que um lead mais caro que fecha contrato.</p>
-<h2>O que são UTMs e por que usar</h2>
-<p>UTMs são parâmetros adicionados aos links para identificar origem, mídia, campanha e conteúdo do clique. Elas ajudam a entender se o contato veio do <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a>, blog, landing page, anúncio específico ou campanha sazonal.</p>
-<div class="table-wrap"><table><thead><tr><th>Parâmetro</th><th>Exemplo de uso</th></tr></thead><tbody>
-<tr><td>utm_source</td><td>google, meta, instagram, site</td></tr>
-<tr><td>utm_medium</td><td>cpc, social, organic, referral</td></tr>
-<tr><td>utm_campaign</td><td>advogado_foz, turismo_ferias, landing_page</td></tr>
-<tr><td>utm_content</td><td>criativo_01, botao_whatsapp, anuncio_dor</td></tr>
-</tbody></table></div>
-<p>O Google disponibiliza um <a href="https://ga-dev-tools.google/campaign-url-builder/" target="_blank" rel="noopener noreferrer">construtor gratuito de URLs com UTMs</a> que facilita a criação desses links sem errar a sintaxe.</p>
-<h2>Eventos importantes para medir</h2>
-<p>O mínimo recomendado é medir clique no WhatsApp, envio de formulário, clique em telefone, clique em rota quando aplicável e visitas às páginas mais importantes. Para campanhas mais maduras, também faz sentido medir etapas posteriores, como lead qualificado, orçamento enviado, reunião marcada e venda realizada. Nosso serviço de <a href="/servicos/rastreamento-e-conversao">rastreamento e conversão</a> cobre toda essa estrutura.</p>
-<h2>WhatsApp precisa de processo</h2>
-<p>O WhatsApp é ótimo para conversão, mas ruim para análise quando não existe organização. Se todos os leads entram misturados, a empresa perde a origem. O ideal é usar links com mensagem personalizada por campanha, UTMs e algum tipo de registro em CRM, planilha ou sistema de atendimento.</p>
-<h2>Qualidade do lead importa mais que volume</h2>
-<p>A leitura correta não é apenas "qual campanha gerou mais leads?". A pergunta melhor é: "qual campanha gerou mais oportunidades com chance real de venda?". Para responder, é preciso classificar os contatos por qualidade, segmento, urgência, localização, orçamento e aderência à oferta.</p>
-<h2>Conclusão</h2>
-<p>Sem rastreamento, você otimiza para clique. Com rastreamento, você otimiza para oportunidade. Essa diferença muda tudo, porque permite investir mais no que gera negócio e cortar desperdícios com mais segurança. Entenda mais sobre <a href="/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu">como escolher um gestor de tráfego em Foz do Iguaçu</a> que saiba trabalhar com dados.</p>`,
-  },
-  {
-    slug: "/blog/como-responder-avaliacoes-no-google-meu-negocio",
-    category: "conversao",
-    title: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
-    description: "Veja como responder avaliações positivas e negativas no Google Meu Negócio com profissionalismo, cuidado e foco em reputação local.",
-    h1: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
-    intro: "Responder avaliações é uma parte importante da gestão do Google Meu Negócio. Uma boa resposta mostra atenção, profissionalismo e cuidado com a experiência do cliente.",
-    bodyHtml: `<p>Avaliações influenciam confiança. Quando uma pessoa encontra sua empresa no Google, ela não olha apenas a nota. Ela também observa comentários, fotos, quantidade de avaliações e como a empresa responde. Uma resposta bem feita pode reforçar credibilidade. Uma resposta mal feita pode aumentar o problema.</p>
-<p>Responder avaliações não significa discutir, se defender a qualquer custo ou usar mensagens copiadas. Significa reconhecer a experiência do cliente, agradecer, orientar e mostrar postura profissional. A <a href="https://support.google.com/business/answer/3474050?hl=pt-BR" target="_blank" rel="noopener noreferrer">Central de Ajuda do Google</a> orienta sobre boas práticas ao responder avaliações no Perfil da Empresa.</p>
-<h2>Como responder avaliações positivas</h2>
-<p>Agradeça de forma natural, mencione o serviço quando fizer sentido e reforce que a empresa fica à disposição. Evite respostas idênticas em todos os comentários. Personalização simples já melhora a percepção.</p>
-<p>Exemplo de resposta: "Obrigado pela avaliação, [nome]. Ficamos felizes em saber que sua experiência foi positiva. Seguimos à disposição sempre que precisar."</p>
-<h2>Como responder avaliações negativas</h2>
-<p>A resposta deve ser calma, objetiva e profissional. Evite confronto público. Reconheça o relato, peça mais detalhes se necessário e direcione para um canal de atendimento. Mesmo quando a crítica parecer injusta, a resposta será lida por futuros clientes.</p>
-<p>Exemplo de resposta: "Olá, [nome]. Sentimos muito que sua experiência não tenha sido como esperado. Queremos entender melhor o ocorrido e buscar a melhor solução possível. Por favor, entre em contato pelo nosso canal oficial para avaliarmos o caso com atenção."</p>
-<h2>O que evitar</h2>
-<div class="table-wrap"><table><thead><tr><th>Erro</th><th>Por que prejudica</th></tr></thead><tbody>
-<tr><td>Discutir publicamente</td><td>Passa imagem defensiva e pouco profissional.</td></tr>
-<tr><td>Copiar a mesma resposta</td><td>Parece automático e sem cuidado.</td></tr>
-<tr><td>Expor dados do cliente</td><td>Pode gerar problemas de privacidade.</td></tr>
-<tr><td>Ignorar críticas</td><td>Dá sensação de abandono e descuido.</td></tr>
-<tr><td>Prometer o que não será feito</td><td>Aumenta frustração e risco reputacional.</td></tr>
-</tbody></table></div>
-<h2>Avaliações devem virar aprendizado</h2>
-<p>Além de responder, a empresa deve analisar padrões. Se várias pessoas reclamam de demora, atendimento ou informação desencontrada, isso indica gargalo real. Reputação não é apenas marketing; é reflexo da operação. Uma boa <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão do Google Meu Negócio</a> inclui esse acompanhamento sistemático.</p>
-<h2>Conclusão</h2>
-<p>Responder avaliações no Google Meu Negócio é uma oportunidade de mostrar maturidade. A empresa que responde bem transmite confiança, reduz insegurança de novos clientes e melhora a percepção da marca local. Se você ainda não tem o perfil configurado, veja como <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criar o Google Meu Negócio em Foz do Iguaçu</a>.</p>`,
-  },
-  {
-    slug: "/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes",
-    category: "conversao",
-    title: "7 erros que fazem leads do WhatsApp não virarem clientes",
-    description: "Veja 7 erros que fazem leads do WhatsApp não virarem clientes e como melhorar resposta, qualificação, follow-up e rastreamento comercial.",
-    h1: "7 erros que fazem leads do WhatsApp não virarem clientes",
-    intro: "Muitas empresas culpam os anúncios quando os leads não fecham, mas parte do problema acontece depois do clique. O WhatsApp pode converter muito bem, desde que exista velocidade, clareza, qualificação e follow-up.",
-    cta: "Analisar meu funil de WhatsApp",
-    bodyHtml: `<p>Nem todo problema de tráfego pago está na campanha. Em muitos casos, o anúncio gera contatos, mas o atendimento perde oportunidades por falta de processo. Isso é comum em negócios locais, profissionais liberais, clínicas, escritórios e prestadores de serviço.</p>
-<p>O WhatsApp é um canal de alta intenção, mas também é um ambiente cheio de distração. O lead chama várias empresas, compara respostas e tende a avançar com quem responde rápido, entende a demanda e conduz a conversa com objetividade.</p>
-<h2>1. Demorar para responder</h2>
-<p>Velocidade não garante venda, mas demora mata oportunidade. Quando o lead chama pelo WhatsApp, ele normalmente está em momento de pesquisa ou decisão. Se a empresa responde horas depois, pode encontrar o cliente já atendido por outro concorrente.</p>
-<h2>2. Não qualificar o contato</h2>
-<p>Atender todo mundo da mesma forma reduz conversão. É preciso descobrir o que a pessoa precisa, onde está, qual urgência, se já pesquisou antes e qual solução faz sentido. Sem qualificação, o atendimento vira troca de mensagens soltas.</p>
-<h2>3. Mandar mensagem genérica</h2>
-<p>Respostas muito prontas passam sensação de descaso. O ideal é ter estrutura, mas personalizar a conversa. Um bom atendimento combina velocidade com contexto: chama pelo nome, confirma a necessidade e direciona o próximo passo.</p>
-<h2>4. Não registrar origem</h2>
-<p>Se a empresa não sabe de onde veio o contato, não sabe qual campanha funcionou. O mínimo é registrar se o lead veio de <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a>, site, Google Meu Negócio, indicação ou orgânico. Sem isso, a otimização fica fraca. Entenda mais sobre <a href="/blog/como-rastrear-leads-de-trafego-pago">como rastrear leads de tráfego pago</a>.</p>
-<h2>5. Depender só de áudio</h2>
-<p>Áudio pode ajudar, mas não deve ser a base do atendimento. Muitas pessoas não conseguem ouvir na hora, e informações importantes se perdem. Mensagens curtas, objetivas e com próximos passos claros costumam funcionar melhor.</p>
-<h2>6. Não ter follow-up</h2>
-<p>Nem todo cliente fecha na primeira conversa. Sem follow-up, oportunidades mornas são abandonadas. A empresa precisa ter uma rotina simples para retomar contato, tirar dúvidas e oferecer o próximo passo sem ser invasiva.</p>
-<h2>7. Medir apenas quantidade</h2>
-<p>Ter muitos leads não significa ter bons leads. O que importa é quantos contatos tinham perfil, quantos receberam proposta, quantos avançaram e quantos viraram venda. Essa leitura evita cortar campanhas boas por análise superficial.</p>
-<h2>Checklist rápido de melhoria</h2>
-<div class="table-wrap"><table><thead><tr><th>Etapa</th><th>Pergunta de controle</th></tr></thead><tbody>
-<tr><td>Resposta</td><td>O lead recebe retorno em poucos minutos?</td></tr>
-<tr><td>Qualificação</td><td>A equipe sabe quais perguntas fazer?</td></tr>
-<tr><td>Registro</td><td>A origem do lead fica anotada?</td></tr>
-<tr><td>Próximo passo</td><td>A conversa termina com ação clara?</td></tr>
-<tr><td>Follow-up</td><td>Existe retomada organizada?</td></tr>
-<tr><td>Análise</td><td>A qualidade do lead é avaliada?</td></tr>
-</tbody></table></div>
-<h2>Conclusão</h2>
-<p>Antes de culpar o tráfego, olhe o atendimento. Uma campanha mediana com atendimento bom pode performar melhor do que uma campanha boa com atendimento desorganizado. O WhatsApp precisa ser tratado como parte do funil, não como uma caixa de entrada solta.</p>`,
-  },
-  {
-    slug: "/blog/google-ads-ou-meta-ads-foz-do-iguacu",
-    category: "canais",
-    title: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
-    description: "Compare Google Ads e Meta Ads para empresas em Foz do Iguaçu e entenda quando usar cada canal para gerar leads, demanda e vendas.",
-    h1: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
-    intro: "A melhor plataforma depende da intenção do cliente, do tipo de oferta, do orçamento e do momento da empresa. Google Ads e Meta Ads podem funcionar muito bem, mas resolvem problemas diferentes.",
-    cta: "Descobrir melhor canal para meu negócio",
-    bodyHtml: `<p>A dúvida entre <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> e <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a> é comum, mas a resposta certa raramente é "um é melhor que o outro". O Google costuma funcionar melhor quando o cliente já está pesquisando uma solução. A Meta costuma funcionar melhor quando a empresa precisa gerar demanda, educar o público ou aparecer antes da busca ativa.</p>
-<p>Em Foz do Iguaçu, isso varia bastante por segmento. Um turista procurando restaurante, passeio, hotel ou transporte pode usar Google e Maps com intenção imediata. Já um serviço de maior consideração, como consultoria, estética, educação, advocacia informativa ou infoproduto, pode precisar de Meta Ads para gerar desejo e relacionamento.</p>
-<h2>Quando priorizar Google Ads</h2>
-<p>Google Ads tende a fazer sentido quando existe demanda ativa. Se a pessoa pesquisa "advogado trabalhista em Foz do Iguaçu", "clínica odontológica perto de mim", "hotel em Foz do Iguaçu" ou "gestor de tráfego em Foz do Iguaçu", ela já demonstrou intenção. Esse canal costuma ser forte para serviços com urgência, comparação direta e busca local.</p>
-<h2>Quando priorizar Meta Ads</h2>
-<p>Meta Ads costuma ser melhor para gerar atenção e desejo. A pessoa pode não estar pesquisando agora, mas pode se interessar ao ver uma oferta clara, prova social, antes e depois, conteúdo educativo ou oportunidade específica. Esse canal é muito útil para remarketing, campanhas de conteúdo, geração de demanda para negócios locais, turismo, eventos, gastronomia, estética e ofertas com apelo visual.</p>
-<h2>Comparativo prático</h2>
-<div class="table-wrap"><table><thead><tr><th>Critério</th><th>Google Ads</th><th>Meta Ads</th></tr></thead><tbody>
-<tr><td>Intenção</td><td>Alta quando há busca ativa</td><td>Média ou baixa, depende do criativo e oferta</td></tr>
-<tr><td>Velocidade de aprendizado</td><td>Boa quando há volume de buscas</td><td>Boa quando há verba para testar criativos</td></tr>
-<tr><td>Melhor uso</td><td>Capturar demanda existente</td><td>Criar demanda e fazer remarketing</td></tr>
-<tr><td>Risco comum</td><td>Pagar por palavra ampla ou irrelevante</td><td>Gerar lead curioso sem intenção real</td></tr>
-<tr><td>Métrica crítica</td><td>Termos de busca e conversões</td><td>Criativo, público, mensagem e qualidade do lead</td></tr>
-</tbody></table></div>
-<p>O <a href="https://ads.google.com/intl/pt-BR_br/home/resources/google-ads-vs-facebook-ads/" target="_blank" rel="noopener noreferrer">Google também disponibiliza comparativos entre suas plataformas de anúncios</a> que podem ajudar na decisão dependendo do objetivo comercial.</p>
-<h2>O melhor cenário</h2>
-<p>Em muitos casos, a melhor estratégia não é escolher um canal, mas organizar o papel de cada um. Google Ads captura quem já procura. Meta Ads aquece, educa, faz remarketing e reforça autoridade. O <a href="/servicos/landing-pages-foz-do-iguacu">site, a landing page</a>, o WhatsApp e o <a href="/servicos/rastreamento-e-conversao">rastreamento</a> conectam tudo.</p>
-<h2>Conclusão</h2>
-<p>Se o orçamento é limitado, comece pelo canal mais próximo da intenção de compra. Se já existe demanda ativa, Google Ads pode ser prioridade. Se o mercado precisa ser educado ou a oferta depende de desejo, Meta Ads pode entrar primeiro. O importante é não decidir por preferência pessoal, e sim por intenção, margem e rastreamento. Entenda mais: <a href="/blog/quanto-custa-trafego-pago-em-foz-do-iguacu">quanto custa contratar tráfego pago em Foz do Iguaçu</a>.</p>`,
-  },
-  {
-    slug: "/blog/google-meu-negocio-ou-site-o-que-priorizar",
-    category: "canais",
-    title: "Google Meu Negócio ou site: o que priorizar primeiro?",
-    description: "Entenda quando priorizar Google Meu Negócio, quando investir em site e como os dois canais se complementam para gerar leads locais.",
-    h1: "Google Meu Negócio ou site: o que priorizar primeiro?",
-    intro: "Para empresas locais, a resposta ideal quase nunca é escolher um e ignorar o outro. Google Meu Negócio e site têm papéis diferentes na jornada do cliente e funcionam melhor quando estão conectados.",
-    bodyHtml: `<p>O Google Meu Negócio é ótimo para presença local rápida. Ele ajuda a empresa a aparecer na Busca e no Maps com telefone, horário, rota, fotos e avaliações. Já o site é melhor para explicar serviços em profundidade, criar conteúdo, captar leads, rodar campanhas e medir comportamento.</p>
-<p>Se a empresa está começando e ainda não tem nenhuma presença local, o <a href="https://business.google.com/" target="_blank" rel="noopener noreferrer">Perfil da Empresa no Google</a> pode ser o primeiro passo. Mas se o objetivo é crescer com SEO, anúncios e conversão, o site se torna indispensável.</p>
-<h2>Quando priorizar Google Meu Negócio</h2>
-<p>Priorize o Google Meu Negócio quando a empresa atende localmente, recebe visitas, depende de rotas, precisa aparecer no Maps ou ainda não tem uma presença básica no Google. Restaurantes, clínicas, lojas, prestadores de serviço, turismo e negócios com atendimento regional costumam se beneficiar bastante. Veja como começar: <a href="/blog/google-meu-negocio-para-empresas-locais-em-foz-do-iguacu">Google Meu Negócio para empresas locais em Foz do Iguaçu</a>.</p>
-<h2>Quando priorizar site</h2>
-<p>Priorize o site quando a empresa precisa explicar serviços complexos, gerar autoridade, criar blog, rodar <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, medir conversões ou apresentar diferenciais com mais profundidade. O site também é essencial quando o negócio quer depender menos de plataformas externas. O Google reforça que <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">ter conteúdo útil e de qualidade</a> é o principal fator para crescer no orgânico.</p>
-<h2>Comparativo prático</h2>
-<div class="table-wrap"><table><thead><tr><th>Critério</th><th>Google Meu Negócio</th><th>Site</th></tr></thead><tbody>
-<tr><td>Velocidade inicial</td><td>Alta</td><td>Média</td></tr>
-<tr><td>Profundidade de informação</td><td>Limitada</td><td>Alta</td></tr>
-<tr><td>SEO local</td><td>Muito importante</td><td>Muito importante</td></tr>
-<tr><td>Controle de layout</td><td>Baixo</td><td>Alto</td></tr>
-<tr><td>Rastreamento de campanha</td><td>Limitado</td><td>Mais completo</td></tr>
-<tr><td>Conteúdo educativo</td><td>Limitado</td><td>Forte</td></tr>
-<tr><td>Conversão personalizada</td><td>Média</td><td>Alta</td></tr>
-</tbody></table></div>
-<h2>O melhor caminho</h2>
-<p>Para a maioria das empresas, o melhor caminho é configurar bem o Perfil da Empresa e usar o site como base principal de conteúdo e conversão. O perfil gera confiança e visibilidade local. O site explica, filtra, convence e mede melhor. Veja nossos serviços: <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criação de Google Meu Negócio</a> e <a href="/servicos/landing-pages-foz-do-iguacu">sites e landing pages para negócios locais</a>.</p>
-<h2>Conclusão</h2>
-<p>Se você quer o mínimo para ser encontrado, comece pelo Google Meu Negócio. Se quer construir aquisição previsível, combine Google Meu Negócio, site, SEO, anúncios e <a href="/servicos/rastreamento-e-conversao">rastreamento</a>. Um canal fortalece o outro.</p>`,
-  },
-  {
-    slug: "/blog/google-meu-negocio-para-empresas-locais-em-foz-do-iguacu",
-    category: "canais",
-    title: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
-    description: "Entenda como empresas locais em Foz do Iguaçu podem usar o Google Meu Negócio para aparecer na Busca, no Maps e gerar mais contatos.",
-    h1: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
-    intro: "O Google Meu Negócio — hoje chamado Perfil da Empresa no Google — é uma base importante para negócios locais que querem ser encontrados na Busca Google e no Maps. Mas criar o perfil é só o primeiro passo.",
-    bodyHtml: `<p>Empresas locais dependem de confiança e facilidade de contato. Quando alguém procura por um serviço em Foz do Iguaçu, é comum comparar opções no Google, olhar avaliações, conferir fotos, abrir rota e chamar no WhatsApp. O <a href="https://business.google.com/" target="_blank" rel="noopener noreferrer">Perfil da Empresa no Google</a> ajuda a concentrar essas informações em um lugar visível.</p>
-<p>O erro é tratar o perfil como um cadastro simples. Ele funciona como uma vitrine local. Se as informações estão incompletas, as fotos são fracas ou o horário está errado, o cliente pode escolher outro concorrente sem nem entrar no seu site.</p>
-<h2>O que não pode faltar no perfil</h2>
-<div class="table-wrap"><table><thead><tr><th>Elemento</th><th>Por que é importante</th></tr></thead><tbody>
-<tr><td>Categoria correta</td><td>Ajuda o Google e o usuário a entenderem o tipo de negócio.</td></tr>
-<tr><td>Telefone e WhatsApp</td><td>Reduz fricção para o contato.</td></tr>
-<tr><td>Horário atualizado</td><td>Evita frustração e perda de oportunidade.</td></tr>
-<tr><td>Fotos reais</td><td>Aumenta percepção de confiança.</td></tr>
-<tr><td>Serviços descritos</td><td>Mostra o que a empresa oferece antes do contato.</td></tr>
-<tr><td>Avaliações respondidas</td><td>Demonstra atenção e profissionalismo.</td></tr>
-<tr><td>Link para site</td><td>Permite apresentar informações completas e medir melhor os leads.</td></tr>
-</tbody></table></div>
-<p>A <a href="https://support.google.com/business/answer/7091?hl=pt-BR" target="_blank" rel="noopener noreferrer">Central de Ajuda do Google para Perfil da Empresa</a> explica cada um desses elementos e como configurá-los corretamente.</p>
-<h2>Criação não é gestão</h2>
-<p>Criar o perfil é organizar a base. Gerir o perfil é manter essa base viva. Empresas que dependem de busca local devem revisar dados, publicar fotos, responder avaliações e acompanhar insights de desempenho. Isso evita que o perfil fique desatualizado e perca força comercial. Conheça nosso serviço de <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão de Google Meu Negócio em Foz do Iguaçu</a>.</p>
-<h2>Google Meu Negócio e tráfego pago</h2>
-<p>O perfil também conversa com anúncios. Uma empresa que investe em <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, mas tem perfil ruim no Maps, pode perder confiança. O usuário pode clicar no anúncio, pesquisar a empresa, ver poucas avaliações ou informações inconsistentes e desistir. Veja como os dois se complementam em: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
-<h2>Conclusão</h2>
-<p>Se sua empresa atende em Foz do Iguaçu, o Google Meu Negócio precisa ser tratado como parte do funil de aquisição. Ele não substitui site, campanha ou atendimento, mas ajuda a transformar buscas locais em contatos mais confiáveis. O próximo passo é <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criar o seu Perfil da Empresa no Google</a> com a estrutura certa.</p>`,
-  },
-  {
-    slug: "/blog/landing-page-para-negocios-locais-em-foz-do-iguacu",
-    category: "conversao",
-    title: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
-    description: "Veja o que uma landing page para negócios locais em Foz do Iguaçu precisa ter para converter cliques em leads pelo WhatsApp, formulário ou ligação.",
-    h1: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
-    intro: "Uma landing page local não precisa ser complexa, mas precisa ser clara. Ela deve explicar a oferta, gerar confiança, facilitar o contato e medir o que acontece depois do clique.",
-    cta: "Analisar minha página",
-    bodyHtml: `<p>Uma boa landing page para negócios locais tem uma função simples: transformar visita em contato qualificado. Ela não precisa ter dezenas de seções, animações pesadas ou textos genéricos. Precisa responder rapidamente se a empresa atende a necessidade do visitante, por que é confiável e qual é o próximo passo.</p>
-<p>Em campanhas locais, especialmente com <a href="/servicos/gestao-de-trafego-pago">tráfego pago</a>, mandar todo mundo para a home pode reduzir conversão. A home costuma falar de várias coisas ao mesmo tempo. A landing page direciona a atenção para uma oferta, um serviço, um público ou uma região.</p>
-<h2>Estrutura recomendada</h2>
-<div class="table-wrap"><table><thead><tr><th>Seção</th><th>Função</th></tr></thead><tbody>
-<tr><td>Hero com promessa clara</td><td>Mostrar serviço, localidade e benefício principal.</td></tr>
-<tr><td>CTA visível</td><td>Facilitar WhatsApp, formulário ou ligação.</td></tr>
-<tr><td>Problemas que a empresa resolve</td><td>Conectar com a dor real do usuário.</td></tr>
-<tr><td>Serviços ou diferenciais</td><td>Explicar o que está incluso e por que escolher a empresa.</td></tr>
-<tr><td>Prova de confiança</td><td>Mostrar avaliações, fotos, cases, credenciais ou experiência.</td></tr>
-<tr><td>FAQ</td><td>Reduzir objeções antes do contato.</td></tr>
-<tr><td>Rastreamento</td><td>Medir cliques, formulários, ligações e origem dos leads.</td></tr>
-</tbody></table></div>
-<h2>Erros comuns</h2>
-<p>O erro mais comum é criar uma página bonita, mas sem foco. Outro problema é esconder o botão de contato, usar textos vagos, não adaptar para celular e não medir conversões. Também é ruim usar fotos genéricas demais quando o negócio depende de confiança local. Veja as <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">diretrizes do Google sobre conteúdo útil</a> para entender o que realmente importa numa página.</p>
-<h2>O papel do mobile</h2>
-<p>Grande parte dos acessos locais acontece pelo celular. Por isso, a landing page precisa carregar rápido, ter botões fáceis de clicar, texto legível e WhatsApp bem posicionado. O Google considera a experiência mobile como fator de ranqueamento — veja mais no <a href="https://developers.google.com/search/docs/appearance/page-experience?hl=pt-br" target="_blank" rel="noopener noreferrer">guia de experiência da página do Google Search Central</a>. Se a pessoa precisa dar zoom ou procurar o contato, a página já perdeu eficiência.</p>
-<h2>Landing page e atendimento precisam conversar</h2>
-<p>A página pode prometer diagnóstico, orçamento, reserva, avaliação ou conversa inicial. Mas o atendimento precisa continuar essa promessa. Se o CTA diz "solicitar orçamento" e o WhatsApp responde com mensagem confusa, a conversão cai. Leia também: <a href="/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes">7 erros que fazem leads do WhatsApp não virarem clientes</a>.</p>
-<h2>Conclusão</h2>
-<p>Uma landing page local eficiente é direta, rápida, confiável e mensurável. Ela não deve ser avaliada apenas pelo design, mas pela capacidade de gerar contatos melhores e permitir decisões de otimização. Conheça nosso serviço de <a href="/servicos/landing-pages-foz-do-iguacu">criação de landing pages em Foz do Iguaçu</a>.</p>`,
+    body: [
+      ["p", "Escolher um gestor de tráfego em Foz do Iguaçu não deve ser uma decisão baseada apenas em preço ou promessa de resultado rápido. O profissional certo precisa entender mídia paga, mas também oferta, funil, WhatsApp, rastreamento e qualidade dos leads."],
+      ["p", "Tráfego pago não resolve sozinho um negócio com oferta confusa, atendimento lento ou página ruim. O gestor precisa olhar para anúncio, clique, página, contato, atendimento e venda."],
+      ["h2", "O que avaliar antes de contratar"],
+      ["table", [["Critério", "O que observar"], ["Diagnóstico inicial", "O profissional entende seu negócio antes de sugerir campanha?"], ["Clareza de métricas", "Ele fala de CPL, taxa de conversão e qualidade do lead?"], ["Rastreamento", "Existe plano para medir WhatsApp, formulário e origem dos contatos?"], ["Estratégia de canal", "Ele explica quando usar Google Ads, Meta Ads ou ambos?"], ["Transparência", "Você terá acesso aos dados e entenderá o que está sendo feito?"]]],
+      ["h2", "Perguntas que você deve fazer"],
+      ["p", "Pergunte como será medido o resultado, se as campanhas ficarão em uma conta sua, como serão apresentados os relatórios e qual será o plano para os primeiros 30 dias."],
+      ["h2", "Sinais de alerta"],
+      ["p", "Desconfie de promessas de primeiro lugar, vendas garantidas ou resultados sem conhecer sua empresa. Também é arriscado contratar alguém que fala só em alcance, curtidas e cliques, sem abordar conversão e rastreamento."],
+      ["p", "O melhor gestor de tráfego é o que consegue transformar verba de mídia em aprendizado, leads qualificados e decisões melhores."],
+    ],
   },
   {
     slug: "/blog/quanto-custa-trafego-pago-em-foz-do-iguacu",
-    category: "investimento",
     title: "Quanto custa contratar tráfego pago em Foz do Iguaçu?",
-    description: "Entenda quanto custa contratar tráfego pago em Foz do Iguaçu, separando verba de mídia, gestão, setup, rastreamento e expectativa de retorno.",
-    h1: "Quanto custa contratar tráfego pago em Foz do Iguaçu?",
-    intro: "O custo de tráfego pago não é apenas a mensalidade da gestão. Para avaliar se vale a pena, é preciso separar verba de anúncios, serviço de gestão, estrutura inicial, página, rastreamento e capacidade de conversão comercial.",
+    description:
+      "Entenda quanto custa contratar tráfego pago em Foz do Iguaçu, como separar verba de mídia e gestão, e quando o investimento começa a fazer sentido.",
     cta: "Pedir análise de investimento",
-    bodyHtml: `<p>A pergunta "quanto custa tráfego pago?" é legítima, mas incompleta. O investimento total depende do objetivo, segmento, concorrência, ticket médio, margem, maturidade da empresa e estrutura atual. Uma campanha para gerar reservas em turismo não tem a mesma lógica de uma campanha para advocacia, estética, comércio local ou serviço B2B.</p>
-<p>O primeiro ponto é separar verba de mídia e honorário de gestão. A verba de mídia é o dinheiro pago às plataformas, como <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> ou <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a>. A gestão é o trabalho de planejamento, criação, acompanhamento, otimização, análise e comunicação.</p>
-<h2>Verba de mídia não é o mesmo que gestão</h2>
-<div class="table-wrap"><table><thead><tr><th>Custo</th><th>O que significa</th></tr></thead><tbody>
-<tr><td>Verba de mídia</td><td>Valor investido diretamente nos anúncios (pago ao Google ou Meta).</td></tr>
-<tr><td>Gestão</td><td>Serviço profissional para planejar, configurar e otimizar campanhas.</td></tr>
-<tr><td>Setup</td><td>Organização inicial de contas, tags, eventos, públicos, criativos e estrutura.</td></tr>
-<tr><td>Página ou landing page</td><td>Destino criado para aumentar conversão dos cliques.</td></tr>
-<tr><td>Rastreamento</td><td>Configuração para medir leads e origem dos contatos.</td></tr>
-</tbody></table></div>
-<h2>Existe investimento mínimo?</h2>
-<p>Existe um investimento mínimo prático, mesmo que não exista uma regra universal. Se a verba for muito baixa, a campanha pode não gerar dados suficientes para aprender. O problema não é apenas "aparecer pouco", mas não ter volume para identificar palavras, públicos, anúncios e canais que funcionam.</p>
-<p>Para empresas locais, o ideal é começar com um orçamento que permita testar com consistência, medir leads e ajustar a rota. Investir pouco demais pode parecer seguro, mas às vezes só gera dados fracos e conclusões erradas.</p>
-<h2>Como saber se vale a pena?</h2>
-<p>A conta deve considerar margem e conversão, não apenas CPL. Um lead de R$ 40 pode ser caro se nunca fecha. Um lead de R$ 120 pode ser barato se vira contrato de alto valor. Por isso, a análise precisa conectar anúncio, lead, atendimento, proposta e venda. Leia mais em <a href="/blog/como-rastrear-leads-de-trafego-pago">como rastrear leads de tráfego pago</a> para entender como montar essa conta.</p>
-<h2>Conclusão</h2>
-<p>Contratar tráfego pago em Foz do Iguaçu pode valer muito a pena, mas só quando existe clareza de objetivo, estrutura mínima e acompanhamento de dados. O menor preço nem sempre é o menor risco. O melhor investimento é aquele que permite aprender, otimizar e vender com previsibilidade. Se quiser entender melhor o processo, consulte nossa <a href="/consultoria">consultoria estratégica</a>.</p>`,
+    body: [
+      ["p", "O custo de tráfego pago em Foz do Iguaçu depende de dois componentes principais: a verba investida nas plataformas e o valor da gestão estratégica."],
+      ["h2", "Verba de mídia não é o mesmo que gestão"],
+      ["table", [["Item", "Para que serve"], ["Verba de mídia", "Compra cliques, impressões e oportunidades de contato."], ["Gestão", "Define estratégia, configura campanhas, analisa dados e otimiza resultados."], ["Landing page", "Melhora a conversão dos cliques em leads."], ["Rastreamento", "Mostra quais campanhas geram contatos e oportunidades."]]],
+      ["h2", "Existe investimento mínimo?"],
+      ["p", "Existe um mínimo prático porque campanhas precisam de dados. Se a verba é baixa demais, qualquer conclusão fica frágil."],
+      ["h2", "Como saber se vale a pena?"],
+      ["p", "A conta não deve ser feita apenas pelo custo por lead. O que importa é o custo por oportunidade e o custo por cliente."],
+    ],
   },
   {
-    slug: "/blog/seo-local-para-negocios-em-foz-do-iguacu",
-    category: "canais",
-    title: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
-    description: "Guia prático de SEO local para negócios em Foz do Iguaçu: site, Google Meu Negócio, conteúdo, avaliações, Maps e rastreamento.",
-    h1: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
-    intro: "SEO local é o conjunto de ações que ajuda uma empresa a ser encontrada por pessoas que pesquisam por soluções em uma região específica. Para negócios em Foz do Iguaçu, isso envolve site, Google Meu Negócio, conteúdo, avaliações, rastreamento e experiência de contato.",
-    bodyHtml: `<p>SEO local não é apenas colocar o nome da cidade no título da página. É construir uma presença digital coerente para que o usuário encontre sua empresa, entenda o que você faz, confie na sua marca e consiga entrar em contato sem dificuldade.</p>
-<p>Em Foz do Iguaçu, a lógica local é forte para restaurantes, turismo, hotéis, clínicas, escritórios, prestadores de serviço, profissionais liberais e negócios que atendem por região. Quem pesquisa localmente costuma ter intenção prática: quer comparar opções, pedir orçamento, ligar, abrir rota ou chamar no WhatsApp. O <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br" target="_blank" rel="noopener noreferrer">Guia de SEO para iniciantes do Google Search Central</a> é a referência oficial para entender o que o Google valoriza nas buscas.</p>
-<h2>Os pilares do SEO local</h2>
-<div class="table-wrap"><table><thead><tr><th>Pilar</th><th>O que fazer</th></tr></thead><tbody>
-<tr><td>Site</td><td>Criar páginas claras para serviços, nichos e localização.</td></tr>
-<tr><td>Google Meu Negócio</td><td>Manter perfil completo, atualizado e com fotos reais.</td></tr>
-<tr><td>Conteúdo</td><td>Responder dúvidas reais do público local com profundidade.</td></tr>
-<tr><td>Avaliações</td><td>Estimular feedbacks verdadeiros e responder com cuidado.</td></tr>
-<tr><td>Consistência</td><td>Usar dados coerentes em site, redes, mapas e diretórios.</td></tr>
-<tr><td>Rastreamento</td><td>Medir contatos, origem dos leads e qualidade comercial.</td></tr>
-</tbody></table></div>
-<h2>Conteúdo local precisa ser útil</h2>
-<p>Não adianta criar várias páginas repetindo "em Foz do Iguaçu" sem agregar valor. O conteúdo precisa ajudar o usuário a decidir. Isso significa explicar custos, processos, critérios de escolha, erros comuns, prazos, dúvidas frequentes e diferenças entre soluções. O Google reforça em seu guia de <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">como criar conteúdo útil</a> que páginas criadas para enganar mecanismos de busca são penalizadas — o foco deve ser sempre o usuário.</p>
-<h2>Google Meu Negócio e site trabalham juntos</h2>
-<p>O <a href="/servicos/google-meu-negocio-foz-do-iguacu">Perfil da Empresa no Google</a> ajuda na descoberta e na confiança local. O site aprofunda a decisão. Quando os dois estão bem configurados, a empresa melhora a experiência do usuário e cria mais caminhos para conversão. Leia mais: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
-<h2>SEO local e tráfego pago</h2>
-<p>SEO local é construção. Tráfego pago é aceleração. O ideal é usar os dois quando possível. Enquanto o SEO constrói presença e autoridade, os anúncios geram demanda mais previsível e ajudam a testar mensagens, ofertas e páginas. Entenda mais: <a href="/blog/google-ads-ou-meta-ads-foz-do-iguacu">Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?</a></p>
-<h2>Como saber se o SEO local está funcionando</h2>
-<p>Acompanhe acessos orgânicos, posições aproximadas, cliques para WhatsApp, ligações, formulários, rotas, termos de busca e qualidade dos contatos. O objetivo não é apenas ter mais visitas, mas gerar mais oportunidades úteis. Nosso serviço de <a href="/servicos/rastreamento-e-conversao">rastreamento e conversão</a> ajuda a conectar SEO com resultados comerciais.</p>
-<h2>Conclusão</h2>
-<p>SEO local bem feito conecta conteúdo, presença no Maps, site, reputação e dados. Para empresas em Foz do Iguaçu, isso pode reduzir dependência exclusiva de anúncios e melhorar a previsibilidade na geração de leads. Se você quer um diagnóstico gratuito do seu SEO e presença digital, entre em contato com nosso <a href="/consultoria">serviço de consultoria</a>.</p>`,
+    slug: "/blog/google-ads-ou-meta-ads-foz-do-iguacu",
+    title: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
+    description:
+      "Entenda quando usar Google Ads ou Meta Ads em Foz do Iguaçu para gerar leads, conversas no WhatsApp, reservas e vendas locais.",
+    cta: "Descobrir melhor canal para meu negócio",
+    body: [
+      ["p", "A resposta curta é: depende da intenção do seu cliente. Google Ads captura pessoas que já estão procurando. Meta Ads ajuda a gerar demanda, despertar interesse e reimpactar públicos."],
+      ["h2", "Quando priorizar Google Ads"],
+      ["p", "Google Ads deve ser prioridade quando existe demanda ativa, como buscas por serviços locais, turismo, saúde, advocacia ou soluções com urgência."],
+      ["table", [["Cenário", "Canal mais indicado"], ["Pessoa já pesquisa pelo serviço", "Google Ads"], ["Serviço tem urgência", "Google Ads"], ["Oferta precisa ser descoberta", "Meta Ads"], ["Produto visual ou turístico", "Meta Ads e Google Ads combinados"], ["Público já visitou o site", "Remarketing no Meta e Google"]]],
+      ["h2", "Quando priorizar Meta Ads"],
+      ["p", "Meta Ads é forte quando a oferta precisa aparecer antes da busca, especialmente em restaurantes, experiências turísticas, eventos, estética, clínicas e campanhas de relacionamento."],
+      ["h2", "O melhor cenário"],
+      ["p", "Muitos negócios combinam Google Ads para intenção ativa e Meta Ads para geração de demanda e remarketing. O erro é dividir verba pequena demais em canais demais."],
+    ],
   },
   {
     slug: "/blog/trafego-pago-para-advogados-em-foz-do-iguacu",
-    category: "nichos",
     title: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
-    description: "Entenda como advogados em Foz do Iguaçu podem usar tráfego pago com abordagem informativa, ética, rastreamento e foco em autoridade.",
-    h1: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
-    intro: "O tráfego pago para advogados exige cuidado. A comunicação precisa ser informativa, sóbria e alinhada às regras profissionais, evitando promessa de resultado, captação agressiva e linguagem mercantilista.",
+    description:
+      "Veja como advogados em Foz do Iguaçu podem usar tráfego pago com comunicação informativa, ética e focada em autoridade, sem promessas indevidas.",
     cta: "Solicitar diagnóstico jurídico",
-    bodyHtml: `<p>Advogados podem usar marketing digital, mas precisam fazer isso com mais critério do que muitos outros segmentos. A estratégia não deve se apoiar em promessa, urgência artificial ou abordagem sensacionalista. O caminho mais seguro é produzir comunicação informativa, clara e orientada a dúvidas reais do público.</p>
-<p>Em Foz do Iguaçu, a concorrência jurídica também passa pela confiança local. O potencial cliente quer entender se o advogado atua no tema, se comunica com clareza e se passa segurança. O tráfego pago pode acelerar essa descoberta, desde que a mensagem respeite os limites éticos da profissão. O <a href="https://www.oab.org.br/legislacaooab/integra.asp?tipo=CodEtProvDA&num=&ano=" target="_blank" rel="noopener noreferrer">Código de Ética e Disciplina da OAB</a> define os limites da publicidade para advogados e deve ser a referência central de qualquer estratégia de marketing jurídico.</p>
-<h2>O que evitar</h2>
-<p>Evite prometer causa ganha, usar termos como "garantido", explorar dor de forma exagerada, oferecer consulta como promoção, comparar-se de forma agressiva com outros profissionais ou usar linguagem de venda incompatível com a advocacia.</p>
-<p>Também é preciso cuidado com anúncios que parecem captar clientes de forma direta e apelativa. A abordagem deve ser educativa: explicar direitos, processos, documentos, prazos e caminhos possíveis, sempre sem transformar o anúncio em promessa.</p>
-<h2>Estratégias mais seguras</h2>
-<div class="table-wrap"><table><thead><tr><th>Estratégia</th><th>Como aplicar</th></tr></thead><tbody>
-<tr><td>Conteúdo informativo</td><td>Criar artigos e páginas que respondem dúvidas frequentes sobre a área de atuação.</td></tr>
-<tr><td>Google Ads com intenção</td><td>Trabalhar termos relacionados à área de atuação com cuidado na copy do anúncio.</td></tr>
-<tr><td>Landing pages sóbrias</td><td>Explicar atuação, experiência, contato e próximos passos sem promessa.</td></tr>
-<tr><td>Rastreamento</td><td>Medir contatos sem expor dados sensíveis dos clientes.</td></tr>
-<tr><td>WhatsApp profissional</td><td>Atendimento objetivo, discreto e com orientação inicial adequada.</td></tr>
-</tbody></table></div>
-<h2>O papel do SEO e do conteúdo</h2>
-<p>Para advocacia, SEO pode ser uma base forte porque permite construir autoridade com conteúdo educativo. Posts sobre dúvidas frequentes atraem pessoas em fase de pesquisa e ajudam a reduzir dependência exclusiva de anúncios. O tráfego pago pode impulsionar páginas relevantes, mas o conteúdo precisa ser sério e bem escrito. Leia: <a href="/blog/seo-local-para-negocios-em-foz-do-iguacu">SEO local para negócios em Foz do Iguaçu</a>.</p>
-<h2>Conclusão</h2>
-<p>Tráfego pago para advogados funciona melhor quando é tratado como estratégia de autoridade e orientação, não como venda agressiva. O objetivo é ser encontrado por quem precisa de informação jurídica e conduzir o contato com profissionalismo. Entenda mais sobre <a href="/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu">como escolher um gestor de tráfego</a> que entenda as particularidades da advocacia.</p>`,
+    body: [
+      ["p", "Advogados podem usar tráfego pago, mas a comunicação jurídica deve ser sóbria, informativa e responsável. O objetivo não é prometer resultado nem explorar dor de forma apelativa."],
+      ["h2", "O que evitar"],
+      ["table", [["Não recomendado", "Melhor abordagem"], ["Ganhe sua ação trabalhista", "Entenda quando buscar orientação em direito trabalhista."], ["O melhor advogado de Foz", "Atuação em direito de família em Foz do Iguaçu."], ["Resultado garantido", "Cada caso depende de análise individual."], ["Clique e processe agora", "Solicite uma análise inicial do seu caso."]]],
+      ["h2", "Estratégias mais seguras"],
+      ["p", "Uma estratégia mais segura usa conteúdos informativos, páginas por área de atuação, linguagem clara e CTA para análise inicial."],
+      ["p", "A qualidade do lead importa mais que volume, especialmente para escritórios que precisam respeitar limites éticos e filtrar demandas com cuidado."],
+    ],
+  },
+  {
+    slug: "/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes",
+    title: "7 erros que fazem leads do WhatsApp não virarem clientes",
+    description:
+      "Recebe leads no WhatsApp, mas vende pouco? Veja erros de atendimento, oferta, velocidade e rastreamento que reduzem a conversão.",
+    cta: "Analisar meu funil de WhatsApp",
+    body: [
+      ["p", "Muitas empresas culpam o tráfego pago quando os leads não viram clientes. Em muitos casos, o gargalo está no atendimento, na oferta ou no processo depois que o lead chama no WhatsApp."],
+      ["h2", "1. Demorar para responder"],
+      ["p", "Quanto mais tempo o lead espera, maior a chance de falar com concorrentes ou perder interesse."],
+      ["h2", "2. Não qualificar o contato"],
+      ["p", "Perguntas simples sobre serviço, prazo, cidade e necessidade ajudam a separar curiosos de oportunidades reais."],
+      ["h2", "3. Mandar mensagem genérica"],
+      ["p", "O atendimento precisa continuar o assunto que trouxe o lead, não responder todos os contatos com o mesmo texto."],
+      ["h2", "4. Não registrar origem"],
+      ["p", "Sem origem, fica impossível saber se o lead veio do Google, Instagram, campanha específica ou indicação."],
+      ["h2", "5. Depender só de áudio"],
+      ["p", "Mensagens escritas, objetivas e bem estruturadas facilitam a decisão de quem não pode ouvir áudio na hora."],
+      ["h2", "6. Não ter follow-up"],
+      ["p", "Um processo simples de retorno em 24 horas, 3 dias e 7 dias pode recuperar oportunidades."],
+      ["h2", "7. Medir apenas quantidade"],
+      ["p", "Volume sem qualidade engana. O correto é analisar quantos leads eram qualificados, receberam proposta e fecharam."],
+    ],
   },
   {
     slug: "/blog/trafego-pago-para-hoteis-turismo-restaurantes-foz",
-    category: "nichos",
     title: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
-    description: "Veja estratégias de tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu, considerando sazonalidade, Google Maps, reservas e WhatsApp.",
-    h1: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
-    intro: "Foz do Iguaçu tem forte demanda turística, mas isso não significa que todo anúncio vai funcionar. Hotéis, restaurantes e empresas de turismo precisam considerar sazonalidade, intenção de busca, localização, reputação e velocidade de atendimento.",
+    description:
+      "Estratégias de tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu gerarem reservas, visitas e contatos pelo WhatsApp.",
     cta: "Avaliar campanha para turismo",
-    bodyHtml: `<p>Turismo é um dos mercados mais importantes de Foz do Iguaçu, mas também é altamente competitivo. O visitante compara preço, localização, avaliações, fotos, distância, facilidade de reserva e resposta no WhatsApp. Por isso, a estratégia de tráfego pago precisa conectar anúncios, <a href="/servicos/google-meu-negocio-foz-do-iguacu">Google Maps</a>, site, perfil da empresa, reputação e atendimento.</p>
-<p>Campanhas para turismo não devem ser planejadas apenas por canal. É preciso entender o momento da viagem. Há pessoas pesquisando meses antes, pessoas montando roteiro na semana e turistas que já estão na cidade decidindo onde comer, comprar ou visitar.</p>
-<h2>Estratégias por segmento</h2>
-<div class="table-wrap"><table><thead><tr><th>Segmento</th><th>Estratégia recomendada</th></tr></thead><tbody>
-<tr><td>Hotéis e pousadas</td><td>Campanhas por intenção de busca, remarketing e páginas com diferenciais claros.</td></tr>
-<tr><td>Restaurantes</td><td>Google Maps, campanhas locais, fotos fortes, avaliações e ofertas por momento do dia.</td></tr>
-<tr><td>Passeios turísticos</td><td>Google Ads para busca ativa e Meta Ads para inspirar roteiro.</td></tr>
-<tr><td>Transporte e receptivo</td><td>Anúncios com urgência, rota, confiança e atendimento rápido.</td></tr>
-<tr><td>Comércio turístico</td><td>Campanhas por localização, sazonalidade e públicos em visita à cidade.</td></tr>
-</tbody></table></div>
-<h2>Google Ads no turismo</h2>
-<p><a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> costuma funcionar bem quando o turista já sabe o que quer. Pesquisas por hotel, restaurante, passeio, transfer ou ingresso indicam intenção mais próxima da compra. O desafio é separar buscas informativas de buscas com potencial real de reserva.</p>
-<h2>Meta Ads no turismo</h2>
-<p><a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a> é forte para desejo e descoberta. Fotos, vídeos curtos, experiências, pratos, ambientes e depoimentos podem despertar interesse antes da busca. Também funciona bem para remarketing de quem visitou o site ou interagiu com o perfil.</p>
-<h2>Google Meu Negócio e Maps são decisivos</h2>
-<p>No turismo local, o Perfil da Empresa no Google pode influenciar muito a decisão. Fotos ruins, horário errado ou avaliações sem resposta podem prejudicar a conversão mesmo quando o anúncio está bom. Por isso, mídia paga e presença local precisam andar juntas. Veja: <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão de Google Meu Negócio em Foz do Iguaçu</a>. Segundo dados do <a href="https://www.visitbrasil.com/estatisticas/" target="_blank" rel="noopener noreferrer">Ministério do Turismo</a>, Foz do Iguaçu é um dos destinos mais visitados do Brasil, o que aumenta ainda mais a competição pela atenção online.</p>
-<h2>Conclusão</h2>
-<p>Hotéis, turismo e restaurantes em Foz do Iguaçu precisam de campanhas que respeitem intenção, sazonalidade e comportamento de decisão. O canal importa, mas o conjunto importa mais: anúncio, fotos, reputação, página, atendimento e rastreamento. Entenda como o <a href="/blog/como-rastrear-leads-de-trafego-pago">rastreamento de leads</a> ajuda a entender quais canais funcionam melhor para o seu tipo de negócio.</p>`,
-  }
+    body: [
+      ["p", "Foz do Iguaçu é um dos destinos mais conhecidos do Brasil, com forte presença de turismo, hotelaria, gastronomia, transporte e experiências locais."],
+      ["h2", "Estratégias por segmento"],
+      ["table", [["Segmento", "Oportunidade"], ["Hotéis e pousadas", "Campanhas para reservas, diferenciais e remarketing."], ["Restaurantes", "Busca local, ofertas, datas comemorativas e localização."], ["Agências de turismo", "Passeios, combos, experiências e atendimento rápido."], ["Transporte", "Transfer, aeroporto, Paraguai, Argentina e roteiros."], ["Atrativos e experiências", "Criativos visuais e campanhas por interesse."]]],
+      ["h2", "Google Ads no turismo"],
+      ["p", "Google Ads captura intenção direta em pesquisas por hospedagem, restaurantes, transfers e passeios."],
+      ["h2", "Meta Ads no turismo"],
+      ["p", "Meta Ads funciona bem para inspirar, apresentar ofertas e fazer remarketing com fotos, vídeos e mensagens claras."],
+    ],
+  },
+  {
+    slug: "/blog/landing-page-para-negocios-locais-em-foz-do-iguacu",
+    title: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
+    description:
+      "Veja o que uma landing page para negócios locais em Foz do Iguaçu precisa ter para converter cliques de anúncios em leads e WhatsApp.",
+    cta: "Analisar minha página",
+    body: [
+      ["p", "Uma landing page local precisa responder rapidamente três perguntas: o que você oferece, por que o visitante deve confiar e como ele entra em contato."],
+      ["h2", "Estrutura recomendada"],
+      ["table", [["Bloco", "Objetivo"], ["Hero", "Mostrar oferta, cidade e CTA."], ["Problema", "Conectar com a dor do usuário."], ["Solução", "Explicar serviço de forma objetiva."], ["Prova", "Mostrar experiência, depoimentos ou diferenciais."], ["Processo", "Reduzir incerteza sobre próximos passos."], ["FAQ", "Responder dúvidas antes do contato."], ["CTA final", "Levar para WhatsApp ou formulário."]]],
+      ["h2", "Erros comuns"],
+      ["p", "Usar uma página institucional genérica, esconder o botão de WhatsApp ou pedir informações demais no formulário reduz a conversão."],
+      ["h2", "O papel do mobile"],
+      ["p", "Grande parte dos acessos de campanhas vem do celular. A página precisa carregar rápido, ter textos escaneáveis e botões fáceis de clicar."],
+    ],
+  },
+  {
+    slug: "/blog/como-rastrear-leads-de-trafego-pago",
+    title: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
+    description:
+      "Aprenda como rastrear leads de tráfego pago usando UTMs, eventos, WhatsApp e CRM simples para entender quais campanhas geram oportunidades.",
+    cta: "Solicitar análise de rastreamento",
+    body: [
+      ["p", "Rastrear leads é uma das partes mais importantes do tráfego pago. Sem isso, a empresa sabe que recebeu contatos, mas não sabe de onde vieram e quais campanhas atraíram leads melhores."],
+      ["h2", "O que são UTMs"],
+      ["p", "UTMs são parâmetros adicionados aos links para identificar origem, mídia, campanha e anúncio."],
+      ["table", [["Parâmetro", "Exemplo de uso"], ["utm_source", "google, facebook, instagram"], ["utm_medium", "cpc, paid_social, organic"], ["utm_campaign", "google_servicos_foz"], ["utm_content", "anuncio_01, criativo_video"], ["utm_term", "palavra-chave em campanhas de busca"]]],
+      ["h2", "Eventos importantes"],
+      ["p", "Clique no WhatsApp, envio de formulário, ligação e visualização de página-chave são eventos úteis para análise."],
+      ["h2", "Qualidade do lead"],
+      ["p", "A equipe comercial precisa registrar se o lead era qualificado, recebeu proposta, fechou ou foi perdido."],
+    ],
+  },
 ];
+
 const pages = [
   {
     slug: "/",
@@ -597,94 +429,6 @@ const pages = [
       ["O que pode ser configurado", "Contas de anúncio, gerenciadores, permissões de acesso, pixels, tags, conversões, integrações básicas, UTMs e organização mínima para que a operação seja mais segura."],
       ["Quando contratar", "Esse serviço faz sentido para empresas que vão começar a anunciar, trocaram de fornecedor, perderam acesso, têm contas bagunçadas ou precisam preparar a base antes da gestão."],
       ["Por que isso importa", "Uma conta mal configurada pode comprometer mensuração, segurança, aprendizado das campanhas e continuidade da operação. A estrutura correta evita retrabalho."],
-    ],
-  },
-  {
-    slug: "/servicos/google-meu-negocio-foz-do-iguacu",
-    title: "Google Meu Negócio em Foz do Iguaçu",
-    description: "Criação e gestão do Perfil da Empresa no Google para empresas locais aparecerem melhor na Busca Google e no Maps.",
-    h1: "Google Meu Negócio em Foz do Iguaçu",
-    intro: "O Google Meu Negócio — hoje chamado oficialmente de Perfil da Empresa no Google — é uma das principais vitrines digitais para negócios locais. Ele aparece quando alguém pesquisa por serviços, clínicas, restaurantes, escritórios ou profissionais próximos. Para empresas em Foz do Iguaçu, isso é ainda mais relevante: turismo, atendimento por região, rotas pelo Maps e contatos rápidos pelo WhatsApp dependem de um perfil bem estruturado.",
-    introHtml: `O Google Meu Negócio — hoje chamado oficialmente de <strong>Perfil da Empresa no Google</strong> — é uma das principais vitrines digitais para negócios locais. Ele aparece quando alguém pesquisa por serviços, clínicas, restaurantes, escritórios ou profissionais próximos. Para empresas em Foz do Iguaçu, isso é ainda mais relevante: turismo, atendimento por região, rotas pelo Maps e contatos rápidos pelo WhatsApp dependem de um perfil bem estruturado.<br><br>Um perfil mal configurado ou abandonado passa uma imagem pouco profissional e perde a confiança de quem está comparando opções — justamente no momento em que o cliente está perto de decidir.`,
-    kicker: "Serviço de presença local no Google",
-    sections: [],
-    contentHtml: `<section class="section content-section"><div class="wrap prose-blocks">
-    <article class="prose-block" data-reveal>
-      <h2>O que oferecemos</h2>
-      <p>Unimos criação e gestão do Perfil da Empresa no Google em uma frente única: primeiro organizamos a base para que sua empresa seja encontrada com clareza, depois mantemos o perfil vivo, atualizado e conectado ao restante da estratégia digital.</p>
-    </article>
-    <article class="prose-block" id="criacao" data-reveal>
-      <h2>Criação do Google Meu Negócio</h2>
-      <p><em>Para empresas que ainda não têm perfil ou perderam o acesso.</em></p>
-      <p>Criar um perfil corretamente vai além de preencher nome, telefone e endereço. A estrutura influencia como sua empresa é percebida e encontrada. Configuramos cada elemento para gerar confiança desde o primeiro contato.</p>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Item configurado</th><th>Por que isso importa</th></tr></thead>
-        <tbody>
-          <tr><td>Nome comercial correto</td><td>Evita inconsistência e problemas de validação.</td></tr>
-          <tr><td>Categoria principal e secundárias</td><td>Ajuda o Google e o usuário a entenderem o tipo de negócio.</td></tr>
-          <tr><td>Endereço ou área de atendimento</td><td>Define se a empresa recebe no local ou atende por deslocamento.</td></tr>
-          <tr><td>Telefone, site e WhatsApp</td><td>Reduz fricção entre pesquisa e atendimento.</td></tr>
-          <tr><td>Horário de funcionamento</td><td>Evita ligações perdidas, rotas frustradas e reclamações.</td></tr>
-          <tr><td>Descrição da empresa</td><td>Explica o que a empresa faz com linguagem clara e natural.</td></tr>
-          <tr><td>Serviços ou produtos</td><td>Mostra as principais soluções antes do contato.</td></tr>
-          <tr><td>Fotos iniciais</td><td>Aumenta percepção de profissionalismo e confiança.</td></tr>
-        </tbody>
-      </table></div>
-      <p><strong>Para quem faz sentido:</strong> empresas novas, negócios sem perfil criado, empresas que mudaram de endereço, profissionais que atendem por região e negócios que aparecem no Google mas não têm controle do próprio perfil.</p>
-    </article>
-    <article class="prose-block" id="gestao" data-reveal>
-      <h2>Gestão do Google Meu Negócio</h2>
-      <p><em>Para empresas que já têm perfil e querem mantê-lo gerando contatos.</em></p>
-      <p>Ter o perfil criado é apenas o começo. Um perfil parado perde força comercial porque deixa de refletir a realidade da empresa. A gestão contínua mantém o perfil atualizado, alinhado com campanhas e focado em gerar contatos qualificados — não apenas visualizações.</p>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Frente de gestão</th><th>Como trabalhamos</th></tr></thead>
-        <tbody>
-          <tr><td>Atualização de informações</td><td>Telefone, site, horário, área de atendimento e links de contato.</td></tr>
-          <tr><td>Serviços e descrições</td><td>Textos claros, orientados à busca local e à decisão do cliente.</td></tr>
-          <tr><td>Fotos e identidade visual</td><td>Imagens que reforçam estrutura, equipe, atendimento ou ambiente.</td></tr>
-          <tr><td>Postagens no perfil</td><td>Serviços, diferenciais, avisos e novidades.</td></tr>
-          <tr><td>Avaliações</td><td>Orientação para estimular avaliações reais e responder comentários.</td></tr>
-          <tr><td>Perguntas e respostas</td><td>Respostas úteis para reduzir fricção antes do contato.</td></tr>
-          <tr><td>Insights do perfil</td><td>Leitura de buscas, ligações, rotas e cliques para melhorar decisões.</td></tr>
-          <tr><td>Integração com mídia paga</td><td>Alinhamento com <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, landing pages e rastreamento de leads.</td></tr>
-        </tbody>
-      </table></div>
-      <p><strong>Para quem faz sentido:</strong> empresas com perfil incompleto, avaliações sem resposta, muitas visualizações mas poucos contatos, ou que já rodam Google Ads e precisam integrar presença local com campanhas.</p>
-    </article>
-    <article class="prose-block" data-reveal>
-      <h2>Qual é o melhor caminho para você?</h2>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Situação</th><th>Serviço indicado</th></tr></thead>
-        <tbody>
-          <tr><td>A empresa ainda não tem perfil</td><td>Criação.</td></tr>
-          <tr><td>Tem perfil, mas está incompleto ou sem acesso</td><td>Criação + organização inicial.</td></tr>
-          <tr><td>Tem perfil, mas está parado há meses</td><td>Gestão.</td></tr>
-          <tr><td>Recebe visualizações, mas poucos contatos</td><td>Gestão com foco em conversão.</td></tr>
-          <tr><td>Roda Google Ads e quer integrar presença local</td><td>Gestão integrada.</td></tr>
-        </tbody>
-      </table></div>
-    </article>
-    <article class="prose-block" data-reveal>
-      <h2>O que não prometemos</h2>
-      <p>Não prometemos primeiro lugar no Google Maps nem aumento imediato de contatos sem analisar concorrência, categoria, localização, avaliações, demanda e qualidade do perfil. A proposta é estruturar e manter o perfil de forma profissional, evitar erros básicos e apoiar a geração de contatos reais.</p>
-    </article>
-    <article class="prose-block" data-reveal>
-      <h2>Perguntas frequentes</h2>
-      <p><strong>Google Meu Negócio ainda existe?</strong><br>O nome atual do produto é Perfil da Empresa no Google, mas o termo Google Meu Negócio ainda é amplamente usado no Brasil. Na prática, é a presença da empresa na Busca Google e no Maps.</p>
-      <p><strong>Criar o perfil é gratuito?</strong><br>O Google permite criar o perfil sem custo. O serviço cobrado aqui é pela configuração estratégica, organização das informações e preparação do perfil para gerar mais confiança e contatos.</p>
-      <p><strong>Minha empresa não tem loja física. Posso criar mesmo assim?</strong><br>Em muitos casos, sim. Prestadores de serviço que atendem em área de cobertura podem ter perfil, desde que sigam as diretrizes do Google para representação de empresas.</p>
-      <p><strong>A gestão ajuda no SEO local?</strong><br>Ajuda na organização da presença local e melhora a experiência de quem encontra a empresa. Para resultados mais completos, deve ser combinada com site bem estruturado, conteúdo útil e boa reputação online.</p>
-      <p><strong>Com que frequência o perfil deve ser atualizado?</strong><br>Uma rotina mensal ou quinzenal de revisão, fotos, postagens e análise de desempenho já traz bons resultados. Em segmentos sazonais como turismo e gastronomia, a frequência pode ser maior.</p>
-      <p><strong>A gestão substitui anúncios no Google?</strong><br>Não. A gestão fortalece a presença orgânica local. Em muitos casos, Google Meu Negócio, site e <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> funcionam melhor juntos do que separados.</p>
-    </article>
-  </div></section>`,
-    faq: [
-      ["Google Meu Negócio ainda existe?", "O nome atual do produto é Perfil da Empresa no Google, mas o termo Google Meu Negócio ainda é amplamente usado no Brasil. Na prática, é a presença da empresa na Busca Google e no Maps."],
-      ["Criar o perfil é gratuito?", "O Google permite criar o perfil sem custo. O serviço cobrado aqui é pela configuração estratégica, organização das informações e preparação do perfil para gerar mais confiança e contatos."],
-      ["Minha empresa não tem loja física. Posso criar mesmo assim?", "Em muitos casos, sim. Prestadores de serviço que atendem em área de cobertura podem ter perfil, desde que sigam as diretrizes do Google para representação de empresas."],
-      ["A gestão ajuda no SEO local?", "Ajuda na organização da presença local e melhora a experiência de quem encontra a empresa. Para resultados mais completos, deve ser combinada com site bem estruturado, conteúdo útil e boa reputação online."],
-      ["Com que frequência o perfil deve ser atualizado?", "Uma rotina mensal ou quinzenal de revisão, fotos, postagens e análise de desempenho já traz bons resultados. Em segmentos sazonais como turismo e gastronomia, a frequência pode ser maior."],
-      ["A gestão substitui anúncios no Google?", "Não. A gestão fortalece a presença orgânica local. Em muitos casos, Google Meu Negócio, site e Google Ads funcionam melhor juntos do que separados."],
     ],
   },
   {
@@ -984,15 +728,7 @@ function localBusinessJson() {
     url: siteUrl,
     areaServed: "Foz do Iguaçu, PR",
     brand,
-    serviceType: [
-      "Gestão de tráfego pago",
-      "Google Ads",
-      "Meta Ads",
-      "Landing pages",
-      "Rastreamento de conversões",
-      "Criação de Google Meu Negócio",
-      "Gestão de Google Meu Negócio",
-    ],
+    serviceType: ["Gestão de tráfego pago", "Google Ads", "Meta Ads", "Landing pages", "Rastreamento de conversões"],
   };
 }
 
@@ -1065,10 +801,6 @@ function renderNavLink(text, href, page) {
     : `<a href="${href}">${escapeHtml(text)}</a>`;
 }
 
-function contactFormHref(page) {
-  return isCurrentPage("/contato", page) ? "#formulario" : "/contato/#formulario";
-}
-
 function renderHeader(page) {
   return `<header class="site-header" data-header>
   <div class="wrap header-inner">
@@ -1080,7 +812,7 @@ function renderHeader(page) {
       ${nav.map(([text, href]) => renderNavLink(text, href, page)).join("")}
     </nav>
     <div class="header-actions">
-      <a class="button primary sm" href="${contactFormHref(page)}" data-gtm="header_diagnostico" data-event-category="cta" data-event-label="header">Diagnóstico gratuito</a>
+      <a class="button primary sm" href="/contato/#formulario" data-gtm="header_diagnostico" data-event-category="cta" data-event-label="header">Diagnóstico gratuito</a>
       <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-nav">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         Menu
@@ -1118,9 +850,7 @@ function renderFooter(page) {
     </div>
     <div class="footer-bottom">
       <span>© <span id="ano">2026</span> Gestor de Tráfego Foz do Iguaçu · PR</span>
-      <span>CNPJ: 57.110.765/0001-00</span>
-      <span>Este site pertence à <a href="https://gabriads.com" target="_blank" rel="noopener noreferrer">GabriAds Soluções Digitais</a></span>
-      ${isCurrentPage("/politica-de-privacidade", page) ? `<span class="footer-current" aria-current="page">Política de privacidade</span>` : `<a href="/politica-de-privacidade">Política de privacidade</a>`}
+      <a href="/politica-de-privacidade">Política de privacidade</a>
     </div>
   </div>
 </footer>`;
@@ -1158,7 +888,7 @@ function renderCta(page, labelText) {
       <p>Vamos analisar seu cenário, entender seu objetivo e indicar o caminho mais simples para gerar leads com mais previsibilidade.</p>
     </div>
     <div class="cta-actions">
-      <a class="button primary" href="${contactFormHref(page)}" data-gtm="cta_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">${escapeHtml(labelText)} ${arrowSvg("arrow")}</a>
+      <a class="button primary" href="/contato/#formulario" data-gtm="cta_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">${escapeHtml(labelText)} ${arrowSvg("arrow")}</a>
       <a class="button ghost" href="${whatsappHref(page.slug)}" data-whatsapp-link data-gtm="cta_whatsapp" data-event-category="whatsapp" data-event-label="${escapeHtml(page.slug)}">Falar no WhatsApp</a>
     </div>
   </div>
@@ -1327,21 +1057,19 @@ function renderPackages(packages) {
 
 function renderPostArchive() {
   const categories = [
-    ["contratacao", "Contratação", "Como escolher gestor e avaliar propostas."],
-    ["investimento", "Investimento", "Quanto custa e como pensar verba de mídia."],
-    ["canais", "Canais", "Google Ads, Meta Ads e escolha de plataformas."],
-    ["nichos", "Nichos", "Advocacia, turismo, restaurantes e negócios locais."],
-    ["conversao", "Conversão", "WhatsApp, landing pages, rastreamento e qualidade de lead."],
+    ["Contratação", "Como escolher gestor e avaliar propostas."],
+    ["Investimento", "Quanto custa e como pensar verba de mídia."],
+    ["Canais", "Google Ads, Meta Ads e escolha de plataformas."],
+    ["Nichos", "Advocacia, turismo, restaurantes e negócios locais."],
+    ["Conversão", "WhatsApp, landing pages, rastreamento e qualidade de lead."],
   ];
-  const categoryLabels = Object.fromEntries(categories.map(([id, label]) => [id, label]));
-  return `<section class="section post-archive-section"><div class="wrap">
-    <div class="category-list" data-blog-filters data-reveal aria-label="Filtrar posts por tema">
-      <button class="category-filter is-active" type="button" data-filter-category="all" aria-pressed="true"><strong>Todos</strong>Ver todos os artigos.</button>${categories
-      .map(([id, t, x]) => `<button class="category-filter" type="button" data-filter-category="${id}" aria-pressed="false"><strong>${escapeHtml(t)}</strong>${escapeHtml(x)}</button>`)
+  return `<section class="section"><div class="wrap">
+    <div class="category-list" data-reveal>${categories
+      .map(([t, x]) => `<span><strong>${escapeHtml(t)}</strong>${escapeHtml(x)}</span>`)
       .join("")}</div>
-    <div class="post-grid" data-post-grid>${posts
+    <div class="post-grid">${posts
       .map(
-        (p) => `<a class="post-card" href="${p.slug}" data-post-card data-post-category="${escapeHtml(p.category)}" data-reveal><span>${escapeHtml(categoryLabels[p.category] || "Artigo")}</span><strong>${escapeHtml(p.title)}</strong><p>${escapeHtml(p.description)}</p><span class="sc-go">Ler ${arrowSvg()}</span></a>`
+        (p) => `<a class="post-card" href="${p.slug}" data-reveal><span>Artigo</span><strong>${escapeHtml(p.title)}</strong><p>${escapeHtml(p.description)}</p><span class="sc-go">Ler ${arrowSvg()}</span></a>`
       )
       .join("")}</div>
   </div></section>`;
@@ -1386,13 +1114,13 @@ function renderGeneric(page) {
   <section class="page-hero"><div class="wrap">
     <span class="kicker" data-reveal>${kicker}</span>
     <h1 data-reveal data-delay="60">${escapeHtml(page.h1)}</h1>
-    <p class="lede" data-reveal data-delay="120">${page.introHtml || escapeHtml(page.intro)}</p>
+    <p class="lede" data-reveal data-delay="120">${escapeHtml(page.intro)}</p>
     <div class="hero-actions" data-reveal data-delay="180">
-      <a class="button primary" href="${contactFormHref(page)}" data-gtm="page_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">Solicitar diagnóstico gratuito ${arrowSvg("arrow")}</a>
+      <a class="button primary" href="/contato/#formulario" data-gtm="page_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">Solicitar diagnóstico gratuito ${arrowSvg("arrow")}</a>
       <a class="button ghost" href="${whatsappHref(page.slug)}" data-whatsapp-link data-gtm="page_whatsapp" data-event-category="whatsapp" data-event-label="${escapeHtml(page.slug)}">Falar no WhatsApp</a>
     </div>
   </div></section>
-  ${page.contentHtml ? page.contentHtml : renderProseBlocks(page.sections)}
+  ${renderProseBlocks(page.sections)}
   ${page.cards ? `<section class="section card-section"><div class="wrap"><div class="cards">${page.cards.map((c, i) => renderServiceCard(c, i)).join("")}</div></div></section>` : ""}
   ${page.packages ? renderPackages(page.packages) : ""}
   ${page.postArchive ? renderPostArchive() : ""}
@@ -1402,17 +1130,16 @@ function renderGeneric(page) {
 }
 
 function renderPost(post) {
-  const page = { slug: post.slug, title: post.title, description: post.description, h1: post.h1 || post.title };
-  const intro = post.intro || post.description;
+  const page = { slug: post.slug, title: post.title, description: post.description, h1: post.title };
   return layout(
     page,
     `<main class="page-main article">
   <div class="wrap">${renderBreadcrumb(page)}</div>
   <article class="article-body">
     <span class="kicker" data-reveal>Conteúdo sobre tráfego pago</span>
-    <h1 data-reveal data-delay="60">${escapeHtml(page.h1)}</h1>
-    <p class="lede" data-reveal data-delay="120">${escapeHtml(intro)}</p>
-    <div class="prose">${post.bodyHtml || renderBody(post.body)}</div>
+    <h1 data-reveal data-delay="60">${escapeHtml(post.title)}</h1>
+    <p class="lede" data-reveal data-delay="120">${escapeHtml(post.description)}</p>
+    <div class="prose" data-reveal data-delay="160">${renderBody(post.body)}</div>
   </article>
   ${renderRelated(page)}
   ${renderCta(page, post.cta)}
@@ -1436,12 +1163,10 @@ function layout(page, content, jsonLd) {
   <meta property="og:type" content="website">
   <meta property="og:url" content="${absolute(page.slug)}">
   <meta name="theme-color" content="#14171c">
-  <link rel="icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
-  <link rel="shortcut icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=${assetVersion}">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.faq-answer{height:auto!important}</style></noscript>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -1470,7 +1195,7 @@ function layout(page, content, jsonLd) {
     <span class="fw-label">Falar no WhatsApp</span>
   </a>
   ${renderFooter(page)}
-  <script src="/assets/js/site.js?v=${assetVersion}" defer></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>`;
 }
