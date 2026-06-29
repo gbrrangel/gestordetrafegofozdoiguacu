@@ -105,7 +105,11 @@ O site tem paginas hub e paginas especificas:
 - `/nichos/turismo-hoteis-restaurantes-foz-do-iguacu`
 - `/consultoria`
 - `/blog`
-- 13 posts em `/blog/...`:
+- 17 posts em `/blog/...`:
+  - `/blog/perfil-da-empresa-google-2026-negocios-locais`
+  - `/blog/google-marketing-live-2026-o-que-mudou-no-google-ads`
+  - `/blog/performance-max-2026-novidades-negocios-locais`
+  - `/blog/meta-ads-advantage-plus-2026`
   - `/blog/como-aparecer-no-google-maps-em-foz-do-iguacu`
   - `/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu`
   - `/blog/como-rastrear-leads-de-trafego-pago`
@@ -170,6 +174,31 @@ Ao adicionar um post novo:
 4. Rode `npm run build` e confira `/blog`.
 
 O arquivo do blog usa uma secao `post-archive-section` para controlar o espacamento entre o texto introdutorio, os filtros e os cards de posts.
+
+### Cuidados com automacao de posts
+
+Automacoes que adicionam posts devem alterar somente o array `posts` em `scripts/generate-site.mjs`, preservando o restante do gerador. Nao substituir o arquivo inteiro por uma versao antiga.
+
+Antes de commit/push de post automatico, confira:
+
+- `renderPostArchive()` continua renderizando `<button class="category-filter">` com `data-filter-category`;
+- a lista de categorias continua no formato `[id, label, description]`;
+- cada card de post continua com `data-post-card` e `data-post-category`;
+- nenhum post ficou sem `category`;
+- `assetVersion` continua definido no topo do arquivo;
+- favicon, CSS e JS continuam referenciados com `?v=${assetVersion}`;
+- `renderGeneric()` ainda respeita `introHtml` e `contentHtml`;
+- `renderPost()` ainda usa `post.bodyHtml || renderBody(post.body)`;
+- a rota `/servicos/google-meu-negocio-foz-do-iguacu` continua presente em `pages`, `services` e `footerServices`;
+- `npm run build` gera `/blog` sem `data-post-category="undefined"`.
+
+Comandos uteis de conferencia:
+
+```bash
+npm run build
+rg 'data-post-category="undefined"|<span>Artigo</span>' blog/index.html dist/blog/index.html
+rg 'data-blog-filters|category-filter|data-filter-category' blog/index.html dist/blog/index.html
+```
 
 ## Assets globais
 
