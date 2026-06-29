@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const siteUrl = "https://gestordetrafegofozdoiguacu.com.br";
+const assetVersion = "20260629-1";
 const brand = "Gestor de Tráfego Foz do Iguaçu";
 const whatsappNumber = "5545999046673";
 const contactEmail = "contato@gabriads.com";
@@ -22,6 +23,7 @@ const footerServices = [
   ["Meta Ads", "/servicos/meta-ads-foz-do-iguacu"],
   ["Landing pages", "/servicos/landing-pages-foz-do-iguacu"],
   ["Rastreamento", "/servicos/rastreamento-e-conversao"],
+  ["Google Meu Negócio", "/servicos/google-meu-negocio-foz-do-iguacu"],
 ];
 
 const footerCompany = [
@@ -52,6 +54,11 @@ const services = [
     title: "Sites, blogs e landing pages",
     href: "/servicos/landing-pages-foz-do-iguacu",
     text: "Páginas rápidas, blogs e landing pages pensados para SEO, campanhas, conversão e rastreamento.",
+  },
+  {
+    title: "Google Meu Negócio",
+    href: "/servicos/google-meu-negocio-foz-do-iguacu",
+    text: "Criação e gestão do Perfil da Empresa no Google para empresas locais aparecerem melhor na Busca e no Maps.",
   },
   {
     title: "Consultoria",
@@ -95,390 +102,627 @@ const niches = [
 
 const posts = [
   {
-    slug: "/blog/perfil-da-empresa-google-2026-negocios-locais",
-    title: "Perfil da Empresa no Google em 2026: Guia para Negócios Locais",
-    description: "Veja as principais atualizações do Perfil da Empresa no Google em 2026, com IA, WhatsApp e novos sinais de ranking para negócios em Foz do Iguaçu",
-    cta: "Falar com um especialista em tráfego local",
-    body: [
-      ["p", "Se você tem um negócio em Foz do Iguaçu e ainda não otimizou seu Perfil da Empresa no Google, ou se faz tempo que não acessa esse canal, 2026 é o ano em que essa negligência pode custar clientes reais. O Google atualizou significativamente o que antes era chamado de Google Meu Negócio, adicionando inteligência artificial, integração com WhatsApp, agendamento de posts, novos sinais de ranqueamento local e conexão direta com o Google Analytics. Essas mudanças transformam o perfil de um simples cartão de visitas digital em uma ferramenta ativa de captação de clientes. Este guia explica o que mudou, por que importa e o que donos de negócios locais devem fazer agora para se posicionar melhor nas buscas do Google e no Google Maps em 2026."],
-      ["h2", "O Que É o Perfil da Empresa no Google e Por Que Ele Importa"],
-      ["p", "O Perfil da Empresa no Google, anteriormente conhecido como Google Meu Negócio, é o cadastro gratuito que permite que empresas apareçam nos resultados do Google quando alguém pesquisa por um produto ou serviço próximo. Quando um morador de Foz do Iguaçu busca por restaurante perto de mim, eletricista em Foz do Iguaçu ou hotel no centro de Foz, os resultados que aparecem em destaque antes dos links orgânicos normais são os perfis das empresas cadastradas e otimizadas. Estar presente nesse espaço é um dos caminhos mais diretos para atrair clientes sem investir em anúncios pagos."],
-      ["p", "Diferente do site da empresa, que precisa de visitas espontâneas ou anúncios para ser encontrado, o Perfil da Empresa aparece de forma proeminente quando alguém já está buscando pelo tipo de negócio que você oferece. Isso significa que as pessoas que chegam até o seu perfil já têm intenção de compra ou de contato. Por isso, a qualidade das informações exibidas no perfil, as fotos, as avaliações, os horários e os serviços listados têm impacto direto na decisão de o cliente entrar em contato com você ou escolher um concorrente."],
-      ["p", "Em 2026, o Google tornou o Perfil da Empresa ainda mais relevante ao integrar seus dados com os resultados de busca por IA, os chamados AI Overviews, e ao adicionar novos recursos de comunicação e publicação. Negócios com perfis bem preenchidos, ativos e atualizados estão sendo favorecidos pelo algoritmo de busca local, enquanto perfis incompletos ou abandonados perdem visibilidade gradualmente mesmo que o negócio tenha anos de mercado e boa reputação offline."],
-      ["h2", "As Principais Atualizações do Perfil da Empresa no Google em 2026"],
-      ["p", "Em 2026, o Google implementou um conjunto de atualizações que mudaram como o perfil funciona tanto para empresas quanto para clientes que pesquisam. A mais visível é a integração com inteligência artificial para responder automaticamente perguntas feitas pelos usuários no perfil, com base nos dados do próprio negócio. Outra mudança importante é a possibilidade de adicionar o WhatsApp como canal de contato direto, substituindo o recurso de chat anterior que foi descontinuado pela plataforma."],
-      ["p", "O Google também lançou agendamento nativo de posts dentro do Perfil da Empresa, permitindo que donos de negócio programem publicações com antecedência sem precisar de ferramentas externas. Para redes com múltiplos locais, chegou a possibilidade de criar um único post e publicá-lo simultaneamente em todas as unidades. Além disso, os sinais que o Google usa para rankear empresas no Maps e nas buscas locais foram atualizados, dando mais peso para engajamento recente, como respostas a avaliações, posts publicados e perguntas respondidas."],
-      ["p", "Para negócios em Foz do Iguaçu, todas essas mudanças criam uma oportunidade concreta. Enquanto muitos concorrentes ainda usam o perfil de forma passiva, apenas com o básico preenchido, empresas que adotarem as novas funcionalidades em 2026 têm a chance de ganhar visibilidade relevante nos resultados locais sem nenhum gasto adicional em anúncios. A diferença entre aparecer em primeiro ou em quinto no Maps pode representar dezenas de clientes a mais por mês, dependendo do segmento e do volume de buscas locais."],
-      ["h2", "IA Respondendo Perguntas no Seu Perfil Automaticamente"],
-      ["p", "Um dos recursos mais significativos lançados em 2026 é o uso de inteligência artificial para responder perguntas feitas por usuários diretamente no Perfil da Empresa. Quando um potencial cliente faz uma pergunta como aceitam cartão de crédito ou têm estacionamento, a IA do Google pode gerar uma resposta automática baseada no conteúdo do perfil, no site da empresa e nas avaliações existentes. O dono do negócio recebe uma notificação e pode aprovar, editar ou rejeitar a resposta gerada antes que ela seja publicada."],
-      ["p", "Esse recurso tem implicações práticas importantes. Por um lado, agiliza a comunicação e garante que perguntas não fiquem sem resposta por longos períodos, o que prejudica a experiência do usuário e o ranqueamento do perfil. Por outro, exige atenção do dono do negócio para revisar as respostas geradas pela IA, que podem estar desatualizadas ou imprecisas caso as informações do perfil não estejam corretas e bem detalhadas. Uma resposta errada publicada automaticamente pode criar confusão para o cliente antes mesmo de ele entrar em contato."],
-      ["p", "Para aproveitar bem esse recurso, o primeiro passo é garantir que o perfil tenha todas as informações básicas corretas e detalhadas: horários de funcionamento, serviços oferecidos, formas de pagamento, endereço e telefone. Quanto mais completo estiver o perfil, mais precisa será a IA ao gerar respostas. Estabelecimentos em Foz do Iguaçu com atributos de turismo, como aceitar reserva online, ter cardápio em espanhol ou oferecer translado para o aeroporto, devem garantir que essas informações estejam preenchidas corretamente para que a IA possa transmiti-las automaticamente."],
-      ["h2", "Integração com WhatsApp: Como Funciona e Como Ativar"],
-      ["p", "Em 2026, o Google lançou a integração do Perfil da Empresa com o WhatsApp, permitindo que empresas adicionem um número de WhatsApp como canal de contato visível diretamente na listagem do Maps e nas buscas. Quando o cliente clica no botão de WhatsApp no perfil, é redirecionado diretamente para uma conversa com o número cadastrado, sem precisar copiar o número e abrir o aplicativo manualmente. Essa redução de atrito no processo de contato tende a aumentar o volume de mensagens recebidas pelo negócio."],
-      ["p", "Para ativar a integração, basta acessar o painel do Perfil da Empresa no Google, navegar até a seção de informações de contato e adicionar o número de WhatsApp da empresa. O Google pode solicitar verificação do número durante o processo. É recomendável usar um número de WhatsApp Business, que permite configurar respostas automáticas, horários de atendimento e mensagens de ausência, tornando a comunicação mais profissional e eficiente mesmo fora do horário comercial."],
-      ["p", "Para negócios em Foz do Iguaçu que já usam o WhatsApp como principal canal de atendimento, como restaurantes recebendo reservas, pousadas confirmando disponibilidade ou prestadores de serviço agendando visitas, essa integração é especialmente relevante. Ela facilita o primeiro contato do cliente que encontrou o negócio no Google e quer tirar uma dúvida rápida ou fazer uma reserva sem precisar ligar, comportamento cada vez mais comum entre consumidores que preferem comunicação por mensagem de texto."],
-      ["h2", "Agendamento de Posts e Manutenção Ativa do Perfil"],
-      ["p", "O agendamento nativo de posts é outro recurso novo do Perfil da Empresa em 2026 que facilita a manutenção de um perfil ativo sem depender de ferramentas de terceiros. Antes, publicar posts no perfil precisava ser feito em tempo real, o que tornava difícil manter regularidade para donos de negócio com rotinas intensas. Com o agendamento, é possível dedicar um tempo fixo por semana para planejar e programar publicações de promoções, eventos, novidades e comunicados, garantindo consistência sem esforço diário."],
-      ["p", "Posts publicados com regularidade têm impacto direto no ranqueamento do perfil. O Google trata um perfil ativo, com publicações recentes e interações frequentes, de forma mais favorável em relação a perfis estáticos. Em 2026, o algoritmo local passou a valorizar ainda mais sinais de atividade recente, o que significa que uma empresa que publicou um post há dois dias tende a ter vantagem de ranqueamento sobre uma concorrente que não publica nada há meses, mesmo que a segunda tenha mais avaliações acumuladas no histórico."],
-      ["p", "Tipos de posts que funcionam bem no perfil incluem: ofertas com data de validade, que criam urgência e mostram que o perfil está ativo; anúncios de novidades, como novo produto, serviço ou horário estendido; eventos especiais, como jantares temáticos para restaurantes ou promoções para datas comemorativas em Foz do Iguaçu; e atualizações operacionais, como mudanças de horário em feriados ou durante alta temporada turística. Qualquer conteúdo relevante para o cliente local é válido e contribui para manter o perfil vivo."],
-      ["h2", "Novos Sinais de Ranqueamento Local em 2026"],
-      ["p", "O algoritmo que define a ordem em que empresas aparecem no Google Maps e nas buscas locais é atualizado continuamente, e em 2026 houve mudanças relevantes nos fatores que ele avalia. O Google passou a dar mais peso para sinais de popularidade recente em vez de apenas popularidade histórica. Isso significa que um negócio com muitas avaliações antigas e pouca atividade recente pode perder posição para um concorrente mais novo, mas com perfil mais ativo, mais avaliações recentes e mais interações nos últimos trinta dias."],
-      ["p", "Entre os sinais que ganharam mais relevância em 2026 estão: a taxa de resposta às avaliações, indicando o quanto o dono do negócio está engajado com os clientes; a frequência de publicações no perfil; a taxa de cliques no perfil a partir dos resultados de busca; e o número de interações recentes via WhatsApp ou formulário de contato. Esses sinais comportamentais indicam para o algoritmo que o negócio está ativo, relevante e bem gerenciado, o que aumenta a confiança do Google em recomendá-lo para usuários locais."],
-      ["p", "A completude do perfil também ganhou mais peso. Em 2026, o Google expandiu a lista de atributos disponíveis para diferentes categorias de negócio. Restaurantes podem indicar se têm cardápio vegetariano, área externa, música ao vivo ou aceita reserva pelo Google. Hotéis podem especificar serviços de concierge, café da manhã incluído, piscina ou translado para as Cataratas. Preencher esses atributos específicos da categoria é um diferencial que influencia o ranqueamento e aumenta a probabilidade de o perfil aparecer em buscas com filtros aplicados."],
-      ["h2", "Comparativo: Perfil Básico Versus Perfil Otimizado"],
-      ["table", [
-        ["Critério", "Perfil Básico", "Perfil Otimizado 2026"],
-        ["Informações de contato", "Telefone e endereço", "Telefone, endereço, WhatsApp integrado, site"],
-        ["Fotos", "1 a 3 fotos antigas", "10+ fotos atualizadas, logo e imagem de capa"],
-        ["Posts", "Nenhum ou esporádicos", "Agendados semanalmente"],
-        ["Avaliações", "Sem resposta", "Respondidas em menos de 48 horas"],
-        ["Perguntas e respostas", "Sem resposta", "IA configurada e respostas revisadas"],
-        ["Serviços listados", "Apenas categoria geral", "Serviços detalhados com descrição e preço"],
-        ["Atributos", "Não preenchidos", "Todos os atributos relevantes preenchidos"],
-        ["Resultado esperado", "Aparece raramente ou em posição baixa", "Aparece nas primeiras posições do Map Pack"]
-      ]],
-      ["p", "A tabela acima ilustra a diferença prática entre um perfil mínimo e um perfil otimizado segundo os padrões do Google em 2026. Para negócios em Foz do Iguaçu que dependem de visibilidade local para gerar clientes, a distância entre essas duas configurações pode representar a diferença entre ser encontrado ou ser ignorado nas buscas mais relevantes do dia a dia. O custo de otimizar o perfil é zero em dinheiro, mas exige tempo e consistência na manutenção."],
-      ["h2", "AI Overviews e o Impacto nas Buscas Locais"],
-      ["p", "Os AI Overviews, resumos de busca gerados por inteligência artificial que aparecem no topo da página do Google, chegaram às pesquisas locais em 2026. Quando alguém busca por qual é o melhor hotel em Foz do Iguaçu ou onde comer frutos do mar perto das Cataratas, o Google pode exibir um resumo gerado por IA antes dos resultados tradicionais. Esse resumo é construído a partir dos dados dos Perfis da Empresa, das avaliações dos clientes e do conteúdo dos sites das empresas."],
-      ["p", "Para aparecer nos AI Overviews de buscas locais, o Perfil da Empresa precisa ter dados precisos, avaliações positivas e conteúdo detalhado sobre os serviços. O Google prioriza perfis com alta confiabilidade e completude de informações ao construir esses resumos de IA. Negócios com muitas avaliações recentes, com respostas do proprietário e com descrições claras dos serviços têm mais chance de serem mencionados nesses resumos, aumentando sua visibilidade mesmo para usuários que não chegam a clicar no perfil completo."],
-      ["p", "Um aspecto importante é que os AI Overviews podem aparecer tanto em buscas genéricas quanto em buscas com intenção de compra imediata, como preciso de um eletricista agora em Foz do Iguaçu. Para negócios de serviço local, estar presente nesses resumos pode significar mais ligações e mensagens recebidas sem custo adicional. A estratégia para isso é simples na teoria, mas exige disciplina na execução: manter o perfil completo, ativo e com avaliações recentes respondidas."],
-      ["h2", "Como o Perfil da Empresa se Conecta ao Tráfego Pago"],
-      ["p", "O Perfil da Empresa no Google e as campanhas de tráfego pago não são estratégias separadas, elas se complementam diretamente. As campanhas de Google Ads para buscas locais, como campanhas de Pesquisa com segmentação geográfica em Foz do Iguaçu, podem exibir o endereço da empresa, o número de telefone e a avaliação do perfil diretamente no anúncio por meio das extensões de local e de chamada. Isso torna o anúncio mais informativo e aumenta a taxa de cliques, especialmente em dispositivos móveis."],
-      ["p", "As campanhas de Performance Max do Google Ads usam os dados do Perfil da Empresa para otimizar anúncios no Google Maps. Quando um negócio local ativa os anúncios de Maps, seus anúncios aparecem como destaque no mapa quando usuários pesquisam por serviços próximos à área configurada. Essa integração exige que o Perfil da Empresa esteja verificado e atualizado para funcionar corretamente. Um perfil desatualizado ou com informações incorretas pode comprometer a veiculação dos anúncios locais."],
-      ["p", "Em termos de estratégia, o perfil orgânico e o tráfego pago se reforçam mutuamente. Um negócio com bom ranqueamento orgânico no Maps e campanhas pagas ativas ocupa mais espaço visual nos resultados de busca locais, aumentando a probabilidade de o cliente escolhê-lo. Para gestores de tráfego que trabalham com negócios em Foz do Iguaçu, orientar o cliente a manter o Perfil da Empresa otimizado é parte integrante de uma estratégia de tráfego pago eficiente, não um detalhe secundário."],
-      ["h2", "Erros Comuns que Negócios em Foz do Iguaçu Cometem no Perfil"],
-      ["p", "Um dos erros mais frequentes é manter o horário de funcionamento desatualizado, especialmente durante feriados, alta temporada turística ou períodos de recesso. O Google penaliza perfis com horários inconsistentes porque eles criam experiências negativas para o usuário que vai até o estabelecimento fora do horário real. Em Foz do Iguaçu, onde o fluxo de turistas é elevado em determinadas épocas do ano, ter horários corretos no perfil é ainda mais crítico porque esses visitantes dependem das informações online para planejar suas visitas."],
-      ["p", "Outro erro comum é ignorar as avaliações negativas. Quando um cliente insatisfeito deixa uma avaliação ruim e o dono do negócio não responde, o impacto é duplo: o Google interpreta a falta de resposta como baixo engajamento, prejudicando o ranqueamento, e potenciais clientes que leem a avaliação não têm a visão do outro lado da história. Responder a avaliações negativas com educação, reconhecendo o problema e explicando o que foi feito para corrigi-lo, demonstra profissionalismo e pode reverter a percepção negativa de quem está lendo."],
-      ["p", "Um terceiro erro é não usar a seção de produtos ou serviços do perfil. Muitos negócios preenchem apenas a categoria geral, como restaurante ou loja de roupas, sem listar os serviços ou produtos específicos que oferecem. Essa seção permite descrever cada serviço com título, descrição e faixa de preço. Para prestadores de serviço em Foz do Iguaçu, como empresas de mudança, limpeza ou instalação, listar os serviços com descrição ajuda o Google a exibir o perfil em buscas mais específicas, ampliando o alcance orgânico sem custo adicional."],
-      ["h2", "Passo a Passo para Otimizar o Perfil da Empresa Hoje"],
-      ["p", "O primeiro passo é verificar se o perfil está reivindicado e verificado. Um perfil não verificado tem funcionalidades limitadas e pode ser editado por terceiros por engano. Para verificar, acesse o Google e pesquise pelo nome da sua empresa, clique em gerenciar perfil e siga o processo de verificação que pode ser feito por e-mail, SMS ou videochamada dependendo da categoria do negócio. Empresas que ainda têm o perfil no formato antigo do Google Meu Negócio devem migrar para o novo gerenciamento diretamente pelo Google."],
-      ["p", "Com o perfil verificado, o próximo passo é revisar e completar todas as informações básicas: nome, endereço, telefone, site, horário de funcionamento por dia da semana, categoria principal e categorias secundárias. Em seguida, acesse a seção de atributos e preencha todos os que se aplicam ao seu negócio, como formas de pagamento, acessibilidade, estacionamento, Wi-Fi ou serviço de entrega. Depois, adicione fotos recentes do estabelecimento, produtos, equipe e ambiente interno e externo. Imagens atualizadas transmitem confiança e aumentam a taxa de cliques no perfil."],
-      ["p", "Com o perfil básico em ordem, integre o WhatsApp como canal de contato e publique o primeiro post. Para manter o perfil ativo, estabeleça uma rotina simples de gestão: um post por semana, resposta a todas as avaliações em até 48 horas e revisão mensal das informações de horário e serviços. Essa rotina, que leva em média 30 minutos por semana, é suficiente para manter o perfil competitivo nos resultados locais de Foz do Iguaçu ao longo do ano."],
-      ["h2", "Conclusão: Perfil da Empresa no Google é Parte da Estratégia Digital em 2026"],
-      ["p", "O Perfil da Empresa no Google deixou de ser um cadastro passivo que você cria uma vez e esquece. Em 2026, ele é uma plataforma ativa de comunicação, captação e ranqueamento que exige manutenção contínua para entregar resultados consistentes. As atualizações lançadas pelo Google neste ano, da IA que responde perguntas à integração com WhatsApp e ao agendamento de posts, transformaram o perfil em uma ferramenta de marketing local com potencial real de gerar clientes sem custo direto com anúncios."],
-      ["p", "Para negócios em Foz do Iguaçu, que operam em um mercado com alto fluxo turístico e crescente competitividade digital, investir tempo na otimização do Perfil da Empresa é uma das ações com melhor relação entre esforço e resultado disponíveis atualmente. É um canal que funciona 24 horas por dia, que aparece exatamente no momento em que o cliente está procurando pelo que você oferece e que não cobra por clique ou por impressão. Quando bem configurado e mantido ativo, o perfil atua como um vendedor digital silencioso que trabalha enquanto você foca no seu negócio."],
-      ["p", "Se você precisa de apoio para otimizar o seu Perfil da Empresa no Google, ou se quer integrar essa estratégia com campanhas de tráfego pago para multiplicar sua presença nos resultados locais de Foz do Iguaçu, falar com um especialista em gestão de tráfego com experiência no mercado local pode acelerar significativamente esse processo e evitar os erros mais comuns que consomem tempo e oportunidades."],
-    ],
-  },
+      slug: "/blog/perfil-da-empresa-google-2026-negocios-locais",
+      category: "canais",
+      title: "Perfil da Empresa no Google em 2026: Guia para Negócios Locais",
+      description: "Veja as principais atualizações do Perfil da Empresa no Google em 2026, com IA, WhatsApp e novos sinais de ranking para negócios em Foz do Iguaçu",
+      h1: "Perfil da Empresa no Google em 2026: guia para negócios locais",
+      intro: "As atualizações do Perfil da Empresa no Google mudam como negócios locais aparecem na Busca, no Maps e nos contatos por WhatsApp.",
+      cta: "Falar com um especialista em tráfego local",
+      body: [
+        ["p", "Se você tem um negócio em Foz do Iguaçu e ainda não otimizou seu Perfil da Empresa no Google, ou se faz tempo que não acessa esse canal, 2026 é o ano em que essa negligência pode custar clientes reais. O Google atualizou significativamente o que antes era chamado de Google Meu Negócio, adicionando inteligência artificial, integração com WhatsApp, agendamento de posts, novos sinais de ranqueamento local e conexão direta com o Google Analytics. Essas mudanças transformam o perfil de um simples cartão de visitas digital em uma ferramenta ativa de captação de clientes. Este guia explica o que mudou, por que importa e o que donos de negócios locais devem fazer agora para se posicionar melhor nas buscas do Google e no Google Maps em 2026."],
+        ["h2", "O Que É o Perfil da Empresa no Google e Por Que Ele Importa"],
+        ["p", "O Perfil da Empresa no Google, anteriormente conhecido como Google Meu Negócio, é o cadastro gratuito que permite que empresas apareçam nos resultados do Google quando alguém pesquisa por um produto ou serviço próximo. Quando um morador de Foz do Iguaçu busca por restaurante perto de mim, eletricista em Foz do Iguaçu ou hotel no centro de Foz, os resultados que aparecem em destaque antes dos links orgânicos normais são os perfis das empresas cadastradas e otimizadas. Estar presente nesse espaço é um dos caminhos mais diretos para atrair clientes sem investir em anúncios pagos."],
+        ["p", "Diferente do site da empresa, que precisa de visitas espontâneas ou anúncios para ser encontrado, o Perfil da Empresa aparece de forma proeminente quando alguém já está buscando pelo tipo de negócio que você oferece. Isso significa que as pessoas que chegam até o seu perfil já têm intenção de compra ou de contato. Por isso, a qualidade das informações exibidas no perfil, as fotos, as avaliações, os horários e os serviços listados têm impacto direto na decisão de o cliente entrar em contato com você ou escolher um concorrente."],
+        ["p", "Em 2026, o Google tornou o Perfil da Empresa ainda mais relevante ao integrar seus dados com os resultados de busca por IA, os chamados AI Overviews, e ao adicionar novos recursos de comunicação e publicação. Negócios com perfis bem preenchidos, ativos e atualizados estão sendo favorecidos pelo algoritmo de busca local, enquanto perfis incompletos ou abandonados perdem visibilidade gradualmente mesmo que o negócio tenha anos de mercado e boa reputação offline."],
+        ["h2", "As Principais Atualizações do Perfil da Empresa no Google em 2026"],
+        ["p", "Em 2026, o Google implementou um conjunto de atualizações que mudaram como o perfil funciona tanto para empresas quanto para clientes que pesquisam. A mais visível é a integração com inteligência artificial para responder automaticamente perguntas feitas pelos usuários no perfil, com base nos dados do próprio negócio. Outra mudança importante é a possibilidade de adicionar o WhatsApp como canal de contato direto, substituindo o recurso de chat anterior que foi descontinuado pela plataforma."],
+        ["p", "O Google também lançou agendamento nativo de posts dentro do Perfil da Empresa, permitindo que donos de negócio programem publicações com antecedência sem precisar de ferramentas externas. Para redes com múltiplos locais, chegou a possibilidade de criar um único post e publicá-lo simultaneamente em todas as unidades. Além disso, os sinais que o Google usa para rankear empresas no Maps e nas buscas locais foram atualizados, dando mais peso para engajamento recente, como respostas a avaliações, posts publicados e perguntas respondidas."],
+        ["p", "Para negócios em Foz do Iguaçu, todas essas mudanças criam uma oportunidade concreta. Enquanto muitos concorrentes ainda usam o perfil de forma passiva, apenas com o básico preenchido, empresas que adotarem as novas funcionalidades em 2026 têm a chance de ganhar visibilidade relevante nos resultados locais sem nenhum gasto adicional em anúncios. A diferença entre aparecer em primeiro ou em quinto no Maps pode representar dezenas de clientes a mais por mês, dependendo do segmento e do volume de buscas locais."],
+        ["h2", "IA Respondendo Perguntas no Seu Perfil Automaticamente"],
+        ["p", "Um dos recursos mais significativos lançados em 2026 é o uso de inteligência artificial para responder perguntas feitas por usuários diretamente no Perfil da Empresa. Quando um potencial cliente faz uma pergunta como aceitam cartão de crédito ou têm estacionamento, a IA do Google pode gerar uma resposta automática baseada no conteúdo do perfil, no site da empresa e nas avaliações existentes. O dono do negócio recebe uma notificação e pode aprovar, editar ou rejeitar a resposta gerada antes que ela seja publicada."],
+        ["p", "Esse recurso tem implicações práticas importantes. Por um lado, agiliza a comunicação e garante que perguntas não fiquem sem resposta por longos períodos, o que prejudica a experiência do usuário e o ranqueamento do perfil. Por outro, exige atenção do dono do negócio para revisar as respostas geradas pela IA, que podem estar desatualizadas ou imprecisas caso as informações do perfil não estejam corretas e bem detalhadas. Uma resposta errada publicada automaticamente pode criar confusão para o cliente antes mesmo de ele entrar em contato."],
+        ["p", "Para aproveitar bem esse recurso, o primeiro passo é garantir que o perfil tenha todas as informações básicas corretas e detalhadas: horários de funcionamento, serviços oferecidos, formas de pagamento, endereço e telefone. Quanto mais completo estiver o perfil, mais precisa será a IA ao gerar respostas. Estabelecimentos em Foz do Iguaçu com atributos de turismo, como aceitar reserva online, ter cardápio em espanhol ou oferecer translado para o aeroporto, devem garantir que essas informações estejam preenchidas corretamente para que a IA possa transmiti-las automaticamente."],
+        ["h2", "Integração com WhatsApp: Como Funciona e Como Ativar"],
+        ["p", "Em 2026, o Google lançou a integração do Perfil da Empresa com o WhatsApp, permitindo que empresas adicionem um número de WhatsApp como canal de contato visível diretamente na listagem do Maps e nas buscas. Quando o cliente clica no botão de WhatsApp no perfil, é redirecionado diretamente para uma conversa com o número cadastrado, sem precisar copiar o número e abrir o aplicativo manualmente. Essa redução de atrito no processo de contato tende a aumentar o volume de mensagens recebidas pelo negócio."],
+        ["p", "Para ativar a integração, basta acessar o painel do Perfil da Empresa no Google, navegar até a seção de informações de contato e adicionar o número de WhatsApp da empresa. O Google pode solicitar verificação do número durante o processo. É recomendável usar um número de WhatsApp Business, que permite configurar respostas automáticas, horários de atendimento e mensagens de ausência, tornando a comunicação mais profissional e eficiente mesmo fora do horário comercial."],
+        ["p", "Para negócios em Foz do Iguaçu que já usam o WhatsApp como principal canal de atendimento, como restaurantes recebendo reservas, pousadas confirmando disponibilidade ou prestadores de serviço agendando visitas, essa integração é especialmente relevante. Ela facilita o primeiro contato do cliente que encontrou o negócio no Google e quer tirar uma dúvida rápida ou fazer uma reserva sem precisar ligar, comportamento cada vez mais comum entre consumidores que preferem comunicação por mensagem de texto."],
+        ["h2", "Agendamento de Posts e Manutenção Ativa do Perfil"],
+        ["p", "O agendamento nativo de posts é outro recurso novo do Perfil da Empresa em 2026 que facilita a manutenção de um perfil ativo sem depender de ferramentas de terceiros. Antes, publicar posts no perfil precisava ser feito em tempo real, o que tornava difícil manter regularidade para donos de negócio com rotinas intensas. Com o agendamento, é possível dedicar um tempo fixo por semana para planejar e programar publicações de promoções, eventos, novidades e comunicados, garantindo consistência sem esforço diário."],
+        ["p", "Posts publicados com regularidade têm impacto direto no ranqueamento do perfil. O Google trata um perfil ativo, com publicações recentes e interações frequentes, de forma mais favorável em relação a perfis estáticos. Em 2026, o algoritmo local passou a valorizar ainda mais sinais de atividade recente, o que significa que uma empresa que publicou um post há dois dias tende a ter vantagem de ranqueamento sobre uma concorrente que não publica nada há meses, mesmo que a segunda tenha mais avaliações acumuladas no histórico."],
+        ["p", "Tipos de posts que funcionam bem no perfil incluem: ofertas com data de validade, que criam urgência e mostram que o perfil está ativo; anúncios de novidades, como novo produto, serviço ou horário estendido; eventos especiais, como jantares temáticos para restaurantes ou promoções para datas comemorativas em Foz do Iguaçu; e atualizações operacionais, como mudanças de horário em feriados ou durante alta temporada turística. Qualquer conteúdo relevante para o cliente local é válido e contribui para manter o perfil vivo."],
+        ["h2", "Novos Sinais de Ranqueamento Local em 2026"],
+        ["p", "O algoritmo que define a ordem em que empresas aparecem no Google Maps e nas buscas locais é atualizado continuamente, e em 2026 houve mudanças relevantes nos fatores que ele avalia. O Google passou a dar mais peso para sinais de popularidade recente em vez de apenas popularidade histórica. Isso significa que um negócio com muitas avaliações antigas e pouca atividade recente pode perder posição para um concorrente mais novo, mas com perfil mais ativo, mais avaliações recentes e mais interações nos últimos trinta dias."],
+        ["p", "Entre os sinais que ganharam mais relevância em 2026 estão: a taxa de resposta às avaliações, indicando o quanto o dono do negócio está engajado com os clientes; a frequência de publicações no perfil; a taxa de cliques no perfil a partir dos resultados de busca; e o número de interações recentes via WhatsApp ou formulário de contato. Esses sinais comportamentais indicam para o algoritmo que o negócio está ativo, relevante e bem gerenciado, o que aumenta a confiança do Google em recomendá-lo para usuários locais."],
+        ["p", "A completude do perfil também ganhou mais peso. Em 2026, o Google expandiu a lista de atributos disponíveis para diferentes categorias de negócio. Restaurantes podem indicar se têm cardápio vegetariano, área externa, música ao vivo ou aceita reserva pelo Google. Hotéis podem especificar serviços de concierge, café da manhã incluído, piscina ou translado para as Cataratas. Preencher esses atributos específicos da categoria é um diferencial que influencia o ranqueamento e aumenta a probabilidade de o perfil aparecer em buscas com filtros aplicados."],
+        ["h2", "Comparativo: Perfil Básico Versus Perfil Otimizado"],
+        ["table", [
+          ["Critério", "Perfil Básico", "Perfil Otimizado 2026"],
+          ["Informações de contato", "Telefone e endereço", "Telefone, endereço, WhatsApp integrado, site"],
+          ["Fotos", "1 a 3 fotos antigas", "10+ fotos atualizadas, logo e imagem de capa"],
+          ["Posts", "Nenhum ou esporádicos", "Agendados semanalmente"],
+          ["Avaliações", "Sem resposta", "Respondidas em menos de 48 horas"],
+          ["Perguntas e respostas", "Sem resposta", "IA configurada e respostas revisadas"],
+          ["Serviços listados", "Apenas categoria geral", "Serviços detalhados com descrição e preço"],
+          ["Atributos", "Não preenchidos", "Todos os atributos relevantes preenchidos"],
+          ["Resultado esperado", "Aparece raramente ou em posição baixa", "Aparece nas primeiras posições do Map Pack"]
+        ]],
+        ["p", "A tabela acima ilustra a diferença prática entre um perfil mínimo e um perfil otimizado segundo os padrões do Google em 2026. Para negócios em Foz do Iguaçu que dependem de visibilidade local para gerar clientes, a distância entre essas duas configurações pode representar a diferença entre ser encontrado ou ser ignorado nas buscas mais relevantes do dia a dia. O custo de otimizar o perfil é zero em dinheiro, mas exige tempo e consistência na manutenção."],
+        ["h2", "AI Overviews e o Impacto nas Buscas Locais"],
+        ["p", "Os AI Overviews, resumos de busca gerados por inteligência artificial que aparecem no topo da página do Google, chegaram às pesquisas locais em 2026. Quando alguém busca por qual é o melhor hotel em Foz do Iguaçu ou onde comer frutos do mar perto das Cataratas, o Google pode exibir um resumo gerado por IA antes dos resultados tradicionais. Esse resumo é construído a partir dos dados dos Perfis da Empresa, das avaliações dos clientes e do conteúdo dos sites das empresas."],
+        ["p", "Para aparecer nos AI Overviews de buscas locais, o Perfil da Empresa precisa ter dados precisos, avaliações positivas e conteúdo detalhado sobre os serviços. O Google prioriza perfis com alta confiabilidade e completude de informações ao construir esses resumos de IA. Negócios com muitas avaliações recentes, com respostas do proprietário e com descrições claras dos serviços têm mais chance de serem mencionados nesses resumos, aumentando sua visibilidade mesmo para usuários que não chegam a clicar no perfil completo."],
+        ["p", "Um aspecto importante é que os AI Overviews podem aparecer tanto em buscas genéricas quanto em buscas com intenção de compra imediata, como preciso de um eletricista agora em Foz do Iguaçu. Para negócios de serviço local, estar presente nesses resumos pode significar mais ligações e mensagens recebidas sem custo adicional. A estratégia para isso é simples na teoria, mas exige disciplina na execução: manter o perfil completo, ativo e com avaliações recentes respondidas."],
+        ["h2", "Como o Perfil da Empresa se Conecta ao Tráfego Pago"],
+        ["p", "O Perfil da Empresa no Google e as campanhas de tráfego pago não são estratégias separadas, elas se complementam diretamente. As campanhas de Google Ads para buscas locais, como campanhas de Pesquisa com segmentação geográfica em Foz do Iguaçu, podem exibir o endereço da empresa, o número de telefone e a avaliação do perfil diretamente no anúncio por meio das extensões de local e de chamada. Isso torna o anúncio mais informativo e aumenta a taxa de cliques, especialmente em dispositivos móveis."],
+        ["p", "As campanhas de Performance Max do Google Ads usam os dados do Perfil da Empresa para otimizar anúncios no Google Maps. Quando um negócio local ativa os anúncios de Maps, seus anúncios aparecem como destaque no mapa quando usuários pesquisam por serviços próximos à área configurada. Essa integração exige que o Perfil da Empresa esteja verificado e atualizado para funcionar corretamente. Um perfil desatualizado ou com informações incorretas pode comprometer a veiculação dos anúncios locais."],
+        ["p", "Em termos de estratégia, o perfil orgânico e o tráfego pago se reforçam mutuamente. Um negócio com bom ranqueamento orgânico no Maps e campanhas pagas ativas ocupa mais espaço visual nos resultados de busca locais, aumentando a probabilidade de o cliente escolhê-lo. Para gestores de tráfego que trabalham com negócios em Foz do Iguaçu, orientar o cliente a manter o Perfil da Empresa otimizado é parte integrante de uma estratégia de tráfego pago eficiente, não um detalhe secundário."],
+        ["h2", "Erros Comuns que Negócios em Foz do Iguaçu Cometem no Perfil"],
+        ["p", "Um dos erros mais frequentes é manter o horário de funcionamento desatualizado, especialmente durante feriados, alta temporada turística ou períodos de recesso. O Google penaliza perfis com horários inconsistentes porque eles criam experiências negativas para o usuário que vai até o estabelecimento fora do horário real. Em Foz do Iguaçu, onde o fluxo de turistas é elevado em determinadas épocas do ano, ter horários corretos no perfil é ainda mais crítico porque esses visitantes dependem das informações online para planejar suas visitas."],
+        ["p", "Outro erro comum é ignorar as avaliações negativas. Quando um cliente insatisfeito deixa uma avaliação ruim e o dono do negócio não responde, o impacto é duplo: o Google interpreta a falta de resposta como baixo engajamento, prejudicando o ranqueamento, e potenciais clientes que leem a avaliação não têm a visão do outro lado da história. Responder a avaliações negativas com educação, reconhecendo o problema e explicando o que foi feito para corrigi-lo, demonstra profissionalismo e pode reverter a percepção negativa de quem está lendo."],
+        ["p", "Um terceiro erro é não usar a seção de produtos ou serviços do perfil. Muitos negócios preenchem apenas a categoria geral, como restaurante ou loja de roupas, sem listar os serviços ou produtos específicos que oferecem. Essa seção permite descrever cada serviço com título, descrição e faixa de preço. Para prestadores de serviço em Foz do Iguaçu, como empresas de mudança, limpeza ou instalação, listar os serviços com descrição ajuda o Google a exibir o perfil em buscas mais específicas, ampliando o alcance orgânico sem custo adicional."],
+        ["h2", "Passo a Passo para Otimizar o Perfil da Empresa Hoje"],
+        ["p", "O primeiro passo é verificar se o perfil está reivindicado e verificado. Um perfil não verificado tem funcionalidades limitadas e pode ser editado por terceiros por engano. Para verificar, acesse o Google e pesquise pelo nome da sua empresa, clique em gerenciar perfil e siga o processo de verificação que pode ser feito por e-mail, SMS ou videochamada dependendo da categoria do negócio. Empresas que ainda têm o perfil no formato antigo do Google Meu Negócio devem migrar para o novo gerenciamento diretamente pelo Google."],
+        ["p", "Com o perfil verificado, o próximo passo é revisar e completar todas as informações básicas: nome, endereço, telefone, site, horário de funcionamento por dia da semana, categoria principal e categorias secundárias. Em seguida, acesse a seção de atributos e preencha todos os que se aplicam ao seu negócio, como formas de pagamento, acessibilidade, estacionamento, Wi-Fi ou serviço de entrega. Depois, adicione fotos recentes do estabelecimento, produtos, equipe e ambiente interno e externo. Imagens atualizadas transmitem confiança e aumentam a taxa de cliques no perfil."],
+        ["p", "Com o perfil básico em ordem, integre o WhatsApp como canal de contato e publique o primeiro post. Para manter o perfil ativo, estabeleça uma rotina simples de gestão: um post por semana, resposta a todas as avaliações em até 48 horas e revisão mensal das informações de horário e serviços. Essa rotina, que leva em média 30 minutos por semana, é suficiente para manter o perfil competitivo nos resultados locais de Foz do Iguaçu ao longo do ano."],
+        ["h2", "Conclusão: Perfil da Empresa no Google é Parte da Estratégia Digital em 2026"],
+        ["p", "O Perfil da Empresa no Google deixou de ser um cadastro passivo que você cria uma vez e esquece. Em 2026, ele é uma plataforma ativa de comunicação, captação e ranqueamento que exige manutenção contínua para entregar resultados consistentes. As atualizações lançadas pelo Google neste ano, da IA que responde perguntas à integração com WhatsApp e ao agendamento de posts, transformaram o perfil em uma ferramenta de marketing local com potencial real de gerar clientes sem custo direto com anúncios."],
+        ["p", "Para negócios em Foz do Iguaçu, que operam em um mercado com alto fluxo turístico e crescente competitividade digital, investir tempo na otimização do Perfil da Empresa é uma das ações com melhor relação entre esforço e resultado disponíveis atualmente. É um canal que funciona 24 horas por dia, que aparece exatamente no momento em que o cliente está procurando pelo que você oferece e que não cobra por clique ou por impressão. Quando bem configurado e mantido ativo, o perfil atua como um vendedor digital silencioso que trabalha enquanto você foca no seu negócio."],
+        ["p", "Se você precisa de apoio para otimizar o seu Perfil da Empresa no Google, ou se quer integrar essa estratégia com campanhas de tráfego pago para multiplicar sua presença nos resultados locais de Foz do Iguaçu, falar com um especialista em gestão de tráfego com experiência no mercado local pode acelerar significativamente esse processo e evitar os erros mais comuns que consomem tempo e oportunidades."],
+      ],
+    },
   {
-    slug: "/blog/google-marketing-live-2026-o-que-mudou-no-google-ads",
-    title: "Google Marketing Live 2026: O Que Mudou no Google Ads",
-    description: "Veja as principais novidades anunciadas no Google Marketing Live 2026 e entenda como as mudanças afetam quem anuncia no Google Ads no Brasil",
-    cta: "Falar com um especialista em Google Ads",
-    body: [
-      ["p", "Em maio de 2026, o Google realizou o Google Marketing Live, seu principal evento anual de publicidade digital, e anunciou uma série de mudanças significativas na plataforma Google Ads. O evento, focado em inteligência artificial e automação, apresentou novos recursos que afetam diretamente a forma como campanhas são criadas, gerenciadas e avaliadas. Para pequenas e médias empresas de Foz do Iguaçu que anunciam ou pretendem anunciar no Google, compreender essas mudanças é o ponto de partida para tomar decisões mais bem informadas sobre onde e como investir o orçamento de marketing digital."],
-      ["h2", "O Que Foi o Google Marketing Live 2026"],
-      ["p", "O Google Marketing Live é o evento anual da Google dedicado a apresentar novidades da plataforma de anúncios para anunciantes, agências e gestores de mídia paga ao redor do mundo. Em 2026, o evento aconteceu em 20 de maio e teve como tema central a integração da inteligência artificial em praticamente todos os aspectos do Google Ads, desde a criação de criativos até a mensuração de resultados. Foi considerado por especialistas como um dos eventos mais impactantes da história recente da plataforma de anúncios do Google."],
-      ["p", "Diferente de anos anteriores, onde o foco estava em recursos pontuais como novas formas de segmentação ou formatos de anúncios, o Google Marketing Live 2026 apresentou uma visão sistêmica de como a IA vai transformar a operação de campanhas. O Google chamou esse conjunto de mudanças de inteligência artificial agêntica nos anúncios, indicando que o Gemini, modelo de linguagem da Google, passará a agir de forma mais autônoma dentro das campanhas para otimizar resultados de maneira contínua e adaptativa."],
-      ["p", "Para profissionais do mercado de tráfego pago, o evento trouxe tanto oportunidades quanto desafios. As novas ferramentas prometem simplificar tarefas operacionais e ampliar o alcance de campanhas com menos esforço manual. Ao mesmo tempo, a dependência crescente de automação exige que gestores desenvolvam habilidades analíticas e estratégicas mais sofisticadas, já que a execução técnica tende a se tornar cada vez mais automatizada pela própria plataforma, transferindo o diferencial competitivo para a qualidade da estratégia e da análise de dados."],
-      ["h2", "IA Max: O Novo Recurso para Campanhas de Pesquisa"],
-      ["p", "Uma das novidades mais comentadas do Google Marketing Live 2026 foi o lançamento do IA Max para campanhas de pesquisa. Esse recurso adiciona uma camada de inteligência artificial às campanhas tradicionais de pesquisa do Google Ads, expandindo automaticamente as palavras-chave e os anúncios para consultas relevantes que o anunciante não havia cadastrado originalmente. Na prática, o algoritmo identifica padrões de busca relacionados ao negócio e exibe os anúncios em pesquisas com potencial de conversão, mesmo que essas palavras-chave não estejam na lista configurada pelo gestor."],
-      ["p", "O IA Max também inclui controles de marca aprimorados, que permitem ao anunciante definir quais termos de busca ou categorias de concorrentes não devem acionar seus anúncios. Essa funcionalidade foi muito solicitada por anunciantes que reclamavam da falta de transparência nas campanhas automatizadas. Com os novos controles, é possível, por exemplo, impedir que anúncios apareçam para buscas de concorrentes diretos ou para termos que não correspondem ao perfil do cliente ideal do negócio."],
-      ["p", "Para negócios locais em Foz do Iguaçu, o IA Max pode ser relevante quando bem configurado. Uma pousada, por exemplo, pode ativar o recurso com palavras-chave relacionadas à hospedagem em Foz e deixar o algoritmo expandir o alcance para buscas complementares sobre turismo e atrações da região. A eficiência desse recurso depende da qualidade das configurações iniciais e do acompanhamento por um profissional que saiba balancear automação e controle para o contexto específico do negócio."],
-      ["p", "É importante destacar que o IA Max não substitui a necessidade de uma estratégia de palavras-chave bem definida. Ele atua como uma expansão inteligente, mas os melhores resultados tendem a vir quando há uma base sólida de palavras-chave negativas, grupos de anúncios bem estruturados e criativos adequados ao público local. Ativar o recurso sem essa base pode levar a um aumento de alcance sem o correspondente aumento em conversões qualificadas para o negócio."],
-      ["h2", "Geração de Demanda: Campanhas Visuais com Inteligência Artificial"],
-      ["p", "Outro destaque do Google Marketing Live 2026 foi a evolução das campanhas de Geração de Demanda, que funcionam em canais visuais como YouTube, Discover e Gmail. Em 2026, o Google aprimorou o uso de IA para criar e testar variações de criativos dentro dessas campanhas de forma automática, reduzindo o esforço manual necessário para produzir anúncios em múltiplos formatos e tamanhos ao mesmo tempo."],
-      ["p", "As campanhas de Geração de Demanda foram inicialmente lançadas como substituta das campanhas Discovery. Ao longo dos anos seguintes, o Google foi adicionando integrações com o YouTube Shorts e refinando o algoritmo de entrega. Em 2026, a novidade principal é a possibilidade de usar o Gemini para gerar variações de texto e imagem diretamente dentro do Gerenciador de Anúncios, acelerando o processo de criação de criativos para pequenas empresas que não têm equipe de design dedicada ou orçamento para produção constante."],
-      ["p", "Para empresas de Foz do Iguaçu nos setores de turismo, gastronomia e serviços, as campanhas de Geração de Demanda representam uma oportunidade de exibir imagens e vídeos do negócio em canais de alta audiência como o YouTube com orçamentos mais acessíveis do que as campanhas de vídeo tradicionais. A segmentação por interesse e comportamento permite alcançar pessoas que estão na fase de consideração, antes mesmo de pesquisarem ativamente pelo serviço no Google."],
-      ["h2", "Mais Controle e Transparência no Performance Max"],
-      ["p", "O Performance Max também recebeu atualizações relevantes no Google Marketing Live 2026. A principal delas é a melhoria nos relatórios de canal, que agora mostram com mais clareza quanto do orçamento está sendo investido em cada canal do Google, como YouTube, Pesquisa, Display e Google Maps. Antes, essa informação era fragmentada e difícil de interpretar, gerando frustração em anunciantes que queriam entender o desempenho de cada canal separadamente e tomar decisões baseadas nesses dados."],
-      ["p", "Outra melhoria foi a ampliação dos controles de exclusão de público. Agora é possível excluir listas de remarketing de campanhas Performance Max, o que era uma limitação criticada por muitos gestores. Isso permite que uma empresa exclua clientes recentes de suas campanhas de prospecção, evitando gastar verba com quem já converteu. Para negócios locais com base de clientes mapeada, essa funcionalidade pode melhorar a eficiência do orçamento de forma considerável ao focar o investimento em novos clientes potenciais."],
-      ["p", "O Google também anunciou maior flexibilidade na criação de grupos de assets dentro do Performance Max. Com isso, anunciantes podem organizar melhor os criativos por segmento de produto, serviço ou público, tornando as campanhas mais estruturadas e facilitando a análise de quais combinações de criativos têm melhor desempenho. Para gestores que trabalham com múltiplos serviços ou produtos, essa organização pode fazer diferença na qualidade dos relatórios e na capacidade de tomar decisões baseadas em dados reais."],
-      ["h2", "Criação de Criativos com Gemini Dentro do Google Ads"],
-      ["p", "Um dos temas mais discutidos no Google Marketing Live 2026 foi a criação de criativos com IA. O Google expandiu as funcionalidades do Gemini dentro do Google Ads para permitir que anunciantes gerem textos de anúncio, títulos, descrições e imagens diretamente na plataforma, sem precisar sair do Gerenciador de Anúncios. A ferramenta sugere variações baseadas no conteúdo do site do anunciante e nas configurações da campanha, acelerando o processo de criação especialmente para quem não tem equipe criativa dedicada."],
-      ["p", "A geração de imagens com IA dentro do Google Ads ainda está em fase de expansão para diferentes mercados e tipos de conta. Em linhas gerais, o anunciante descreve o tipo de imagem desejada e o Gemini gera opções que podem ser usadas nas campanhas de Display, Performance Max e Geração de Demanda. Trata-se de uma funcionalidade que pode reduzir custos de produção de criativos para pequenas empresas, embora a qualidade das imagens deva ser avaliada com cuidado antes de serem publicadas."],
-      ["p", "A criação de textos com IA também avançou significativamente. O Gemini analisa a página de destino do anúncio e sugere títulos e descrições otimizados para diferentes intenções de busca. O anunciante pode aceitar, editar ou rejeitar as sugestões. Especialistas recomendam que essas sugestões sejam sempre revisadas por um profissional, pois a ferramenta nem sempre capta nuances locais, termos técnicos do setor ou o tom de voz da marca. Referências culturais e regionais de Foz do Iguaçu, por exemplo, raramente são incorporadas adequadamente sem ajuste manual."],
-      ["h2", "Novos Relatórios e Transparência na Plataforma"],
-      ["p", "Transparência foi uma das palavras mais repetidas durante o Google Marketing Live 2026. O Google anunciou melhorias nos relatórios de performance para campanhas de pesquisa, incluindo novas métricas relacionadas à qualidade do tráfego gerado, como a proporção de cliques que resultam em engajamento real no site versus cliques que resultam em abandono imediato. Essas métricas complementam o Índice de Qualidade existente e ajudam gestores a identificar problemas na experiência da página de destino que podem estar comprometendo os resultados das campanhas."],
-      ["p", "Também foram anunciados relatórios aprimorados para o IA Max, mostrando quais expansões de palavras-chave geradas automaticamente estão trazendo mais conversões. Essa transparência é importante para que gestores possam validar se a expansão automática está alinhada com a estratégia da campanha ou se é necessário adicionar mais palavras-chave negativas para filtrar tráfego irrelevante. No passado, essa visibilidade era limitada, o que tornava difícil avaliar objetivamente a qualidade do tráfego gerado pelo recurso automático."],
-      ["p", "No campo de mensuração, o Google reforçou a integração entre Google Ads e Google Analytics 4, facilitando a visualização do caminho completo do usuário desde o clique no anúncio até a conversão final. Para anunciantes que usam múltiplos canais de marketing, como Google Ads e Meta Ads simultaneamente, a integração com o GA4 permite entender melhor a contribuição de cada canal na jornada do cliente, evitando decisões baseadas apenas na última interação registrada antes da conversão."],
-      ["h2", "Comparativo das Principais Novidades do Google Marketing Live 2026"],
-      ["table", [
-        ["Novidade", "Canal afetado", "Impacto para negócios locais"],
-        ["IA Max para Pesquisa", "Campanhas de Pesquisa", "Expansão automática de palavras-chave com controle de marca"],
-        ["Geração de Demanda com IA", "YouTube, Discover, Gmail", "Criação de criativos visuais com menor custo de produção"],
-        ["Relatórios de canal no PMax", "Performance Max", "Visibilidade sobre distribuição de orçamento por canal"],
-        ["Exclusão de remarketing no PMax", "Performance Max", "Evitar gastar verba com clientes já convertidos"],
-        ["Geração de imagens com Gemini", "Display, PMax, Demand Gen", "Criação de imagens de anúncio dentro da plataforma"],
-        ["Relatórios aprimorados de busca", "Pesquisa e IA Max", "Mais visibilidade sobre qualidade do tráfego gerado"],
-        ["Integração GA4 aprimorada", "Todos os canais", "Visão completa da jornada do cliente entre canais"]
-      ]],
-      ["p", "A tabela acima resume as principais mudanças anunciadas e seu impacto direto para anunciantes locais. Vale notar que nem todos os recursos estarão disponíveis imediatamente para todas as contas no Brasil, pois o Google costuma fazer lançamentos graduais por região e tipo de conta. Consultar um gestor de tráfego atualizado é a forma mais eficiente de saber quais recursos já estão disponíveis para a sua conta e quais ainda estão em fase de expansão para o mercado brasileiro."],
-      ["h2", "O Que Muda para Negócios Locais em Foz do Iguaçu"],
-      ["p", "Para pequenas e médias empresas de Foz do Iguaçu, as mudanças do Google Marketing Live 2026 trazem tanto oportunidades quanto um aumento na complexidade de gestão das campanhas. As ferramentas de IA prometem democratizar recursos antes acessíveis apenas para grandes anunciantes com equipes especializadas. Um restaurante, hotel ou prestador de serviço local pode agora criar criativos, expandir o alcance e medir resultados com menos esforço operacional do que era necessário há poucos anos."],
-      ["p", "Por outro lado, o aumento da automação não elimina a necessidade de estratégia. Ferramentas de IA operam dentro dos parâmetros que o anunciante define. Se os objetivos, o público-alvo, o orçamento e as exclusões não forem configurados corretamente, o algoritmo pode otimizar para as metas erradas. Um hotel que configura mal sua campanha pode acabar atraindo cliques de públicos sem potencial de reserva, ou desperdiçando verba com termos de busca não relacionados aos seus serviços reais."],
-      ["p", "Outro ponto de atenção é a concorrência local. Em Foz do Iguaçu, negócios do setor de turismo, hotéis, restaurantes e serviços estão cada vez mais presentes no Google Ads. Com a popularização das ferramentas de IA, é esperado que mais anunciantes entrem na plataforma, o que pode elevar os leilões de palavras-chave locais e aumentar o custo por clique em categorias mais competitivas. Estar bem configurado e com campanhas bem estruturadas torna-se ainda mais relevante neste contexto."],
-      ["p", "Para negócios que ainda não anunciam no Google, 2026 é um bom momento para começar a explorar a plataforma. As ferramentas de IA facilitam a criação de campanhas iniciais mesmo para quem tem pouca familiaridade com o ambiente do Google Ads. No entanto, contar com orientação profissional ajuda a evitar os erros mais comuns, como configurar campanhas sem palavras-chave negativas, sem conversões rastreadas ou com páginas de destino inadequadas, situações que podem consumir orçamento sem trazer resultados mensuráveis."],
-      ["h2", "Como Se Adaptar às Mudanças do Google Ads em 2026"],
-      ["p", "O primeiro passo para se adaptar às mudanças do Google Ads em 2026 é garantir que o rastreamento de conversões esteja funcionando corretamente. Sem conversões configuradas, as campanhas automatizadas não têm dados suficientes para otimizar com eficiência. O Google Ads precisa saber quais ações no site são valiosas para o negócio, seja um formulário preenchido, uma ligação, uma compra ou uma mensagem via WhatsApp, para direcionar os anúncios para pessoas com maior propensão a realizar essa ação específica."],
-      ["p", "Em seguida, vale revisar a estrutura das campanhas existentes. Com o IA Max expandindo automaticamente o alcance das campanhas de pesquisa, torna-se ainda mais importante ter uma lista robusta de palavras-chave negativas. Sem essa lista, o algoritmo pode expandir os anúncios para buscas irrelevantes, gerando tráfego de baixa qualidade e desperdiçando orçamento. Negócios locais devem excluir termos relacionados a cidades onde não atuam e a públicos que não correspondem ao seu cliente ideal."],
-      ["p", "Para quem usa Performance Max, o momento é de revisar os grupos de assets e atualizar os criativos aproveitando os novos relatórios de canal disponíveis. Com esses dados, é possível identificar em quais canais a campanha está tendo melhor desempenho e ajustar a estratégia de acordo. Muitas vezes, o PMax gera bons resultados em pesquisa mas desempenho abaixo do esperado em Display, e com os novos dados disponíveis as decisões sobre orçamento passam a ser mais embasadas e menos intuitivas."],
-      ["h2", "O Papel do Gestor de Tráfego Neste Novo Cenário"],
-      ["p", "Com a crescente automação das plataformas de anúncios, é natural que donos de negócio se perguntem se ainda faz sentido contratar um gestor de tráfego. A resposta é sim, mas o papel do gestor evoluiu ao longo dos anos. Antes, grande parte do trabalho era operacional: criar anúncios, ajustar lances manualmente, monitorar palavras-chave individualmente. Com a IA assumindo parte dessas tarefas, o gestor passou a ter um papel mais estratégico, focado em análise de dados e ajuste das configurações que definem como o algoritmo vai otimizar."],
-      ["p", "Um bom gestor de tráfego em 2026 precisa entender como funciona cada novo recurso de IA, quais são seus limites e quando é necessário intervir manualmente. O IA Max, por exemplo, pode gerar tráfego de qualidade quando bem configurado, mas pode também consumir orçamento em buscas irrelevantes se as exclusões não forem gerenciadas com atenção. Essa distinção exige conhecimento técnico atualizado e capacidade de interpretar relatórios de forma crítica, sem aceitar passivamente o que a plataforma apresenta como resultado."],
-      ["p", "Para pequenas e médias empresas de Foz do Iguaçu, trabalhar com um gestor de tráfego local tem a vantagem adicional do conhecimento do mercado regional. Um profissional que entende a sazonalidade do turismo em Foz, os comportamentos de busca específicos da região e as particularidades de cada setor local tende a configurar campanhas mais alinhadas com a realidade do negócio do que uma ferramenta automatizada de propósito geral, que não conhece as especificidades do contexto local."],
-      ["p", "É importante que donos de negócio mantenham uma comunicação ativa com seu gestor de tráfego sobre as novidades da plataforma. Mudanças como as anunciadas no Google Marketing Live 2026 precisam ser avaliadas no contexto de cada negócio. Nem toda novidade precisa ser adotada imediatamente, e algumas mudanças afetam tipos específicos de campanha que podem não ser relevantes para todos os anunciantes. Um gestor atualizado vai filtrar o que é aplicável para o seu caso e priorizar as mudanças com maior potencial de impacto positivo."],
-      ["h2", "Conclusão: IA como Centro do Google Ads em 2026"],
-      ["p", "O Google Marketing Live 2026 consolidou uma tendência que vinha se desenhando nos últimos anos: a inteligência artificial é o novo centro de gravidade do Google Ads. Recursos como IA Max, geração de criativos com Gemini, campanhas de Geração de Demanda aprimoradas e novos relatórios de transparência indicam que a plataforma está evoluindo para oferecer mais automação, mais alcance e mais dados ao mesmo tempo. Para anunciantes bem preparados, isso representa uma oportunidade de ampliar o alcance das campanhas com eficiência. Para quem não está atento às mudanças, o risco é de continuar investindo em estratégias que deixaram de ser prioritárias pelo próprio Google."],
-      ["p", "Em Foz do Iguaçu, o momento é de atualização constante e, quando necessário, de buscar orientação profissional para adequar as campanhas ao novo contexto da plataforma. Se você tem dúvidas sobre como as novidades do Google Ads de 2026 se aplicam ao seu negócio, ou se ainda não anuncia no Google e quer entender por onde começar, fale com um especialista em gestão de tráfego pago que conheça a plataforma atualizada e compreenda as particularidades do mercado local de Foz do Iguaçu e região."],
-    ],
-  },
+      slug: "/blog/google-marketing-live-2026-o-que-mudou-no-google-ads",
+      category: "canais",
+      title: "Google Marketing Live 2026: O Que Mudou no Google Ads",
+      description: "Veja as principais novidades anunciadas no Google Marketing Live 2026 e entenda como as mudanças afetam quem anuncia no Google Ads no Brasil",
+      h1: "Google Marketing Live 2026: o que mudou no Google Ads",
+      intro: "O Google Marketing Live 2026 trouxe novidades de IA, automação e mensuração que afetam campanhas de Google Ads para negócios locais.",
+      cta: "Falar com um especialista em Google Ads",
+      body: [
+        ["p", "Em maio de 2026, o Google realizou o Google Marketing Live, seu principal evento anual de publicidade digital, e anunciou uma série de mudanças significativas na plataforma Google Ads. O evento, focado em inteligência artificial e automação, apresentou novos recursos que afetam diretamente a forma como campanhas são criadas, gerenciadas e avaliadas. Para pequenas e médias empresas de Foz do Iguaçu que anunciam ou pretendem anunciar no Google, compreender essas mudanças é o ponto de partida para tomar decisões mais bem informadas sobre onde e como investir o orçamento de marketing digital."],
+        ["h2", "O Que Foi o Google Marketing Live 2026"],
+        ["p", "O Google Marketing Live é o evento anual da Google dedicado a apresentar novidades da plataforma de anúncios para anunciantes, agências e gestores de mídia paga ao redor do mundo. Em 2026, o evento aconteceu em 20 de maio e teve como tema central a integração da inteligência artificial em praticamente todos os aspectos do Google Ads, desde a criação de criativos até a mensuração de resultados. Foi considerado por especialistas como um dos eventos mais impactantes da história recente da plataforma de anúncios do Google."],
+        ["p", "Diferente de anos anteriores, onde o foco estava em recursos pontuais como novas formas de segmentação ou formatos de anúncios, o Google Marketing Live 2026 apresentou uma visão sistêmica de como a IA vai transformar a operação de campanhas. O Google chamou esse conjunto de mudanças de inteligência artificial agêntica nos anúncios, indicando que o Gemini, modelo de linguagem da Google, passará a agir de forma mais autônoma dentro das campanhas para otimizar resultados de maneira contínua e adaptativa."],
+        ["p", "Para profissionais do mercado de tráfego pago, o evento trouxe tanto oportunidades quanto desafios. As novas ferramentas prometem simplificar tarefas operacionais e ampliar o alcance de campanhas com menos esforço manual. Ao mesmo tempo, a dependência crescente de automação exige que gestores desenvolvam habilidades analíticas e estratégicas mais sofisticadas, já que a execução técnica tende a se tornar cada vez mais automatizada pela própria plataforma, transferindo o diferencial competitivo para a qualidade da estratégia e da análise de dados."],
+        ["h2", "IA Max: O Novo Recurso para Campanhas de Pesquisa"],
+        ["p", "Uma das novidades mais comentadas do Google Marketing Live 2026 foi o lançamento do IA Max para campanhas de pesquisa. Esse recurso adiciona uma camada de inteligência artificial às campanhas tradicionais de pesquisa do Google Ads, expandindo automaticamente as palavras-chave e os anúncios para consultas relevantes que o anunciante não havia cadastrado originalmente. Na prática, o algoritmo identifica padrões de busca relacionados ao negócio e exibe os anúncios em pesquisas com potencial de conversão, mesmo que essas palavras-chave não estejam na lista configurada pelo gestor."],
+        ["p", "O IA Max também inclui controles de marca aprimorados, que permitem ao anunciante definir quais termos de busca ou categorias de concorrentes não devem acionar seus anúncios. Essa funcionalidade foi muito solicitada por anunciantes que reclamavam da falta de transparência nas campanhas automatizadas. Com os novos controles, é possível, por exemplo, impedir que anúncios apareçam para buscas de concorrentes diretos ou para termos que não correspondem ao perfil do cliente ideal do negócio."],
+        ["p", "Para negócios locais em Foz do Iguaçu, o IA Max pode ser relevante quando bem configurado. Uma pousada, por exemplo, pode ativar o recurso com palavras-chave relacionadas à hospedagem em Foz e deixar o algoritmo expandir o alcance para buscas complementares sobre turismo e atrações da região. A eficiência desse recurso depende da qualidade das configurações iniciais e do acompanhamento por um profissional que saiba balancear automação e controle para o contexto específico do negócio."],
+        ["p", "É importante destacar que o IA Max não substitui a necessidade de uma estratégia de palavras-chave bem definida. Ele atua como uma expansão inteligente, mas os melhores resultados tendem a vir quando há uma base sólida de palavras-chave negativas, grupos de anúncios bem estruturados e criativos adequados ao público local. Ativar o recurso sem essa base pode levar a um aumento de alcance sem o correspondente aumento em conversões qualificadas para o negócio."],
+        ["h2", "Geração de Demanda: Campanhas Visuais com Inteligência Artificial"],
+        ["p", "Outro destaque do Google Marketing Live 2026 foi a evolução das campanhas de Geração de Demanda, que funcionam em canais visuais como YouTube, Discover e Gmail. Em 2026, o Google aprimorou o uso de IA para criar e testar variações de criativos dentro dessas campanhas de forma automática, reduzindo o esforço manual necessário para produzir anúncios em múltiplos formatos e tamanhos ao mesmo tempo."],
+        ["p", "As campanhas de Geração de Demanda foram inicialmente lançadas como substituta das campanhas Discovery. Ao longo dos anos seguintes, o Google foi adicionando integrações com o YouTube Shorts e refinando o algoritmo de entrega. Em 2026, a novidade principal é a possibilidade de usar o Gemini para gerar variações de texto e imagem diretamente dentro do Gerenciador de Anúncios, acelerando o processo de criação de criativos para pequenas empresas que não têm equipe de design dedicada ou orçamento para produção constante."],
+        ["p", "Para empresas de Foz do Iguaçu nos setores de turismo, gastronomia e serviços, as campanhas de Geração de Demanda representam uma oportunidade de exibir imagens e vídeos do negócio em canais de alta audiência como o YouTube com orçamentos mais acessíveis do que as campanhas de vídeo tradicionais. A segmentação por interesse e comportamento permite alcançar pessoas que estão na fase de consideração, antes mesmo de pesquisarem ativamente pelo serviço no Google."],
+        ["h2", "Mais Controle e Transparência no Performance Max"],
+        ["p", "O Performance Max também recebeu atualizações relevantes no Google Marketing Live 2026. A principal delas é a melhoria nos relatórios de canal, que agora mostram com mais clareza quanto do orçamento está sendo investido em cada canal do Google, como YouTube, Pesquisa, Display e Google Maps. Antes, essa informação era fragmentada e difícil de interpretar, gerando frustração em anunciantes que queriam entender o desempenho de cada canal separadamente e tomar decisões baseadas nesses dados."],
+        ["p", "Outra melhoria foi a ampliação dos controles de exclusão de público. Agora é possível excluir listas de remarketing de campanhas Performance Max, o que era uma limitação criticada por muitos gestores. Isso permite que uma empresa exclua clientes recentes de suas campanhas de prospecção, evitando gastar verba com quem já converteu. Para negócios locais com base de clientes mapeada, essa funcionalidade pode melhorar a eficiência do orçamento de forma considerável ao focar o investimento em novos clientes potenciais."],
+        ["p", "O Google também anunciou maior flexibilidade na criação de grupos de assets dentro do Performance Max. Com isso, anunciantes podem organizar melhor os criativos por segmento de produto, serviço ou público, tornando as campanhas mais estruturadas e facilitando a análise de quais combinações de criativos têm melhor desempenho. Para gestores que trabalham com múltiplos serviços ou produtos, essa organização pode fazer diferença na qualidade dos relatórios e na capacidade de tomar decisões baseadas em dados reais."],
+        ["h2", "Criação de Criativos com Gemini Dentro do Google Ads"],
+        ["p", "Um dos temas mais discutidos no Google Marketing Live 2026 foi a criação de criativos com IA. O Google expandiu as funcionalidades do Gemini dentro do Google Ads para permitir que anunciantes gerem textos de anúncio, títulos, descrições e imagens diretamente na plataforma, sem precisar sair do Gerenciador de Anúncios. A ferramenta sugere variações baseadas no conteúdo do site do anunciante e nas configurações da campanha, acelerando o processo de criação especialmente para quem não tem equipe criativa dedicada."],
+        ["p", "A geração de imagens com IA dentro do Google Ads ainda está em fase de expansão para diferentes mercados e tipos de conta. Em linhas gerais, o anunciante descreve o tipo de imagem desejada e o Gemini gera opções que podem ser usadas nas campanhas de Display, Performance Max e Geração de Demanda. Trata-se de uma funcionalidade que pode reduzir custos de produção de criativos para pequenas empresas, embora a qualidade das imagens deva ser avaliada com cuidado antes de serem publicadas."],
+        ["p", "A criação de textos com IA também avançou significativamente. O Gemini analisa a página de destino do anúncio e sugere títulos e descrições otimizados para diferentes intenções de busca. O anunciante pode aceitar, editar ou rejeitar as sugestões. Especialistas recomendam que essas sugestões sejam sempre revisadas por um profissional, pois a ferramenta nem sempre capta nuances locais, termos técnicos do setor ou o tom de voz da marca. Referências culturais e regionais de Foz do Iguaçu, por exemplo, raramente são incorporadas adequadamente sem ajuste manual."],
+        ["h2", "Novos Relatórios e Transparência na Plataforma"],
+        ["p", "Transparência foi uma das palavras mais repetidas durante o Google Marketing Live 2026. O Google anunciou melhorias nos relatórios de performance para campanhas de pesquisa, incluindo novas métricas relacionadas à qualidade do tráfego gerado, como a proporção de cliques que resultam em engajamento real no site versus cliques que resultam em abandono imediato. Essas métricas complementam o Índice de Qualidade existente e ajudam gestores a identificar problemas na experiência da página de destino que podem estar comprometendo os resultados das campanhas."],
+        ["p", "Também foram anunciados relatórios aprimorados para o IA Max, mostrando quais expansões de palavras-chave geradas automaticamente estão trazendo mais conversões. Essa transparência é importante para que gestores possam validar se a expansão automática está alinhada com a estratégia da campanha ou se é necessário adicionar mais palavras-chave negativas para filtrar tráfego irrelevante. No passado, essa visibilidade era limitada, o que tornava difícil avaliar objetivamente a qualidade do tráfego gerado pelo recurso automático."],
+        ["p", "No campo de mensuração, o Google reforçou a integração entre Google Ads e Google Analytics 4, facilitando a visualização do caminho completo do usuário desde o clique no anúncio até a conversão final. Para anunciantes que usam múltiplos canais de marketing, como Google Ads e Meta Ads simultaneamente, a integração com o GA4 permite entender melhor a contribuição de cada canal na jornada do cliente, evitando decisões baseadas apenas na última interação registrada antes da conversão."],
+        ["h2", "Comparativo das Principais Novidades do Google Marketing Live 2026"],
+        ["table", [
+          ["Novidade", "Canal afetado", "Impacto para negócios locais"],
+          ["IA Max para Pesquisa", "Campanhas de Pesquisa", "Expansão automática de palavras-chave com controle de marca"],
+          ["Geração de Demanda com IA", "YouTube, Discover, Gmail", "Criação de criativos visuais com menor custo de produção"],
+          ["Relatórios de canal no PMax", "Performance Max", "Visibilidade sobre distribuição de orçamento por canal"],
+          ["Exclusão de remarketing no PMax", "Performance Max", "Evitar gastar verba com clientes já convertidos"],
+          ["Geração de imagens com Gemini", "Display, PMax, Demand Gen", "Criação de imagens de anúncio dentro da plataforma"],
+          ["Relatórios aprimorados de busca", "Pesquisa e IA Max", "Mais visibilidade sobre qualidade do tráfego gerado"],
+          ["Integração GA4 aprimorada", "Todos os canais", "Visão completa da jornada do cliente entre canais"]
+        ]],
+        ["p", "A tabela acima resume as principais mudanças anunciadas e seu impacto direto para anunciantes locais. Vale notar que nem todos os recursos estarão disponíveis imediatamente para todas as contas no Brasil, pois o Google costuma fazer lançamentos graduais por região e tipo de conta. Consultar um gestor de tráfego atualizado é a forma mais eficiente de saber quais recursos já estão disponíveis para a sua conta e quais ainda estão em fase de expansão para o mercado brasileiro."],
+        ["h2", "O Que Muda para Negócios Locais em Foz do Iguaçu"],
+        ["p", "Para pequenas e médias empresas de Foz do Iguaçu, as mudanças do Google Marketing Live 2026 trazem tanto oportunidades quanto um aumento na complexidade de gestão das campanhas. As ferramentas de IA prometem democratizar recursos antes acessíveis apenas para grandes anunciantes com equipes especializadas. Um restaurante, hotel ou prestador de serviço local pode agora criar criativos, expandir o alcance e medir resultados com menos esforço operacional do que era necessário há poucos anos."],
+        ["p", "Por outro lado, o aumento da automação não elimina a necessidade de estratégia. Ferramentas de IA operam dentro dos parâmetros que o anunciante define. Se os objetivos, o público-alvo, o orçamento e as exclusões não forem configurados corretamente, o algoritmo pode otimizar para as metas erradas. Um hotel que configura mal sua campanha pode acabar atraindo cliques de públicos sem potencial de reserva, ou desperdiçando verba com termos de busca não relacionados aos seus serviços reais."],
+        ["p", "Outro ponto de atenção é a concorrência local. Em Foz do Iguaçu, negócios do setor de turismo, hotéis, restaurantes e serviços estão cada vez mais presentes no Google Ads. Com a popularização das ferramentas de IA, é esperado que mais anunciantes entrem na plataforma, o que pode elevar os leilões de palavras-chave locais e aumentar o custo por clique em categorias mais competitivas. Estar bem configurado e com campanhas bem estruturadas torna-se ainda mais relevante neste contexto."],
+        ["p", "Para negócios que ainda não anunciam no Google, 2026 é um bom momento para começar a explorar a plataforma. As ferramentas de IA facilitam a criação de campanhas iniciais mesmo para quem tem pouca familiaridade com o ambiente do Google Ads. No entanto, contar com orientação profissional ajuda a evitar os erros mais comuns, como configurar campanhas sem palavras-chave negativas, sem conversões rastreadas ou com páginas de destino inadequadas, situações que podem consumir orçamento sem trazer resultados mensuráveis."],
+        ["h2", "Como Se Adaptar às Mudanças do Google Ads em 2026"],
+        ["p", "O primeiro passo para se adaptar às mudanças do Google Ads em 2026 é garantir que o rastreamento de conversões esteja funcionando corretamente. Sem conversões configuradas, as campanhas automatizadas não têm dados suficientes para otimizar com eficiência. O Google Ads precisa saber quais ações no site são valiosas para o negócio, seja um formulário preenchido, uma ligação, uma compra ou uma mensagem via WhatsApp, para direcionar os anúncios para pessoas com maior propensão a realizar essa ação específica."],
+        ["p", "Em seguida, vale revisar a estrutura das campanhas existentes. Com o IA Max expandindo automaticamente o alcance das campanhas de pesquisa, torna-se ainda mais importante ter uma lista robusta de palavras-chave negativas. Sem essa lista, o algoritmo pode expandir os anúncios para buscas irrelevantes, gerando tráfego de baixa qualidade e desperdiçando orçamento. Negócios locais devem excluir termos relacionados a cidades onde não atuam e a públicos que não correspondem ao seu cliente ideal."],
+        ["p", "Para quem usa Performance Max, o momento é de revisar os grupos de assets e atualizar os criativos aproveitando os novos relatórios de canal disponíveis. Com esses dados, é possível identificar em quais canais a campanha está tendo melhor desempenho e ajustar a estratégia de acordo. Muitas vezes, o PMax gera bons resultados em pesquisa mas desempenho abaixo do esperado em Display, e com os novos dados disponíveis as decisões sobre orçamento passam a ser mais embasadas e menos intuitivas."],
+        ["h2", "O Papel do Gestor de Tráfego Neste Novo Cenário"],
+        ["p", "Com a crescente automação das plataformas de anúncios, é natural que donos de negócio se perguntem se ainda faz sentido contratar um gestor de tráfego. A resposta é sim, mas o papel do gestor evoluiu ao longo dos anos. Antes, grande parte do trabalho era operacional: criar anúncios, ajustar lances manualmente, monitorar palavras-chave individualmente. Com a IA assumindo parte dessas tarefas, o gestor passou a ter um papel mais estratégico, focado em análise de dados e ajuste das configurações que definem como o algoritmo vai otimizar."],
+        ["p", "Um bom gestor de tráfego em 2026 precisa entender como funciona cada novo recurso de IA, quais são seus limites e quando é necessário intervir manualmente. O IA Max, por exemplo, pode gerar tráfego de qualidade quando bem configurado, mas pode também consumir orçamento em buscas irrelevantes se as exclusões não forem gerenciadas com atenção. Essa distinção exige conhecimento técnico atualizado e capacidade de interpretar relatórios de forma crítica, sem aceitar passivamente o que a plataforma apresenta como resultado."],
+        ["p", "Para pequenas e médias empresas de Foz do Iguaçu, trabalhar com um gestor de tráfego local tem a vantagem adicional do conhecimento do mercado regional. Um profissional que entende a sazonalidade do turismo em Foz, os comportamentos de busca específicos da região e as particularidades de cada setor local tende a configurar campanhas mais alinhadas com a realidade do negócio do que uma ferramenta automatizada de propósito geral, que não conhece as especificidades do contexto local."],
+        ["p", "É importante que donos de negócio mantenham uma comunicação ativa com seu gestor de tráfego sobre as novidades da plataforma. Mudanças como as anunciadas no Google Marketing Live 2026 precisam ser avaliadas no contexto de cada negócio. Nem toda novidade precisa ser adotada imediatamente, e algumas mudanças afetam tipos específicos de campanha que podem não ser relevantes para todos os anunciantes. Um gestor atualizado vai filtrar o que é aplicável para o seu caso e priorizar as mudanças com maior potencial de impacto positivo."],
+        ["h2", "Conclusão: IA como Centro do Google Ads em 2026"],
+        ["p", "O Google Marketing Live 2026 consolidou uma tendência que vinha se desenhando nos últimos anos: a inteligência artificial é o novo centro de gravidade do Google Ads. Recursos como IA Max, geração de criativos com Gemini, campanhas de Geração de Demanda aprimoradas e novos relatórios de transparência indicam que a plataforma está evoluindo para oferecer mais automação, mais alcance e mais dados ao mesmo tempo. Para anunciantes bem preparados, isso representa uma oportunidade de ampliar o alcance das campanhas com eficiência. Para quem não está atento às mudanças, o risco é de continuar investindo em estratégias que deixaram de ser prioritárias pelo próprio Google."],
+        ["p", "Em Foz do Iguaçu, o momento é de atualização constante e, quando necessário, de buscar orientação profissional para adequar as campanhas ao novo contexto da plataforma. Se você tem dúvidas sobre como as novidades do Google Ads de 2026 se aplicam ao seu negócio, ou se ainda não anuncia no Google e quer entender por onde começar, fale com um especialista em gestão de tráfego pago que conheça a plataforma atualizada e compreenda as particularidades do mercado local de Foz do Iguaçu e região."],
+      ],
+    },
   {
-    slug: "/blog/performance-max-2026-novidades-negocios-locais",
-    title: "Performance Max em 2026: Novidades e Como Usar para Negócios Locais",
-    description: "Conheça as principais atualizações do Performance Max em 2026 e veja como negócios em Foz do Iguaçu podem usar os novos controles para anunciar melhor no Google",
-    cta: "Falar com um especialista em Google Ads",
-    body: [
-      ["p", "O Performance Max é o tipo de campanha mais automatizado do Google Ads, e em 2026 ele ganhou um conjunto expressivo de atualizações que muda bastante a forma como anunciantes e gestores de tráfego trabalham com ele. Durante anos, uma das maiores críticas ao Performance Max era a falta de transparência: você investia verba, o algoritmo distribuía entre vários canais do Google, mas era difícil saber exatamente o que estava funcionando e o que estava consumindo orçamento sem retorno. Em 2026, o Google respondeu a essas críticas com novas ferramentas de relatório, controle de público, exclusões de marca e visibilidade de orçamento que colocam mais poder nas mãos de quem anuncia. Para donos de negócios em Foz do Iguaçu que investem ou pretendem investir em Google Ads, entender essas mudanças é essencial para aproveitar melhor cada real investido em anúncios."],
-      ["h2", "O Que é o Performance Max e Por Que Ele Importa"],
-      ["p", "O Performance Max, também chamado de PMax, é uma modalidade de campanha do Google Ads que exibe anúncios em todos os canais do ecossistema Google de forma simultânea: Pesquisa, Display, YouTube, Discover, Gmail e Google Maps. Em vez de criar campanhas separadas para cada canal, você configura uma única campanha, fornece criativos, textos, imagens e vídeos, e o algoritmo do Google decide onde, quando e para quem exibir seus anúncios para maximizar as conversões dentro do orçamento definido."],
-      ["p", "Para negócios locais em Foz do Iguaçu, isso significa alcançar potenciais clientes em diferentes momentos da jornada de compra: quando estão pesquisando no Google, assistindo a vídeos no YouTube, navegando em sites parceiros ou usando o Google Maps para encontrar estabelecimentos próximos. A promessa é eficiência: um único setup de campanha cobrindo múltiplos pontos de contato com o cliente, sem precisar gerenciar cada canal separadamente."],
-      ["p", "A desvantagem histórica era a falta de controle. Anunciantes reclamavam que o PMax era uma caixa preta, difícil de entender e otimizar. As atualizações de 2026 foram diretamente ao encontro dessas queixas, trazendo transparência e controles que tornam o Performance Max muito mais viável para negócios que não têm orçamentos grandes o suficiente para desperdiçar em canais que não funcionam para o seu segmento específico."],
-      ["h2", "Novidades de Relatório e Transparência no PMax 2026"],
-      ["p", "Uma das mudanças mais aguardadas do Performance Max em 2026 é o relatório por canal. Agora é possível ver quanto do orçamento foi investido em cada canal do Google, como Pesquisa, Display, YouTube, Discover, Gmail e Maps, além de qual foi a performance de cada um em termos de cliques, impressões e conversões. Antes, essa informação era agregada e impossível de desagregar, o que dificultava decisões de otimização informadas."],
-      ["p", "Outro avanço importante é o relatório por grupo de assets com detalhamento por tema criativo. Isso significa que você consegue ver quais combinações de imagem, texto e vídeo estão gerando mais conversões, e quais estão consumindo verba sem entregar resultado. Para negócios locais, isso permite identificar rapidamente se um tipo de criativo, como fotos do ambiente versus fotos de produto, funciona melhor para o público da cidade."],
-      ["p", "O Google também adicionou dados demográficos ao Performance Max em 2026. Agora é possível ver a distribuição de gastos e conversões por faixa etária e gênero dentro do relatório de audiência da campanha. Essa informação era disponível há anos no Search e Display, mas estava ausente no PMax, o que gerava frustrações para anunciantes que precisavam entender o perfil do consumidor que respondia melhor aos seus anúncios. Com esses dados em mãos, é possível ajustar criativos e mensagens para falar mais diretamente com o público que mais converte."],
-      ["h2", "Novos Controles de Orçamento e Projeção de Gastos"],
-      ["p", "Em 2026, o Performance Max ganhou um painel de controle de orçamento integrado diretamente na campanha. Esse painel mostra a projeção de gasto até o final do mês com base no ritmo atual, o que permite ao anunciante entender com antecedência se o orçamento vai durar ou se há risco de estourar o limite mensal antes do previsto. Para negócios com caixa controlado, essa visibilidade é fundamental para planejar o investimento com mais segurança."],
-      ["p", "A ferramenta também permite simular o impacto de ajustes de orçamento diário na projeção mensal. Se você aumentar R$ 20 por dia, o painel calcula o efeito esperado no total de gastos ao final do mês e nas conversões projetadas. Isso transforma uma decisão que antes era intuitiva em uma análise baseada em dados reais da campanha, reduzindo o risco de surpresas no extrato do cartão de crédito vinculado à conta de anúncios."],
-      ["p", "Para gestores de tráfego que administram várias contas ao mesmo tempo, essa funcionalidade economiza tempo de monitoramento e facilita conversas com clientes sobre investimento. Em vez de puxar planilhas manualmente para estimar o gasto até o fim do mês, os dados ficam centralizados e atualizados em tempo real dentro da própria interface do Google Ads."],
-      ["h2", "Controles de Público e Exclusão de Clientes"],
-      ["p", "Uma das limitações mais sentidas do Performance Max antes de 2026 era a impossibilidade de excluir listas de clientes das campanhas. Isso significava que anunciantes gastavam orçamento reimpactando pessoas que já eram clientes, quando o objetivo era trazer clientes novos. Com as atualizações de 2026, o Google adicionou a opção de excluir listas de clientes específicas do Performance Max, permitindo que o algoritmo foque o orçamento em prospecção de novos consumidores."],
-      ["p", "Para um hotel em Foz do Iguaçu, por exemplo, isso significa poder excluir a lista de hóspedes recentes da campanha de aquisição e investir o orçamento para alcançar turistas que ainda não conhecem o estabelecimento. Para um restaurante, permite separar clientes frequentes de novos visitantes, destinando campanhas e criativos diferentes para cada grupo. Essa segmentação mais precisa melhora a eficiência do gasto e evita que o algoritmo desperdice impressões em públicos que já foram convertidos."],
-      ["p", "Outra novidade relevante é a opção de sinalizar ao algoritmo que o objetivo da campanha é aquisição de novos clientes. Quando essa opção está ativa, o Performance Max calibra sua distribuição de orçamento para priorizar usuários que não fazem parte das listas de clientes existentes. Isso alinha melhor a automação do Google com os objetivos reais de crescimento do negócio, especialmente para empresas que já têm uma base de clientes estabelecida e precisam ampliar seu alcance."],
-      ["h2", "Controles de Marca e Segurança do Anunciante"],
-      ["p", "Em 2026, o Performance Max também recebeu melhorias nos controles de marca. Agora é possível excluir termos de marca da campanha para evitar que o PMax sobreponha campanhas de Search dedicadas à busca pelo nome da empresa. Antes, era comum o Performance Max disputar o mesmo inventário de pesquisa das campanhas de marca, o que podia elevar o custo desnecessariamente quando o usuário já estava buscando especificamente pela empresa."],
-      ["p", "Os controles de segurança de marca também foram ampliados. Anunciantes podem definir parâmetros para evitar que anúncios apareçam em conteúdo fora do perfil da marca, excluir categorias de conteúdo sensível e controlar com mais precisão os contextos em que os anúncios do Performance Max são exibidos na Rede de Display e no YouTube. Para empresas com posicionamento de marca bem definido, esses controles são importantes para manter a coerência da comunicação em todos os canais."],
-      ["p", "Para negócios em nichos regulados, como advocacia e saúde, onde existe restrição sobre o tipo de conteúdo com o qual os anúncios podem aparecer associados, esses controles de segurança de marca têm um valor adicional. Eles permitem restringir a veiculação a contextos mais controlados, reduzindo o risco de associação com conteúdo inadequado para o perfil do negócio ou que possa causar constrangimento para o anunciante perante seus clientes."],
-      ["h2", "Performance Max vs Campanhas Tradicionais de Search"],
-      ["table", [
-        ["Critério", "Performance Max", "Campanha de Search"],
-        ["Canais de exibição", "Pesquisa, Display, YouTube, Gmail, Maps, Discover", "Apenas Pesquisa Google"],
-        ["Segmentação", "Automática por algoritmo com sinais de audiência", "Palavras-chave definidas pelo anunciante"],
-        ["Controle de criativo", "Assets testados automaticamente", "Anúncios configurados manualmente"],
-        ["Relatório por canal", "Disponível desde 2026", "Relatório detalhado por palavra-chave"],
-        ["Exclusão de palavras-chave", "Limitada, no nível de conta", "Completa, no nível de campanha e grupo"],
-        ["Ideal para", "Negócios com múltiplos objetivos e canais", "Negócios com intenção de busca clara"],
-        ["Orçamento mínimo prático", "A partir de R$ 50/dia", "A partir de R$ 30/dia"]
-      ]],
-      ["p", "A escolha entre Performance Max e campanhas tradicionais de Search não precisa ser exclusiva. Em muitos casos, a estratégia mais eficiente combina uma campanha de Search para capturar intenção ativa, buscas específicas por serviços e produtos, com um Performance Max para ampliar o alcance nos demais canais e reimpactar usuários que já demonstraram interesse. Essa estrutura híbrida é usada por gestores de tráfego experientes para maximizar a cobertura sem abrir mão do controle sobre termos de busca de alta intenção."],
-      ["h2", "Como Usar o Performance Max para Negócios Locais em Foz do Iguaçu"],
-      ["p", "Para negócios locais em Foz do Iguaçu, o Performance Max pode ser uma ferramenta poderosa quando configurado com os objetivos e sinais corretos. O primeiro passo é definir claramente o objetivo de conversão da campanha: pode ser uma ligação telefônica, um formulário preenchido, uma mensagem no WhatsApp via rastreamento de clique ou uma visita ao estabelecimento registrada pelo Google Maps. Quanto mais preciso o objetivo configurado, mais eficiente será a otimização do algoritmo."],
-      ["p", "O segundo passo é alimentar a campanha com sinais de audiência de qualidade. Isso significa fazer o upload de uma lista de clientes existentes, configurar o rastreamento correto no site e criar audiências de remarketing para usuários que já visitaram páginas específicas. Esses sinais ajudam o algoritmo a entender o perfil do cliente ideal do negócio e a encontrar pessoas com comportamento semelhante dentro da área geográfica configurada em Foz do Iguaçu e região."],
-      ["p", "O terceiro elemento crítico são os criativos. O Performance Max testa automaticamente combinações de imagens, vídeos e textos, mas a qualidade do que você fornece define o teto de performance da campanha. Para negócios locais, imagens reais do estabelecimento, dos produtos e dos clientes satisfeitos tendem a funcionar melhor do que imagens genéricas de banco de fotos. Um vídeo simples, mesmo feito com celular, pode superar uma imagem estática bem produzida no YouTube e no Discover."],
-      ["h2", "Erros Comuns no Performance Max que Donos de Negócio Devem Evitar"],
-      ["p", "O erro mais comum de quem usa Performance Max pela primeira vez é não configurar as conversões corretamente antes de lançar a campanha. Se o Google Ads não está rastreando as ações que realmente importam para o negócio, seja um clique no número de telefone, um formulário enviado ou uma abertura de chat no WhatsApp, o algoritmo vai otimizar para métricas sem valor comercial, como visualizações de página ou tempo no site, e o orçamento será desperdiçado."],
-      ["p", "Outro erro frequente é definir um orçamento muito baixo e esperar resultados rápidos. O Performance Max precisa de um período de aprendizado para calibrar sua distribuição de anúncios. Com orçamentos abaixo de R$ 30 por dia, esse período se estende muito e os resultados na fase inicial podem ser decepcionantes. Isso leva muitos anunciantes a desativar a campanha antes de ela atingir o volume mínimo de dados necessário para otimizar de forma eficiente."],
-      ["p", "Um terceiro erro é ignorar os relatórios de assets e grupos de ativos. O Performance Max gera diagnósticos sobre o desempenho de cada elemento criativo, indicando quais estão com baixa, média ou alta performance. Anunciantes que não revisam esses relatórios perdem a oportunidade de substituir criativos que não funcionam por novos testes, deixando a campanha estagnada em uma combinação de ativos que poderiam ser muito melhores com ajustes simples no material visual ou nos textos dos anúncios."],
-      ["h2", "Quanto Investir no Performance Max em Foz do Iguaçu"],
-      ["table", [
-        ["Porte do negócio", "Orçamento diário sugerido", "Período de aprendizado estimado", "Resultado esperado"],
-        ["Pequeno negócio local", "R$ 30 a R$ 60/dia", "14 a 21 dias", "5 a 15 leads por semana"],
-        ["Negócio de médio porte", "R$ 60 a R$ 150/dia", "7 a 14 dias", "15 a 40 leads por semana"],
-        ["Empresa com múltiplos serviços", "R$ 150 a R$ 400/dia", "5 a 10 dias", "Escala conforme conversões"]
-      ]],
-      ["p", "Os valores acima são referências práticas baseadas no mercado de anúncios locais no Brasil em 2026, mas o orçamento ideal varia conforme o nicho, a concorrência local e o custo por lead aceitável para o negócio. Um serviço com ticket médio de R$ 500 pode justificar um custo por lead de R$ 40 a R$ 60, enquanto um produto de baixo valor precisa de custo por lead muito menor para que a campanha seja lucrativa. Calcular essa equação antes de definir o orçamento é fundamental para evitar frustração com os resultados."],
-      ["h2", "O Papel do Gestor de Tráfego na Era do Performance Max Automatizado"],
-      ["p", "Com tantas automações e controles cada vez mais sofisticados no Performance Max, surge uma pergunta recorrente entre donos de negócios: ainda preciso de um gestor de tráfego? A resposta continua sendo sim, e o motivo vai além da configuração técnica. O algoritmo do Google é poderoso, mas ele otimiza para as métricas que você configurou. Se o rastreamento está errado, se os criativos são fracos ou se as conversões configuradas não representam o que realmente importa para o negócio, toda a automação do PMax vai trabalhar na direção errada."],
-      ["p", "Um gestor de tráfego qualificado garante que a fundação da campanha esteja correta antes de ligar o algoritmo. Isso inclui configurar o rastreamento de conversões de forma precisa, criar grupos de assets com criativos relevantes para o público local de Foz do Iguaçu, definir as exclusões de marca corretas, fazer o upload das listas de clientes e interpretar os relatórios para identificar oportunidades de melhoria que não são óbvias na superfície dos dados apresentados na interface."],
-      ["p", "Além da configuração, o acompanhamento contínuo faz diferença. O Performance Max pode entrar em fases de queda de performance que exigem intervenção estratégica: novos criativos, revisão de objetivos de conversão, ajustes de orçamento ou mudança de estrutura de campanha. Um anunciante sem experiência tende a ignorar esses sinais até que o orçamento já foi consumido de forma ineficiente. Um gestor experiente identifica esses padrões antes e age com ajustes cirúrgicos que preservam a eficiência da campanha."],
-      ["h2", "Conclusão: Performance Max em 2026 é Mais Poderoso e Mais Transparente"],
-      ["p", "O Performance Max de 2026 não é mais a caixa preta que frustrava anunciantes em anos anteriores. Com relatórios por canal, dados demográficos, exclusão de clientes, controles de marca e visibilidade de orçamento, o Google entregou ferramentas que tornam essa modalidade de campanha muito mais viável e segura para negócios de todos os portes, incluindo pequenas e médias empresas em Foz do Iguaçu que não podem se dar ao luxo de desperdiçar verba de anúncio em canais ineficientes."],
-      ["p", "Para aproveitar ao máximo essas novidades, o ponto de partida é garantir que o rastreamento de conversões está funcionando corretamente na sua conta do Google Ads. Sem isso, todas as atualizações de 2026 perdem grande parte do seu valor, porque o algoritmo precisa de dados de conversão reais para tomar decisões de otimização precisas. Um rastreamento bem configurado é o alicerce sobre o qual toda a automação do Performance Max se apoia para gerar resultados consistentes."],
-      ["p", "Se você quer usar o Performance Max em Foz do Iguaçu e aproveitar as atualizações de 2026 de forma estratégica, contar com um gestor de tráfego especializado reduz o risco de erros na configuração inicial e acelera o processo de aprendizado do algoritmo. O investimento em gestão profissional tende a se pagar rapidamente quando se compara ao custo de semanas de campanha rodando com configurações incorretas ou criativos inadequados para o público local."],
-    ],
-  },
+      slug: "/blog/performance-max-2026-novidades-negocios-locais",
+      category: "canais",
+      title: "Performance Max em 2026: Novidades e Como Usar para Negócios Locais",
+      description: "Conheça as principais atualizações do Performance Max em 2026 e veja como negócios em Foz do Iguaçu podem usar os novos controles para anunciar melhor no Google",
+      h1: "Performance Max em 2026: novidades e como usar para negócios locais",
+      intro: "As campanhas Performance Max ganharam mais relatórios, controles e recursos de IA, mas ainda exigem estratégia para negócios locais.",
+      cta: "Falar com um especialista em Google Ads",
+      body: [
+        ["p", "O Performance Max é o tipo de campanha mais automatizado do Google Ads, e em 2026 ele ganhou um conjunto expressivo de atualizações que muda bastante a forma como anunciantes e gestores de tráfego trabalham com ele. Durante anos, uma das maiores críticas ao Performance Max era a falta de transparência: você investia verba, o algoritmo distribuía entre vários canais do Google, mas era difícil saber exatamente o que estava funcionando e o que estava consumindo orçamento sem retorno. Em 2026, o Google respondeu a essas críticas com novas ferramentas de relatório, controle de público, exclusões de marca e visibilidade de orçamento que colocam mais poder nas mãos de quem anuncia. Para donos de negócios em Foz do Iguaçu que investem ou pretendem investir em Google Ads, entender essas mudanças é essencial para aproveitar melhor cada real investido em anúncios."],
+        ["h2", "O Que é o Performance Max e Por Que Ele Importa"],
+        ["p", "O Performance Max, também chamado de PMax, é uma modalidade de campanha do Google Ads que exibe anúncios em todos os canais do ecossistema Google de forma simultânea: Pesquisa, Display, YouTube, Discover, Gmail e Google Maps. Em vez de criar campanhas separadas para cada canal, você configura uma única campanha, fornece criativos, textos, imagens e vídeos, e o algoritmo do Google decide onde, quando e para quem exibir seus anúncios para maximizar as conversões dentro do orçamento definido."],
+        ["p", "Para negócios locais em Foz do Iguaçu, isso significa alcançar potenciais clientes em diferentes momentos da jornada de compra: quando estão pesquisando no Google, assistindo a vídeos no YouTube, navegando em sites parceiros ou usando o Google Maps para encontrar estabelecimentos próximos. A promessa é eficiência: um único setup de campanha cobrindo múltiplos pontos de contato com o cliente, sem precisar gerenciar cada canal separadamente."],
+        ["p", "A desvantagem histórica era a falta de controle. Anunciantes reclamavam que o PMax era uma caixa preta, difícil de entender e otimizar. As atualizações de 2026 foram diretamente ao encontro dessas queixas, trazendo transparência e controles que tornam o Performance Max muito mais viável para negócios que não têm orçamentos grandes o suficiente para desperdiçar em canais que não funcionam para o seu segmento específico."],
+        ["h2", "Novidades de Relatório e Transparência no PMax 2026"],
+        ["p", "Uma das mudanças mais aguardadas do Performance Max em 2026 é o relatório por canal. Agora é possível ver quanto do orçamento foi investido em cada canal do Google, como Pesquisa, Display, YouTube, Discover, Gmail e Maps, além de qual foi a performance de cada um em termos de cliques, impressões e conversões. Antes, essa informação era agregada e impossível de desagregar, o que dificultava decisões de otimização informadas."],
+        ["p", "Outro avanço importante é o relatório por grupo de assets com detalhamento por tema criativo. Isso significa que você consegue ver quais combinações de imagem, texto e vídeo estão gerando mais conversões, e quais estão consumindo verba sem entregar resultado. Para negócios locais, isso permite identificar rapidamente se um tipo de criativo, como fotos do ambiente versus fotos de produto, funciona melhor para o público da cidade."],
+        ["p", "O Google também adicionou dados demográficos ao Performance Max em 2026. Agora é possível ver a distribuição de gastos e conversões por faixa etária e gênero dentro do relatório de audiência da campanha. Essa informação era disponível há anos no Search e Display, mas estava ausente no PMax, o que gerava frustrações para anunciantes que precisavam entender o perfil do consumidor que respondia melhor aos seus anúncios. Com esses dados em mãos, é possível ajustar criativos e mensagens para falar mais diretamente com o público que mais converte."],
+        ["h2", "Novos Controles de Orçamento e Projeção de Gastos"],
+        ["p", "Em 2026, o Performance Max ganhou um painel de controle de orçamento integrado diretamente na campanha. Esse painel mostra a projeção de gasto até o final do mês com base no ritmo atual, o que permite ao anunciante entender com antecedência se o orçamento vai durar ou se há risco de estourar o limite mensal antes do previsto. Para negócios com caixa controlado, essa visibilidade é fundamental para planejar o investimento com mais segurança."],
+        ["p", "A ferramenta também permite simular o impacto de ajustes de orçamento diário na projeção mensal. Se você aumentar R$ 20 por dia, o painel calcula o efeito esperado no total de gastos ao final do mês e nas conversões projetadas. Isso transforma uma decisão que antes era intuitiva em uma análise baseada em dados reais da campanha, reduzindo o risco de surpresas no extrato do cartão de crédito vinculado à conta de anúncios."],
+        ["p", "Para gestores de tráfego que administram várias contas ao mesmo tempo, essa funcionalidade economiza tempo de monitoramento e facilita conversas com clientes sobre investimento. Em vez de puxar planilhas manualmente para estimar o gasto até o fim do mês, os dados ficam centralizados e atualizados em tempo real dentro da própria interface do Google Ads."],
+        ["h2", "Controles de Público e Exclusão de Clientes"],
+        ["p", "Uma das limitações mais sentidas do Performance Max antes de 2026 era a impossibilidade de excluir listas de clientes das campanhas. Isso significava que anunciantes gastavam orçamento reimpactando pessoas que já eram clientes, quando o objetivo era trazer clientes novos. Com as atualizações de 2026, o Google adicionou a opção de excluir listas de clientes específicas do Performance Max, permitindo que o algoritmo foque o orçamento em prospecção de novos consumidores."],
+        ["p", "Para um hotel em Foz do Iguaçu, por exemplo, isso significa poder excluir a lista de hóspedes recentes da campanha de aquisição e investir o orçamento para alcançar turistas que ainda não conhecem o estabelecimento. Para um restaurante, permite separar clientes frequentes de novos visitantes, destinando campanhas e criativos diferentes para cada grupo. Essa segmentação mais precisa melhora a eficiência do gasto e evita que o algoritmo desperdice impressões em públicos que já foram convertidos."],
+        ["p", "Outra novidade relevante é a opção de sinalizar ao algoritmo que o objetivo da campanha é aquisição de novos clientes. Quando essa opção está ativa, o Performance Max calibra sua distribuição de orçamento para priorizar usuários que não fazem parte das listas de clientes existentes. Isso alinha melhor a automação do Google com os objetivos reais de crescimento do negócio, especialmente para empresas que já têm uma base de clientes estabelecida e precisam ampliar seu alcance."],
+        ["h2", "Controles de Marca e Segurança do Anunciante"],
+        ["p", "Em 2026, o Performance Max também recebeu melhorias nos controles de marca. Agora é possível excluir termos de marca da campanha para evitar que o PMax sobreponha campanhas de Search dedicadas à busca pelo nome da empresa. Antes, era comum o Performance Max disputar o mesmo inventário de pesquisa das campanhas de marca, o que podia elevar o custo desnecessariamente quando o usuário já estava buscando especificamente pela empresa."],
+        ["p", "Os controles de segurança de marca também foram ampliados. Anunciantes podem definir parâmetros para evitar que anúncios apareçam em conteúdo fora do perfil da marca, excluir categorias de conteúdo sensível e controlar com mais precisão os contextos em que os anúncios do Performance Max são exibidos na Rede de Display e no YouTube. Para empresas com posicionamento de marca bem definido, esses controles são importantes para manter a coerência da comunicação em todos os canais."],
+        ["p", "Para negócios em nichos regulados, como advocacia e saúde, onde existe restrição sobre o tipo de conteúdo com o qual os anúncios podem aparecer associados, esses controles de segurança de marca têm um valor adicional. Eles permitem restringir a veiculação a contextos mais controlados, reduzindo o risco de associação com conteúdo inadequado para o perfil do negócio ou que possa causar constrangimento para o anunciante perante seus clientes."],
+        ["h2", "Performance Max vs Campanhas Tradicionais de Search"],
+        ["table", [
+          ["Critério", "Performance Max", "Campanha de Search"],
+          ["Canais de exibição", "Pesquisa, Display, YouTube, Gmail, Maps, Discover", "Apenas Pesquisa Google"],
+          ["Segmentação", "Automática por algoritmo com sinais de audiência", "Palavras-chave definidas pelo anunciante"],
+          ["Controle de criativo", "Assets testados automaticamente", "Anúncios configurados manualmente"],
+          ["Relatório por canal", "Disponível desde 2026", "Relatório detalhado por palavra-chave"],
+          ["Exclusão de palavras-chave", "Limitada, no nível de conta", "Completa, no nível de campanha e grupo"],
+          ["Ideal para", "Negócios com múltiplos objetivos e canais", "Negócios com intenção de busca clara"],
+          ["Orçamento mínimo prático", "A partir de R$ 50/dia", "A partir de R$ 30/dia"]
+        ]],
+        ["p", "A escolha entre Performance Max e campanhas tradicionais de Search não precisa ser exclusiva. Em muitos casos, a estratégia mais eficiente combina uma campanha de Search para capturar intenção ativa, buscas específicas por serviços e produtos, com um Performance Max para ampliar o alcance nos demais canais e reimpactar usuários que já demonstraram interesse. Essa estrutura híbrida é usada por gestores de tráfego experientes para maximizar a cobertura sem abrir mão do controle sobre termos de busca de alta intenção."],
+        ["h2", "Como Usar o Performance Max para Negócios Locais em Foz do Iguaçu"],
+        ["p", "Para negócios locais em Foz do Iguaçu, o Performance Max pode ser uma ferramenta poderosa quando configurado com os objetivos e sinais corretos. O primeiro passo é definir claramente o objetivo de conversão da campanha: pode ser uma ligação telefônica, um formulário preenchido, uma mensagem no WhatsApp via rastreamento de clique ou uma visita ao estabelecimento registrada pelo Google Maps. Quanto mais preciso o objetivo configurado, mais eficiente será a otimização do algoritmo."],
+        ["p", "O segundo passo é alimentar a campanha com sinais de audiência de qualidade. Isso significa fazer o upload de uma lista de clientes existentes, configurar o rastreamento correto no site e criar audiências de remarketing para usuários que já visitaram páginas específicas. Esses sinais ajudam o algoritmo a entender o perfil do cliente ideal do negócio e a encontrar pessoas com comportamento semelhante dentro da área geográfica configurada em Foz do Iguaçu e região."],
+        ["p", "O terceiro elemento crítico são os criativos. O Performance Max testa automaticamente combinações de imagens, vídeos e textos, mas a qualidade do que você fornece define o teto de performance da campanha. Para negócios locais, imagens reais do estabelecimento, dos produtos e dos clientes satisfeitos tendem a funcionar melhor do que imagens genéricas de banco de fotos. Um vídeo simples, mesmo feito com celular, pode superar uma imagem estática bem produzida no YouTube e no Discover."],
+        ["h2", "Erros Comuns no Performance Max que Donos de Negócio Devem Evitar"],
+        ["p", "O erro mais comum de quem usa Performance Max pela primeira vez é não configurar as conversões corretamente antes de lançar a campanha. Se o Google Ads não está rastreando as ações que realmente importam para o negócio, seja um clique no número de telefone, um formulário enviado ou uma abertura de chat no WhatsApp, o algoritmo vai otimizar para métricas sem valor comercial, como visualizações de página ou tempo no site, e o orçamento será desperdiçado."],
+        ["p", "Outro erro frequente é definir um orçamento muito baixo e esperar resultados rápidos. O Performance Max precisa de um período de aprendizado para calibrar sua distribuição de anúncios. Com orçamentos abaixo de R$ 30 por dia, esse período se estende muito e os resultados na fase inicial podem ser decepcionantes. Isso leva muitos anunciantes a desativar a campanha antes de ela atingir o volume mínimo de dados necessário para otimizar de forma eficiente."],
+        ["p", "Um terceiro erro é ignorar os relatórios de assets e grupos de ativos. O Performance Max gera diagnósticos sobre o desempenho de cada elemento criativo, indicando quais estão com baixa, média ou alta performance. Anunciantes que não revisam esses relatórios perdem a oportunidade de substituir criativos que não funcionam por novos testes, deixando a campanha estagnada em uma combinação de ativos que poderiam ser muito melhores com ajustes simples no material visual ou nos textos dos anúncios."],
+        ["h2", "Quanto Investir no Performance Max em Foz do Iguaçu"],
+        ["table", [
+          ["Porte do negócio", "Orçamento diário sugerido", "Período de aprendizado estimado", "Resultado esperado"],
+          ["Pequeno negócio local", "R$ 30 a R$ 60/dia", "14 a 21 dias", "5 a 15 leads por semana"],
+          ["Negócio de médio porte", "R$ 60 a R$ 150/dia", "7 a 14 dias", "15 a 40 leads por semana"],
+          ["Empresa com múltiplos serviços", "R$ 150 a R$ 400/dia", "5 a 10 dias", "Escala conforme conversões"]
+        ]],
+        ["p", "Os valores acima são referências práticas baseadas no mercado de anúncios locais no Brasil em 2026, mas o orçamento ideal varia conforme o nicho, a concorrência local e o custo por lead aceitável para o negócio. Um serviço com ticket médio de R$ 500 pode justificar um custo por lead de R$ 40 a R$ 60, enquanto um produto de baixo valor precisa de custo por lead muito menor para que a campanha seja lucrativa. Calcular essa equação antes de definir o orçamento é fundamental para evitar frustração com os resultados."],
+        ["h2", "O Papel do Gestor de Tráfego na Era do Performance Max Automatizado"],
+        ["p", "Com tantas automações e controles cada vez mais sofisticados no Performance Max, surge uma pergunta recorrente entre donos de negócios: ainda preciso de um gestor de tráfego? A resposta continua sendo sim, e o motivo vai além da configuração técnica. O algoritmo do Google é poderoso, mas ele otimiza para as métricas que você configurou. Se o rastreamento está errado, se os criativos são fracos ou se as conversões configuradas não representam o que realmente importa para o negócio, toda a automação do PMax vai trabalhar na direção errada."],
+        ["p", "Um gestor de tráfego qualificado garante que a fundação da campanha esteja correta antes de ligar o algoritmo. Isso inclui configurar o rastreamento de conversões de forma precisa, criar grupos de assets com criativos relevantes para o público local de Foz do Iguaçu, definir as exclusões de marca corretas, fazer o upload das listas de clientes e interpretar os relatórios para identificar oportunidades de melhoria que não são óbvias na superfície dos dados apresentados na interface."],
+        ["p", "Além da configuração, o acompanhamento contínuo faz diferença. O Performance Max pode entrar em fases de queda de performance que exigem intervenção estratégica: novos criativos, revisão de objetivos de conversão, ajustes de orçamento ou mudança de estrutura de campanha. Um anunciante sem experiência tende a ignorar esses sinais até que o orçamento já foi consumido de forma ineficiente. Um gestor experiente identifica esses padrões antes e age com ajustes cirúrgicos que preservam a eficiência da campanha."],
+        ["h2", "Conclusão: Performance Max em 2026 é Mais Poderoso e Mais Transparente"],
+        ["p", "O Performance Max de 2026 não é mais a caixa preta que frustrava anunciantes em anos anteriores. Com relatórios por canal, dados demográficos, exclusão de clientes, controles de marca e visibilidade de orçamento, o Google entregou ferramentas que tornam essa modalidade de campanha muito mais viável e segura para negócios de todos os portes, incluindo pequenas e médias empresas em Foz do Iguaçu que não podem se dar ao luxo de desperdiçar verba de anúncio em canais ineficientes."],
+        ["p", "Para aproveitar ao máximo essas novidades, o ponto de partida é garantir que o rastreamento de conversões está funcionando corretamente na sua conta do Google Ads. Sem isso, todas as atualizações de 2026 perdem grande parte do seu valor, porque o algoritmo precisa de dados de conversão reais para tomar decisões de otimização precisas. Um rastreamento bem configurado é o alicerce sobre o qual toda a automação do Performance Max se apoia para gerar resultados consistentes."],
+        ["p", "Se você quer usar o Performance Max em Foz do Iguaçu e aproveitar as atualizações de 2026 de forma estratégica, contar com um gestor de tráfego especializado reduz o risco de erros na configuração inicial e acelera o processo de aprendizado do algoritmo. O investimento em gestão profissional tende a se pagar rapidamente quando se compara ao custo de semanas de campanha rodando com configurações incorretas ou criativos inadequados para o público local."],
+      ],
+    },
   {
     slug: "/blog/meta-ads-advantage-plus-2026",
+    category: "canais",
     title: "Meta Ads Advantage+ em 2026: O Que Mudou e Como Usar",
-    description: "Entenda como o Meta Ads Advantage+ funciona em 2026, quais são as principais mudanças e como pequenas empresas podem usar essa ferramenta com eficiência",
-    cta: "Falar com um especialista em Meta Ads",
-    body: [
-      ["p", "O Meta Ads passou por uma das maiores transformações dos últimos anos em 2026. A plataforma que você conhecia, onde era possível configurar manualmente cada detalhe da segmentação, dos públicos e dos posicionamentos, está sendo substituída por um modelo orientado por inteligência artificial. O centro dessa mudança tem nome: Advantage+. Se você é dono de uma empresa em Foz do Iguaçu e investe em anúncios no Facebook ou Instagram, entender o que mudou e como adaptar sua estratégia é fundamental para não desperdiçar orçamento."],
-      ["h2", "O que é o Meta Ads Advantage+"],
-      ["p", "O Advantage+ é o conjunto de ferramentas de automação do Meta Ads que usa inteligência artificial para tomar decisões sobre quem verá seu anúncio, onde exibir e quando mostrar. Em vez de o anunciante definir manualmente cada parâmetro, a plataforma analisa dados de comportamento em tempo real e distribui o orçamento de forma otimizada entre Facebook, Instagram, Stories, Reels e outras posições dentro do ecossistema Meta."],
-      ["p", "Antes, um gestor de tráfego configurava manualmente públicos por interesse, faixa etária, localização e comportamento. Hoje, o Advantage+ permite que você defina um público mais amplo e deixa o algoritmo encontrar, dentro desse universo, as pessoas mais propensas a converter. Essa mudança parece simples, mas altera completamente a lógica de como as campanhas são estruturadas e monitoradas."],
-      ["p", "Dentro do Advantage+ existem vários módulos: Advantage+ Creative (ajustes automáticos de criativo), Advantage+ Audience (expansão automática de público), Advantage+ Placements (distribuição automática de posicionamentos) e Advantage+ Budget (otimização de orçamento entre conjuntos de anúncios). Em 2026, a Meta passou a ativar esses recursos por padrão em novas campanhas, o que surpreendeu muitos anunciantes que não acompanhavam as atualizações da plataforma."],
-      ["h2", "Por Que a Meta Está Apostando em Automação"],
-      ["p", "A resposta é direta: os dados mostram que campanhas com automação performam melhor em média. De acordo com a própria Meta, campanhas Advantage+ de vendas entregam em média 22% mais retorno sobre o investimento em comparação com campanhas manuais equivalentes. Esse número foi o que acelerou a decisão da empresa de empurrar todos os anunciantes para essa direção ao longo de 2025 e 2026."],
-      ["p", "Outro fator é a quantidade crescente de dados que o algoritmo processa. O sistema Andromeda, motor de classificação de anúncios lançado pela Meta, avalia milhares de variáveis antes de decidir qual anúncio exibir para qual usuário. Com criativo e público bem configurados, o algoritmo consegue encontrar o momento certo, o formato certo e a mensagem certa muito mais rapidamente do que qualquer configuração manual conseguiria."],
-      ["p", "Para o anunciante, isso significa uma mudança de papel. O gestor de tráfego deixa de ser quem define cada micro-detalhe e passa a ser quem guia a máquina, fornecendo os criativos certos, os dados de clientes certos e as metas corretas para que o algoritmo trabalhe bem. Quem não fizer essa transição continuará gastando mais orçamento para obter menos resultado do que poderia com a nova estrutura."],
-      ["h2", "As Principais Novidades do Advantage+ em 2026"],
-      ["p", "Em 2026, a Meta trouxe diversas atualizações relevantes para o Advantage+. Uma das mais significativas foi a possibilidade de adicionar trilhas musicais geradas por inteligência artificial em vídeos de anúncios, o que facilita a produção de conteúdo sem depender de licenciamento de músicas. Outro recurso novo é o AI Dubbing, que realiza dublagem automática de vídeos para diferentes idiomas diretamente na plataforma."],
-      ["p", "A geração de imagens por persona também chegou ao Advantage+ em 2026. Isso permite que a Meta crie variações de anúncios adaptadas ao perfil de diferentes públicos automaticamente, sem que o anunciante precise produzir dezenas de versões do mesmo criativo. Para empresas com orçamentos menores, esse recurso representa uma vantagem competitiva real em relação a campanhas inteiramente manuais."],
-      ["p", "Outra mudança importante foi a depreciação progressiva das campanhas Advantage+ Shopping Campaign e Advantage+ App Campaign no formato antigo. A Meta está consolidando tudo em um fluxo único de criação de campanha, mais automatizado e simplificado. Isso obriga anunciantes e gestores a revisarem suas estratégias e estruturas de conta para manter a performance que tinham antes das mudanças."],
-      ["p", "Por fim, a Meta AI, assistente de inteligência artificial da plataforma, está sendo expandida para ajudar anunciantes diretamente no Gerenciador de Anúncios. Ela pode sugerir otimizações, identificar anomalias de performance e orientar decisões de orçamento com base nos dados históricos da conta. Para donos de negócios que gerenciam seus próprios anúncios, isso representa um suporte prático e acessível."],
-      ["h2", "Como o Advantage+ Impacta Negócios Locais em Foz do Iguaçu"],
-      ["p", "Para empresas locais em Foz do Iguaçu, o Advantage+ traz oportunidades reais, mas também exige atenção. O maior benefício é que o algoritmo consegue encontrar pessoas dentro da região que têm maior probabilidade de se interessar pelo seu produto ou serviço, mesmo sem uma segmentação manual detalhada. Isso é especialmente útil para negócios de turismo, gastronomia, saúde e prestação de serviços."],
-      ["p", "A segmentação geográfica continua sendo configurada manualmente. Você ainda define que quer anunciar apenas para Foz do Iguaçu, municípios vizinhos ou para turistas que estão na região. O Advantage+ atua dentro dessa área geográfica para encontrar as pessoas certas dentro do universo que você delimitou. Isso significa que o controle local permanece com o anunciante e o algoritmo trabalha dentro dos limites definidos."],
-      ["p", "Um restaurante em Foz do Iguaçu, por exemplo, pode usar o Advantage+ para alcançar turistas que chegaram à cidade nos últimos dias, com anúncios diferentes dos que são exibidos para moradores locais. Esse nível de otimização era muito mais difícil de alcançar com configurações manuais e agora é entregue de forma automática pelo algoritmo quando a campanha é estruturada corretamente com dados e criativos adequados."],
-      ["h2", "Criativo: O Novo Fator de Segmentação"],
-      ["p", "Com públicos cada vez mais amplos e automáticos, o criativo tornou-se o principal mecanismo de segmentação dentro do Meta Ads. Em termos práticos: se você quer atrair pais com filhos pequenos para sua clínica pediátrica em Foz do Iguaçu, seu anúncio precisa falar diretamente com esse público usando imagens, linguagem e situações que eles reconhecem. O algoritmo identifica quem reage àquele criativo e amplia o alcance para pessoas com perfil semelhante."],
-      ["p", "Isso significa que investir em criativos bem pensados e variados é agora mais importante do que nunca. Uma campanha Advantage+ com cinco criativos diferentes testa automaticamente quais geram mais engajamento e conversão, e concentra o orçamento nos que performam melhor. Com um único criativo, você perde essa vantagem de otimização automática e limita a capacidade de aprendizado do algoritmo."],
-      ["p", "Para negócios locais, os criativos que melhor funcionam tendem a ser os que mostram o ambiente real, as pessoas reais e os resultados concretos. Um vídeo de 15 segundos mostrando a fachada do restaurante, o prato sendo servido e clientes satisfeitos tende a superar imagens genéricas de banco de imagens. A autenticidade comunica mais do que a perfeição estética no contexto do algoritmo atual da Meta."],
-      ["p", "O Advantage+ Creative pode modificar automaticamente brilho, contraste, proporção de imagem e até adicionar elementos visuais nos seus criativos para adaptá-los a diferentes posicionamentos. Esse recurso é ativado por padrão em novas campanhas. É importante que o gestor de tráfego revise essas configurações para garantir que as modificações automáticas estejam alinhadas com a identidade visual do seu negócio."],
-      ["h2", "Orçamento: Quanto Investir no Advantage+ em 2026"],
-      ["p", "Uma das dúvidas mais comuns entre donos de negócios em Foz do Iguaçu é quanto investir no Meta Ads para ter resultado. Não existe uma resposta única, pois o orçamento ideal depende do seu nicho, do custo por aquisição esperado e dos objetivos da campanha. No entanto, existem referências práticas que ajudam a calibrar o investimento inicial e evitar desperdício nos primeiros dias de campanha."],
-      ["p", "Para campanhas de conversão no Brasil em 2026, o orçamento mínimo viável para que o algoritmo tenha dados suficientes para aprender começa em torno de R$ 30 a R$ 50 por dia por conjunto de anúncios. Abaixo desse valor, o algoritmo permanece em fase de aprendizado por muito tempo e não consegue otimizar adequadamente. Isso não significa que você precisa de um orçamento alto, mas de um orçamento consistente ao longo do tempo."],
-      ["p", "Uma estratégia comum para pequenas empresas é começar com R$ 50 por dia em uma única campanha Advantage+, testar por 7 a 14 dias, analisar os resultados e depois escalar o investimento gradualmente nos criativos e públicos que geraram o melhor custo por lead ou por venda. Aumentar o orçamento de forma abrupta pode reiniciar a fase de aprendizado da campanha, então o crescimento gradual é mais eficiente."],
-      ["table", [["Objetivo da campanha", "Orçamento mínimo diário", "Duração recomendada de teste"], ["Geração de leads", "R$ 30 a R$ 50", "7 a 14 dias"], ["Vendas e conversões", "R$ 50 a R$ 100", "7 a 14 dias"], ["Reconhecimento de marca", "R$ 15 a R$ 30", "14 a 21 dias"], ["Mensagens no WhatsApp", "R$ 20 a R$ 40", "7 a 14 dias"]]],
-      ["h2", "Métricas Que Importam no Advantage+"],
-      ["p", "Com a automação do Advantage+, algumas métricas que eram muito acompanhadas em campanhas manuais perderam importância, enquanto outras ganharam protagonismo. O CPM (custo por mil impressões) e o CTR (taxa de cliques) continuam sendo indicadores relevantes, mas a métrica mais importante agora é o resultado final: custo por lead, custo por venda ou custo por mensagem recebida, dependendo do objetivo do negócio."],
-      ["p", "O ROAS, ou retorno sobre o investimento em anúncios, é a métrica central para campanhas de vendas. Um ROAS de 3x significa que para cada R$ 1 investido, você gerou R$ 3 em faturamento. Para serviços locais onde as conversões acontecem por telefone ou WhatsApp, o CPL (custo por lead) é mais relevante. Definir qual dessas métricas é a sua norte antes de lançar a campanha evita decisões baseadas em dados incompletos."],
-      ["p", "Outra métrica relevante no Advantage+ é o tempo de aprendizado da campanha. A Meta indica que uma campanha precisa de cerca de 50 conversões por conjunto de anúncios em 7 dias para sair da fase de aprendizado. Se o seu orçamento não permite esse volume, considere otimizar para um evento de funil mais alto, como visualização de página ou clique, antes de otimizar para a conversão final do seu objetivo de negócio."],
-      ["h2", "Advantage+ vs Campanhas Manuais: Quando Usar Cada Um"],
-      ["table", [["Critério", "Advantage+", "Campanha manual"], ["Segmentação", "Automática e expandida pela IA", "Definida manualmente pelo anunciante"], ["Configuração inicial", "Simplificada e mais rápida", "Mais detalhada e demorada"], ["Gestão de criativos", "Testados e otimizados automaticamente", "Requerem testes manuais periódicos"], ["Controle sobre quem vê", "Menor, guiado pelo algoritmo", "Maior, definido pelo gestor"], ["Resultado médio", "22% mais ROAS segundo a Meta", "Depende da expertise do gestor"], ["Indicado para", "A maioria dos negócios locais", "Nichos com restrições específicas"]]],
-      ["p", "Apesar de a Meta estar direcionando todos os anunciantes para o Advantage+, as campanhas manuais ainda têm seu espaço em situações específicas. Para anunciantes com produtos ou serviços muito nicho, públicos muito específicos ou restrições de segmentação por conta do setor, como saúde e advocacia que possuem limitações de segmentação por interesse, a configuração manual ainda pode oferecer mais controle sobre quem visualiza os anúncios."],
-      ["p", "Para a maioria dos negócios locais em Foz do Iguaçu, o Advantage+ bem configurado tende a entregar resultados superiores ao que uma campanha manual entregaria com o mesmo orçamento. Isso porque o algoritmo tem acesso a dados de comportamento que nenhum anunciante consegue replicar manualmente. O segredo está em fornecer os insumos certos: criativos de qualidade, dados de clientes e metas claras e bem configuradas."],
-      ["h2", "O Papel do Gestor de Tráfego Nesse Novo Cenário"],
-      ["p", "Com tanta automação, é natural surgir a dúvida: ainda preciso de um gestor de tráfego? A resposta é sim, e o papel desse profissional ficou ainda mais estratégico. Quem gerencia anúncios profissionalmente precisa entender quais configurações do Advantage+ ativar, quais desativar, como interpretar os dados e quando intervir na campanha para corrigir rumos antes que o orçamento seja desperdiçado em resultados abaixo do esperado."],
-      ["p", "Um gestor de tráfego experiente sabe, por exemplo, que ativar todas as opções de automação do Advantage+ sem critério pode resultar em anúncios que fogem da identidade visual da marca ou que alcançam públicos fora da área de atuação do negócio. Configurar os limites corretos, monitorar as métricas semanalmente e ajustar os criativos conforme os dados é um trabalho que exige conhecimento técnico e experiência prática."],
-      ["p", "Para donos de negócios em Foz do Iguaçu que querem aproveitar o potencial do Meta Ads em 2026 sem precisar aprender cada detalhe técnico da plataforma, contar com um gestor de tráfego local é uma escolha que pode economizar tempo e dinheiro. Um profissional que conhece o mercado regional entende as sazonalidades do turismo, os hábitos do consumidor local e como posicionar cada negócio de forma mais competitiva na plataforma."],
-      ["h2", "Conclusão: O Advantage+ Como Aliado do Seu Negócio"],
-      ["p", "O Meta Ads Advantage+ representa uma mudança real e permanente na forma como anúncios são criados e gerenciados no Facebook e Instagram. Ignorar essa evolução significa competir com ferramentas desatualizadas enquanto seus concorrentes aproveitam o potencial da automação por inteligência artificial. Para negócios em Foz do Iguaçu, essa é uma oportunidade de alcançar mais clientes com mais eficiência dentro do ecossistema de mídia paga da Meta."],
-      ["p", "O caminho para extrair o máximo do Advantage+ passa por três pilares: criativos de qualidade que representam o seu negócio com autenticidade, dados de clientes que alimentam o algoritmo com informações precisas sobre quem você quer alcançar, e métricas bem definidas que orientam as decisões de otimização. Esses três elementos, combinados com uma estratégia clara, são o que diferencia campanhas lucrativas de campanhas que apenas consomem orçamento sem retorno proporcional."],
-      ["p", "Se você ainda não revisou sua estratégia de anúncios no Meta Ads para 2026, este é o momento. As mudanças já estão em vigor, e quanto antes você adaptar suas campanhas à nova lógica do Advantage+, mais rápido o algoritmo vai aprender e otimizar seus resultados. Um gestor de tráfego especializado pode conduzir essa transição de forma segura, mantendo a performance durante o período de adaptação às novas configurações."],
-    ],
-  },
+      description: "Entenda como o Meta Ads Advantage+ funciona em 2026, quais são as principais mudanças e como pequenas empresas podem usar essa ferramenta com eficiência",
+      cta: "Falar com um especialista em Meta Ads",
+      body: [
+        ["p", "O Meta Ads passou por uma das maiores transformações dos últimos anos em 2026. A plataforma que você conhecia, onde era possível configurar manualmente cada detalhe da segmentação, dos públicos e dos posicionamentos, está sendo substituída por um modelo orientado por inteligência artificial. O centro dessa mudança tem nome: Advantage+. Se você é dono de uma empresa em Foz do Iguaçu e investe em anúncios no Facebook ou Instagram, entender o que mudou e como adaptar sua estratégia é fundamental para não desperdiçar orçamento."],
+        ["h2", "O que é o Meta Ads Advantage+"],
+        ["p", "O Advantage+ é o conjunto de ferramentas de automação do Meta Ads que usa inteligência artificial para tomar decisões sobre quem verá seu anúncio, onde exibir e quando mostrar. Em vez de o anunciante definir manualmente cada parâmetro, a plataforma analisa dados de comportamento em tempo real e distribui o orçamento de forma otimizada entre Facebook, Instagram, Stories, Reels e outras posições dentro do ecossistema Meta."],
+        ["p", "Antes, um gestor de tráfego configurava manualmente públicos por interesse, faixa etária, localização e comportamento. Hoje, o Advantage+ permite que você defina um público mais amplo e deixa o algoritmo encontrar, dentro desse universo, as pessoas mais propensas a converter. Essa mudança parece simples, mas altera completamente a lógica de como as campanhas são estruturadas e monitoradas."],
+        ["p", "Dentro do Advantage+ existem vários módulos: Advantage+ Creative (ajustes automáticos de criativo), Advantage+ Audience (expansão automática de público), Advantage+ Placements (distribuição automática de posicionamentos) e Advantage+ Budget (otimização de orçamento entre conjuntos de anúncios). Em 2026, a Meta passou a ativar esses recursos por padrão em novas campanhas, o que surpreendeu muitos anunciantes que não acompanhavam as atualizações da plataforma."],
+        ["h2", "Por Que a Meta Está Apostando em Automação"],
+        ["p", "A resposta é direta: os dados mostram que campanhas com automação performam melhor em média. De acordo com a própria Meta, campanhas Advantage+ de vendas entregam em média 22% mais retorno sobre o investimento em comparação com campanhas manuais equivalentes. Esse número foi o que acelerou a decisão da empresa de empurrar todos os anunciantes para essa direção ao longo de 2025 e 2026."],
+        ["p", "Outro fator é a quantidade crescente de dados que o algoritmo processa. O sistema Andromeda, motor de classificação de anúncios lançado pela Meta, avalia milhares de variáveis antes de decidir qual anúncio exibir para qual usuário. Com criativo e público bem configurados, o algoritmo consegue encontrar o momento certo, o formato certo e a mensagem certa muito mais rapidamente do que qualquer configuração manual conseguiria."],
+        ["p", "Para o anunciante, isso significa uma mudança de papel. O gestor de tráfego deixa de ser quem define cada micro-detalhe e passa a ser quem guia a máquina, fornecendo os criativos certos, os dados de clientes certos e as metas corretas para que o algoritmo trabalhe bem. Quem não fizer essa transição continuará gastando mais orçamento para obter menos resultado do que poderia com a nova estrutura."],
+        ["h2", "As Principais Novidades do Advantage+ em 2026"],
+        ["p", "Em 2026, a Meta trouxe diversas atualizações relevantes para o Advantage+. Uma das mais significativas foi a possibilidade de adicionar trilhas musicais geradas por inteligência artificial em vídeos de anúncios, o que facilita a produção de conteúdo sem depender de licenciamento de músicas. Outro recurso novo é o AI Dubbing, que realiza dublagem automática de vídeos para diferentes idiomas diretamente na plataforma."],
+        ["p", "A geração de imagens por persona também chegou ao Advantage+ em 2026. Isso permite que a Meta crie variações de anúncios adaptadas ao perfil de diferentes públicos automaticamente, sem que o anunciante precise produzir dezenas de versões do mesmo criativo. Para empresas com orçamentos menores, esse recurso representa uma vantagem competitiva real em relação a campanhas inteiramente manuais."],
+        ["p", "Outra mudança importante foi a depreciação progressiva das campanhas Advantage+ Shopping Campaign e Advantage+ App Campaign no formato antigo. A Meta está consolidando tudo em um fluxo único de criação de campanha, mais automatizado e simplificado. Isso obriga anunciantes e gestores a revisarem suas estratégias e estruturas de conta para manter a performance que tinham antes das mudanças."],
+        ["p", "Por fim, a Meta AI, assistente de inteligência artificial da plataforma, está sendo expandida para ajudar anunciantes diretamente no Gerenciador de Anúncios. Ela pode sugerir otimizações, identificar anomalias de performance e orientar decisões de orçamento com base nos dados históricos da conta. Para donos de negócios que gerenciam seus próprios anúncios, isso representa um suporte prático e acessível."],
+        ["h2", "Como o Advantage+ Impacta Negócios Locais em Foz do Iguaçu"],
+        ["p", "Para empresas locais em Foz do Iguaçu, o Advantage+ traz oportunidades reais, mas também exige atenção. O maior benefício é que o algoritmo consegue encontrar pessoas dentro da região que têm maior probabilidade de se interessar pelo seu produto ou serviço, mesmo sem uma segmentação manual detalhada. Isso é especialmente útil para negócios de turismo, gastronomia, saúde e prestação de serviços."],
+        ["p", "A segmentação geográfica continua sendo configurada manualmente. Você ainda define que quer anunciar apenas para Foz do Iguaçu, municípios vizinhos ou para turistas que estão na região. O Advantage+ atua dentro dessa área geográfica para encontrar as pessoas certas dentro do universo que você delimitou. Isso significa que o controle local permanece com o anunciante e o algoritmo trabalha dentro dos limites definidos."],
+        ["p", "Um restaurante em Foz do Iguaçu, por exemplo, pode usar o Advantage+ para alcançar turistas que chegaram à cidade nos últimos dias, com anúncios diferentes dos que são exibidos para moradores locais. Esse nível de otimização era muito mais difícil de alcançar com configurações manuais e agora é entregue de forma automática pelo algoritmo quando a campanha é estruturada corretamente com dados e criativos adequados."],
+        ["h2", "Criativo: O Novo Fator de Segmentação"],
+        ["p", "Com públicos cada vez mais amplos e automáticos, o criativo tornou-se o principal mecanismo de segmentação dentro do Meta Ads. Em termos práticos: se você quer atrair pais com filhos pequenos para sua clínica pediátrica em Foz do Iguaçu, seu anúncio precisa falar diretamente com esse público usando imagens, linguagem e situações que eles reconhecem. O algoritmo identifica quem reage àquele criativo e amplia o alcance para pessoas com perfil semelhante."],
+        ["p", "Isso significa que investir em criativos bem pensados e variados é agora mais importante do que nunca. Uma campanha Advantage+ com cinco criativos diferentes testa automaticamente quais geram mais engajamento e conversão, e concentra o orçamento nos que performam melhor. Com um único criativo, você perde essa vantagem de otimização automática e limita a capacidade de aprendizado do algoritmo."],
+        ["p", "Para negócios locais, os criativos que melhor funcionam tendem a ser os que mostram o ambiente real, as pessoas reais e os resultados concretos. Um vídeo de 15 segundos mostrando a fachada do restaurante, o prato sendo servido e clientes satisfeitos tende a superar imagens genéricas de banco de imagens. A autenticidade comunica mais do que a perfeição estética no contexto do algoritmo atual da Meta."],
+        ["p", "O Advantage+ Creative pode modificar automaticamente brilho, contraste, proporção de imagem e até adicionar elementos visuais nos seus criativos para adaptá-los a diferentes posicionamentos. Esse recurso é ativado por padrão em novas campanhas. É importante que o gestor de tráfego revise essas configurações para garantir que as modificações automáticas estejam alinhadas com a identidade visual do seu negócio."],
+        ["h2", "Orçamento: Quanto Investir no Advantage+ em 2026"],
+        ["p", "Uma das dúvidas mais comuns entre donos de negócios em Foz do Iguaçu é quanto investir no Meta Ads para ter resultado. Não existe uma resposta única, pois o orçamento ideal depende do seu nicho, do custo por aquisição esperado e dos objetivos da campanha. No entanto, existem referências práticas que ajudam a calibrar o investimento inicial e evitar desperdício nos primeiros dias de campanha."],
+        ["p", "Para campanhas de conversão no Brasil em 2026, o orçamento mínimo viável para que o algoritmo tenha dados suficientes para aprender começa em torno de R$ 30 a R$ 50 por dia por conjunto de anúncios. Abaixo desse valor, o algoritmo permanece em fase de aprendizado por muito tempo e não consegue otimizar adequadamente. Isso não significa que você precisa de um orçamento alto, mas de um orçamento consistente ao longo do tempo."],
+        ["p", "Uma estratégia comum para pequenas empresas é começar com R$ 50 por dia em uma única campanha Advantage+, testar por 7 a 14 dias, analisar os resultados e depois escalar o investimento gradualmente nos criativos e públicos que geraram o melhor custo por lead ou por venda. Aumentar o orçamento de forma abrupta pode reiniciar a fase de aprendizado da campanha, então o crescimento gradual é mais eficiente."],
+        ["table", [["Objetivo da campanha", "Orçamento mínimo diário", "Duração recomendada de teste"], ["Geração de leads", "R$ 30 a R$ 50", "7 a 14 dias"], ["Vendas e conversões", "R$ 50 a R$ 100", "7 a 14 dias"], ["Reconhecimento de marca", "R$ 15 a R$ 30", "14 a 21 dias"], ["Mensagens no WhatsApp", "R$ 20 a R$ 40", "7 a 14 dias"]]],
+        ["h2", "Métricas Que Importam no Advantage+"],
+        ["p", "Com a automação do Advantage+, algumas métricas que eram muito acompanhadas em campanhas manuais perderam importância, enquanto outras ganharam protagonismo. O CPM (custo por mil impressões) e o CTR (taxa de cliques) continuam sendo indicadores relevantes, mas a métrica mais importante agora é o resultado final: custo por lead, custo por venda ou custo por mensagem recebida, dependendo do objetivo do negócio."],
+        ["p", "O ROAS, ou retorno sobre o investimento em anúncios, é a métrica central para campanhas de vendas. Um ROAS de 3x significa que para cada R$ 1 investido, você gerou R$ 3 em faturamento. Para serviços locais onde as conversões acontecem por telefone ou WhatsApp, o CPL (custo por lead) é mais relevante. Definir qual dessas métricas é a sua norte antes de lançar a campanha evita decisões baseadas em dados incompletos."],
+        ["p", "Outra métrica relevante no Advantage+ é o tempo de aprendizado da campanha. A Meta indica que uma campanha precisa de cerca de 50 conversões por conjunto de anúncios em 7 dias para sair da fase de aprendizado. Se o seu orçamento não permite esse volume, considere otimizar para um evento de funil mais alto, como visualização de página ou clique, antes de otimizar para a conversão final do seu objetivo de negócio."],
+        ["h2", "Advantage+ vs Campanhas Manuais: Quando Usar Cada Um"],
+        ["table", [["Critério", "Advantage+", "Campanha manual"], ["Segmentação", "Automática e expandida pela IA", "Definida manualmente pelo anunciante"], ["Configuração inicial", "Simplificada e mais rápida", "Mais detalhada e demorada"], ["Gestão de criativos", "Testados e otimizados automaticamente", "Requerem testes manuais periódicos"], ["Controle sobre quem vê", "Menor, guiado pelo algoritmo", "Maior, definido pelo gestor"], ["Resultado médio", "22% mais ROAS segundo a Meta", "Depende da expertise do gestor"], ["Indicado para", "A maioria dos negócios locais", "Nichos com restrições específicas"]]],
+        ["p", "Apesar de a Meta estar direcionando todos os anunciantes para o Advantage+, as campanhas manuais ainda têm seu espaço em situações específicas. Para anunciantes com produtos ou serviços muito nicho, públicos muito específicos ou restrições de segmentação por conta do setor, como saúde e advocacia que possuem limitações de segmentação por interesse, a configuração manual ainda pode oferecer mais controle sobre quem visualiza os anúncios."],
+        ["p", "Para a maioria dos negócios locais em Foz do Iguaçu, o Advantage+ bem configurado tende a entregar resultados superiores ao que uma campanha manual entregaria com o mesmo orçamento. Isso porque o algoritmo tem acesso a dados de comportamento que nenhum anunciante consegue replicar manualmente. O segredo está em fornecer os insumos certos: criativos de qualidade, dados de clientes e metas claras e bem configuradas."],
+        ["h2", "O Papel do Gestor de Tráfego Nesse Novo Cenário"],
+        ["p", "Com tanta automação, é natural surgir a dúvida: ainda preciso de um gestor de tráfego? A resposta é sim, e o papel desse profissional ficou ainda mais estratégico. Quem gerencia anúncios profissionalmente precisa entender quais configurações do Advantage+ ativar, quais desativar, como interpretar os dados e quando intervir na campanha para corrigir rumos antes que o orçamento seja desperdiçado em resultados abaixo do esperado."],
+        ["p", "Um gestor de tráfego experiente sabe, por exemplo, que ativar todas as opções de automação do Advantage+ sem critério pode resultar em anúncios que fogem da identidade visual da marca ou que alcançam públicos fora da área de atuação do negócio. Configurar os limites corretos, monitorar as métricas semanalmente e ajustar os criativos conforme os dados é um trabalho que exige conhecimento técnico e experiência prática."],
+        ["p", "Para donos de negócios em Foz do Iguaçu que querem aproveitar o potencial do Meta Ads em 2026 sem precisar aprender cada detalhe técnico da plataforma, contar com um gestor de tráfego local é uma escolha que pode economizar tempo e dinheiro. Um profissional que conhece o mercado regional entende as sazonalidades do turismo, os hábitos do consumidor local e como posicionar cada negócio de forma mais competitiva na plataforma."],
+        ["h2", "Conclusão: O Advantage+ Como Aliado do Seu Negócio"],
+        ["p", "O Meta Ads Advantage+ representa uma mudança real e permanente na forma como anúncios são criados e gerenciados no Facebook e Instagram. Ignorar essa evolução significa competir com ferramentas desatualizadas enquanto seus concorrentes aproveitam o potencial da automação por inteligência artificial. Para negócios em Foz do Iguaçu, essa é uma oportunidade de alcançar mais clientes com mais eficiência dentro do ecossistema de mídia paga da Meta."],
+        ["p", "O caminho para extrair o máximo do Advantage+ passa por três pilares: criativos de qualidade que representam o seu negócio com autenticidade, dados de clientes que alimentam o algoritmo com informações precisas sobre quem você quer alcançar, e métricas bem definidas que orientam as decisões de otimização. Esses três elementos, combinados com uma estratégia clara, são o que diferencia campanhas lucrativas de campanhas que apenas consomem orçamento sem retorno proporcional."],
+        ["p", "Se você ainda não revisou sua estratégia de anúncios no Meta Ads para 2026, este é o momento. As mudanças já estão em vigor, e quanto antes você adaptar suas campanhas à nova lógica do Advantage+, mais rápido o algoritmo vai aprender e otimizar seus resultados. Um gestor de tráfego especializado pode conduzir essa transição de forma segura, mantendo a performance durante o período de adaptação às novas configurações."],
+      ],
+    },
   {
-    slug: "/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu",
-    title: "Como escolher um gestor de tráfego em Foz do Iguaçu",
-    description:
-      "Veja como escolher um gestor de tráfego em Foz do Iguaçu sem cair em promessas vazias. Entenda critérios, riscos e perguntas antes de contratar.",
-    cta: "Solicitar diagnóstico gratuito",
-    body: [
-      ["p", "Escolher um gestor de tráfego em Foz do Iguaçu não deve ser uma decisão baseada apenas em preço ou promessa de resultado rápido. O profissional certo precisa entender mídia paga, mas também oferta, funil, WhatsApp, rastreamento e qualidade dos leads."],
-      ["p", "Tráfego pago não resolve sozinho um negócio com oferta confusa, atendimento lento ou página ruim. O gestor precisa olhar para anúncio, clique, página, contato, atendimento e venda."],
-      ["h2", "O que avaliar antes de contratar"],
-      ["table", [["Critério", "O que observar"], ["Diagnóstico inicial", "O profissional entende seu negócio antes de sugerir campanha?"], ["Clareza de métricas", "Ele fala de CPL, taxa de conversão e qualidade do lead?"], ["Rastreamento", "Existe plano para medir WhatsApp, formulário e origem dos contatos?"], ["Estratégia de canal", "Ele explica quando usar Google Ads, Meta Ads ou ambos?"], ["Transparência", "Você terá acesso aos dados e entenderá o que está sendo feito?"]]],
-      ["h2", "Perguntas que você deve fazer"],
-      ["p", "Pergunte como será medido o resultado, se as campanhas ficarão em uma conta sua, como serão apresentados os relatórios e qual será o plano para os primeiros 30 dias."],
-      ["h2", "Sinais de alerta"],
-      ["p", "Desconfie de promessas de primeiro lugar, vendas garantidas ou resultados sem conhecer sua empresa. Também é arriscado contratar alguém que fala só em alcance, curtidas e cliques, sem abordar conversão e rastreamento."],
-      ["p", "O melhor gestor de tráfego é o que consegue transformar verba de mídia em aprendizado, leads qualificados e decisões melhores."],
-    ],
-  },
+      slug: "/blog/como-aparecer-no-google-maps-em-foz-do-iguacu",
+      category: "canais",
+      title: "Como aparecer no Google Maps em Foz do Iguaçu",
+      description: "Veja o que influencia sua presença no Google Maps em Foz do Iguaçu: perfil completo, categorias, avaliações, fotos, site e consistência.",
+      h1: "Como aparecer no Google Maps em Foz do Iguaçu",
+      intro: "Aparecer no Google Maps é essencial para muitas empresas locais, mas não depende de um único ajuste. O resultado vem da combinação entre perfil completo, relevância, localização, reputação e consistência.",
+      bodyHtml: `<p>Quando alguém pesquisa por um serviço local, o Google Maps pode ser um dos primeiros pontos de decisão. O usuário vê distância, nota, fotos, horários, rotas, telefone e avaliações. Para negócios em Foz do Iguaçu, isso pode impactar ligações, visitas presenciais, reservas e mensagens no WhatsApp.</p>
+  <p>Não existe botão mágico para aparecer em primeiro. Também não faz sentido prometer posição fixa no Maps. O trabalho correto é melhorar os sinais que ajudam o usuário e o Google a entenderem sua empresa. O <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br" target="_blank" rel="noopener noreferrer">Guia de SEO para iniciantes do Google Search Central</a> reforça que SEO local começa com informações precisas e conteúdo útil.</p>
+  <h2>Fatores práticos que influenciam sua presença</h2>
+  <div class="table-wrap"><table><thead><tr><th>Fator</th><th>O que melhorar</th></tr></thead><tbody>
+  <tr><td>Categoria</td><td>Escolher categoria principal coerente com o serviço central.</td></tr>
+  <tr><td>Informações</td><td>Manter nome, telefone, endereço, site e horário corretos.</td></tr>
+  <tr><td>Fotos</td><td>Publicar imagens reais e atualizadas regularmente.</td></tr>
+  <tr><td>Avaliações</td><td>Incentivar avaliações verdadeiras e responder com profissionalismo.</td></tr>
+  <tr><td>Serviços</td><td>Descrever o que a empresa faz com clareza.</td></tr>
+  <tr><td>Site</td><td>Ter páginas relevantes conectadas ao perfil.</td></tr>
+  <tr><td>Consistência</td><td>Evitar divergência de dados entre site, redes e perfil.</td></tr>
+  </tbody></table></div>
+  <h2>O papel das avaliações</h2>
+  <p>Avaliações não devem ser compradas nem manipuladas. O caminho correto é pedir feedback real para clientes reais, facilitar o processo e responder com atenção. Responder avaliações mostra que a empresa está ativa e se importa com a experiência do cliente. Leia: <a href="/blog/como-responder-avaliacoes-no-google-meu-negocio">como responder avaliações no Google Meu Negócio</a>.</p>
+  <h2>O papel do site</h2>
+  <p>O Google Meu Negócio ajuda muito, mas o site dá profundidade. Uma página de serviço bem feita pode explicar melhor a oferta, responder dúvidas, mostrar diferenciais e captar contatos com rastreamento. Para negócios locais, perfil e site devem se complementar. Conheça nosso serviço de <a href="/servicos/landing-pages-foz-do-iguacu">criação de sites e landing pages em Foz do Iguaçu</a>.</p>
+  <h2>Conclusão</h2>
+  <p>Aparecer melhor no Google Maps em Foz do Iguaçu exige consistência. O perfil precisa estar completo, atualizado e conectado a uma presença digital confiável. O foco não deve ser só posição; deve ser gerar mais contatos úteis a partir das buscas locais. Para dar o primeiro passo, veja nosso serviço de <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criação de Google Meu Negócio</a> ou de <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão contínua do perfil</a>.</p>`,
+    },
   {
-    slug: "/blog/quanto-custa-trafego-pago-em-foz-do-iguacu",
-    title: "Quanto custa contratar tráfego pago em Foz do Iguaçu?",
-    description:
-      "Entenda quanto custa contratar tráfego pago em Foz do Iguaçu, como separar verba de mídia e gestão, e quando o investimento começa a fazer sentido.",
-    cta: "Pedir análise de investimento",
-    body: [
-      ["p", "O custo de tráfego pago em Foz do Iguaçu depende de dois componentes principais: a verba investida nas plataformas e o valor da gestão estratégica."],
-      ["h2", "Verba de mídia não é o mesmo que gestão"],
-      ["table", [["Item", "Para que serve"], ["Verba de mídia", "Compra cliques, impressões e oportunidades de contato."], ["Gestão", "Define estratégia, configura campanhas, analisa dados e otimiza resultados."], ["Landing page", "Melhora a conversão dos cliques em leads."], ["Rastreamento", "Mostra quais campanhas geram contatos e oportunidades."]]],
-      ["h2", "Existe investimento mínimo?"],
-      ["p", "Existe um mínimo prático porque campanhas precisam de dados. Se a verba é baixa demais, qualquer conclusão fica frágil."],
-      ["h2", "Como saber se vale a pena?"],
-      ["p", "A conta não deve ser feita apenas pelo custo por lead. O que importa é o custo por oportunidade e o custo por cliente."],
-    ],
-  },
+      slug: "/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu",
+      category: "contratacao",
+      title: "Como escolher um gestor de tráfego em Foz do Iguaçu",
+      description: "Veja como escolher um gestor de tráfego em Foz do Iguaçu com critérios práticos: diagnóstico, métricas, rastreamento, transparência e qualidade dos leads.",
+      h1: "Como escolher um gestor de tráfego em Foz do Iguaçu",
+      intro: "Escolher um gestor de tráfego em Foz do Iguaçu não deve ser uma decisão baseada apenas em preço, promessa de resultado rápido ou indicação informal. O profissional certo precisa entender mídia paga, mas também oferta, funil, WhatsApp, rastreamento e qualidade dos leads.",
+      cta: "Solicitar diagnóstico gratuito",
+      bodyHtml: `<p>Escolher um gestor de tráfego em Foz do Iguaçu exige mais do que comparar mensalidades. Em muitos negócios locais, o problema não está apenas no anúncio. O gargalo pode estar na página, no atendimento, na proposta, na demora para responder no WhatsApp, na falta de rastreamento ou na ausência de uma oferta clara.</p>
+  <p>Um bom gestor não deve começar prometendo resultado. Ele deve começar fazendo perguntas. Antes de falar em verba, campanha e canal, precisa entender o que a empresa vende, qual margem existe, quem é o cliente ideal, como o atendimento funciona e o que acontece depois que o lead chama.</p>
+  <h2>O que avaliar antes de contratar</h2>
+  <div class="table-wrap"><table><thead><tr><th>Critério</th><th>O que observar</th></tr></thead><tbody>
+  <tr><td>Diagnóstico inicial</td><td>O profissional entende seu negócio antes de sugerir campanha?</td></tr>
+  <tr><td>Clareza de métricas</td><td>Ele fala de CPL, taxa de conversão, qualidade do lead e custo por oportunidade real?</td></tr>
+  <tr><td>Rastreamento</td><td>Existe plano para medir WhatsApp, formulário, ligação e origem dos contatos?</td></tr>
+  <tr><td>Estratégia de canal</td><td>Ele explica quando usar <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a> ou ambos?</td></tr>
+  <tr><td>Transparência</td><td>Você terá acesso aos dados e entenderá o que está sendo feito?</td></tr>
+  <tr><td>Visão comercial</td><td>Ele considera atendimento, follow-up e conversão em venda?</td></tr>
+  </tbody></table></div>
+  <h2>Perguntas que você deve fazer antes de fechar</h2>
+  <p>Pergunte se as campanhas ficarão em uma conta da sua empresa, como serão apresentados os relatórios, quais conversões serão medidas, qual será o plano dos primeiros 30 dias e o que será considerado sucesso. Também vale perguntar o que ele faria se os leads viessem baratos, mas ruins. A resposta mostra se o profissional olha apenas volume ou se entende qualidade.</p>
+  <p>Outra pergunta importante é: "o que precisa estar pronto antes de anunciar?". Se a resposta for apenas "verba", cuidado. Uma campanha local eficiente depende de <a href="/servicos/landing-pages-foz-do-iguacu">página ou destino adequado</a>, mensagem clara, canais de contato funcionando e capacidade de atendimento.</p>
+  <h2>Sinais de alerta</h2>
+  <p>Desconfie de promessas de primeiro lugar, vendas garantidas, leads ilimitados ou resultados sem conhecer sua empresa. Também é arriscado contratar alguém que fala só em alcance, curtidas e cliques, sem falar de conversão, <a href="/servicos/rastreamento-e-conversao">rastreamento</a> e processo comercial.</p>
+  <p>O melhor gestor de tráfego é o que consegue transformar verba de mídia em aprendizado, oportunidades qualificadas e decisões melhores. Para empresas em Foz do Iguaçu, isso significa entender a realidade local, concorrência regional, comportamento de WhatsApp e diferença entre lead curioso e lead com real intenção de compra. O <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">guia do Google sobre conteúdo útil</a> reforça que profissionais sérios focam em entregar valor real, não métricas de vaidade.</p>
+  <h2>Conclusão</h2>
+  <p>Se você quer contratar com menos risco, escolha alguém que explique o plano com clareza, questione suas premissas, meça o que importa e tenha coragem de dizer quando o problema não está no anúncio. Tráfego pago bom não é só campanha bonita; é sistema de aquisição funcionando.</p>`,
+    },
   {
-    slug: "/blog/google-ads-ou-meta-ads-foz-do-iguacu",
-    title: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
-    description:
-      "Entenda quando usar Google Ads ou Meta Ads em Foz do Iguaçu para gerar leads, conversas no WhatsApp, reservas e vendas locais.",
-    cta: "Descobrir melhor canal para meu negócio",
-    body: [
-      ["p", "A resposta curta é: depende da intenção do seu cliente. Google Ads captura pessoas que já estão procurando. Meta Ads ajuda a gerar demanda, despertar interesse e reimpactar públicos."],
-      ["h2", "Quando priorizar Google Ads"],
-      ["p", "Google Ads deve ser prioridade quando existe demanda ativa, como buscas por serviços locais, turismo, saúde, advocacia ou soluções com urgência."],
-      ["table", [["Cenário", "Canal mais indicado"], ["Pessoa já pesquisa pelo serviço", "Google Ads"], ["Serviço tem urgência", "Google Ads"], ["Oferta precisa ser descoberta", "Meta Ads"], ["Produto visual ou turístico", "Meta Ads e Google Ads combinados"], ["Público já visitou o site", "Remarketing no Meta e Google"]]],
-      ["h2", "Quando priorizar Meta Ads"],
-      ["p", "Meta Ads é forte quando a oferta precisa aparecer antes da busca, especialmente em restaurantes, experiências turísticas, eventos, estética, clínicas e campanhas de relacionamento."],
-      ["h2", "O melhor cenário"],
-      ["p", "Muitos negócios combinam Google Ads para intenção ativa e Meta Ads para geração de demanda e remarketing. O erro é dividir verba pequena demais em canais demais."],
-    ],
-  },
+      slug: "/blog/como-rastrear-leads-de-trafego-pago",
+      category: "conversao",
+      title: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
+      description: "Entenda como rastrear leads de tráfego pago com UTMs, eventos, WhatsApp, formulários e análise de qualidade para saber quais campanhas geram venda.",
+      h1: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
+      intro: "Gerar leads é importante, mas saber de onde vieram os melhores contatos é o que permite escalar com segurança. Sem rastreamento, a empresa toma decisão no escuro e pode cortar campanhas boas ou manter campanhas ruins.",
+      cta: "Solicitar análise de rastreamento",
+      bodyHtml: `<p>Rastrear leads de tráfego pago é o que separa gestão baseada em dados de gestão baseada em sensação. Em negócios locais, é comum o empresário dizer que "veio bastante WhatsApp", mas não saber qual campanha trouxe os contatos, quais leads tinham intenção real e quais viraram orçamento ou venda.</p>
+  <p>O rastreamento não precisa começar complexo. O primeiro passo é organizar a origem dos contatos. Depois, é preciso conectar essa origem com qualidade comercial. Um lead barato que nunca responde pode ser pior do que um lead mais caro que fecha contrato.</p>
+  <h2>O que são UTMs e por que usar</h2>
+  <p>UTMs são parâmetros adicionados aos links para identificar origem, mídia, campanha e conteúdo do clique. Elas ajudam a entender se o contato veio do <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a>, blog, landing page, anúncio específico ou campanha sazonal.</p>
+  <div class="table-wrap"><table><thead><tr><th>Parâmetro</th><th>Exemplo de uso</th></tr></thead><tbody>
+  <tr><td>utm_source</td><td>google, meta, instagram, site</td></tr>
+  <tr><td>utm_medium</td><td>cpc, social, organic, referral</td></tr>
+  <tr><td>utm_campaign</td><td>advogado_foz, turismo_ferias, landing_page</td></tr>
+  <tr><td>utm_content</td><td>criativo_01, botao_whatsapp, anuncio_dor</td></tr>
+  </tbody></table></div>
+  <p>O Google disponibiliza um <a href="https://ga-dev-tools.google/campaign-url-builder/" target="_blank" rel="noopener noreferrer">construtor gratuito de URLs com UTMs</a> que facilita a criação desses links sem errar a sintaxe.</p>
+  <h2>Eventos importantes para medir</h2>
+  <p>O mínimo recomendado é medir clique no WhatsApp, envio de formulário, clique em telefone, clique em rota quando aplicável e visitas às páginas mais importantes. Para campanhas mais maduras, também faz sentido medir etapas posteriores, como lead qualificado, orçamento enviado, reunião marcada e venda realizada. Nosso serviço de <a href="/servicos/rastreamento-e-conversao">rastreamento e conversão</a> cobre toda essa estrutura.</p>
+  <h2>WhatsApp precisa de processo</h2>
+  <p>O WhatsApp é ótimo para conversão, mas ruim para análise quando não existe organização. Se todos os leads entram misturados, a empresa perde a origem. O ideal é usar links com mensagem personalizada por campanha, UTMs e algum tipo de registro em CRM, planilha ou sistema de atendimento.</p>
+  <h2>Qualidade do lead importa mais que volume</h2>
+  <p>A leitura correta não é apenas "qual campanha gerou mais leads?". A pergunta melhor é: "qual campanha gerou mais oportunidades com chance real de venda?". Para responder, é preciso classificar os contatos por qualidade, segmento, urgência, localização, orçamento e aderência à oferta.</p>
+  <h2>Conclusão</h2>
+  <p>Sem rastreamento, você otimiza para clique. Com rastreamento, você otimiza para oportunidade. Essa diferença muda tudo, porque permite investir mais no que gera negócio e cortar desperdícios com mais segurança. Entenda mais sobre <a href="/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu">como escolher um gestor de tráfego em Foz do Iguaçu</a> que saiba trabalhar com dados.</p>`,
+    },
   {
-    slug: "/blog/trafego-pago-para-advogados-em-foz-do-iguacu",
-    title: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
-    description:
-      "Veja como advogados em Foz do Iguaçu podem usar tráfego pago com comunicação informativa, ética e focada em autoridade, sem promessas indevidas.",
-    cta: "Solicitar diagnóstico jurídico",
-    body: [
-      ["p", "Advogados podem usar tráfego pago, mas a comunicação jurídica deve ser sóbria, informativa e responsável. O objetivo não é prometer resultado nem explorar dor de forma apelativa."],
-      ["h2", "O que evitar"],
-      ["table", [["Não recomendado", "Melhor abordagem"], ["Ganhe sua ação trabalhista", "Entenda quando buscar orientação em direito trabalhista."], ["O melhor advogado de Foz", "Atuação em direito de família em Foz do Iguaçu."], ["Resultado garantido", "Cada caso depende de análise individual."], ["Clique e processe agora", "Solicite uma análise inicial do seu caso."]]],
-      ["h2", "Estratégias mais seguras"],
-      ["p", "Uma estratégia mais segura usa conteúdos informativos, páginas por área de atuação, linguagem clara e CTA para análise inicial."],
-      ["p", "A qualidade do lead importa mais que volume, especialmente para escritórios que precisam respeitar limites éticos e filtrar demandas com cuidado."],
-    ],
-  },
+      slug: "/blog/como-responder-avaliacoes-no-google-meu-negocio",
+      category: "conversao",
+      title: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
+      description: "Veja como responder avaliações positivas e negativas no Google Meu Negócio com profissionalismo, cuidado e foco em reputação local.",
+      h1: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
+      intro: "Responder avaliações é uma parte importante da gestão do Google Meu Negócio. Uma boa resposta mostra atenção, profissionalismo e cuidado com a experiência do cliente.",
+      bodyHtml: `<p>Avaliações influenciam confiança. Quando uma pessoa encontra sua empresa no Google, ela não olha apenas a nota. Ela também observa comentários, fotos, quantidade de avaliações e como a empresa responde. Uma resposta bem feita pode reforçar credibilidade. Uma resposta mal feita pode aumentar o problema.</p>
+  <p>Responder avaliações não significa discutir, se defender a qualquer custo ou usar mensagens copiadas. Significa reconhecer a experiência do cliente, agradecer, orientar e mostrar postura profissional. A <a href="https://support.google.com/business/answer/3474050?hl=pt-BR" target="_blank" rel="noopener noreferrer">Central de Ajuda do Google</a> orienta sobre boas práticas ao responder avaliações no Perfil da Empresa.</p>
+  <h2>Como responder avaliações positivas</h2>
+  <p>Agradeça de forma natural, mencione o serviço quando fizer sentido e reforce que a empresa fica à disposição. Evite respostas idênticas em todos os comentários. Personalização simples já melhora a percepção.</p>
+  <p>Exemplo de resposta: "Obrigado pela avaliação, [nome]. Ficamos felizes em saber que sua experiência foi positiva. Seguimos à disposição sempre que precisar."</p>
+  <h2>Como responder avaliações negativas</h2>
+  <p>A resposta deve ser calma, objetiva e profissional. Evite confronto público. Reconheça o relato, peça mais detalhes se necessário e direcione para um canal de atendimento. Mesmo quando a crítica parecer injusta, a resposta será lida por futuros clientes.</p>
+  <p>Exemplo de resposta: "Olá, [nome]. Sentimos muito que sua experiência não tenha sido como esperado. Queremos entender melhor o ocorrido e buscar a melhor solução possível. Por favor, entre em contato pelo nosso canal oficial para avaliarmos o caso com atenção."</p>
+  <h2>O que evitar</h2>
+  <div class="table-wrap"><table><thead><tr><th>Erro</th><th>Por que prejudica</th></tr></thead><tbody>
+  <tr><td>Discutir publicamente</td><td>Passa imagem defensiva e pouco profissional.</td></tr>
+  <tr><td>Copiar a mesma resposta</td><td>Parece automático e sem cuidado.</td></tr>
+  <tr><td>Expor dados do cliente</td><td>Pode gerar problemas de privacidade.</td></tr>
+  <tr><td>Ignorar críticas</td><td>Dá sensação de abandono e descuido.</td></tr>
+  <tr><td>Prometer o que não será feito</td><td>Aumenta frustração e risco reputacional.</td></tr>
+  </tbody></table></div>
+  <h2>Avaliações devem virar aprendizado</h2>
+  <p>Além de responder, a empresa deve analisar padrões. Se várias pessoas reclamam de demora, atendimento ou informação desencontrada, isso indica gargalo real. Reputação não é apenas marketing; é reflexo da operação. Uma boa <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão do Google Meu Negócio</a> inclui esse acompanhamento sistemático.</p>
+  <h2>Conclusão</h2>
+  <p>Responder avaliações no Google Meu Negócio é uma oportunidade de mostrar maturidade. A empresa que responde bem transmite confiança, reduz insegurança de novos clientes e melhora a percepção da marca local. Se você ainda não tem o perfil configurado, veja como <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criar o Google Meu Negócio em Foz do Iguaçu</a>.</p>`,
+    },
   {
-    slug: "/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes",
-    title: "7 erros que fazem leads do WhatsApp não virarem clientes",
-    description:
-      "Recebe leads no WhatsApp, mas vende pouco? Veja erros de atendimento, oferta, velocidade e rastreamento que reduzem a conversão.",
-    cta: "Analisar meu funil de WhatsApp",
-    body: [
-      ["p", "Muitas empresas culpam o tráfego pago quando os leads não viram clientes. Em muitos casos, o gargalo está no atendimento, na oferta ou no processo depois que o lead chama no WhatsApp."],
-      ["h2", "1. Demorar para responder"],
-      ["p", "Quanto mais tempo o lead espera, maior a chance de falar com concorrentes ou perder interesse."],
-      ["h2", "2. Não qualificar o contato"],
-      ["p", "Perguntas simples sobre serviço, prazo, cidade e necessidade ajudam a separar curiosos de oportunidades reais."],
-      ["h2", "3. Mandar mensagem genérica"],
-      ["p", "O atendimento precisa continuar o assunto que trouxe o lead, não responder todos os contatos com o mesmo texto."],
-      ["h2", "4. Não registrar origem"],
-      ["p", "Sem origem, fica impossível saber se o lead veio do Google, Instagram, campanha específica ou indicação."],
-      ["h2", "5. Depender só de áudio"],
-      ["p", "Mensagens escritas, objetivas e bem estruturadas facilitam a decisão de quem não pode ouvir áudio na hora."],
-      ["h2", "6. Não ter follow-up"],
-      ["p", "Um processo simples de retorno em 24 horas, 3 dias e 7 dias pode recuperar oportunidades."],
-      ["h2", "7. Medir apenas quantidade"],
-      ["p", "Volume sem qualidade engana. O correto é analisar quantos leads eram qualificados, receberam proposta e fecharam."],
-    ],
-  },
+      slug: "/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes",
+      category: "conversao",
+      title: "7 erros que fazem leads do WhatsApp não virarem clientes",
+      description: "Veja 7 erros que fazem leads do WhatsApp não virarem clientes e como melhorar resposta, qualificação, follow-up e rastreamento comercial.",
+      h1: "7 erros que fazem leads do WhatsApp não virarem clientes",
+      intro: "Muitas empresas culpam os anúncios quando os leads não fecham, mas parte do problema acontece depois do clique. O WhatsApp pode converter muito bem, desde que exista velocidade, clareza, qualificação e follow-up.",
+      cta: "Analisar meu funil de WhatsApp",
+      bodyHtml: `<p>Nem todo problema de tráfego pago está na campanha. Em muitos casos, o anúncio gera contatos, mas o atendimento perde oportunidades por falta de processo. Isso é comum em negócios locais, profissionais liberais, clínicas, escritórios e prestadores de serviço.</p>
+  <p>O WhatsApp é um canal de alta intenção, mas também é um ambiente cheio de distração. O lead chama várias empresas, compara respostas e tende a avançar com quem responde rápido, entende a demanda e conduz a conversa com objetividade.</p>
+  <h2>1. Demorar para responder</h2>
+  <p>Velocidade não garante venda, mas demora mata oportunidade. Quando o lead chama pelo WhatsApp, ele normalmente está em momento de pesquisa ou decisão. Se a empresa responde horas depois, pode encontrar o cliente já atendido por outro concorrente.</p>
+  <h2>2. Não qualificar o contato</h2>
+  <p>Atender todo mundo da mesma forma reduz conversão. É preciso descobrir o que a pessoa precisa, onde está, qual urgência, se já pesquisou antes e qual solução faz sentido. Sem qualificação, o atendimento vira troca de mensagens soltas.</p>
+  <h2>3. Mandar mensagem genérica</h2>
+  <p>Respostas muito prontas passam sensação de descaso. O ideal é ter estrutura, mas personalizar a conversa. Um bom atendimento combina velocidade com contexto: chama pelo nome, confirma a necessidade e direciona o próximo passo.</p>
+  <h2>4. Não registrar origem</h2>
+  <p>Se a empresa não sabe de onde veio o contato, não sabe qual campanha funcionou. O mínimo é registrar se o lead veio de <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a>, site, Google Meu Negócio, indicação ou orgânico. Sem isso, a otimização fica fraca. Entenda mais sobre <a href="/blog/como-rastrear-leads-de-trafego-pago">como rastrear leads de tráfego pago</a>.</p>
+  <h2>5. Depender só de áudio</h2>
+  <p>Áudio pode ajudar, mas não deve ser a base do atendimento. Muitas pessoas não conseguem ouvir na hora, e informações importantes se perdem. Mensagens curtas, objetivas e com próximos passos claros costumam funcionar melhor.</p>
+  <h2>6. Não ter follow-up</h2>
+  <p>Nem todo cliente fecha na primeira conversa. Sem follow-up, oportunidades mornas são abandonadas. A empresa precisa ter uma rotina simples para retomar contato, tirar dúvidas e oferecer o próximo passo sem ser invasiva.</p>
+  <h2>7. Medir apenas quantidade</h2>
+  <p>Ter muitos leads não significa ter bons leads. O que importa é quantos contatos tinham perfil, quantos receberam proposta, quantos avançaram e quantos viraram venda. Essa leitura evita cortar campanhas boas por análise superficial.</p>
+  <h2>Checklist rápido de melhoria</h2>
+  <div class="table-wrap"><table><thead><tr><th>Etapa</th><th>Pergunta de controle</th></tr></thead><tbody>
+  <tr><td>Resposta</td><td>O lead recebe retorno em poucos minutos?</td></tr>
+  <tr><td>Qualificação</td><td>A equipe sabe quais perguntas fazer?</td></tr>
+  <tr><td>Registro</td><td>A origem do lead fica anotada?</td></tr>
+  <tr><td>Próximo passo</td><td>A conversa termina com ação clara?</td></tr>
+  <tr><td>Follow-up</td><td>Existe retomada organizada?</td></tr>
+  <tr><td>Análise</td><td>A qualidade do lead é avaliada?</td></tr>
+  </tbody></table></div>
+  <h2>Conclusão</h2>
+  <p>Antes de culpar o tráfego, olhe o atendimento. Uma campanha mediana com atendimento bom pode performar melhor do que uma campanha boa com atendimento desorganizado. O WhatsApp precisa ser tratado como parte do funil, não como uma caixa de entrada solta.</p>`,
+    },
   {
-    slug: "/blog/trafego-pago-para-hoteis-turismo-restaurantes-foz",
-    title: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
-    description:
-      "Estratégias de tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu gerarem reservas, visitas e contatos pelo WhatsApp.",
-    cta: "Avaliar campanha para turismo",
-    body: [
-      ["p", "Foz do Iguaçu é um dos destinos mais conhecidos do Brasil, com forte presença de turismo, hotelaria, gastronomia, transporte e experiências locais."],
-      ["h2", "Estratégias por segmento"],
-      ["table", [["Segmento", "Oportunidade"], ["Hotéis e pousadas", "Campanhas para reservas, diferenciais e remarketing."], ["Restaurantes", "Busca local, ofertas, datas comemorativas e localização."], ["Agências de turismo", "Passeios, combos, experiências e atendimento rápido."], ["Transporte", "Transfer, aeroporto, Paraguai, Argentina e roteiros."], ["Atrativos e experiências", "Criativos visuais e campanhas por interesse."]]],
-      ["h2", "Google Ads no turismo"],
-      ["p", "Google Ads captura intenção direta em pesquisas por hospedagem, restaurantes, transfers e passeios."],
-      ["h2", "Meta Ads no turismo"],
-      ["p", "Meta Ads funciona bem para inspirar, apresentar ofertas e fazer remarketing com fotos, vídeos e mensagens claras."],
-    ],
-  },
+      slug: "/blog/google-ads-ou-meta-ads-foz-do-iguacu",
+      category: "canais",
+      title: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
+      description: "Compare Google Ads e Meta Ads para empresas em Foz do Iguaçu e entenda quando usar cada canal para gerar leads, demanda e vendas.",
+      h1: "Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?",
+      intro: "A melhor plataforma depende da intenção do cliente, do tipo de oferta, do orçamento e do momento da empresa. Google Ads e Meta Ads podem funcionar muito bem, mas resolvem problemas diferentes.",
+      cta: "Descobrir melhor canal para meu negócio",
+      bodyHtml: `<p>A dúvida entre <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> e <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a> é comum, mas a resposta certa raramente é "um é melhor que o outro". O Google costuma funcionar melhor quando o cliente já está pesquisando uma solução. A Meta costuma funcionar melhor quando a empresa precisa gerar demanda, educar o público ou aparecer antes da busca ativa.</p>
+  <p>Em Foz do Iguaçu, isso varia bastante por segmento. Um turista procurando restaurante, passeio, hotel ou transporte pode usar Google e Maps com intenção imediata. Já um serviço de maior consideração, como consultoria, estética, educação, advocacia informativa ou infoproduto, pode precisar de Meta Ads para gerar desejo e relacionamento.</p>
+  <h2>Quando priorizar Google Ads</h2>
+  <p>Google Ads tende a fazer sentido quando existe demanda ativa. Se a pessoa pesquisa "advogado trabalhista em Foz do Iguaçu", "clínica odontológica perto de mim", "hotel em Foz do Iguaçu" ou "gestor de tráfego em Foz do Iguaçu", ela já demonstrou intenção. Esse canal costuma ser forte para serviços com urgência, comparação direta e busca local.</p>
+  <h2>Quando priorizar Meta Ads</h2>
+  <p>Meta Ads costuma ser melhor para gerar atenção e desejo. A pessoa pode não estar pesquisando agora, mas pode se interessar ao ver uma oferta clara, prova social, antes e depois, conteúdo educativo ou oportunidade específica. Esse canal é muito útil para remarketing, campanhas de conteúdo, geração de demanda para negócios locais, turismo, eventos, gastronomia, estética e ofertas com apelo visual.</p>
+  <h2>Comparativo prático</h2>
+  <div class="table-wrap"><table><thead><tr><th>Critério</th><th>Google Ads</th><th>Meta Ads</th></tr></thead><tbody>
+  <tr><td>Intenção</td><td>Alta quando há busca ativa</td><td>Média ou baixa, depende do criativo e oferta</td></tr>
+  <tr><td>Velocidade de aprendizado</td><td>Boa quando há volume de buscas</td><td>Boa quando há verba para testar criativos</td></tr>
+  <tr><td>Melhor uso</td><td>Capturar demanda existente</td><td>Criar demanda e fazer remarketing</td></tr>
+  <tr><td>Risco comum</td><td>Pagar por palavra ampla ou irrelevante</td><td>Gerar lead curioso sem intenção real</td></tr>
+  <tr><td>Métrica crítica</td><td>Termos de busca e conversões</td><td>Criativo, público, mensagem e qualidade do lead</td></tr>
+  </tbody></table></div>
+  <p>O <a href="https://ads.google.com/intl/pt-BR_br/home/resources/google-ads-vs-facebook-ads/" target="_blank" rel="noopener noreferrer">Google também disponibiliza comparativos entre suas plataformas de anúncios</a> que podem ajudar na decisão dependendo do objetivo comercial.</p>
+  <h2>O melhor cenário</h2>
+  <p>Em muitos casos, a melhor estratégia não é escolher um canal, mas organizar o papel de cada um. Google Ads captura quem já procura. Meta Ads aquece, educa, faz remarketing e reforça autoridade. O <a href="/servicos/landing-pages-foz-do-iguacu">site, a landing page</a>, o WhatsApp e o <a href="/servicos/rastreamento-e-conversao">rastreamento</a> conectam tudo.</p>
+  <h2>Conclusão</h2>
+  <p>Se o orçamento é limitado, comece pelo canal mais próximo da intenção de compra. Se já existe demanda ativa, Google Ads pode ser prioridade. Se o mercado precisa ser educado ou a oferta depende de desejo, Meta Ads pode entrar primeiro. O importante é não decidir por preferência pessoal, e sim por intenção, margem e rastreamento. Entenda mais: <a href="/blog/quanto-custa-trafego-pago-em-foz-do-iguacu">quanto custa contratar tráfego pago em Foz do Iguaçu</a>.</p>`,
+    },
   {
-    slug: "/blog/landing-page-para-negocios-locais-em-foz-do-iguacu",
-    title: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
-    description:
-      "Veja o que uma landing page para negócios locais em Foz do Iguaçu precisa ter para converter cliques de anúncios em leads e WhatsApp.",
-    cta: "Analisar minha página",
-    body: [
-      ["p", "Uma landing page local precisa responder rapidamente três perguntas: o que você oferece, por que o visitante deve confiar e como ele entra em contato."],
-      ["h2", "Estrutura recomendada"],
-      ["table", [["Bloco", "Objetivo"], ["Hero", "Mostrar oferta, cidade e CTA."], ["Problema", "Conectar com a dor do usuário."], ["Solução", "Explicar serviço de forma objetiva."], ["Prova", "Mostrar experiência, depoimentos ou diferenciais."], ["Processo", "Reduzir incerteza sobre próximos passos."], ["FAQ", "Responder dúvidas antes do contato."], ["CTA final", "Levar para WhatsApp ou formulário."]]],
-      ["h2", "Erros comuns"],
-      ["p", "Usar uma página institucional genérica, esconder o botão de WhatsApp ou pedir informações demais no formulário reduz a conversão."],
-      ["h2", "O papel do mobile"],
-      ["p", "Grande parte dos acessos de campanhas vem do celular. A página precisa carregar rápido, ter textos escaneáveis e botões fáceis de clicar."],
-    ],
-  },
+      slug: "/blog/google-meu-negocio-ou-site-o-que-priorizar",
+      category: "canais",
+      title: "Google Meu Negócio ou site: o que priorizar primeiro?",
+      description: "Entenda quando priorizar Google Meu Negócio, quando investir em site e como os dois canais se complementam para gerar leads locais.",
+      h1: "Google Meu Negócio ou site: o que priorizar primeiro?",
+      intro: "Para empresas locais, a resposta ideal quase nunca é escolher um e ignorar o outro. Google Meu Negócio e site têm papéis diferentes na jornada do cliente e funcionam melhor quando estão conectados.",
+      bodyHtml: `<p>O Google Meu Negócio é ótimo para presença local rápida. Ele ajuda a empresa a aparecer na Busca e no Maps com telefone, horário, rota, fotos e avaliações. Já o site é melhor para explicar serviços em profundidade, criar conteúdo, captar leads, rodar campanhas e medir comportamento.</p>
+  <p>Se a empresa está começando e ainda não tem nenhuma presença local, o <a href="https://business.google.com/" target="_blank" rel="noopener noreferrer">Perfil da Empresa no Google</a> pode ser o primeiro passo. Mas se o objetivo é crescer com SEO, anúncios e conversão, o site se torna indispensável.</p>
+  <h2>Quando priorizar Google Meu Negócio</h2>
+  <p>Priorize o Google Meu Negócio quando a empresa atende localmente, recebe visitas, depende de rotas, precisa aparecer no Maps ou ainda não tem uma presença básica no Google. Restaurantes, clínicas, lojas, prestadores de serviço, turismo e negócios com atendimento regional costumam se beneficiar bastante. Veja como começar: <a href="/blog/google-meu-negocio-para-empresas-locais-em-foz-do-iguacu">Google Meu Negócio para empresas locais em Foz do Iguaçu</a>.</p>
+  <h2>Quando priorizar site</h2>
+  <p>Priorize o site quando a empresa precisa explicar serviços complexos, gerar autoridade, criar blog, rodar <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, medir conversões ou apresentar diferenciais com mais profundidade. O site também é essencial quando o negócio quer depender menos de plataformas externas. O Google reforça que <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">ter conteúdo útil e de qualidade</a> é o principal fator para crescer no orgânico.</p>
+  <h2>Comparativo prático</h2>
+  <div class="table-wrap"><table><thead><tr><th>Critério</th><th>Google Meu Negócio</th><th>Site</th></tr></thead><tbody>
+  <tr><td>Velocidade inicial</td><td>Alta</td><td>Média</td></tr>
+  <tr><td>Profundidade de informação</td><td>Limitada</td><td>Alta</td></tr>
+  <tr><td>SEO local</td><td>Muito importante</td><td>Muito importante</td></tr>
+  <tr><td>Controle de layout</td><td>Baixo</td><td>Alto</td></tr>
+  <tr><td>Rastreamento de campanha</td><td>Limitado</td><td>Mais completo</td></tr>
+  <tr><td>Conteúdo educativo</td><td>Limitado</td><td>Forte</td></tr>
+  <tr><td>Conversão personalizada</td><td>Média</td><td>Alta</td></tr>
+  </tbody></table></div>
+  <h2>O melhor caminho</h2>
+  <p>Para a maioria das empresas, o melhor caminho é configurar bem o Perfil da Empresa e usar o site como base principal de conteúdo e conversão. O perfil gera confiança e visibilidade local. O site explica, filtra, convence e mede melhor. Veja nossos serviços: <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criação de Google Meu Negócio</a> e <a href="/servicos/landing-pages-foz-do-iguacu">sites e landing pages para negócios locais</a>.</p>
+  <h2>Conclusão</h2>
+  <p>Se você quer o mínimo para ser encontrado, comece pelo Google Meu Negócio. Se quer construir aquisição previsível, combine Google Meu Negócio, site, SEO, anúncios e <a href="/servicos/rastreamento-e-conversao">rastreamento</a>. Um canal fortalece o outro.</p>`,
+    },
   {
-    slug: "/blog/como-rastrear-leads-de-trafego-pago",
-    title: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
-    description:
-      "Aprenda como rastrear leads de tráfego pago usando UTMs, eventos, WhatsApp e CRM simples para entender quais campanhas geram oportunidades.",
-    cta: "Solicitar análise de rastreamento",
-    body: [
-      ["p", "Rastrear leads é uma das partes mais importantes do tráfego pago. Sem isso, a empresa sabe que recebeu contatos, mas não sabe de onde vieram e quais campanhas atraíram leads melhores."],
-      ["h2", "O que são UTMs"],
-      ["p", "UTMs são parâmetros adicionados aos links para identificar origem, mídia, campanha e anúncio."],
-      ["table", [["Parâmetro", "Exemplo de uso"], ["utm_source", "google, facebook, instagram"], ["utm_medium", "cpc, paid_social, organic"], ["utm_campaign", "google_servicos_foz"], ["utm_content", "anuncio_01, criativo_video"], ["utm_term", "palavra-chave em campanhas de busca"]]],
-      ["h2", "Eventos importantes"],
-      ["p", "Clique no WhatsApp, envio de formulário, ligação e visualização de página-chave são eventos úteis para análise."],
-      ["h2", "Qualidade do lead"],
-      ["p", "A equipe comercial precisa registrar se o lead era qualificado, recebeu proposta, fechou ou foi perdido."],
-    ],
-  },
+      slug: "/blog/google-meu-negocio-para-empresas-locais-em-foz-do-iguacu",
+      category: "canais",
+      title: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
+      description: "Entenda como empresas locais em Foz do Iguaçu podem usar o Google Meu Negócio para aparecer na Busca, no Maps e gerar mais contatos.",
+      h1: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
+      intro: "O Google Meu Negócio — hoje chamado Perfil da Empresa no Google — é uma base importante para negócios locais que querem ser encontrados na Busca Google e no Maps. Mas criar o perfil é só o primeiro passo.",
+      bodyHtml: `<p>Empresas locais dependem de confiança e facilidade de contato. Quando alguém procura por um serviço em Foz do Iguaçu, é comum comparar opções no Google, olhar avaliações, conferir fotos, abrir rota e chamar no WhatsApp. O <a href="https://business.google.com/" target="_blank" rel="noopener noreferrer">Perfil da Empresa no Google</a> ajuda a concentrar essas informações em um lugar visível.</p>
+  <p>O erro é tratar o perfil como um cadastro simples. Ele funciona como uma vitrine local. Se as informações estão incompletas, as fotos são fracas ou o horário está errado, o cliente pode escolher outro concorrente sem nem entrar no seu site.</p>
+  <h2>O que não pode faltar no perfil</h2>
+  <div class="table-wrap"><table><thead><tr><th>Elemento</th><th>Por que é importante</th></tr></thead><tbody>
+  <tr><td>Categoria correta</td><td>Ajuda o Google e o usuário a entenderem o tipo de negócio.</td></tr>
+  <tr><td>Telefone e WhatsApp</td><td>Reduz fricção para o contato.</td></tr>
+  <tr><td>Horário atualizado</td><td>Evita frustração e perda de oportunidade.</td></tr>
+  <tr><td>Fotos reais</td><td>Aumenta percepção de confiança.</td></tr>
+  <tr><td>Serviços descritos</td><td>Mostra o que a empresa oferece antes do contato.</td></tr>
+  <tr><td>Avaliações respondidas</td><td>Demonstra atenção e profissionalismo.</td></tr>
+  <tr><td>Link para site</td><td>Permite apresentar informações completas e medir melhor os leads.</td></tr>
+  </tbody></table></div>
+  <p>A <a href="https://support.google.com/business/answer/7091?hl=pt-BR" target="_blank" rel="noopener noreferrer">Central de Ajuda do Google para Perfil da Empresa</a> explica cada um desses elementos e como configurá-los corretamente.</p>
+  <h2>Criação não é gestão</h2>
+  <p>Criar o perfil é organizar a base. Gerir o perfil é manter essa base viva. Empresas que dependem de busca local devem revisar dados, publicar fotos, responder avaliações e acompanhar insights de desempenho. Isso evita que o perfil fique desatualizado e perca força comercial. Conheça nosso serviço de <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão de Google Meu Negócio em Foz do Iguaçu</a>.</p>
+  <h2>Google Meu Negócio e tráfego pago</h2>
+  <p>O perfil também conversa com anúncios. Uma empresa que investe em <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a>, mas tem perfil ruim no Maps, pode perder confiança. O usuário pode clicar no anúncio, pesquisar a empresa, ver poucas avaliações ou informações inconsistentes e desistir. Veja como os dois se complementam em: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
+  <h2>Conclusão</h2>
+  <p>Se sua empresa atende em Foz do Iguaçu, o Google Meu Negócio precisa ser tratado como parte do funil de aquisição. Ele não substitui site, campanha ou atendimento, mas ajuda a transformar buscas locais em contatos mais confiáveis. O próximo passo é <a href="/servicos/google-meu-negocio-foz-do-iguacu#criacao">criar o seu Perfil da Empresa no Google</a> com a estrutura certa.</p>`,
+    },
+  {
+      slug: "/blog/landing-page-para-negocios-locais-em-foz-do-iguacu",
+      category: "conversao",
+      title: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
+      description: "Veja o que uma landing page para negócios locais em Foz do Iguaçu precisa ter para converter cliques em leads pelo WhatsApp, formulário ou ligação.",
+      h1: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
+      intro: "Uma landing page local não precisa ser complexa, mas precisa ser clara. Ela deve explicar a oferta, gerar confiança, facilitar o contato e medir o que acontece depois do clique.",
+      cta: "Analisar minha página",
+      bodyHtml: `<p>Uma boa landing page para negócios locais tem uma função simples: transformar visita em contato qualificado. Ela não precisa ter dezenas de seções, animações pesadas ou textos genéricos. Precisa responder rapidamente se a empresa atende a necessidade do visitante, por que é confiável e qual é o próximo passo.</p>
+  <p>Em campanhas locais, especialmente com <a href="/servicos/gestao-de-trafego-pago">tráfego pago</a>, mandar todo mundo para a home pode reduzir conversão. A home costuma falar de várias coisas ao mesmo tempo. A landing page direciona a atenção para uma oferta, um serviço, um público ou uma região.</p>
+  <h2>Estrutura recomendada</h2>
+  <div class="table-wrap"><table><thead><tr><th>Seção</th><th>Função</th></tr></thead><tbody>
+  <tr><td>Hero com promessa clara</td><td>Mostrar serviço, localidade e benefício principal.</td></tr>
+  <tr><td>CTA visível</td><td>Facilitar WhatsApp, formulário ou ligação.</td></tr>
+  <tr><td>Problemas que a empresa resolve</td><td>Conectar com a dor real do usuário.</td></tr>
+  <tr><td>Serviços ou diferenciais</td><td>Explicar o que está incluso e por que escolher a empresa.</td></tr>
+  <tr><td>Prova de confiança</td><td>Mostrar avaliações, fotos, cases, credenciais ou experiência.</td></tr>
+  <tr><td>FAQ</td><td>Reduzir objeções antes do contato.</td></tr>
+  <tr><td>Rastreamento</td><td>Medir cliques, formulários, ligações e origem dos leads.</td></tr>
+  </tbody></table></div>
+  <h2>Erros comuns</h2>
+  <p>O erro mais comum é criar uma página bonita, mas sem foco. Outro problema é esconder o botão de contato, usar textos vagos, não adaptar para celular e não medir conversões. Também é ruim usar fotos genéricas demais quando o negócio depende de confiança local. Veja as <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">diretrizes do Google sobre conteúdo útil</a> para entender o que realmente importa numa página.</p>
+  <h2>O papel do mobile</h2>
+  <p>Grande parte dos acessos locais acontece pelo celular. Por isso, a landing page precisa carregar rápido, ter botões fáceis de clicar, texto legível e WhatsApp bem posicionado. O Google considera a experiência mobile como fator de ranqueamento — veja mais no <a href="https://developers.google.com/search/docs/appearance/page-experience?hl=pt-br" target="_blank" rel="noopener noreferrer">guia de experiência da página do Google Search Central</a>. Se a pessoa precisa dar zoom ou procurar o contato, a página já perdeu eficiência.</p>
+  <h2>Landing page e atendimento precisam conversar</h2>
+  <p>A página pode prometer diagnóstico, orçamento, reserva, avaliação ou conversa inicial. Mas o atendimento precisa continuar essa promessa. Se o CTA diz "solicitar orçamento" e o WhatsApp responde com mensagem confusa, a conversão cai. Leia também: <a href="/blog/erros-que-fazem-leads-do-whatsapp-nao-virarem-clientes">7 erros que fazem leads do WhatsApp não virarem clientes</a>.</p>
+  <h2>Conclusão</h2>
+  <p>Uma landing page local eficiente é direta, rápida, confiável e mensurável. Ela não deve ser avaliada apenas pelo design, mas pela capacidade de gerar contatos melhores e permitir decisões de otimização. Conheça nosso serviço de <a href="/servicos/landing-pages-foz-do-iguacu">criação de landing pages em Foz do Iguaçu</a>.</p>`,
+    },
+  {
+      slug: "/blog/quanto-custa-trafego-pago-em-foz-do-iguacu",
+      category: "investimento",
+      title: "Quanto custa contratar tráfego pago em Foz do Iguaçu?",
+      description: "Entenda quanto custa contratar tráfego pago em Foz do Iguaçu, separando verba de mídia, gestão, setup, rastreamento e expectativa de retorno.",
+      h1: "Quanto custa contratar tráfego pago em Foz do Iguaçu?",
+      intro: "O custo de tráfego pago não é apenas a mensalidade da gestão. Para avaliar se vale a pena, é preciso separar verba de anúncios, serviço de gestão, estrutura inicial, página, rastreamento e capacidade de conversão comercial.",
+      cta: "Pedir análise de investimento",
+      bodyHtml: `<p>A pergunta "quanto custa tráfego pago?" é legítima, mas incompleta. O investimento total depende do objetivo, segmento, concorrência, ticket médio, margem, maturidade da empresa e estrutura atual. Uma campanha para gerar reservas em turismo não tem a mesma lógica de uma campanha para advocacia, estética, comércio local ou serviço B2B.</p>
+  <p>O primeiro ponto é separar verba de mídia e honorário de gestão. A verba de mídia é o dinheiro pago às plataformas, como <a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> ou <a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a>. A gestão é o trabalho de planejamento, criação, acompanhamento, otimização, análise e comunicação.</p>
+  <h2>Verba de mídia não é o mesmo que gestão</h2>
+  <div class="table-wrap"><table><thead><tr><th>Custo</th><th>O que significa</th></tr></thead><tbody>
+  <tr><td>Verba de mídia</td><td>Valor investido diretamente nos anúncios (pago ao Google ou Meta).</td></tr>
+  <tr><td>Gestão</td><td>Serviço profissional para planejar, configurar e otimizar campanhas.</td></tr>
+  <tr><td>Setup</td><td>Organização inicial de contas, tags, eventos, públicos, criativos e estrutura.</td></tr>
+  <tr><td>Página ou landing page</td><td>Destino criado para aumentar conversão dos cliques.</td></tr>
+  <tr><td>Rastreamento</td><td>Configuração para medir leads e origem dos contatos.</td></tr>
+  </tbody></table></div>
+  <h2>Existe investimento mínimo?</h2>
+  <p>Existe um investimento mínimo prático, mesmo que não exista uma regra universal. Se a verba for muito baixa, a campanha pode não gerar dados suficientes para aprender. O problema não é apenas "aparecer pouco", mas não ter volume para identificar palavras, públicos, anúncios e canais que funcionam.</p>
+  <p>Para empresas locais, o ideal é começar com um orçamento que permita testar com consistência, medir leads e ajustar a rota. Investir pouco demais pode parecer seguro, mas às vezes só gera dados fracos e conclusões erradas.</p>
+  <h2>Como saber se vale a pena?</h2>
+  <p>A conta deve considerar margem e conversão, não apenas CPL. Um lead de R$ 40 pode ser caro se nunca fecha. Um lead de R$ 120 pode ser barato se vira contrato de alto valor. Por isso, a análise precisa conectar anúncio, lead, atendimento, proposta e venda. Leia mais em <a href="/blog/como-rastrear-leads-de-trafego-pago">como rastrear leads de tráfego pago</a> para entender como montar essa conta.</p>
+  <h2>Conclusão</h2>
+  <p>Contratar tráfego pago em Foz do Iguaçu pode valer muito a pena, mas só quando existe clareza de objetivo, estrutura mínima e acompanhamento de dados. O menor preço nem sempre é o menor risco. O melhor investimento é aquele que permite aprender, otimizar e vender com previsibilidade. Se quiser entender melhor o processo, consulte nossa <a href="/consultoria">consultoria estratégica</a>.</p>`,
+    },
+  {
+      slug: "/blog/seo-local-para-negocios-em-foz-do-iguacu",
+      category: "canais",
+      title: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
+      description: "Guia prático de SEO local para negócios em Foz do Iguaçu: site, Google Meu Negócio, conteúdo, avaliações, Maps e rastreamento.",
+      h1: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
+      intro: "SEO local é o conjunto de ações que ajuda uma empresa a ser encontrada por pessoas que pesquisam por soluções em uma região específica. Para negócios em Foz do Iguaçu, isso envolve site, Google Meu Negócio, conteúdo, avaliações, rastreamento e experiência de contato.",
+      bodyHtml: `<p>SEO local não é apenas colocar o nome da cidade no título da página. É construir uma presença digital coerente para que o usuário encontre sua empresa, entenda o que você faz, confie na sua marca e consiga entrar em contato sem dificuldade.</p>
+  <p>Em Foz do Iguaçu, a lógica local é forte para restaurantes, turismo, hotéis, clínicas, escritórios, prestadores de serviço, profissionais liberais e negócios que atendem por região. Quem pesquisa localmente costuma ter intenção prática: quer comparar opções, pedir orçamento, ligar, abrir rota ou chamar no WhatsApp. O <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br" target="_blank" rel="noopener noreferrer">Guia de SEO para iniciantes do Google Search Central</a> é a referência oficial para entender o que o Google valoriza nas buscas.</p>
+  <h2>Os pilares do SEO local</h2>
+  <div class="table-wrap"><table><thead><tr><th>Pilar</th><th>O que fazer</th></tr></thead><tbody>
+  <tr><td>Site</td><td>Criar páginas claras para serviços, nichos e localização.</td></tr>
+  <tr><td>Google Meu Negócio</td><td>Manter perfil completo, atualizado e com fotos reais.</td></tr>
+  <tr><td>Conteúdo</td><td>Responder dúvidas reais do público local com profundidade.</td></tr>
+  <tr><td>Avaliações</td><td>Estimular feedbacks verdadeiros e responder com cuidado.</td></tr>
+  <tr><td>Consistência</td><td>Usar dados coerentes em site, redes, mapas e diretórios.</td></tr>
+  <tr><td>Rastreamento</td><td>Medir contatos, origem dos leads e qualidade comercial.</td></tr>
+  </tbody></table></div>
+  <h2>Conteúdo local precisa ser útil</h2>
+  <p>Não adianta criar várias páginas repetindo "em Foz do Iguaçu" sem agregar valor. O conteúdo precisa ajudar o usuário a decidir. Isso significa explicar custos, processos, critérios de escolha, erros comuns, prazos, dúvidas frequentes e diferenças entre soluções. O Google reforça em seu guia de <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pt-br" target="_blank" rel="noopener noreferrer">como criar conteúdo útil</a> que páginas criadas para enganar mecanismos de busca são penalizadas — o foco deve ser sempre o usuário.</p>
+  <h2>Google Meu Negócio e site trabalham juntos</h2>
+  <p>O <a href="/servicos/google-meu-negocio-foz-do-iguacu">Perfil da Empresa no Google</a> ajuda na descoberta e na confiança local. O site aprofunda a decisão. Quando os dois estão bem configurados, a empresa melhora a experiência do usuário e cria mais caminhos para conversão. Leia mais: <a href="/blog/google-meu-negocio-ou-site-o-que-priorizar">Google Meu Negócio ou site: o que priorizar primeiro?</a></p>
+  <h2>SEO local e tráfego pago</h2>
+  <p>SEO local é construção. Tráfego pago é aceleração. O ideal é usar os dois quando possível. Enquanto o SEO constrói presença e autoridade, os anúncios geram demanda mais previsível e ajudam a testar mensagens, ofertas e páginas. Entenda mais: <a href="/blog/google-ads-ou-meta-ads-foz-do-iguacu">Google Ads ou Meta Ads: o que funciona melhor em Foz do Iguaçu?</a></p>
+  <h2>Como saber se o SEO local está funcionando</h2>
+  <p>Acompanhe acessos orgânicos, posições aproximadas, cliques para WhatsApp, ligações, formulários, rotas, termos de busca e qualidade dos contatos. O objetivo não é apenas ter mais visitas, mas gerar mais oportunidades úteis. Nosso serviço de <a href="/servicos/rastreamento-e-conversao">rastreamento e conversão</a> ajuda a conectar SEO com resultados comerciais.</p>
+  <h2>Conclusão</h2>
+  <p>SEO local bem feito conecta conteúdo, presença no Maps, site, reputação e dados. Para empresas em Foz do Iguaçu, isso pode reduzir dependência exclusiva de anúncios e melhorar a previsibilidade na geração de leads. Se você quer um diagnóstico gratuito do seu SEO e presença digital, entre em contato com nosso <a href="/consultoria">serviço de consultoria</a>.</p>`,
+    },
+  {
+      slug: "/blog/trafego-pago-para-advogados-em-foz-do-iguacu",
+      category: "nichos",
+      title: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
+      description: "Entenda como advogados em Foz do Iguaçu podem usar tráfego pago com abordagem informativa, ética, rastreamento e foco em autoridade.",
+      h1: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
+      intro: "O tráfego pago para advogados exige cuidado. A comunicação precisa ser informativa, sóbria e alinhada às regras profissionais, evitando promessa de resultado, captação agressiva e linguagem mercantilista.",
+      cta: "Solicitar diagnóstico jurídico",
+      bodyHtml: `<p>Advogados podem usar marketing digital, mas precisam fazer isso com mais critério do que muitos outros segmentos. A estratégia não deve se apoiar em promessa, urgência artificial ou abordagem sensacionalista. O caminho mais seguro é produzir comunicação informativa, clara e orientada a dúvidas reais do público.</p>
+  <p>Em Foz do Iguaçu, a concorrência jurídica também passa pela confiança local. O potencial cliente quer entender se o advogado atua no tema, se comunica com clareza e se passa segurança. O tráfego pago pode acelerar essa descoberta, desde que a mensagem respeite os limites éticos da profissão. O <a href="https://www.oab.org.br/legislacaooab/integra.asp?tipo=CodEtProvDA&num=&ano=" target="_blank" rel="noopener noreferrer">Código de Ética e Disciplina da OAB</a> define os limites da publicidade para advogados e deve ser a referência central de qualquer estratégia de marketing jurídico.</p>
+  <h2>O que evitar</h2>
+  <p>Evite prometer causa ganha, usar termos como "garantido", explorar dor de forma exagerada, oferecer consulta como promoção, comparar-se de forma agressiva com outros profissionais ou usar linguagem de venda incompatível com a advocacia.</p>
+  <p>Também é preciso cuidado com anúncios que parecem captar clientes de forma direta e apelativa. A abordagem deve ser educativa: explicar direitos, processos, documentos, prazos e caminhos possíveis, sempre sem transformar o anúncio em promessa.</p>
+  <h2>Estratégias mais seguras</h2>
+  <div class="table-wrap"><table><thead><tr><th>Estratégia</th><th>Como aplicar</th></tr></thead><tbody>
+  <tr><td>Conteúdo informativo</td><td>Criar artigos e páginas que respondem dúvidas frequentes sobre a área de atuação.</td></tr>
+  <tr><td>Google Ads com intenção</td><td>Trabalhar termos relacionados à área de atuação com cuidado na copy do anúncio.</td></tr>
+  <tr><td>Landing pages sóbrias</td><td>Explicar atuação, experiência, contato e próximos passos sem promessa.</td></tr>
+  <tr><td>Rastreamento</td><td>Medir contatos sem expor dados sensíveis dos clientes.</td></tr>
+  <tr><td>WhatsApp profissional</td><td>Atendimento objetivo, discreto e com orientação inicial adequada.</td></tr>
+  </tbody></table></div>
+  <h2>O papel do SEO e do conteúdo</h2>
+  <p>Para advocacia, SEO pode ser uma base forte porque permite construir autoridade com conteúdo educativo. Posts sobre dúvidas frequentes atraem pessoas em fase de pesquisa e ajudam a reduzir dependência exclusiva de anúncios. O tráfego pago pode impulsionar páginas relevantes, mas o conteúdo precisa ser sério e bem escrito. Leia: <a href="/blog/seo-local-para-negocios-em-foz-do-iguacu">SEO local para negócios em Foz do Iguaçu</a>.</p>
+  <h2>Conclusão</h2>
+  <p>Tráfego pago para advogados funciona melhor quando é tratado como estratégia de autoridade e orientação, não como venda agressiva. O objetivo é ser encontrado por quem precisa de informação jurídica e conduzir o contato com profissionalismo. Entenda mais sobre <a href="/blog/como-escolher-gestor-de-trafego-em-foz-do-iguacu">como escolher um gestor de tráfego</a> que entenda as particularidades da advocacia.</p>`,
+    },
+  {
+      slug: "/blog/trafego-pago-para-hoteis-turismo-restaurantes-foz",
+      category: "nichos",
+      title: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
+      description: "Veja estratégias de tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu, considerando sazonalidade, Google Maps, reservas e WhatsApp.",
+      h1: "Tráfego pago para hotéis, turismo e restaurantes em Foz do Iguaçu",
+      intro: "Foz do Iguaçu tem forte demanda turística, mas isso não significa que todo anúncio vai funcionar. Hotéis, restaurantes e empresas de turismo precisam considerar sazonalidade, intenção de busca, localização, reputação e velocidade de atendimento.",
+      cta: "Avaliar campanha para turismo",
+      bodyHtml: `<p>Turismo é um dos mercados mais importantes de Foz do Iguaçu, mas também é altamente competitivo. O visitante compara preço, localização, avaliações, fotos, distância, facilidade de reserva e resposta no WhatsApp. Por isso, a estratégia de tráfego pago precisa conectar anúncios, <a href="/servicos/google-meu-negocio-foz-do-iguacu">Google Maps</a>, site, perfil da empresa, reputação e atendimento.</p>
+  <p>Campanhas para turismo não devem ser planejadas apenas por canal. É preciso entender o momento da viagem. Há pessoas pesquisando meses antes, pessoas montando roteiro na semana e turistas que já estão na cidade decidindo onde comer, comprar ou visitar.</p>
+  <h2>Estratégias por segmento</h2>
+  <div class="table-wrap"><table><thead><tr><th>Segmento</th><th>Estratégia recomendada</th></tr></thead><tbody>
+  <tr><td>Hotéis e pousadas</td><td>Campanhas por intenção de busca, remarketing e páginas com diferenciais claros.</td></tr>
+  <tr><td>Restaurantes</td><td>Google Maps, campanhas locais, fotos fortes, avaliações e ofertas por momento do dia.</td></tr>
+  <tr><td>Passeios turísticos</td><td>Google Ads para busca ativa e Meta Ads para inspirar roteiro.</td></tr>
+  <tr><td>Transporte e receptivo</td><td>Anúncios com urgência, rota, confiança e atendimento rápido.</td></tr>
+  <tr><td>Comércio turístico</td><td>Campanhas por localização, sazonalidade e públicos em visita à cidade.</td></tr>
+  </tbody></table></div>
+  <h2>Google Ads no turismo</h2>
+  <p><a href="/servicos/google-ads-foz-do-iguacu">Google Ads</a> costuma funcionar bem quando o turista já sabe o que quer. Pesquisas por hotel, restaurante, passeio, transfer ou ingresso indicam intenção mais próxima da compra. O desafio é separar buscas informativas de buscas com potencial real de reserva.</p>
+  <h2>Meta Ads no turismo</h2>
+  <p><a href="/servicos/meta-ads-foz-do-iguacu">Meta Ads</a> é forte para desejo e descoberta. Fotos, vídeos curtos, experiências, pratos, ambientes e depoimentos podem despertar interesse antes da busca. Também funciona bem para remarketing de quem visitou o site ou interagiu com o perfil.</p>
+  <h2>Google Meu Negócio e Maps são decisivos</h2>
+  <p>No turismo local, o Perfil da Empresa no Google pode influenciar muito a decisão. Fotos ruins, horário errado ou avaliações sem resposta podem prejudicar a conversão mesmo quando o anúncio está bom. Por isso, mídia paga e presença local precisam andar juntas. Veja: <a href="/servicos/google-meu-negocio-foz-do-iguacu">gestão de Google Meu Negócio em Foz do Iguaçu</a>. Segundo dados do <a href="https://www.visitbrasil.com/estatisticas/" target="_blank" rel="noopener noreferrer">Ministério do Turismo</a>, Foz do Iguaçu é um dos destinos mais visitados do Brasil, o que aumenta ainda mais a competição pela atenção online.</p>
+  <h2>Conclusão</h2>
+  <p>Hotéis, turismo e restaurantes em Foz do Iguaçu precisam de campanhas que respeitem intenção, sazonalidade e comportamento de decisão. O canal importa, mas o conjunto importa mais: anúncio, fotos, reputação, página, atendimento e rastreamento. Entenda como o <a href="/blog/como-rastrear-leads-de-trafego-pago">rastreamento de leads</a> ajuda a entender quais canais funcionam melhor para o seu tipo de negócio.</p>`,
+    },
 ];
 
 const pages = [
@@ -558,6 +802,31 @@ const pages = [
       ["O que pode ser configurado", "Contas de anúncio, gerenciadores, permissões de acesso, pixels, tags, conversões, integrações básicas, UTMs e organização mínima para que a operação seja mais segura."],
       ["Quando contratar", "Esse serviço faz sentido para empresas que vão começar a anunciar, trocaram de fornecedor, perderam acesso, têm contas bagunçadas ou precisam preparar a base antes da gestão."],
       ["Por que isso importa", "Uma conta mal configurada pode comprometer mensuração, segurança, aprendizado das campanhas e continuidade da operação. A estrutura correta evita retrabalho."],
+    ],
+  },
+  {
+    slug: "/servicos/google-meu-negocio-foz-do-iguacu",
+    title: "Google Meu Negócio em Foz do Iguaçu",
+    description:
+      "Criação e gestão do Perfil da Empresa no Google para empresas locais aparecerem melhor na Busca Google e no Maps.",
+    h1: "Google Meu Negócio em Foz do Iguaçu",
+    intro:
+      "O Google Meu Negócio, hoje chamado oficialmente de Perfil da Empresa no Google, é uma das principais vitrines digitais para negócios locais.",
+    introHtml:
+      "O Google Meu Negócio, hoje chamado oficialmente de <strong>Perfil da Empresa no Google</strong>, é uma das principais vitrines digitais para negócios locais. Ele aparece quando alguém pesquisa por serviços, clínicas, restaurantes, escritórios ou profissionais próximos. Para empresas em Foz do Iguaçu, isso é ainda mais relevante: turismo, atendimento por região, rotas pelo Maps e contatos rápidos pelo WhatsApp dependem de um perfil bem estruturado.<br><br>Um perfil mal configurado ou abandonado passa uma imagem pouco profissional e perde a confiança de quem está comparando opções.",
+    kicker: "Serviço de presença local no Google",
+    sections: [
+      ["O que oferecemos", "Unimos criação e gestão do Perfil da Empresa no Google em uma frente única: primeiro organizamos a base para que sua empresa seja encontrada com clareza, depois mantemos o perfil vivo, atualizado e conectado ao restante da estratégia digital."],
+      ["Criação do Google Meu Negócio", "Para empresas que ainda não têm perfil ou perderam o acesso. Configuramos nome comercial, categorias, endereço ou área de atendimento, telefone, site, WhatsApp, horário, descrição, serviços e fotos iniciais."],
+      ["Gestão do Google Meu Negócio", "Para empresas que já têm perfil e querem mantê-lo gerando contatos. A gestão inclui atualização de informações, serviços, fotos, postagens, avaliações, perguntas e respostas, insights e integração com mídia paga."],
+      ["O que não prometemos", "Não prometemos primeiro lugar no Google Maps nem aumento imediato de contatos sem analisar concorrência, categoria, localização, avaliações, demanda e qualidade do perfil. A proposta é estruturar e manter o perfil de forma profissional."],
+    ],
+    faq: [
+      ["Google Meu Negócio ainda existe?", "O nome atual do produto é Perfil da Empresa no Google, mas o termo Google Meu Negócio ainda é amplamente usado no Brasil."],
+      ["Criar o perfil é gratuito?", "O Google permite criar o perfil sem custo. O serviço cobrado aqui é pela configuração estratégica, organização das informações e preparação do perfil."],
+      ["Minha empresa não tem loja física. Posso criar mesmo assim?", "Em muitos casos, sim. Prestadores de serviço que atendem em área de cobertura podem ter perfil, desde que sigam as diretrizes do Google."],
+      ["A gestão ajuda no SEO local?", "Ajuda na organização da presença local e melhora a experiência de quem encontra a empresa. Para resultados mais completos, deve ser combinada com site bem estruturado, conteúdo útil e boa reputação online."],
+      ["A gestão substitui anúncios no Google?", "Não. A gestão fortalece a presença orgânica local. Em muitos casos, Google Meu Negócio, site e Google Ads funcionam melhor juntos do que separados."],
     ],
   },
   {
@@ -930,6 +1199,10 @@ function renderNavLink(text, href, page) {
     : `<a href="${href}">${escapeHtml(text)}</a>`;
 }
 
+function contactFormHref(page) {
+  return isCurrentPage("/contato", page) ? "#formulario" : "/contato/#formulario";
+}
+
 function renderHeader(page) {
   return `<header class="site-header" data-header>
   <div class="wrap header-inner">
@@ -941,7 +1214,7 @@ function renderHeader(page) {
       ${nav.map(([text, href]) => renderNavLink(text, href, page)).join("")}
     </nav>
     <div class="header-actions">
-      <a class="button primary sm" href="/contato/#formulario" data-gtm="header_diagnostico" data-event-category="cta" data-event-label="header">Diagnóstico gratuito</a>
+      <a class="button primary sm" href="${contactFormHref(page)}" data-gtm="header_diagnostico" data-event-category="cta" data-event-label="header">Diagnóstico gratuito</a>
       <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-nav">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
         Menu
@@ -979,7 +1252,9 @@ function renderFooter(page) {
     </div>
     <div class="footer-bottom">
       <span>© <span id="ano">2026</span> Gestor de Tráfego Foz do Iguaçu · PR</span>
-      <a href="/politica-de-privacidade">Política de privacidade</a>
+      <span>CNPJ: 57.110.765/0001-00</span>
+      <span>Este site pertence à <a href="https://gabriads.com" target="_blank" rel="noopener noreferrer">GabriAds Soluções Digitais</a></span>
+      ${isCurrentPage("/politica-de-privacidade", page) ? `<span class="footer-current" aria-current="page">Política de privacidade</span>` : `<a href="/politica-de-privacidade">Política de privacidade</a>`}
     </div>
   </div>
 </footer>`;
@@ -1017,7 +1292,7 @@ function renderCta(page, labelText) {
       <p>Vamos analisar seu cenário, entender seu objetivo e indicar o caminho mais simples para gerar leads com mais previsibilidade.</p>
     </div>
     <div class="cta-actions">
-      <a class="button primary" href="/contato/#formulario" data-gtm="cta_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">${escapeHtml(labelText)} ${arrowSvg("arrow")}</a>
+      <a class="button primary" href="${contactFormHref(page)}" data-gtm="cta_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">${escapeHtml(labelText)} ${arrowSvg("arrow")}</a>
       <a class="button ghost" href="${whatsappHref(page.slug)}" data-whatsapp-link data-gtm="cta_whatsapp" data-event-category="whatsapp" data-event-label="${escapeHtml(page.slug)}">Falar no WhatsApp</a>
     </div>
   </div>
@@ -1186,19 +1461,21 @@ function renderPackages(packages) {
 
 function renderPostArchive() {
   const categories = [
-    ["Contratação", "Como escolher gestor e avaliar propostas."],
-    ["Investimento", "Quanto custa e como pensar verba de mídia."],
-    ["Canais", "Google Ads, Meta Ads e escolha de plataformas."],
-    ["Nichos", "Advocacia, turismo, restaurantes e negócios locais."],
-    ["Conversão", "WhatsApp, landing pages, rastreamento e qualidade de lead."],
+    ["contratacao", "Contratação", "Como escolher gestor e avaliar propostas."],
+    ["investimento", "Investimento", "Quanto custa e como pensar verba de mídia."],
+    ["canais", "Canais", "Google Ads, Meta Ads e escolha de plataformas."],
+    ["nichos", "Nichos", "Advocacia, turismo, restaurantes e negócios locais."],
+    ["conversao", "Conversão", "WhatsApp, landing pages, rastreamento e qualidade de lead."],
   ];
-  return `<section class="section"><div class="wrap">
-    <div class="category-list" data-reveal>${categories
-      .map(([t, x]) => `<span><strong>${escapeHtml(t)}</strong>${escapeHtml(x)}</span>`)
+  const categoryLabels = Object.fromEntries(categories.map(([id, label]) => [id, label]));
+  return `<section class="section post-archive-section"><div class="wrap">
+    <div class="category-list" data-blog-filters data-reveal aria-label="Filtrar posts por tema">
+      <button class="category-filter is-active" type="button" data-filter-category="all" aria-pressed="true"><strong>Todos</strong>Ver todos os artigos.</button>${categories
+      .map(([id, t, x]) => `<button class="category-filter" type="button" data-filter-category="${id}" aria-pressed="false"><strong>${escapeHtml(t)}</strong>${escapeHtml(x)}</button>`)
       .join("")}</div>
-    <div class="post-grid">${posts
+    <div class="post-grid" data-post-grid>${posts
       .map(
-        (p) => `<a class="post-card" href="${p.slug}" data-reveal><span>Artigo</span><strong>${escapeHtml(p.title)}</strong><p>${escapeHtml(p.description)}</p><span class="sc-go">Ler ${arrowSvg()}</span></a>`
+        (p) => `<a class="post-card" href="${p.slug}" data-post-card data-post-category="${escapeHtml(p.category)}" data-reveal><span>${escapeHtml(categoryLabels[p.category] || "Artigo")}</span><strong>${escapeHtml(p.title)}</strong><p>${escapeHtml(p.description)}</p><span class="sc-go">Ler ${arrowSvg()}</span></a>`
       )
       .join("")}</div>
   </div></section>`;
@@ -1243,13 +1520,13 @@ function renderGeneric(page) {
   <section class="page-hero"><div class="wrap">
     <span class="kicker" data-reveal>${kicker}</span>
     <h1 data-reveal data-delay="60">${escapeHtml(page.h1)}</h1>
-    <p class="lede" data-reveal data-delay="120">${escapeHtml(page.intro)}</p>
+    <p class="lede" data-reveal data-delay="120">${page.introHtml || escapeHtml(page.intro)}</p>
     <div class="hero-actions" data-reveal data-delay="180">
-      <a class="button primary" href="/contato/#formulario" data-gtm="page_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">Solicitar diagnóstico gratuito ${arrowSvg("arrow")}</a>
+      <a class="button primary" href="${contactFormHref(page)}" data-gtm="page_diagnostico" data-event-category="cta" data-event-label="${escapeHtml(page.slug)}">Solicitar diagnóstico gratuito ${arrowSvg("arrow")}</a>
       <a class="button ghost" href="${whatsappHref(page.slug)}" data-whatsapp-link data-gtm="page_whatsapp" data-event-category="whatsapp" data-event-label="${escapeHtml(page.slug)}">Falar no WhatsApp</a>
     </div>
   </div></section>
-  ${renderProseBlocks(page.sections)}
+  ${page.contentHtml ? page.contentHtml : renderProseBlocks(page.sections)}
   ${page.cards ? `<section class="section card-section"><div class="wrap"><div class="cards">${page.cards.map((c, i) => renderServiceCard(c, i)).join("")}</div></div></section>` : ""}
   ${page.packages ? renderPackages(page.packages) : ""}
   ${page.postArchive ? renderPostArchive() : ""}
@@ -1259,16 +1536,17 @@ function renderGeneric(page) {
 }
 
 function renderPost(post) {
-  const page = { slug: post.slug, title: post.title, description: post.description, h1: post.title };
+  const page = { slug: post.slug, title: post.title, description: post.description, h1: post.h1 || post.title };
+  const intro = post.intro || post.description;
   return layout(
     page,
     `<main class="page-main article">
   <div class="wrap">${renderBreadcrumb(page)}</div>
   <article class="article-body">
     <span class="kicker" data-reveal>Conteúdo sobre tráfego pago</span>
-    <h1 data-reveal data-delay="60">${escapeHtml(post.title)}</h1>
-    <p class="lede" data-reveal data-delay="120">${escapeHtml(post.description)}</p>
-    <div class="prose">${renderBody(post.body)}</div>
+    <h1 data-reveal data-delay="60">${escapeHtml(page.h1)}</h1>
+    <p class="lede" data-reveal data-delay="120">${escapeHtml(intro)}</p>
+    <div class="prose">${post.bodyHtml || renderBody(post.body)}</div>
   </article>
   ${renderRelated(page)}
   ${renderCta(page, post.cta)}
@@ -1292,10 +1570,12 @@ function layout(page, content, jsonLd) {
   <meta property="og:type" content="website">
   <meta property="og:url" content="${absolute(page.slug)}">
   <meta name="theme-color" content="#14171c">
+  <link rel="icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=${assetVersion}">
   <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}.faq-answer{height:auto!important}</style></noscript>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -1324,7 +1604,7 @@ function layout(page, content, jsonLd) {
     <span class="fw-label">Falar no WhatsApp</span>
   </a>
   ${renderFooter(page)}
-  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/site.js?v=${assetVersion}" defer></script>
 </body>
 </html>`;
 }
