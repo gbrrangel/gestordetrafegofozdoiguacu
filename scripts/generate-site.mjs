@@ -4,6 +4,15 @@ import { dirname, join } from "node:path";
 const siteUrl = "https://gestordetrafegofozdoiguacu.com.br";
 const assetVersion = "20260629-1";
 const brand = "Gestor de Tráfego Foz do Iguaçu";
+const defaultKeywords = [
+  "gestor de tráfego Foz do Iguaçu",
+  "tráfego pago Foz do Iguaçu",
+  "Google Ads Foz do Iguaçu",
+  "Meta Ads Foz do Iguaçu",
+  "SEO local Foz do Iguaçu",
+  "landing pages Foz do Iguaçu",
+  "rastreamento de conversões",
+];
 const whatsappNumber = "5545999046673";
 const contactEmail = "contato@gabriads.com";
 const whatsappMessage =
@@ -295,7 +304,7 @@ const posts = [
   {
       slug: "/blog/performance-max-2026-novidades-negocios-locais",
       category: "canais",
-      title: "Performance Max em 2026: Novidades e Como Usar para Negócios Locais",
+      title: "Performance Max em 2026 para Negócios Locais",
       description: "Conheça as principais atualizações do Performance Max em 2026 e veja como negócios em Foz do Iguaçu podem usar os novos controles para anunciar melhor no Google",
       h1: "Performance Max em 2026: novidades e como usar para negócios locais",
       intro: "As campanhas Performance Max ganharam mais relatórios, controles e recursos de IA, mas ainda exigem estratégia para negócios locais.",
@@ -470,7 +479,7 @@ const posts = [
   {
       slug: "/blog/como-rastrear-leads-de-trafego-pago",
       category: "conversao",
-      title: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
+      title: "Como rastrear leads de tráfego pago",
       description: "Entenda como rastrear leads de tráfego pago com UTMs, eventos, WhatsApp, formulários e análise de qualidade para saber quais campanhas geram venda.",
       h1: "Como rastrear leads de tráfego pago e saber quais campanhas vendem",
       intro: "Gerar leads é importante, mas saber de onde vieram os melhores contatos é o que permite escalar com segurança. Sem rastreamento, a empresa toma decisão no escuro e pode cortar campanhas boas ou manter campanhas ruins.",
@@ -498,7 +507,7 @@ const posts = [
   {
       slug: "/blog/como-responder-avaliacoes-no-google-meu-negocio",
       category: "conversao",
-      title: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
+      title: "Como responder avaliações no Google Meu Negócio",
       description: "Veja como responder avaliações positivas e negativas no Google Meu Negócio com profissionalismo, cuidado e foco em reputação local.",
       h1: "Como responder avaliações no Google Meu Negócio sem prejudicar sua marca",
       intro: "Responder avaliações é uma parte importante da gestão do Google Meu Negócio. Uma boa resposta mostra atenção, profissionalismo e cuidado com a experiência do cliente.",
@@ -618,7 +627,7 @@ const posts = [
   {
       slug: "/blog/google-meu-negocio-para-empresas-locais-em-foz-do-iguacu",
       category: "canais",
-      title: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
+      title: "Google Meu Negócio para empresas locais em Foz",
       description: "Entenda como empresas locais em Foz do Iguaçu podem usar o Google Meu Negócio para aparecer na Busca, no Maps e gerar mais contatos.",
       h1: "Google Meu Negócio para empresas locais em Foz do Iguaçu: por onde começar",
       intro: "O Google Meu Negócio — hoje chamado Perfil da Empresa no Google — é uma base importante para negócios locais que querem ser encontrados na Busca Google e no Maps. Mas criar o perfil é só o primeiro passo.",
@@ -645,7 +654,7 @@ const posts = [
   {
       slug: "/blog/landing-page-para-negocios-locais-em-foz-do-iguacu",
       category: "conversao",
-      title: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
+      title: "Landing page para negócios locais em Foz do Iguaçu",
       description: "Veja o que uma landing page para negócios locais em Foz do Iguaçu precisa ter para converter cliques em leads pelo WhatsApp, formulário ou ligação.",
       h1: "Landing page para negócios locais em Foz do Iguaçu: o que precisa ter",
       intro: "Uma landing page local não precisa ser complexa, mas precisa ser clara. Ela deve explicar a oferta, gerar confiança, facilitar o contato e medir o que acontece depois do clique.",
@@ -700,7 +709,7 @@ const posts = [
   {
       slug: "/blog/seo-local-para-negocios-em-foz-do-iguacu",
       category: "canais",
-      title: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
+      title: "SEO local para negócios em Foz do Iguaçu",
       description: "Guia prático de SEO local para negócios em Foz do Iguaçu: site, Google Meu Negócio, conteúdo, avaliações, Maps e rastreamento.",
       h1: "SEO local para negócios em Foz do Iguaçu: guia prático para gerar mais contatos",
       intro: "SEO local é o conjunto de ações que ajuda uma empresa a ser encontrada por pessoas que pesquisam por soluções em uma região específica. Para negócios em Foz do Iguaçu, isso envolve site, Google Meu Negócio, conteúdo, avaliações, rastreamento e experiência de contato.",
@@ -729,7 +738,7 @@ const posts = [
   {
       slug: "/blog/trafego-pago-para-advogados-em-foz-do-iguacu",
       category: "nichos",
-      title: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
+      title: "Tráfego pago para advogados em Foz do Iguaçu",
       description: "Entenda como advogados em Foz do Iguaçu podem usar tráfego pago com abordagem informativa, ética, rastreamento e foco em autoridade.",
       h1: "Tráfego pago para advogados em Foz do Iguaçu: como fazer com ética",
       intro: "O tráfego pago para advogados exige cuidado. A comunicação precisa ser informativa, sóbria e alinhada às regras profissionais, evitando promessa de resultado, captação agressiva e linguagem mercantilista.",
@@ -834,7 +843,7 @@ const pages = [
   },
   {
     slug: "/servicos/gestao-de-trafego-pago",
-    title: "Gestão de Tráfego Pago em Google Ads, Meta Ads e Outras Plataformas",
+    title: "Gestão de Tráfego Pago em Google Ads e Meta Ads",
     description:
       "Gestão de tráfego pago para Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, Pinterest Ads e outras plataformas com foco em performance.",
     h1: "Gestão de tráfego pago para empresas que precisam de acompanhamento completo",
@@ -1040,7 +1049,7 @@ const pages = [
   },
   {
     slug: "/nichos/trafego-pago-para-advogados-foz-do-iguacu",
-    title: "Tráfego Pago para Advogados em Foz do Iguaçu | Ético e Estratégico",
+    title: "Tráfego Pago para Advogados em Foz do Iguaçu",
     description:
       "Gestão de tráfego pago para advogados em Foz do Iguaçu com comunicação ética, campanhas informativas e foco em contatos qualificados.",
     h1: "Tráfego pago para advogados em Foz do Iguaçu com estratégia e cuidado ético",
@@ -1068,7 +1077,7 @@ const pages = [
   },
   {
     slug: "/consultoria",
-    title: "Consultoria de Tráfego Pago em Foz do Iguaçu | Diagnóstico Estratégico",
+    title: "Consultoria de Tráfego Pago em Foz do Iguaçu",
     description:
       "Consultoria de tráfego pago para empresas que querem orientação estratégica sem contratar uma gestão completa de campanhas.",
     h1: "Consultoria de tráfego pago para orientar sua operação com clareza",
@@ -1105,7 +1114,7 @@ const pages = [
     slug: "/politica-de-privacidade",
     title: "Política de Privacidade | Gestor de Tráfego Foz do Iguaçu",
     description:
-      "Política de privacidade do site Gestor de Tráfego Foz do Iguaçu.",
+      "Leia a política de privacidade do site Gestor de Tráfego Foz do Iguaçu e entenda como dados de contato, cookies e rastreamento podem ser usados.",
     h1: "Política de Privacidade",
     intro:
       "Esta Política de Privacidade explica como o site Gestor de Tráfego Foz do Iguaçu coleta e utiliza informações enviadas por visitantes interessados em serviços de tráfego pago.",
@@ -1135,6 +1144,24 @@ function pathToFile(slug) {
 
 function absolute(slug) {
   return `${siteUrl}${slug === "/" ? "" : slug}`;
+}
+
+function metaKeywords(page) {
+  const localTerms = page.slug
+    .split("/")
+    .filter(Boolean)
+    .flatMap((part) =>
+      part
+        .split("-")
+        .filter((word) => word.length > 2 && !["para", "com", "das", "dos", "que", "como", "por"].includes(word))
+        .join(" "),
+    )
+    .filter(Boolean);
+
+  return [...new Set([...defaultKeywords, page.title, page.h1, ...localTerms])]
+    .filter(Boolean)
+    .slice(0, 14)
+    .join(", ");
 }
 
 function whatsappHref(source) {
@@ -1613,6 +1640,8 @@ function renderPost(post) {
 function layout(page, content, jsonLd) {
   jsonLd = jsonLd || [];
   const json = [localBusinessJson(), breadcrumbJson(page), ...(page.faq ? [faqJson(page.faq)] : []), ...jsonLd];
+  const canonicalUrl = absolute(page.slug);
+  const keywords = page.keywords || metaKeywords(page);
   return `<!doctype html>
 <html lang="pt-BR" data-bg="grafite">
 <head>
@@ -1620,11 +1649,19 @@ function layout(page, content, jsonLd) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(page.title)}</title>
   <meta name="description" content="${escapeHtml(page.description)}">
-  <link rel="canonical" href="${absolute(page.slug)}">
+  <meta name="keywords" content="${escapeHtml(keywords)}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="${escapeHtml(brand)}">
+  <link rel="canonical" href="${canonicalUrl}">
   <meta property="og:title" content="${escapeHtml(page.title)}">
   <meta property="og:description" content="${escapeHtml(page.description)}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="${absolute(page.slug)}">
+  <meta property="og:url" content="${canonicalUrl}">
+  <meta property="og:site_name" content="${escapeHtml(brand)}">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="${escapeHtml(page.title)}">
+  <meta name="twitter:description" content="${escapeHtml(page.description)}">
   <meta name="theme-color" content="#14171c">
   <link rel="icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
   <link rel="shortcut icon" href="/assets/favicon.svg?v=${assetVersion}" type="image/svg+xml">
